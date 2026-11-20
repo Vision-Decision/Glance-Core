@@ -91,7 +91,7 @@ Gen-v1 trains the same backbone on the same data to answer in text: it matches G
 objects one point more often (88.4 vs 87.4), so the data explains the accuracy. The heads buy the interface: one pass
 for all questions, a better-ranked box confidence (AUROC 90.2 vs 88.3) and far fewer false refusals on GUI targets.
 On screenshots, scaling the LoRA update to α = 0.5 and zooming inside the question block lift ScreenSpot-Pro from
-50.1 to 68.75 without training (v1.1 checkpoint; zoom track with extra passes, settings chosen on the test set, so not
+50.1 to 68.75 without training (on an internal v1.1 checkpoint, not released yet; zoom track with extra passes, settings chosen on the test set, so not
 comparable to single-pass leaderboards). A general 4B VLM (Qwen3-VL-4B, reported) still leads on VenusBench-GD through its clicks, and on raw clicks without the refusal gate Gen-v1 is also ahead (50.97 vs 47.28). Every value and its file: [`assets/core_results.py`](assets/core_results.py).</sub>
 
 <picture>
@@ -112,9 +112,9 @@ Glance v1 (the released weights) unless marked; official protocols where one exi
 | RefCOCO / + / g, 8 splits, mean Acc@0.5 | **90.8** | [`outputs/v1/eval_results.json`](outputs/v1/eval_results.json) (`sets.refcoco*.acc50`) |
 | gRefCOCO val: no-target accuracy / presence AUROC / presence ECE | **87.4 / 97.9 / 2.3** | same, `sets.grefcoco_val_merged` |
 | VenusBench-GD, official UI-Venus scorer: v1 / v1.1 | 40.06 / 40.68 | [`outputs/sprint_abs/v1/tables.md`](outputs/sprint_abs/v1/tables.md), [`v1.1`](outputs/sprint_abs/v1.1/tables.md) (`raw_gated`) |
-| ScreenSpot-Pro, v1.1, official single-pass protocol, native resolution: Glance / base generative | 50.7 / 59.9 | [`outputs/sprint_gui/summary.md`](outputs/sprint_gui/summary.md), [`outputs/sspro_base/summary.md`](outputs/sspro_base/summary.md) |
+| ScreenSpot-Pro, internal v1.1 checkpoint, official single-pass protocol, native resolution: Glance / base generative | 50.7 / 59.9 | [`outputs/sprint_gui/summary.md`](outputs/sprint_gui/summary.md), [`outputs/sspro_base/summary.md`](outputs/sspro_base/summary.md) |
 | ScreenSpot-v2, v1.1 (better of two resolutions, chosen on test) / base generative | 90.1 / 93.4 | [`outputs/sprint_gui/summary.md`](outputs/sprint_gui/summary.md) |
-| ScreenSpot-Pro, v1.1, zoom track (extra passes; LoRA scale and crop settings chosen on the test set) | 68.75 [66.4, 71.0] | [`outputs/arch/zoom/summary.md`](outputs/arch/zoom/summary.md) (the arch harness scores the first pass 50.1; bf16 batching) |
+| ScreenSpot-Pro, internal v1.1 checkpoint (not released), zoom track (extra passes; LoRA scale and crop settings chosen on the test set). The released Glance-4B-preview on the zoom track alone: 58.1 | 68.75 [66.4, 71.0] | [`outputs/arch/zoom/summary.md`](outputs/arch/zoom/summary.md) (the arch harness scores the first pass 50.1; bf16 batching) |
 | Shifted descriptions (Chinese, paraphrase, functional, vague): accuracy, v1 → augmented data + consistency loss (a recipe, not released weights); base generative 80.2 | 75.0 → **83.6** | [`outputs/sprint_robust/summary/tables.md`](outputs/sprint_robust/summary/tables.md) |
 
 **Same data, text answers.** Gen-v1 trains the same backbone on the same data to answer in text
