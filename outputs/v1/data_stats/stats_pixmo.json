@@ -1,0 +1,16 @@
+{
+ "points_rows": 2376222,
+ "count_rows": 36916,
+ "url_eval_overlap_removed": 0,
+ "download_ok": 24006,
+ "download_tried": 50000,
+ "eval_hash_dup_removed": 227,
+ "records": 23779,
+ "questions": 277203,
+ "by_type": {
+  "box": 244884,
+  "score": 32279,
+  "noul": 40
+ },
+ "absent": 37361
+}

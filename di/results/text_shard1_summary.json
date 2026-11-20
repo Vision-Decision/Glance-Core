@@ -1,0 +1,428 @@
+{
+ "run_dir": "/content/out/di/text-shard1",
+ "status": {
+  "ok": 49537
+ },
+ "latency_all_rows": {
+  "n": 49537,
+  "median_ms": 74.85865899980126,
+  "mean_ms": 120.4402877244272,
+  "p80_ms": 112.93494700021256,
+  "p95_ms": 189.6491560000868,
+  "max_ms": 12675.875791999715
+ },
+ "latency_per_benchmark": {
+  "ACOS": {
+   "n": 571,
+   "median_ms": 449.12868899973546,
+   "mean_ms": 406.6810697600733,
+   "p80_ms": 449.68477899965364,
+   "p95_ms": 450.31659899996157,
+   "max_ms": 995.8578360001411
+  },
+  "ANLI": {
+   "n": 1128,
+   "median_ms": 74.47184800003015,
+   "mean_ms": 74.46636370391694,
+   "p80_ms": 74.69387800028926,
+   "p95_ms": 74.9025579998488,
+   "max_ms": 76.1385590003556
+  },
+  "API-Bank": {
+   "n": 161,
+   "median_ms": 882.7255770002012,
+   "mean_ms": 888.182886459623,
+   "p80_ms": 915.8697960001518,
+   "p95_ms": 961.0822960003134,
+   "max_ms": 988.7026349997541
+  },
+  "ARC-Challenge": {
+   "n": 452,
+   "median_ms": 74.11417299954337,
+   "mean_ms": 74.08948004206094,
+   "p80_ms": 74.29086799947981,
+   "p95_ms": 74.64443900062179,
+   "max_ms": 75.67753900002572
+  },
+  "ARC-Easy": {
+   "n": 861,
+   "median_ms": 74.07949800017377,
+   "mean_ms": 73.97976151220132,
+   "p80_ms": 74.23956799993903,
+   "p95_ms": 74.4527589995414,
+   "max_ms": 75.09717800076032
+  },
+  "Amazon ESCI": {
+   "n": 1762,
+   "median_ms": 75.1375229997393,
+   "mean_ms": 75.57748070772973,
+   "p80_ms": 76.33967800029495,
+   "p95_ms": 77.4046480000834,
+   "max_ms": 133.34350599961908
+  },
+  "BANKING77": {
+   "n": 1047,
+   "median_ms": 152.89814599964302,
+   "mean_ms": 152.92038411937,
+   "p80_ms": 153.3108160001575,
+   "p95_ms": 154.10369599976548,
+   "max_ms": 160.2690950003307
+  },
+  "BBH fixed-option tasks": {
+   "n": 1950,
+   "median_ms": 73.82900699940365,
+   "mean_ms": 73.84578476820025,
+   "p80_ms": 74.16392800041649,
+   "p95_ms": 74.49732799977937,
+   "max_ms": 75.78961699982756
+  },
+  "BFCL": {
+   "n": 599,
+   "median_ms": 75.8450680000351,
+   "mean_ms": 104.96668450418072,
+   "p80_ms": 100.35988700019516,
+   "p95_ms": 125.61107700003049,
+   "max_ms": 7038.009209000393
+  },
+  "BPoMP": {
+   "n": 1928,
+   "median_ms": 74.69958299998325,
+   "mean_ms": 74.66909197250214,
+   "p80_ms": 74.8687469995275,
+   "p95_ms": 75.05958799993095,
+   "max_ms": 76.5460479997273
+  },
+  "BRIGHT": {
+   "n": 102,
+   "median_ms": 1847.073009000269,
+   "mean_ms": 1888.6173662843014,
+   "p80_ms": 2467.227277999882,
+   "p95_ms": 3597.85864100013,
+   "max_ms": 4340.185752000252
+  },
+  "CLINC150+OOS": {
+   "n": 1880,
+   "median_ms": 189.25377599998683,
+   "mean_ms": 189.4153450191444,
+   "p80_ms": 189.6675759999198,
+   "p95_ms": 191.12302499979705,
+   "max_ms": 197.45932499972696
+  },
+  "CLadder": {
+   "n": 1808,
+   "median_ms": 74.53079800052365,
+   "mean_ms": 74.49886010897545,
+   "p80_ms": 74.80533799935074,
+   "p95_ms": 75.19490799859341,
+   "max_ms": 77.22577800086583
+  },
+  "CRUXEval": {
+   "n": 202,
+   "median_ms": 74.5907629998328,
+   "mean_ms": 74.62947229704345,
+   "p80_ms": 74.93215799877362,
+   "p95_ms": 75.2370879999944,
+   "max_ms": 75.97286800046277
+  },
+  "ChessBench": {
+   "n": 1763,
+   "median_ms": 152.2833470007754,
+   "mean_ms": 131.52193813499935,
+   "p80_ms": 156.59766599947034,
+   "p95_ms": 163.4391859997777,
+   "max_ms": 209.8120549999294
+  },
+  "ContractNLI": {
+   "n": 39,
+   "median_ms": 182.92165599996224,
+   "mean_ms": 202.8435677179331,
+   "p80_ms": 233.42255399984424,
+   "p95_ms": 371.19934000020294,
+   "max_ms": 490.93953800002055
+  },
+  "FinEntity": {
+   "n": 348,
+   "median_ms": 75.1593180002601,
+   "mean_ms": 75.33688231319502,
+   "p80_ms": 75.63269799993577,
+   "p95_ms": 76.08147799965082,
+   "max_ms": 105.07982700073626
+  },
+  "GPQA Diamond": {
+   "n": 85,
+   "median_ms": 74.2059779995543,
+   "mean_ms": 74.37076184714363,
+   "p80_ms": 74.66405799914355,
+   "p95_ms": 75.30363800015039,
+   "max_ms": 75.68658900072478
+  },
+  "GSM8K": {
+   "n": 944,
+   "median_ms": 74.29222799964919,
+   "mean_ms": 74.30216825846632,
+   "p80_ms": 74.60928900036379,
+   "p95_ms": 74.93224800055032,
+   "max_ms": 75.507818000915
+  },
+  "HLE": {
+   "n": 179,
+   "median_ms": 74.82756799981871,
+   "mean_ms": 78.82892110622343,
+   "p80_ms": 75.90412799982005,
+   "p95_ms": 85.51342799910344,
+   "max_ms": 350.52532100053213
+  },
+  "Habermas Machine": {
+   "n": 585,
+   "median_ms": 75.27308799944876,
+   "mean_ms": 76.28718404445482,
+   "p80_ms": 76.08348800022213,
+   "p95_ms": 82.69543800088286,
+   "max_ms": 96.40257799946994
+  },
+  "HellaSwag": {
+   "n": 3488,
+   "median_ms": 74.55543800006126,
+   "mean_ms": 74.49415820097843,
+   "p80_ms": 74.77537799968559,
+   "p95_ms": 75.14640800036432,
+   "max_ms": 76.16166800016799
+  },
+  "HoVer claim verification": {
+   "n": 1361,
+   "median_ms": 75.64139799978875,
+   "mean_ms": 75.51391808079485,
+   "p80_ms": 75.9793979996175,
+   "p95_ms": 76.37068800067937,
+   "max_ms": 77.83236799878068
+  },
+  "Home appliance simulator": {
+   "n": 36,
+   "median_ms": 213.81434000022637,
+   "mean_ms": 213.00465552788714,
+   "p80_ms": 222.94451500056311,
+   "p95_ms": 223.43229500074813,
+   "max_ms": 225.61103400039428
+  },
+  "Humicroedit": {
+   "n": 888,
+   "median_ms": 74.76662799990663,
+   "mean_ms": 74.66803223760078,
+   "p80_ms": 74.98950799981685,
+   "p95_ms": 75.16791799935163,
+   "max_ms": 76.19855800021469
+  },
+  "MMLU": {
+   "n": 4882,
+   "median_ms": 74.11626349994549,
+   "mean_ms": 74.18132097131937,
+   "p80_ms": 74.45065899992187,
+   "p95_ms": 75.14942800025892,
+   "max_ms": 78.06925900058559
+  },
+  "MMLU-Pro": {
+   "n": 4234,
+   "median_ms": 74.08713850054482,
+   "mean_ms": 74.15307406281552,
+   "p80_ms": 74.50514800075325,
+   "p95_ms": 75.09005799875013,
+   "max_ms": 99.67702699941583
+  },
+  "MuSR": {
+   "n": 276,
+   "median_ms": 77.5836480001999,
+   "mean_ms": 80.94455707611115,
+   "p80_ms": 85.62166699994123,
+   "p95_ms": 92.12118799950986,
+   "max_ms": 103.67359700012457
+  },
+  "NLI4CT": {
+   "n": 1926,
+   "median_ms": 75.92588300030911,
+   "mean_ms": 78.46996807423967,
+   "p80_ms": 76.9736379997994,
+   "p95_ms": 95.23550799985969,
+   "max_ms": 173.6308649997227
+  },
+  "New Yorker caption matching": {
+   "n": 209,
+   "median_ms": 74.3842379997659,
+   "mean_ms": 74.30818276550686,
+   "p80_ms": 74.58144799966249,
+   "p95_ms": 74.76836800015008,
+   "max_ms": 74.97242800127424
+  },
+  "POP909-CL": {
+   "n": 716,
+   "median_ms": 480.0266620000002,
+   "mean_ms": 495.8085529399481,
+   "p80_ms": 551.6512849999344,
+   "p95_ms": 627.0426030005183,
+   "max_ms": 2670.9898480003176
+  },
+  "PhishNChips phishing decisions": {
+   "n": 705,
+   "median_ms": 77.95061799879477,
+   "mean_ms": 78.17646857731737,
+   "p80_ms": 78.2038580000517,
+   "p95_ms": 80.70203799979936,
+   "max_ms": 99.5556170000782
+  },
+  "RAGTruth response-level hallucination": {
+   "n": 951,
+   "median_ms": 76.88212799985195,
+   "mean_ms": 79.86553480021377,
+   "p80_ms": 80.63345800110255,
+   "p95_ms": 98.24136799943517,
+   "max_ms": 134.44598599926394
+  },
+  "RouterBench": {
+   "n": 3579,
+   "median_ms": 134.28380699951958,
+   "mean_ms": 141.52520409109002,
+   "p80_ms": 157.44595599971944,
+   "p95_ms": 166.6415159997996,
+   "max_ms": 318.8140320007733
+  },
+  "SATA-Bench": {
+   "n": 530,
+   "median_ms": 76.82547800004613,
+   "mean_ms": 95.66724918302258,
+   "p80_ms": 108.58789700068883,
+   "p95_ms": 147.04499599974952,
+   "max_ms": 634.5565550000174
+  },
+  "SGD/SGD-X": {
+   "n": 879,
+   "median_ms": 77.00035800007754,
+   "mean_ms": 78.9259901262897,
+   "p80_ms": 80.31360799941467,
+   "p95_ms": 92.23039799962862,
+   "max_ms": 120.602097000301
+  },
+  "SimpleBench": {
+   "n": 6,
+   "median_ms": 74.52518299987787,
+   "mean_ms": 74.61059316665342,
+   "p80_ms": 74.66568800009554,
+   "p95_ms": 75.28915900002175,
+   "max_ms": 75.28915900002175
+  },
+  "ToolRet": {
+   "n": 339,
+   "median_ms": 1303.8643570002932,
+   "mean_ms": 2310.906275469021,
+   "p80_ms": 4447.019805999844,
+   "p95_ms": 5966.1771480000425,
+   "max_ms": 12675.875791999715
+  },
+  "VAST": {
+   "n": 1085,
+   "median_ms": 74.91373799985013,
+   "mean_ms": 74.94701899815254,
+   "p80_ms": 75.26788799987116,
+   "p95_ms": 75.61221800006024,
+   "max_ms": 76.38636799947562
+  },
+  "When2Call MCQ": {
+   "n": 1279,
+   "median_ms": 75.74978800039389,
+   "mean_ms": 81.1405819593395,
+   "p80_ms": 84.94888799941691,
+   "p95_ms": 106.50026700022863,
+   "max_ms": 170.3618550000101
+  },
+  "WinoGrande": {
+   "n": 406,
+   "median_ms": 73.72312300003614,
+   "mean_ms": 73.68129412067987,
+   "p80_ms": 74.05866799945215,
+   "p95_ms": 74.24868799989781,
+   "max_ms": 75.64732799983176
+  },
+  "cfcolor": {
+   "n": 1746,
+   "median_ms": 75.17695349952191,
+   "mean_ms": 75.19250971935168,
+   "p80_ms": 75.43435900061013,
+   "p95_ms": 75.77927799957251,
+   "max_ms": 77.1146779998162
+  },
+  "iSarcasmEval": {
+   "n": 1622,
+   "median_ms": 74.76620800025557,
+   "mean_ms": 74.92079623550926,
+   "p80_ms": 75.38610800020251,
+   "p95_ms": 75.70994799971231,
+   "max_ms": 76.7843890007498
+  }
+ },
+ "chunked_rows": {
+  "API-Bank": 161,
+  "BANKING77": 1047,
+  "CLINC150+OOS": 1880,
+  "POP909-CL": 716,
+  "ChessBench": 1232
+ },
+ "environment.json": {
+  "engine": "di.engine:GlanceEngine",
+  "engine_options": {
+   "model": "Vision-Decision/Glance-4B-preview"
+  },
+  "model_source": {
+   "kind": "in-process",
+   "engine": "di.engine:GlanceEngine",
+   "base": "Qwen/Qwen3.5-4B",
+   "repo": "Vision-Decision/Glance-4B-preview",
+   "revision": "b6237b4a5856c1e44714b1204163b62a36832851",
+   "release": "Glance-4B-preview",
+   "version": "v1",
+   "train_step": 3844,
+   "device": "cuda",
+   "dtype": "bfloat16",
+   "temperatures": {
+    "presence": 0.948836,
+    "choice": 1.046105,
+    "noul": 0.889068,
+    "score": 1.046105
+   },
+   "attn_mask": "block_bidir",
+   "max_vis_tokens": 1600,
+   "max_pixels": 1638400,
+   "image_resize": "native, never upscaled; downscaled (bicubic, multiples of 32 px) only when over max_vis_tokens 32x32 tokens",
+   "declared_limits": {
+    "options_per_choice": 255,
+    "max_prefix_tokens": 65536,
+    "max_block_tokens": 32768
+   },
+   "large_option_fallback": {
+    "applies_to": "> 26 options",
+    "mode": "tournament",
+    "advance": 3,
+    "rule": "original-order near-equal chunks of <= 26 on the shared prefix; tournament: the top-k of every chunk (k = min(advance, 26 // chunks)) go, in original order, to a second forward; finalists share 1 - r in final-round proportions, other options get M_c * P_chunk(o) (M_c = final mass of chunk c's finalists, r = sum_c M_c * (1 - P_chunk(finalists of c)))"
+   },
+   "policy": "One fixed rendering for every benchmark (di/engine.py docstring); no truncation, no option filtering; over-limit requests raise Unsupported."
+  },
+  "torch": "2.14.1+cu130",
+  "device": "cuda",
+  "cuda": "13.0",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "transformers": "5.23.0",
+  "fla": "0.6.0",
+  "loaded_seconds": 4.918164610000076,
+  "frozen_corpus_sha256": null,
+  "rows_path": "/content/di/shard1.jsonl.gz",
+  "runner_sha256": "f4c9f36c4c557f537f1d8184db7bf00c5a84d9f4f0aa67f8c06198cead25818d",
+  "latency": "In-process, device-synchronized request wall time: tokenization, image decode/resize, vision tower, one shared-prefix forward (two for >26-option tournament fallback), readout; excludes model loading."
+ },
+ "status.json": {
+  "time": "2026-11-18T07:18:42.978659+00:00",
+  "event": "complete",
+  "engine": "di.engine:GlanceEngine",
+  "completed": 49537,
+  "counts": {
+   "ok": 49537
+  },
+  "elapsed_seconds": 5976.3
+ }
+}

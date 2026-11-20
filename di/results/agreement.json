@@ -1,0 +1,10 @@
+{
+ "rows_a": 3000,
+ "rows_b": 3000,
+ "compared": 3000,
+ "agreement": 1.0,
+ "rows_with_flip": 0,
+ "max_abs_dp": 0.0,
+ "status_mismatch": 0,
+ "target": ">= 0.985 (bf16; brief's figure, not found in the public kit/methodology)"
+}

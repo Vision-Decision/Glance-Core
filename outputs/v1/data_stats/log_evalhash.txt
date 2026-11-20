@@ -1,0 +1,1 @@
+{'refcoco_family': 6549, 'ss2': 730, 'sspro': 1581, 'venus': 1819, 'pixmo_count_eval_urls': 1080, 'pixmo_count_eval_sha': 1080, 'pixmo_count_eval': 8, 'point_bench': 0}

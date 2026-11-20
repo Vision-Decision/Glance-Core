@@ -1,0 +1,78 @@
+{
+ "ckpt": "/content/ckpt/ablation/ar_hier_neg25_bf16.pt",
+ "variant": "ar_hier",
+ "keep_none": true,
+ "n_present": 2706,
+ "n_absent": 2187,
+ "timing_s": {
+  "b4lp0": 83.47801065444946,
+  "b8lp0": 162.77848029136658,
+  "b16lp0": 304.90066957473755,
+  "b4lp1": 83.40796232223511,
+  "b8lp1": 163.15082025527954,
+  "b16lp1": 304.89955973625183
+ },
+ "image_stride": 4,
+ "configs": {
+  "b4lp0": {
+   "beams": 4,
+   "length_penalty": 0.0,
+   "split": 1,
+   "refusal_present": 0.2261640798226164,
+   "N_acc": 0.9647919524462735,
+   "acc50_present_accepted": 0.9646609360076409,
+   "gated_acc50": 0.7464892830746489,
+   "bad": 0.0
+  },
+  "b8lp0": {
+   "beams": 8,
+   "length_penalty": 0.0,
+   "split": 1,
+   "refusal_present": 0.22394678492239467,
+   "N_acc": 0.9638774577046182,
+   "acc50_present_accepted": 0.9642857142857143,
+   "gated_acc50": 0.7483370288248337,
+   "bad": 0.0
+  },
+  "b16lp0": {
+   "beams": 16,
+   "length_penalty": 0.0,
+   "split": 1,
+   "refusal_present": 0.22283813747228381,
+   "N_acc": 0.9625057155921354,
+   "acc50_present_accepted": 0.9624346172135045,
+   "gated_acc50": 0.7479674796747967,
+   "bad": 0.0
+  },
+  "b4lp1": {
+   "beams": 4,
+   "length_penalty": 1.0,
+   "split": 1,
+   "refusal_present": 0.02180339985218034,
+   "N_acc": 0.8340192043895748,
+   "acc50_present_accepted": 0.9478655081224027,
+   "gated_acc50": 0.9271988174427199,
+   "bad": 0.0
+  },
+  "b8lp1": {
+   "beams": 8,
+   "length_penalty": 1.0,
+   "split": 1,
+   "refusal_present": 0.021433850702143386,
+   "N_acc": 0.8331047096479195,
+   "acc50_present_accepted": 0.9478851963746223,
+   "gated_acc50": 0.9275683665927569,
+   "bad": 0.0
+  },
+  "b16lp1": {
+   "beams": 16,
+   "length_penalty": 1.0,
+   "split": 1,
+   "refusal_present": 0.021433850702143386,
+   "N_acc": 0.8326474622770919,
+   "acc50_present_accepted": 0.9459969788519638,
+   "gated_acc50": 0.9257206208425721,
+   "bad": 0.0
+  }
+ }
+}

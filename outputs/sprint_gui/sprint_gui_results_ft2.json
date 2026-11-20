@@ -1,0 +1,153 @@
+{
+ "runs": {
+  "ft2f_ss2_16384u1": {
+   "decoders": {
+    "box": 0.8923,
+    "patch": 0.8954,
+    "vote": 0.8868,
+    "ioupick": 0.8947,
+    "local": 0.9041
+   },
+   "box_groups": {
+    "all": 0.8923,
+    "plat/desktop": 0.8892,
+    "plat/mobile": 0.9122,
+    "plat/web": 0.8719,
+    "size/l>=0.2%": 0.9065,
+    "size/m<0.2%": 0.8156,
+    "size/s<0.05%": 0.7692,
+    "type/icon": 0.8502,
+    "type/text": 0.9248
+   },
+   "refusal_acc": null,
+   "venus_official_overall": null,
+   "info": {
+    "ckpt": "/content/out/sprint_ft2/ckpt_final.pt",
+    "max_vis": 16384,
+    "upscale": 1.0,
+    "zoom_from": "",
+    "zoom_frac": 0.4,
+    "wall_s": 266.03927063941956,
+    "n": 1272,
+    "vis_tokens_median": 2923.0
+   }
+  },
+  "ft2f_sspro_16384u1": {
+   "decoders": {
+    "box": 0.5041,
+    "patch": 0.3877,
+    "vote": 0.4548,
+    "ioupick": 0.5054,
+    "local": 0.4889
+   },
+   "box_groups": {
+    "all": 0.5041,
+    "group/CAD": 0.4444,
+    "group/Creative": 0.4223,
+    "group/Dev": 0.4816,
+    "group/OS": 0.5153,
+    "group/Office": 0.6261,
+    "group/Scientific": 0.5827,
+    "plat/linux": 0.54,
+    "plat/macos": 0.5381,
+    "plat/windows": 0.48,
+    "size/l>=0.2%": 0.6545,
+    "size/m<0.2%": 0.6432,
+    "size/s<0.05%": 0.4687,
+    "size/xs<0.01%": 0.2432,
+    "type/icon": 0.3725,
+    "type/text": 0.5855
+   },
+   "refusal_acc": null,
+   "venus_official_overall": null,
+   "info": {
+    "ckpt": "/content/out/sprint_ft2/ckpt_final.pt",
+    "max_vis": 16384,
+    "upscale": 1.0,
+    "zoom_from": "",
+    "zoom_frac": 0.4,
+    "wall_s": 1635.1772470474243,
+    "n": 1581,
+    "vis_tokens_median": 4080.0
+   }
+  }
+ },
+ "zoom": {
+  "ft2f_sspro_16384u1_zoom0.25_4096u2box": {
+   "decoders": {
+    "box": 0.5952,
+    "patch": 0.5674,
+    "vote": 0.5844,
+    "ioupick": 0.6009
+   },
+   "box_groups": {
+    "all": 0.5952,
+    "group/CAD": 0.5632,
+    "group/Creative": 0.5103,
+    "group/Dev": 0.5619,
+    "group/OS": 0.5816,
+    "group/Office": 0.7391,
+    "group/Scientific": 0.6614,
+    "plat/linux": 0.56,
+    "plat/macos": 0.6258,
+    "plat/windows": 0.5771,
+    "size/l>=0.2%": 0.6909,
+    "size/m<0.2%": 0.7035,
+    "size/s<0.05%": 0.5597,
+    "size/xs<0.01%": 0.417,
+    "type/icon": 0.4834,
+    "type/text": 0.6643
+   },
+   "info": {
+    "ckpt": "/content/out/sprint_ft2/ckpt_final.pt",
+    "max_vis": 4096,
+    "upscale": 2.0,
+    "zoom_from": "/content/sprint/ft2f_sspro_16384u1",
+    "zoom_frac": 0.25,
+    "wall_s": 285.2611358165741,
+    "n": 1581,
+    "vis_tokens_median": 1020.0
+   }
+  }
+ },
+ "mzoom": {
+  "ft2f_sspro_16384u1_zoom0.25_4096u2boxc3": {
+   "rules": {
+    "first": 0.5958,
+    "peak": 0.5882,
+    "piou": 0.5952,
+    "presence": 0.6211,
+    "pres_peak": 0.6154,
+    "oracle_any": 0.6509
+   },
+   "presence_groups": {
+    "all": 0.6211,
+    "group/CAD": 0.5824,
+    "group/Creative": 0.5279,
+    "group/Dev": 0.6154,
+    "group/OS": 0.6327,
+    "group/Office": 0.7478,
+    "group/Scientific": 0.6693,
+    "plat/linux": 0.58,
+    "plat/macos": 0.6639,
+    "plat/windows": 0.5955,
+    "size/l>=0.2%": 0.7091,
+    "size/m<0.2%": 0.737,
+    "size/s<0.05%": 0.5761,
+    "size/xs<0.01%": 0.4517,
+    "type/icon": 0.4967,
+    "type/text": 0.6981
+   },
+   "info": {
+    "ckpt": "/content/out/sprint_ft2/ckpt_final.pt",
+    "max_vis": 4096,
+    "upscale": 2.0,
+    "zoom_from": "/content/sprint/ft2f_sspro_16384u1",
+    "zoom_frac": 0.25,
+    "wall_s": 419.2210566997528,
+    "n": 2292,
+    "vis_tokens_median": 1020.0
+   }
+  }
+ }
+}

@@ -1,0 +1,637 @@
+{
+ "ours_neg25": {
+  "n": 19739,
+  "n_present": 10834,
+  "n_absent": 8905,
+  "scores": {
+   "gate": {
+    "aurc": 0.1620409281279357,
+    "aurc_ci95": [
+     0.156587676222105,
+     0.16701484576061257
+    ]
+   },
+   "gate*iou": {
+    "aurc": 0.16207381041047153,
+    "aurc_ci95": [
+     0.1569792338107753,
+     0.16723638373869537
+    ]
+   }
+  },
+  "operating_points": {
+   "gate>=.5": {
+    "coverage": 0.6564668929530372,
+    "selective_risk": 0.20767093687297422,
+    "false_accept_rate_absent": 0.24323413812464909,
+    "refusal_present": 0.0038766845117223555,
+    "box_error_rate_accepted_present": 0.04864714603409933,
+    "risk_of_scores_at_same_coverage": {
+     "gate": 0.20767093687297422,
+     "gate*iou": 0.20751659206667694
+    }
+   },
+   "gate*iou>=.5": {
+    "coverage": 0.6213080703176452,
+    "selective_risk": 0.16927592954990212,
+    "false_accept_rate_absent": 0.19067939359910163,
+    "refusal_present": 0.024736939265275985,
+    "box_error_rate_accepted_present": 0.03577512776831346,
+    "risk_of_scores_at_same_coverage": {
+     "gate": 0.16813437703848666,
+     "gate*iou": 0.16927592954990212
+    }
+   }
+  },
+  "iou": {
+   "mean_iou": 0.8402708710819937,
+   "acc50": 0.9508953295181835,
+   "acc75": 0.8502861362377699,
+   "acc90": 0.4701864500646114
+  },
+  "iou_val_testA_testB": {
+   "n": 21586,
+   "mean_iou": 0.836397370963726,
+   "acc50": 0.9477439080885759,
+   "acc75": 0.8411007134253683,
+   "acc90": 0.4612248679699805
+  },
+  "iou_refcoco_testA": {
+   "mean_iou": 0.8537270429785995,
+   "acc50": 0.9618172176065052,
+   "acc75": 0.8729008308290613,
+   "acc90": 0.5094573095280184
+  },
+  "iou_refcoco_testB": {
+   "mean_iou": 0.808919558428014,
+   "acc50": 0.9254170755642787,
+   "acc75": 0.786261040235525,
+   "acc90": 0.3886162904808636
+  }
+ },
+ "ar_digits_neg25": {
+  "n": 19739,
+  "n_present": 10834,
+  "n_absent": 8905,
+  "scores": {
+   "1-P(none)": {
+    "aurc": 0.1663861307555816,
+    "aurc_ci95": [
+     0.16091976761826177,
+     0.17162409862626304
+    ]
+   },
+   "P(s_hat)": {
+    "aurc": 0.24553313480687233,
+    "aurc_ci95": [
+     0.23806009739108677,
+     0.25291267171515247
+    ]
+   },
+   "(1-P(none))*conf": {
+    "aurc": 0.20936966767388132,
+    "aurc_ci95": [
+     0.2023799555291457,
+     0.21615485015745514
+    ]
+   }
+  },
+  "operating_points": {
+   "greedy": {
+    "coverage": 0.6454227671107959,
+    "selective_risk": 0.20047095761381473,
+    "false_accept_rate_absent": 0.21998877035373385,
+    "refusal_present": 0.004892006645744878,
+    "box_error_rate_accepted_present": 0.05518968555792598,
+    "risk_of_scores_at_same_coverage": {
+     "1-P(none)": 0.20086342229199372,
+     "P(s_hat)": 0.24772370486656203,
+     "(1-P(none))*conf": 0.2009419152276295
+    }
+   },
+   "P(none)<.5": {
+    "coverage": 0.6556563149095699,
+    "selective_risk": 0.21256374594343996,
+    "false_accept_rate_absent": 0.2416619876473891,
+    "refusal_present": 0.004061288536090087,
+    "box_error_rate_accepted_present": 0.05551436515291937,
+    "risk_of_scores_at_same_coverage": {
+     "1-P(none)": 0.21256374594343996,
+     "P(s_hat)": 0.25181579354041106,
+     "(1-P(none))*conf": 0.21264101375367017
+    }
+   },
+   "seq-MAP proxy": {
+    "coverage": 0.3378590607426921,
+    "selective_risk": 0.03973609236767128,
+    "false_accept_rate_absent": 0.01819202695115104,
+    "refusal_present": 0.3993908067195865,
+    "box_error_rate_accepted_present": 0.01582910711541417,
+    "risk_of_scores_at_same_coverage": {
+     "1-P(none)": 0.042735042735042694,
+     "P(s_hat)": 0.17423901634427952,
+     "(1-P(none))*conf": 0.12370670265407102
+    }
+   }
+  },
+  "iou": {
+   "mean_iou": 0.8779702710016104,
+   "acc50": 0.9437880745800259,
+   "acc75": 0.8734539412959202,
+   "acc90": 0.7213402252169098
+  },
+  "iou_val_testA_testB": {
+   "n": 21586,
+   "mean_iou": 0.8743082826129224,
+   "acc50": 0.941489854535347,
+   "acc75": 0.8675530436393959,
+   "acc90": 0.7104604836468081
+  },
+  "iou_refcoco_testA": {
+   "mean_iou": 0.8884425373294415,
+   "acc50": 0.9566908255258971,
+   "acc75": 0.8942902598550468,
+   "acc90": 0.7336043839490897
+  },
+  "iou_refcoco_testB": {
+   "mean_iou": 0.8508281135973396,
+   "acc50": 0.9197252208047105,
+   "acc75": 0.8253189401373896,
+   "acc90": 0.6616290480863591
+  },
+  "seqmap_refused_present": {
+   "n_refused": 4327,
+   "acc50_refused": 0.8830598567136584,
+   "acc50_accepted": 0.9841708928845858,
+   "mean_iou_refused": 0.8112467302439231,
+   "mean_iou_accepted": 0.9223398362173033,
+   "parse_ok_share_of_refused": 1.0
+  }
+ },
+ "ar_hier_neg25": {
+  "n": 19739,
+  "n_present": 10834,
+  "n_absent": 8905,
+  "scores": {
+   "1-P(none)": {
+    "aurc": 0.16566546357578815,
+    "aurc_ci95": [
+     0.16088045622912742,
+     0.17126641104319176
+    ]
+   },
+   "P(s_hat)": {
+    "aurc": 0.24697429921207012,
+    "aurc_ci95": [
+     0.23912688500476706,
+     0.25542779894034723
+    ]
+   },
+   "(1-P(none))*conf": {
+    "aurc": 0.21803985875928558,
+    "aurc_ci95": [
+     0.2111218955569848,
+     0.2259092253388954
+    ]
+   }
+  },
+  "operating_points": {
+   "greedy": {
+    "coverage": 0.6464359896651299,
+    "selective_risk": 0.20117554858934172,
+    "false_accept_rate_absent": 0.22189781021897811,
+    "refusal_present": 0.0046151006091932805,
+    "box_error_rate_accepted_present": 0.05480341246290801,
+    "risk_of_scores_at_same_coverage": {
+     "1-P(none)": 0.20141065830721006,
+     "P(s_hat)": 0.24678683385579936,
+     "(1-P(none))*conf": 0.20376175548589337
+    }
+   },
+   "P(none)<.5": {
+    "coverage": 0.6555043315264197,
+    "selective_risk": 0.21168560166937167,
+    "false_accept_rate_absent": 0.2407636159460977,
+    "refusal_present": 0.0035997784751707587,
+    "box_error_rate_accepted_present": 0.05511811023622047,
+    "risk_of_scores_at_same_coverage": {
+     "1-P(none)": 0.21168560166937167,
+     "P(s_hat)": 0.25094675013525003,
+     "(1-P(none))*conf": 0.21238117319731042
+    }
+   },
+   "seq-MAP proxy": {
+    "coverage": 0.44369015654288463,
+    "selective_risk": 0.0667960721625942,
+    "false_accept_rate_absent": 0.0339135317237507,
+    "refusal_present": 0.21949418497323242,
+    "box_error_rate_accepted_present": 0.03346736045411542,
+    "risk_of_scores_at_same_coverage": {
+     "1-P(none)": 0.07581639643754279,
+     "P(s_hat)": 0.1920529801324503,
+     "(1-P(none))*conf": 0.14877825987668414
+    }
+   }
+  },
+  "iou": {
+   "mean_iou": 0.8737527875451114,
+   "acc50": 0.9439726786043936,
+   "acc75": 0.8732693372715525,
+   "acc90": 0.7062949972309396
+  },
+  "iou_val_testA_testB": {
+   "n": 21586,
+   "mean_iou": 0.8697628045447632,
+   "acc50": 0.9406559807282497,
+   "acc75": 0.8662559066061336,
+   "acc90": 0.6977670712498841
+  },
+  "iou_refcoco_testA": {
+   "mean_iou": 0.8835302029121604,
+   "acc50": 0.9538624712745272,
+   "acc75": 0.8902245006187025,
+   "acc90": 0.724058688350716
+  },
+  "iou_refcoco_testB": {
+   "mean_iou": 0.8459925104544513,
+   "acc50": 0.9189401373895977,
+   "acc75": 0.8247301275760549,
+   "acc90": 0.6504416094210009
+  },
+  "seqmap_refused_present": {
+   "n_refused": 2378,
+   "acc50_refused": 0.8637510513036165,
+   "acc50_accepted": 0.9665326395458845,
+   "mean_iou_refused": 0.788214820474633,
+   "mean_iou_accepted": 0.8978078118702767,
+   "parse_ok_share_of_refused": 1.0
+  }
+ },
+ "ar_atomic100_neg25": {
+  "n": 19739,
+  "n_present": 10834,
+  "n_absent": 8905,
+  "scores": {
+   "1-P(none)": {
+    "aurc": 0.16520086733096165,
+    "aurc_ci95": [
+     0.15964429450144083,
+     0.17078738747479946
+    ]
+   },
+   "P(s_hat)": {
+    "aurc": 0.2252002173833806,
+    "aurc_ci95": [
+     0.2174103215903862,
+     0.23252130021485873
+    ]
+   },
+   "(1-P(none))*conf": {
+    "aurc": 0.2157778042480466,
+    "aurc_ci95": [
+     0.2084577102763611,
+     0.22293553969601318
+    ]
+   }
+  },
+  "operating_points": {
+   "greedy": {
+    "coverage": 0.6381275647195906,
+    "selective_risk": 0.19323594791997456,
+    "false_accept_rate_absent": 0.20673778775968557,
+    "refusal_present": 0.007291858962525383,
+    "box_error_rate_accepted_present": 0.05513714551371455,
+    "risk_of_scores_at_same_coverage": {
+     "1-P(none)": 0.19363289933312167,
+     "P(s_hat)": 0.22951730708161322,
+     "(1-P(none))*conf": 0.20625595427119725
+    }
+   },
+   "P(none)<.5": {
+    "coverage": 0.6574801155073712,
+    "selective_risk": 0.21474803513638463,
+    "false_accept_rate_absent": 0.24514317798989332,
+    "refusal_present": 0.0035997784751707587,
+    "box_error_rate_accepted_present": 0.055951829550717924,
+    "risk_of_scores_at_same_coverage": {
+     "1-P(none)": 0.21474803513638463,
+     "P(s_hat)": 0.23894282632146713,
+     "(1-P(none))*conf": 0.2192171366928648
+    }
+   },
+   "seq-MAP proxy": {
+    "coverage": 0.5856932975328031,
+    "selective_risk": 0.14021278436121443,
+    "false_accept_rate_absent": 0.12307692307692308,
+    "refusal_present": 0.03405944249584641,
+    "box_error_rate_accepted_present": 0.05016722408026756,
+    "risk_of_scores_at_same_coverage": {
+     "1-P(none)": 0.14081826831588962,
+     "P(s_hat)": 0.2049130698036502,
+     "(1-P(none))*conf": 0.18225067035723552
+    }
+   }
+  },
+  "iou": {
+   "mean_iou": 0.8706178426836247,
+   "acc50": 0.9433265645191066,
+   "acc75": 0.8693003507476463,
+   "acc90": 0.6930958094886469
+  },
+  "iou_val_testA_testB": {
+   "n": 21586,
+   "mean_iou": 0.8668184470447067,
+   "acc50": 0.9401000648568517,
+   "acc75": 0.8640785694431576,
+   "acc90": 0.6828963216899843
+  },
+  "iou_refcoco_testA": {
+   "mean_iou": 0.8794033943212699,
+   "acc50": 0.9520947498674209,
+   "acc75": 0.8888103234930175,
+   "acc90": 0.7047905250132579
+  },
+  "iou_refcoco_testB": {
+   "mean_iou": 0.8447662980563736,
+   "acc50": 0.9199214916584887,
+   "acc75": 0.8255152109911678,
+   "acc90": 0.6368989205103042
+  },
+  "seqmap_refused_present": {
+   "n_refused": 369,
+   "acc50_refused": 0.7588075880758808,
+   "acc50_accepted": 0.9498327759197325,
+   "mean_iou_refused": 0.68759602443965,
+   "mean_iou_accepted": 0.8770712636995853,
+   "parse_ok_share_of_refused": 1.0
+  }
+ },
+ "ar_atomic1000_neg25": {
+  "n": 19739,
+  "n_present": 10834,
+  "n_absent": 8905,
+  "scores": {
+   "1-P(none)": {
+    "aurc": 0.1713109303708363,
+    "aurc_ci95": [
+     0.16468806709650544,
+     0.17759547674731244
+    ]
+   },
+   "P(s_hat)": {
+    "aurc": 0.24527689798702434,
+    "aurc_ci95": [
+     0.23779767247874845,
+     0.2533909032171961
+    ]
+   },
+   "(1-P(none))*conf": {
+    "aurc": 0.2282242023777167,
+    "aurc_ci95": [
+     0.2208435443404661,
+     0.23548623603420613
+    ]
+   }
+  },
+  "operating_points": {
+   "greedy": {
+    "coverage": 0.610263944475404,
+    "selective_risk": 0.16669433836958325,
+    "false_accept_rate_absent": 0.1554183043234138,
+    "refusal_present": 0.015875946095624885,
+    "box_error_rate_accepted_present": 0.05852560495216657,
+    "risk_of_scores_at_same_coverage": {
+     "1-P(none)": 0.16652830815208364,
+     "P(s_hat)": 0.228789639714428,
+     "(1-P(none))*conf": 0.19724389838950684
+    }
+   },
+   "P(none)<.5": {
+    "coverage": 0.65104615228735,
+    "selective_risk": 0.21220138510621744,
+    "false_accept_rate_absent": 0.2317798989331836,
+    "refusal_present": 0.004338194572641683,
+    "box_error_rate_accepted_present": 0.0614628719755261,
+    "risk_of_scores_at_same_coverage": {
+     "1-P(none)": 0.21220138510621744,
+     "P(s_hat)": 0.24620652089331574,
+     "(1-P(none))*conf": 0.21850439654501597
+    }
+   },
+   "seq-MAP proxy": {
+    "coverage": 0.5244439941233092,
+    "selective_risk": 0.09969088098918089,
+    "false_accept_rate_absent": 0.06659180235822572,
+    "refusal_present": 0.09922466309765553,
+    "box_error_rate_accepted_present": 0.044984117225125526,
+    "risk_of_scores_at_same_coverage": {
+     "1-P(none)": 0.10374806800618241,
+     "P(s_hat)": 0.2010239567233385,
+     "(1-P(none))*conf": 0.17146445131375576
+    }
+   }
+  },
+  "iou": {
+   "mean_iou": 0.8672603673442398,
+   "acc50": 0.9377884437880746,
+   "acc75": 0.8657928742846595,
+   "acc90": 0.6990954402805981
+  },
+  "iou_val_testA_testB": {
+   "n": 21586,
+   "mean_iou": 0.8626241771174539,
+   "acc50": 0.9342166218845548,
+   "acc75": 0.857314926341147,
+   "acc90": 0.6838228481423144
+  },
+  "iou_refcoco_testA": {
+   "mean_iou": 0.8764047490291934,
+   "acc50": 0.9490896234753403,
+   "acc75": 0.8829768428495669,
+   "acc90": 0.7074421071239173
+  },
+  "iou_refcoco_testB": {
+   "mean_iou": 0.8374651623536241,
+   "acc50": 0.910107948969578,
+   "acc75": 0.8107948969578017,
+   "acc90": 0.6251226692836114
+  },
+  "seqmap_refused_present": {
+   "n_refused": 1075,
+   "acc50_refused": 0.7813953488372093,
+   "acc50_accepted": 0.9550158827748745,
+   "mean_iou_refused": 0.7219094504717586,
+   "mean_iou_accepted": 0.8832714581975976,
+   "parse_ok_share_of_refused": 1.0
+  }
+ },
+ "ours_neg05": {
+  "n": 19739,
+  "n_present": 10834,
+  "n_absent": 8905,
+  "scores": {
+   "gate": {
+    "aurc": 0.16526442124773116,
+    "aurc_ci95": [
+     0.16020774459759374,
+     0.17032507714402204
+    ]
+   },
+   "gate*iou": {
+    "aurc": 0.1716931050569284,
+    "aurc_ci95": [
+     0.16626707011147884,
+     0.17727900187864676
+    ]
+   }
+  },
+  "operating_points": {
+   "gate>=.5": {
+    "coverage": 0.7092051269061249,
+    "selective_risk": 0.26644760340024287,
+    "false_accept_rate_absent": 0.3567658618753509,
+    "refusal_present": 0.0011076241462063873,
+    "box_error_rate_accepted_present": 0.05109961190168176,
+    "risk_of_scores_at_same_coverage": {
+     "gate": 0.26644760340024287,
+     "gate*iou": 0.2666619044217444
+    }
+   },
+   "gate*iou>=.5": {
+    "coverage": 0.6581387101676883,
+    "selective_risk": 0.21715033484720192,
+    "false_accept_rate_absent": 0.27142055025266704,
+    "refusal_present": 0.02399852316780506,
+    "box_error_rate_accepted_present": 0.03820692264043881,
+    "risk_of_scores_at_same_coverage": {
+     "gate": 0.21206989454237546,
+     "gate*iou": 0.21715033484720192
+    }
+   }
+  },
+  "iou": {
+   "mean_iou": 0.8355166898721667,
+   "acc50": 0.9484031751892191,
+   "acc75": 0.8423481631899575,
+   "acc90": 0.4338194572641684
+  },
+  "iou_val_testA_testB": {
+   "n": 21586,
+   "mean_iou": 0.8323221453493215,
+   "acc50": 0.9444084128601872,
+   "acc75": 0.8371166496803484,
+   "acc90": 0.43486519040118593
+  },
+  "iou_refcoco_testA": {
+   "mean_iou": 0.8496109229998671,
+   "acc50": 0.9563372812444759,
+   "acc75": 0.8734311472511932,
+   "acc90": 0.4834718048435567
+  },
+  "iou_refcoco_testB": {
+   "mean_iou": 0.806333468110923,
+   "acc50": 0.9226692836113837,
+   "acc75": 0.7856722276741904,
+   "acc90": 0.3831207065750736
+  }
+ },
+ "ar_digits_neg05": {
+  "n": 19739,
+  "n_present": 10834,
+  "n_absent": 8905,
+  "scores": {
+   "1-P(none)": {
+    "aurc": 0.16694072447462655,
+    "aurc_ci95": [
+     0.1620167192516262,
+     0.17221516901537862
+    ]
+   },
+   "P(s_hat)": {
+    "aurc": 0.27446496571671986,
+    "aurc_ci95": [
+     0.266180814049322,
+     0.2825639141499838
+    ]
+   },
+   "(1-P(none))*conf": {
+    "aurc": 0.23559503599431791,
+    "aurc_ci95": [
+     0.22807832868559125,
+     0.243332844124062
+    ]
+   }
+  },
+  "operating_points": {
+   "greedy": {
+    "coverage": 0.6958812503166321,
+    "selective_risk": 0.2565521258008153,
+    "false_accept_rate_absent": 0.3279056709713644,
+    "refusal_present": 0.001661436219309581,
+    "box_error_rate_accepted_present": 0.05584319526627219,
+    "risk_of_scores_at_same_coverage": {
+     "1-P(none)": 0.25647932440302856,
+     "P(s_hat)": 0.2976121141525917,
+     "(1-P(none))*conf": 0.2566249271986022
+    }
+   },
+   "P(none)<.5": {
+    "coverage": 0.7061654592431228,
+    "selective_risk": 0.26716407202812253,
+    "false_accept_rate_absent": 0.35025266704098823,
+    "refusal_present": 0.0012922281705741185,
+    "box_error_rate_accepted_present": 0.05591497227356747,
+    "risk_of_scores_at_same_coverage": {
+     "1-P(none)": 0.26716407202812253,
+     "P(s_hat)": 0.30253246287395075,
+     "(1-P(none))*conf": 0.26730755434392706
+    }
+   },
+   "seq-MAP proxy": {
+    "coverage": 0.49217285576776937,
+    "selective_risk": 0.08193515182707156,
+    "false_accept_rate_absent": 0.05884334643458731,
+    "refusal_present": 0.1516522060180912,
+    "box_error_rate_accepted_present": 0.029594168208029594,
+    "risk_of_scores_at_same_coverage": {
+     "1-P(none)": 0.08265568708183224,
+     "P(s_hat)": 0.2414822439526505,
+     "(1-P(none))*conf": 0.18219248584662895
+    }
+   }
+  },
+  "iou": {
+   "mean_iou": 0.8758183442612226,
+   "acc50": 0.943695772567842,
+   "acc75": 0.8711463909913236,
+   "acc90": 0.7172789366808197
+  },
+  "iou_val_testA_testB": {
+   "n": 21586,
+   "mean_iou": 0.8730394606853581,
+   "acc50": 0.9404706754377837,
+   "acc75": 0.8673677383489299,
+   "acc90": 0.7101361993884926
+  },
+  "iou_refcoco_testA": {
+   "mean_iou": 0.890309800209821,
+   "acc50": 0.9552766484002121,
+   "acc75": 0.89800247480997,
+   "acc90": 0.7413823581403571
+  },
+  "iou_refcoco_testB": {
+   "mean_iou": 0.8479551161611574,
+   "acc50": 0.9171736997055937,
+   "acc75": 0.8253189401373896,
+   "acc90": 0.6602551521099117
+  },
+  "seqmap_refused_present": {
+   "n_refused": 1643,
+   "acc50_refused": 0.7942787583688375,
+   "acc50_accepted": 0.9704058317919704,
+   "mean_iou_refused": 0.7230679427717667,
+   "mean_iou_accepted": 0.903124285904915,
+   "parse_ok_share_of_refused": 1.0
+  }
+ }
+}

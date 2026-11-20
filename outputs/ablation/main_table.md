@@ -1,0 +1,9 @@
+| run | variant | decoding | refcoco_val | testA | testB | N_acc | refusal_present_val | auroc | ece | N_acc@0.5%refusal | N_acc@1%refusal | N_acc@2%refusal | lat_1q_ms | lat_8q_ms | steps_1q | N_acc_greedy_c | N_acc_thresh | N_acc_seqmap | refusal_greedy_c_val | refusal_thresh_val | refusal_seqmap_val | acc50_val_unconstrained | parse_fail_val_unconstrained | N_acc_priorcorr | refusal_val_priorcorr |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| ours_neg25 | ours | - | 95.1 | 96.2 | 92.5 | 75.7 | 0.4 | 96.6 | 8.1 | 78.2 | 81.3 | 85.7 | 84.2 | 84.5 | 0.0 | - | - | - | - | - | - | - | - | - | - |
+| ar_digits_neg25 | ar_digits | constrained | 94.4 | 95.7 | 92.0 | 78.0 | 0.5 | 96.3 | 7.9 | 77.8 | 82.1 | 85.5 | 615.8 | 630.2 | 15.3 | 78.0 | 75.8 | 98.2 | 0.5 | 0.4 | 39.9 | 94.4 | 0.0 | - | - |
+| ar_hier_neg25 | ar_hier | constrained | 94.4 | 95.4 | 91.9 | 78.3 | 0.5 | 96.6 | 8.0 | 78.8 | 81.7 | 85.3 | 371.0 | 376.4 | 9.0 | 77.8 | 75.9 | 96.6 | 0.5 | 0.4 | 21.9 | 94.4 | 0.0 | - | - |
+| ar_atomic1000_neg25 | ar_atomic | constrained | 93.8 | 94.9 | 91.0 | 84.4 | 1.5 | 96.2 | 7.6 | 77.7 | 82.1 | 86.0 | 232.0 | 235.2 | 4.9 | 84.5 | 76.8 | 93.3 | 1.6 | 0.4 | 9.9 | 73.1 | 24.2 | - | - |
+| ar_atomic100_neg25 | ar_atomic | constrained | 94.3 | 95.2 | 92.0 | 79.8 | 0.8 | 96.7 | 8.2 | 77.0 | 81.8 | 85.6 | 230.5 | 232.0 | 5.0 | 79.3 | 75.5 | 87.7 | 0.7 | 0.4 | 3.4 | 94.4 | 0.0 | - | - |
+| ours_neg05 | ours | - | 94.8 | 95.6 | 92.3 | 64.3 | 0.1 | 94.9 | 12.7 | 75.6 | 80.0 | 83.5 | 84.0 | 85.1 | 0.0 | - | - | - | - | - | - | - | - | 72.7 | 0.2 |
+| ar_digits_neg05 | ar_digits | constrained | 94.4 | 95.5 | 91.7 | 67.2 | 0.2 | 95.0 | 12.1 | 75.2 | 79.9 | 84.6 | 621.5 | 629.6 | 15.4 | 67.2 | 65.0 | 94.1 | 0.2 | 0.1 | 15.2 | 94.4 | 0.0 | 75.4 | 0.6 |

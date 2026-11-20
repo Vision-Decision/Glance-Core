@@ -1,0 +1,12 @@
+{
+ "refcoco_val": {
+  "n": 500,
+  "acc50": 0.948,
+  "gated_acc50": 0.94,
+  "said_absent_rate": 0.01
+ },
+ "grefcoco_val_notarget": {
+  "n": 500,
+  "N_acc": 0.75
+ }
+}

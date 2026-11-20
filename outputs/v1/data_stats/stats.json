@@ -1,0 +1,286 @@
+{
+ "text": {
+  "records": 178942,
+  "questions": 208000,
+  "pool_questions": 478483,
+  "repeats": 1,
+  "by_src": [
+   [
+    "decider",
+    49576
+   ],
+   [
+    "j11_written",
+    19052
+   ],
+   [
+    "tasksource/procedural-typed-decisions",
+    6637
+   ],
+   [
+    "oasst2/creativity",
+    2807
+   ],
+   [
+    "j11_generator",
+    2499
+   ],
+   [
+    "human_soft",
+    2293
+   ],
+   [
+    "spartqa-mchoice",
+    1731
+   ],
+   [
+    "dynasent/r1_votes",
+    1705
+   ],
+   [
+    "jeff10_llm",
+    1544
+   ],
+   [
+    "FOL-nli",
+    1450
+   ],
+   [
+    "lex_glue/case_hold",
+    1372
+   ],
+   [
+    "WANLI",
+    1361
+   ],
+   [
+    "math_qa",
+    1345
+   ],
+   [
+    "dynasent/r2_votes",
+    1248
+   ],
+   [
+    "doc-nli",
+    1240
+   ],
+   [
+    "allenai/winogrande",
+    1093
+   ],
+   [
+    "Rowan/hellaswag",
+    1079
+   ],
+   [
+    "cais/mmlu",
+    1060
+   ],
+   [
+    "dynabench/dynasent",
+    895
+   ],
+   [
+    "logiqa",
+    882
+   ],
+   [
+    "openai/gsm8k",
+    852
+   ],
+   [
+    "scruples/verdict_votes",
+    844
+   ],
+   [
+    "procedural-typed-decisions/event_triggered_execution",
+    801
+   ],
+   [
+    "procedural-typed-decisions/arithmetic",
+    800
+   ],
+   [
+    "procedural-typed-decisions/instruction_execution",
+    769
+   ],
+   [
+    "procedural-typed-decisions/evidence_sufficiency",
+    761
+   ],
+   [
+    "procedural-typed-decisions/policy_under_uncertainty",
+    759
+   ],
+   [
+    "procedural-typed-decisions/goal_directed_planning",
+    756
+   ],
+   [
+    "procedural-typed-decisions/multi_view_adjudication",
+    744
+   ],
+   [
+    "procedural-typed-decisions/event_state_reconstruction",
+    744
+   ],
+   [
+    "procedural-typed-decisions/state_perturbation",
+    744
+   ],
+   [
+    "procedural-typed-decisions/partial_observation_calibration",
+    741
+   ],
+   [
+    "procedural-typed-decisions/policy_applicability",
+    735
+   ],
+   [
+    "procedural-typed-decisions/entity_belief_tracking",
+    725
+   ],
+   [
+    "procedural-typed-decisions/record_aggregation",
+    717
+   ],
+   [
+    "spartqa-yn",
+    707
+   ],
+   [
+    "google/civil_comments",
+    685
+   ],
+   [
+    "corr2cause",
+    679
+   ],
+   [
+    "procedural-typed-decisions/table_lookup",
+    673
+   ],
+   [
+    "procedural-typed-decisions/taxonomy_routing",
+    666
+   ]
+  ],
+  "by_type": {
+   "choice": 158153,
+   "noul": 27962,
+   "score": 21885
+  },
+  "absent": 0,
+  "hard_neg": 0,
+  "easy_neg": 0,
+  "prefix_tokens": 31987117,
+  "block_tokens_est": 21520738
+ },
+ "gui": {
+  "records": 20050,
+  "questions": 130029,
+  "pool_questions": 104065,
+  "repeats": 2,
+  "by_src": [
+   [
+    "mobile_aw",
+    35846
+   ],
+   [
+    "desktop_linux",
+    25647
+   ],
+   [
+    "mobile_ricosca",
+    19437
+   ],
+   [
+    "desktop_macos",
+    17321
+   ],
+   [
+    "mobile_widgetcap",
+    14521
+   ],
+   [
+    "web_guienv",
+    9602
+   ],
+   [
+    "mobile_uibert",
+    7655
+   ]
+  ],
+  "by_type": {
+   "box": 130029
+  },
+  "absent": 13046,
+  "hard_neg": 6470,
+  "easy_neg": 6576,
+  "prefix_tokens": 26970300,
+  "block_tokens_est": 3900870
+ },
+ "natural": {
+  "records": 7590,
+  "questions": 114419,
+  "pool_questions": 360968,
+  "repeats": 1,
+  "by_src": [
+   [
+    "natural",
+    114419
+   ]
+  ],
+  "by_type": {
+   "box": 114419
+  },
+  "absent": 32088,
+  "hard_neg": 20941,
+  "easy_neg": 11147,
+  "prefix_tokens": 4734937,
+  "block_tokens_est": 3432570
+ },
+ "pixmo": {
+  "records": 5791,
+  "questions": 67600,
+  "pool_questions": 276771,
+  "repeats": 1,
+  "by_src": [
+   [
+    "pixmo_points",
+    67578
+   ],
+   [
+    "pixmo_count",
+    22
+   ]
+  ],
+  "by_type": {
+   "box": 59683,
+   "score": 7906,
+   "noul": 11
+  },
+  "absent": 9260,
+  "hard_neg": 0,
+  "easy_neg": 0,
+  "prefix_tokens": 5436241,
+  "block_tokens_est": 2321895
+ },
+ "total": {
+  "records": 212373,
+  "questions": 520048,
+  "box_questions": 304131,
+  "absent": 54394,
+  "by_type": {
+   "choice": 158153,
+   "box": 304131,
+   "score": 29791,
+   "noul": 27973
+  },
+  "prefix_tokens": 69128595,
+  "block_tokens_est": 31176073,
+  "absent_frac_of_all": 0.10459419130541796,
+  "absent_frac_of_box": 0.17885056110689143
+ }
+}

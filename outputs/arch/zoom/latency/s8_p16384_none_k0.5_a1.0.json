@@ -1,0 +1,31 @@
+{
+ "ckpt": "/content/ckpt/glance-train-ckpts/v1.1/ckpt_final.pt",
+ "bench": "/content/gui/sspro.jsonl",
+ "prefix_vis": 16384,
+ "crop_frac": 0.25,
+ "crop_vis": 4096,
+ "crop_up": 2.0,
+ "layout": "none",
+ "reprefill": false,
+ "limit": 0,
+ "stride": 8,
+ "warmup": 5,
+ "cands": 1,
+ "alpha": 1.0,
+ "keep_ratio": 0.5,
+ "out": "/content/arch/latency/s8_p16384_none_k0.5_a1.0",
+ "n": 198,
+ "n_images": 198,
+ "acc1": 0.4494949494949495,
+ "ms_per_q": {
+  "vit": 314.58046002555676,
+  "prefill": 149.2795485080584,
+  "stage1": 35.64478017611748,
+  "vit_crop": 0.0,
+  "stage2": 0.0,
+  "reprefill": 0.0
+ },
+ "nq_timed": 193,
+ "prefix_tok_median": 2040.0,
+ "wall_s": 117.35844469070435
+}

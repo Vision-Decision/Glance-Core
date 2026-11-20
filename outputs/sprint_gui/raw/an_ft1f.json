@@ -1,0 +1,1679 @@
+{
+ "ft1f_sspro_16384u1": {
+  "decoders": {
+   "box": {
+    "all": {
+     "n": 1581,
+     "acc": 0.4965
+    },
+    "group/CAD": {
+     "n": 261,
+     "acc": 0.4253
+    },
+    "group/Creative": {
+     "n": 341,
+     "acc": 0.4076
+    },
+    "group/Dev": {
+     "n": 299,
+     "acc": 0.5117
+    },
+    "group/OS": {
+     "n": 196,
+     "acc": 0.5051
+    },
+    "group/Office": {
+     "n": 230,
+     "acc": 0.6261
+    },
+    "group/Scientific": {
+     "n": 254,
+     "acc": 0.5472
+    },
+    "plat/linux": {
+     "n": 50,
+     "acc": 0.48
+    },
+    "plat/macos": {
+     "n": 604,
+     "acc": 0.553
+    },
+    "plat/windows": {
+     "n": 927,
+     "acc": 0.4606
+    },
+    "size/l>=0.2%": {
+     "n": 55,
+     "acc": 0.6545
+    },
+    "size/m<0.2%": {
+     "n": 597,
+     "acc": 0.6097
+    },
+    "size/s<0.05%": {
+     "n": 670,
+     "acc": 0.4746
+    },
+    "size/xs<0.01%": {
+     "n": 259,
+     "acc": 0.2587
+    },
+    "type/icon": {
+     "n": 604,
+     "acc": 0.3841
+    },
+    "type/text": {
+     "n": 977,
+     "acc": 0.566
+    }
+   },
+   "patch": {
+    "all": {
+     "n": 1581,
+     "acc": 0.3846
+    },
+    "group/CAD": {
+     "n": 261,
+     "acc": 0.341
+    },
+    "group/Creative": {
+     "n": 341,
+     "acc": 0.2903
+    },
+    "group/Dev": {
+     "n": 299,
+     "acc": 0.4181
+    },
+    "group/OS": {
+     "n": 196,
+     "acc": 0.3929
+    },
+    "group/Office": {
+     "n": 230,
+     "acc": 0.5348
+    },
+    "group/Scientific": {
+     "n": 254,
+     "acc": 0.374
+    },
+    "plat/linux": {
+     "n": 50,
+     "acc": 0.4
+    },
+    "plat/macos": {
+     "n": 604,
+     "acc": 0.4702
+    },
+    "plat/windows": {
+     "n": 927,
+     "acc": 0.3279
+    },
+    "size/l>=0.2%": {
+     "n": 55,
+     "acc": 0.5818
+    },
+    "size/m<0.2%": {
+     "n": 597,
+     "acc": 0.5042
+    },
+    "size/s<0.05%": {
+     "n": 670,
+     "acc": 0.3493
+    },
+    "size/xs<0.01%": {
+     "n": 259,
+     "acc": 0.1583
+    },
+    "type/icon": {
+     "n": 604,
+     "acc": 0.2732
+    },
+    "type/text": {
+     "n": 977,
+     "acc": 0.4534
+    }
+   },
+   "vote": {
+    "all": {
+     "n": 1581,
+     "acc": 0.4598
+    },
+    "group/CAD": {
+     "n": 261,
+     "acc": 0.4138
+    },
+    "group/Creative": {
+     "n": 341,
+     "acc": 0.393
+    },
+    "group/Dev": {
+     "n": 299,
+     "acc": 0.4515
+    },
+    "group/OS": {
+     "n": 196,
+     "acc": 0.4643
+    },
+    "group/Office": {
+     "n": 230,
+     "acc": 0.5739
+    },
+    "group/Scientific": {
+     "n": 254,
+     "acc": 0.5
+    },
+    "plat/linux": {
+     "n": 50,
+     "acc": 0.46
+    },
+    "plat/macos": {
+     "n": 604,
+     "acc": 0.4901
+    },
+    "plat/windows": {
+     "n": 927,
+     "acc": 0.4401
+    },
+    "size/l>=0.2%": {
+     "n": 55,
+     "acc": 0.6727
+    },
+    "size/m<0.2%": {
+     "n": 597,
+     "acc": 0.6214
+    },
+    "size/s<0.05%": {
+     "n": 670,
+     "acc": 0.4075
+    },
+    "size/xs<0.01%": {
+     "n": 259,
+     "acc": 0.1776
+    },
+    "type/icon": {
+     "n": 604,
+     "acc": 0.3129
+    },
+    "type/text": {
+     "n": 977,
+     "acc": 0.5507
+    }
+   },
+   "ioupick": {
+    "all": {
+     "n": 1581,
+     "acc": 0.4953
+    },
+    "group/CAD": {
+     "n": 261,
+     "acc": 0.4176
+    },
+    "group/Creative": {
+     "n": 341,
+     "acc": 0.4106
+    },
+    "group/Dev": {
+     "n": 299,
+     "acc": 0.5151
+    },
+    "group/OS": {
+     "n": 196,
+     "acc": 0.5051
+    },
+    "group/Office": {
+     "n": 230,
+     "acc": 0.6087
+    },
+    "group/Scientific": {
+     "n": 254,
+     "acc": 0.5551
+    },
+    "plat/linux": {
+     "n": 50,
+     "acc": 0.5
+    },
+    "plat/macos": {
+     "n": 604,
+     "acc": 0.5546
+    },
+    "plat/windows": {
+     "n": 927,
+     "acc": 0.4563
+    },
+    "size/l>=0.2%": {
+     "n": 55,
+     "acc": 0.6727
+    },
+    "size/m<0.2%": {
+     "n": 597,
+     "acc": 0.6131
+    },
+    "size/s<0.05%": {
+     "n": 670,
+     "acc": 0.4672
+    },
+    "size/xs<0.01%": {
+     "n": 259,
+     "acc": 0.2587
+    },
+    "type/icon": {
+     "n": 604,
+     "acc": 0.3791
+    },
+    "type/text": {
+     "n": 977,
+     "acc": 0.567
+    }
+   },
+   "local": {
+    "all": {
+     "n": 1581,
+     "acc": 0.4807
+    },
+    "group/CAD": {
+     "n": 261,
+     "acc": 0.4291
+    },
+    "group/Creative": {
+     "n": 341,
+     "acc": 0.3695
+    },
+    "group/Dev": {
+     "n": 299,
+     "acc": 0.5117
+    },
+    "group/OS": {
+     "n": 196,
+     "acc": 0.4898
+    },
+    "group/Office": {
+     "n": 230,
+     "acc": 0.6043
+    },
+    "group/Scientific": {
+     "n": 254,
+     "acc": 0.5276
+    },
+    "plat/linux": {
+     "n": 50,
+     "acc": 0.5
+    },
+    "plat/macos": {
+     "n": 604,
+     "acc": 0.5464
+    },
+    "plat/windows": {
+     "n": 927,
+     "acc": 0.4369
+    },
+    "size/l>=0.2%": {
+     "n": 55,
+     "acc": 0.6364
+    },
+    "size/m<0.2%": {
+     "n": 597,
+     "acc": 0.593
+    },
+    "size/s<0.05%": {
+     "n": 670,
+     "acc": 0.4612
+    },
+    "size/xs<0.01%": {
+     "n": 259,
+     "acc": 0.2394
+    },
+    "type/icon": {
+     "n": 604,
+     "acc": 0.3576
+    },
+    "type/text": {
+     "n": 977,
+     "acc": 0.5568
+    }
+   }
+  },
+  "refusal_acc": null,
+  "n": 1581
+ },
+ "ens:v11f_sspro_16384u1+ft1f_sspro_16384u1": {
+  "fused": {
+   "all": {
+    "n": 1581,
+    "acc": 0.5066
+   },
+   "group/CAD": {
+    "n": 261,
+    "acc": 0.4789
+   },
+   "group/Creative": {
+    "n": 341,
+    "acc": 0.4164
+   },
+   "group/Dev": {
+    "n": 299,
+    "acc": 0.5318
+   },
+   "group/OS": {
+    "n": 196,
+    "acc": 0.4949
+   },
+   "group/Office": {
+    "n": 230,
+    "acc": 0.6087
+   },
+   "group/Scientific": {
+    "n": 254,
+    "acc": 0.5433
+   },
+   "plat/linux": {
+    "n": 50,
+    "acc": 0.42
+   },
+   "plat/macos": {
+    "n": 604,
+    "acc": 0.5546
+   },
+   "plat/windows": {
+    "n": 927,
+    "acc": 0.48
+   },
+   "size/l>=0.2%": {
+    "n": 55,
+    "acc": 0.6545
+   },
+   "size/m<0.2%": {
+    "n": 597,
+    "acc": 0.6097
+   },
+   "size/s<0.05%": {
+    "n": 670,
+    "acc": 0.4985
+   },
+   "size/xs<0.01%": {
+    "n": 259,
+    "acc": 0.2587
+   },
+   "type/icon": {
+    "n": 604,
+    "acc": 0.3924
+   },
+   "type/text": {
+    "n": 977,
+    "acc": 0.5773
+   }
+  }
+ },
+ "ens:v11f_sspro_16384u1+v11b_sspro_16384u1": {
+  "fused": {
+   "all": {
+    "n": 1581,
+    "acc": 0.5035
+   },
+   "group/CAD": {
+    "n": 261,
+    "acc": 0.4483
+   },
+   "group/Creative": {
+    "n": 341,
+    "acc": 0.4047
+   },
+   "group/Dev": {
+    "n": 299,
+    "acc": 0.5351
+   },
+   "group/OS": {
+    "n": 196,
+    "acc": 0.4643
+   },
+   "group/Office": {
+    "n": 230,
+    "acc": 0.6304
+   },
+   "group/Scientific": {
+    "n": 254,
+    "acc": 0.5709
+   },
+   "plat/linux": {
+    "n": 50,
+    "acc": 0.4
+   },
+   "plat/macos": {
+    "n": 604,
+    "acc": 0.5579
+   },
+   "plat/windows": {
+    "n": 927,
+    "acc": 0.4736
+   },
+   "size/l>=0.2%": {
+    "n": 55,
+    "acc": 0.7273
+   },
+   "size/m<0.2%": {
+    "n": 597,
+    "acc": 0.598
+   },
+   "size/s<0.05%": {
+    "n": 670,
+    "acc": 0.4955
+   },
+   "size/xs<0.01%": {
+    "n": 259,
+    "acc": 0.2587
+   },
+   "type/icon": {
+    "n": 604,
+    "acc": 0.4056
+   },
+   "type/text": {
+    "n": 977,
+    "acc": 0.564
+   }
+  }
+ },
+ "ft1f_ss2_16384u1": {
+  "decoders": {
+   "box": {
+    "all": {
+     "n": 1272,
+     "acc": 0.8986
+    },
+    "plat/desktop": {
+     "n": 334,
+     "acc": 0.9162
+    },
+    "plat/mobile": {
+     "n": 501,
+     "acc": 0.9162
+    },
+    "plat/web": {
+     "n": 437,
+     "acc": 0.865
+    },
+    "size/l>=0.2%": {
+     "n": 1080,
+     "acc": 0.9111
+    },
+    "size/m<0.2%": {
+     "n": 179,
+     "acc": 0.8268
+    },
+    "size/s<0.05%": {
+     "n": 13,
+     "acc": 0.8462
+    },
+    "type/icon": {
+     "n": 554,
+     "acc": 0.8646
+    },
+    "type/text": {
+     "n": 718,
+     "acc": 0.9248
+    }
+   },
+   "patch": {
+    "all": {
+     "n": 1272,
+     "acc": 0.8939
+    },
+    "plat/desktop": {
+     "n": 334,
+     "acc": 0.8892
+    },
+    "plat/mobile": {
+     "n": 501,
+     "acc": 0.9202
+    },
+    "plat/web": {
+     "n": 437,
+     "acc": 0.8673
+    },
+    "size/l>=0.2%": {
+     "n": 1080,
+     "acc": 0.9019
+    },
+    "size/m<0.2%": {
+     "n": 179,
+     "acc": 0.8547
+    },
+    "size/s<0.05%": {
+     "n": 13,
+     "acc": 0.7692
+    },
+    "type/icon": {
+     "n": 554,
+     "acc": 0.8682
+    },
+    "type/text": {
+     "n": 718,
+     "acc": 0.9136
+    }
+   },
+   "vote": {
+    "all": {
+     "n": 1272,
+     "acc": 0.8892
+    },
+    "plat/desktop": {
+     "n": 334,
+     "acc": 0.8832
+    },
+    "plat/mobile": {
+     "n": 501,
+     "acc": 0.9202
+    },
+    "plat/web": {
+     "n": 437,
+     "acc": 0.8581
+    },
+    "size/l>=0.2%": {
+     "n": 1080,
+     "acc": 0.9056
+    },
+    "size/m<0.2%": {
+     "n": 179,
+     "acc": 0.8156
+    },
+    "size/s<0.05%": {
+     "n": 13,
+     "acc": 0.5385
+    },
+    "type/icon": {
+     "n": 554,
+     "acc": 0.8412
+    },
+    "type/text": {
+     "n": 718,
+     "acc": 0.9262
+    }
+   },
+   "ioupick": {
+    "all": {
+     "n": 1272,
+     "acc": 0.9033
+    },
+    "plat/desktop": {
+     "n": 334,
+     "acc": 0.9192
+    },
+    "plat/mobile": {
+     "n": 501,
+     "acc": 0.9202
+    },
+    "plat/web": {
+     "n": 437,
+     "acc": 0.8719
+    },
+    "size/l>=0.2%": {
+     "n": 1080,
+     "acc": 0.9148
+    },
+    "size/m<0.2%": {
+     "n": 179,
+     "acc": 0.838
+    },
+    "size/s<0.05%": {
+     "n": 13,
+     "acc": 0.8462
+    },
+    "type/icon": {
+     "n": 554,
+     "acc": 0.87
+    },
+    "type/text": {
+     "n": 718,
+     "acc": 0.929
+    }
+   },
+   "local": {
+    "all": {
+     "n": 1272,
+     "acc": 0.9064
+    },
+    "plat/desktop": {
+     "n": 334,
+     "acc": 0.9192
+    },
+    "plat/mobile": {
+     "n": 501,
+     "acc": 0.9202
+    },
+    "plat/web": {
+     "n": 437,
+     "acc": 0.881
+    },
+    "size/l>=0.2%": {
+     "n": 1080,
+     "acc": 0.9111
+    },
+    "size/m<0.2%": {
+     "n": 179,
+     "acc": 0.8827
+    },
+    "size/s<0.05%": {
+     "n": 13,
+     "acc": 0.8462
+    },
+    "type/icon": {
+     "n": 554,
+     "acc": 0.8845
+    },
+    "type/text": {
+     "n": 718,
+     "acc": 0.9234
+    }
+   }
+  },
+  "refusal_acc": null,
+  "n": 1272
+ },
+ "ft1f_venus_16384u1": {
+  "decoders": {
+   "box": {
+    "all": {
+     "n": 5266,
+     "acc": 0.556
+    },
+    "plat/desktop": {
+     "n": 1876,
+     "acc": 0.5874
+    },
+    "plat/mobile": {
+     "n": 1551,
+     "acc": 0.6789
+    },
+    "plat/web": {
+     "n": 1839,
+     "acc": 0.4203
+    },
+    "size/l>=0.2%": {
+     "n": 2029,
+     "acc": 0.5786
+    },
+    "size/m<0.2%": {
+     "n": 1850,
+     "acc": 0.6097
+    },
+    "size/s<0.05%": {
+     "n": 1259,
+     "acc": 0.4694
+    },
+    "size/xs<0.01%": {
+     "n": 128,
+     "acc": 0.2734
+    },
+    "type/element_grounding": {
+     "n": 1591,
+     "acc": 0.6631
+    },
+    "type/functional_grounding": {
+     "n": 700,
+     "acc": 0.4814
+    },
+    "type/reason_grounding": {
+     "n": 1107,
+     "acc": 0.1725
+    },
+    "type/spatial_grounding": {
+     "n": 1029,
+     "acc": 0.6783
+    },
+    "type/visual_grounding": {
+     "n": 839,
+     "acc": 0.7712
+    }
+   },
+   "patch": {
+    "all": {
+     "n": 5266,
+     "acc": 0.5513
+    },
+    "plat/desktop": {
+     "n": 1876,
+     "acc": 0.556
+    },
+    "plat/mobile": {
+     "n": 1551,
+     "acc": 0.6847
+    },
+    "plat/web": {
+     "n": 1839,
+     "acc": 0.4339
+    },
+    "size/l>=0.2%": {
+     "n": 2029,
+     "acc": 0.5737
+    },
+    "size/m<0.2%": {
+     "n": 1850,
+     "acc": 0.6032
+    },
+    "size/s<0.05%": {
+     "n": 1259,
+     "acc": 0.4734
+    },
+    "size/xs<0.01%": {
+     "n": 128,
+     "acc": 0.2109
+    },
+    "type/element_grounding": {
+     "n": 1591,
+     "acc": 0.6637
+    },
+    "type/functional_grounding": {
+     "n": 700,
+     "acc": 0.4586
+    },
+    "type/reason_grounding": {
+     "n": 1107,
+     "acc": 0.1734
+    },
+    "type/spatial_grounding": {
+     "n": 1029,
+     "acc": 0.691
+    },
+    "type/visual_grounding": {
+     "n": 839,
+     "acc": 0.7426
+    }
+   },
+   "vote": {
+    "all": {
+     "n": 5266,
+     "acc": 0.5408
+    },
+    "plat/desktop": {
+     "n": 1876,
+     "acc": 0.5597
+    },
+    "plat/mobile": {
+     "n": 1551,
+     "acc": 0.6634
+    },
+    "plat/web": {
+     "n": 1839,
+     "acc": 0.4182
+    },
+    "size/l>=0.2%": {
+     "n": 2029,
+     "acc": 0.5875
+    },
+    "size/m<0.2%": {
+     "n": 1850,
+     "acc": 0.5973
+    },
+    "size/s<0.05%": {
+     "n": 1259,
+     "acc": 0.4202
+    },
+    "size/xs<0.01%": {
+     "n": 128,
+     "acc": 0.1719
+    },
+    "type/element_grounding": {
+     "n": 1591,
+     "acc": 0.6486
+    },
+    "type/functional_grounding": {
+     "n": 700,
+     "acc": 0.4857
+    },
+    "type/reason_grounding": {
+     "n": 1107,
+     "acc": 0.1798
+    },
+    "type/spatial_grounding": {
+     "n": 1029,
+     "acc": 0.6472
+    },
+    "type/visual_grounding": {
+     "n": 839,
+     "acc": 0.7282
+    }
+   },
+   "ioupick": {
+    "all": {
+     "n": 5266,
+     "acc": 0.5632
+    },
+    "plat/desktop": {
+     "n": 1876,
+     "acc": 0.5906
+    },
+    "plat/mobile": {
+     "n": 1551,
+     "acc": 0.6886
+    },
+    "plat/web": {
+     "n": 1839,
+     "acc": 0.4296
+    },
+    "size/l>=0.2%": {
+     "n": 2029,
+     "acc": 0.5929
+    },
+    "size/m<0.2%": {
+     "n": 1850,
+     "acc": 0.6141
+    },
+    "size/s<0.05%": {
+     "n": 1259,
+     "acc": 0.471
+    },
+    "size/xs<0.01%": {
+     "n": 128,
+     "acc": 0.2656
+    },
+    "type/element_grounding": {
+     "n": 1591,
+     "acc": 0.6625
+    },
+    "type/functional_grounding": {
+     "n": 700,
+     "acc": 0.49
+    },
+    "type/reason_grounding": {
+     "n": 1107,
+     "acc": 0.1852
+    },
+    "type/spatial_grounding": {
+     "n": 1029,
+     "acc": 0.69
+    },
+    "type/visual_grounding": {
+     "n": 839,
+     "acc": 0.7795
+    }
+   },
+   "local": {
+    "all": {
+     "n": 5266,
+     "acc": 0.5748
+    },
+    "plat/desktop": {
+     "n": 1876,
+     "acc": 0.6029
+    },
+    "plat/mobile": {
+     "n": 1551,
+     "acc": 0.7028
+    },
+    "plat/web": {
+     "n": 1839,
+     "acc": 0.4383
+    },
+    "size/l>=0.2%": {
+     "n": 2029,
+     "acc": 0.5786
+    },
+    "size/m<0.2%": {
+     "n": 1850,
+     "acc": 0.6286
+    },
+    "size/s<0.05%": {
+     "n": 1259,
+     "acc": 0.5195
+    },
+    "size/xs<0.01%": {
+     "n": 128,
+     "acc": 0.2812
+    },
+    "type/element_grounding": {
+     "n": 1591,
+     "acc": 0.6838
+    },
+    "type/functional_grounding": {
+     "n": 700,
+     "acc": 0.4943
+    },
+    "type/reason_grounding": {
+     "n": 1107,
+     "acc": 0.1743
+    },
+    "type/spatial_grounding": {
+     "n": 1029,
+     "acc": 0.725
+    },
+    "type/visual_grounding": {
+     "n": 839,
+     "acc": 0.7795
+    }
+   }
+  },
+  "refusal_acc": 0.8053,
+  "n": 6165,
+  "venus_official_overall": 0.5924
+ },
+ "zoom:ft1f_sspro_16384u1_zoom0.25_4096u2box": {
+  "zoom": {
+   "all": {
+    "n": 1581,
+    "acc": 0.6015
+   },
+   "group/CAD": {
+    "n": 261,
+    "acc": 0.5977
+   },
+   "group/Creative": {
+    "n": 341,
+    "acc": 0.4985
+   },
+   "group/Dev": {
+    "n": 299,
+    "acc": 0.6054
+   },
+   "group/OS": {
+    "n": 196,
+    "acc": 0.5765
+   },
+   "group/Office": {
+    "n": 230,
+    "acc": 0.7304
+   },
+   "group/Scientific": {
+    "n": 254,
+    "acc": 0.6417
+   },
+   "plat/linux": {
+    "n": 50,
+    "acc": 0.56
+   },
+   "plat/macos": {
+    "n": 604,
+    "acc": 0.6457
+   },
+   "plat/windows": {
+    "n": 927,
+    "acc": 0.575
+   },
+   "size/l>=0.2%": {
+    "n": 55,
+    "acc": 0.6364
+   },
+   "size/m<0.2%": {
+    "n": 597,
+    "acc": 0.6801
+   },
+   "size/s<0.05%": {
+    "n": 670,
+    "acc": 0.5896
+   },
+   "size/xs<0.01%": {
+    "n": 259,
+    "acc": 0.444
+   },
+   "type/icon": {
+    "n": 604,
+    "acc": 0.5017
+   },
+   "type/text": {
+    "n": 977,
+    "acc": 0.6633
+   }
+  },
+  "decoders": {
+   "box": {
+    "all": {
+     "n": 1581,
+     "acc": 0.6015
+    },
+    "group/CAD": {
+     "n": 261,
+     "acc": 0.5977
+    },
+    "group/Creative": {
+     "n": 341,
+     "acc": 0.4985
+    },
+    "group/Dev": {
+     "n": 299,
+     "acc": 0.6054
+    },
+    "group/OS": {
+     "n": 196,
+     "acc": 0.5765
+    },
+    "group/Office": {
+     "n": 230,
+     "acc": 0.7304
+    },
+    "group/Scientific": {
+     "n": 254,
+     "acc": 0.6417
+    },
+    "plat/linux": {
+     "n": 50,
+     "acc": 0.56
+    },
+    "plat/macos": {
+     "n": 604,
+     "acc": 0.6457
+    },
+    "plat/windows": {
+     "n": 927,
+     "acc": 0.575
+    },
+    "size/l>=0.2%": {
+     "n": 55,
+     "acc": 0.6364
+    },
+    "size/m<0.2%": {
+     "n": 597,
+     "acc": 0.6801
+    },
+    "size/s<0.05%": {
+     "n": 670,
+     "acc": 0.5896
+    },
+    "size/xs<0.01%": {
+     "n": 259,
+     "acc": 0.444
+    },
+    "type/icon": {
+     "n": 604,
+     "acc": 0.5017
+    },
+    "type/text": {
+     "n": 977,
+     "acc": 0.6633
+    }
+   },
+   "patch": {
+    "all": {
+     "n": 1581,
+     "acc": 0.5718
+    },
+    "group/CAD": {
+     "n": 261,
+     "acc": 0.5862
+    },
+    "group/Creative": {
+     "n": 341,
+     "acc": 0.4692
+    },
+    "group/Dev": {
+     "n": 299,
+     "acc": 0.5819
+    },
+    "group/OS": {
+     "n": 196,
+     "acc": 0.5663
+    },
+    "group/Office": {
+     "n": 230,
+     "acc": 0.7174
+    },
+    "group/Scientific": {
+     "n": 254,
+     "acc": 0.5551
+    },
+    "plat/linux": {
+     "n": 50,
+     "acc": 0.58
+    },
+    "plat/macos": {
+     "n": 604,
+     "acc": 0.6225
+    },
+    "plat/windows": {
+     "n": 927,
+     "acc": 0.5383
+    },
+    "size/l>=0.2%": {
+     "n": 55,
+     "acc": 0.6182
+    },
+    "size/m<0.2%": {
+     "n": 597,
+     "acc": 0.6533
+    },
+    "size/s<0.05%": {
+     "n": 670,
+     "acc": 0.5642
+    },
+    "size/xs<0.01%": {
+     "n": 259,
+     "acc": 0.3938
+    },
+    "type/icon": {
+     "n": 604,
+     "acc": 0.4752
+    },
+    "type/text": {
+     "n": 977,
+     "acc": 0.6315
+    }
+   },
+   "vote": {
+    "all": {
+     "n": 1581,
+     "acc": 0.5819
+    },
+    "group/CAD": {
+     "n": 261,
+     "acc": 0.5709
+    },
+    "group/Creative": {
+     "n": 341,
+     "acc": 0.4868
+    },
+    "group/Dev": {
+     "n": 299,
+     "acc": 0.5719
+    },
+    "group/OS": {
+     "n": 196,
+     "acc": 0.5714
+    },
+    "group/Office": {
+     "n": 230,
+     "acc": 0.7087
+    },
+    "group/Scientific": {
+     "n": 254,
+     "acc": 0.626
+    },
+    "plat/linux": {
+     "n": 50,
+     "acc": 0.54
+    },
+    "plat/macos": {
+     "n": 604,
+     "acc": 0.6325
+    },
+    "plat/windows": {
+     "n": 927,
+     "acc": 0.5512
+    },
+    "size/l>=0.2%": {
+     "n": 55,
+     "acc": 0.6727
+    },
+    "size/m<0.2%": {
+     "n": 597,
+     "acc": 0.6851
+    },
+    "size/s<0.05%": {
+     "n": 670,
+     "acc": 0.5687
+    },
+    "size/xs<0.01%": {
+     "n": 259,
+     "acc": 0.3591
+    },
+    "type/icon": {
+     "n": 604,
+     "acc": 0.457
+    },
+    "type/text": {
+     "n": 977,
+     "acc": 0.6592
+    }
+   },
+   "ioupick": {
+    "all": {
+     "n": 1581,
+     "acc": 0.6085
+    },
+    "group/CAD": {
+     "n": 261,
+     "acc": 0.6054
+    },
+    "group/Creative": {
+     "n": 341,
+     "acc": 0.5015
+    },
+    "group/Dev": {
+     "n": 299,
+     "acc": 0.6187
+    },
+    "group/OS": {
+     "n": 196,
+     "acc": 0.5816
+    },
+    "group/Office": {
+     "n": 230,
+     "acc": 0.7391
+    },
+    "group/Scientific": {
+     "n": 254,
+     "acc": 0.6457
+    },
+    "plat/linux": {
+     "n": 50,
+     "acc": 0.56
+    },
+    "plat/macos": {
+     "n": 604,
+     "acc": 0.6589
+    },
+    "plat/windows": {
+     "n": 927,
+     "acc": 0.5782
+    },
+    "size/l>=0.2%": {
+     "n": 55,
+     "acc": 0.6727
+    },
+    "size/m<0.2%": {
+     "n": 597,
+     "acc": 0.6834
+    },
+    "size/s<0.05%": {
+     "n": 670,
+     "acc": 0.597
+    },
+    "size/xs<0.01%": {
+     "n": 259,
+     "acc": 0.4517
+    },
+    "type/icon": {
+     "n": 604,
+     "acc": 0.5099
+    },
+    "type/text": {
+     "n": 977,
+     "acc": 0.6694
+    }
+   }
+  }
+ },
+ "mzoom:ft1f_sspro_16384u1_zoom0.25_4096u2boxc3": {
+  "first": {
+   "all": {
+    "n": 1581,
+    "acc": 0.6015
+   },
+   "group/CAD": {
+    "n": 261,
+    "acc": 0.5977
+   },
+   "group/Creative": {
+    "n": 341,
+    "acc": 0.4985
+   },
+   "group/Dev": {
+    "n": 299,
+    "acc": 0.6054
+   },
+   "group/OS": {
+    "n": 196,
+    "acc": 0.5765
+   },
+   "group/Office": {
+    "n": 230,
+    "acc": 0.7304
+   },
+   "group/Scientific": {
+    "n": 254,
+    "acc": 0.6417
+   },
+   "plat/linux": {
+    "n": 50,
+    "acc": 0.56
+   },
+   "plat/macos": {
+    "n": 604,
+    "acc": 0.6457
+   },
+   "plat/windows": {
+    "n": 927,
+    "acc": 0.575
+   },
+   "size/l>=0.2%": {
+    "n": 55,
+    "acc": 0.6364
+   },
+   "size/m<0.2%": {
+    "n": 597,
+    "acc": 0.6801
+   },
+   "size/s<0.05%": {
+    "n": 670,
+    "acc": 0.5896
+   },
+   "size/xs<0.01%": {
+    "n": 259,
+    "acc": 0.444
+   },
+   "type/icon": {
+    "n": 604,
+    "acc": 0.5017
+   },
+   "type/text": {
+    "n": 977,
+    "acc": 0.6633
+   }
+  },
+  "peak": {
+   "all": {
+    "n": 1581,
+    "acc": 0.5787
+   },
+   "group/CAD": {
+    "n": 261,
+    "acc": 0.5556
+   },
+   "group/Creative": {
+    "n": 341,
+    "acc": 0.4868
+   },
+   "group/Dev": {
+    "n": 299,
+    "acc": 0.5652
+   },
+   "group/OS": {
+    "n": 196,
+    "acc": 0.551
+   },
+   "group/Office": {
+    "n": 230,
+    "acc": 0.7391
+   },
+   "group/Scientific": {
+    "n": 254,
+    "acc": 0.6181
+   },
+   "plat/linux": {
+    "n": 50,
+    "acc": 0.6
+   },
+   "plat/macos": {
+    "n": 604,
+    "acc": 0.6275
+   },
+   "plat/windows": {
+    "n": 927,
+    "acc": 0.5458
+   },
+   "size/l>=0.2%": {
+    "n": 55,
+    "acc": 0.6
+   },
+   "size/m<0.2%": {
+    "n": 597,
+    "acc": 0.6667
+   },
+   "size/s<0.05%": {
+    "n": 670,
+    "acc": 0.5612
+   },
+   "size/xs<0.01%": {
+    "n": 259,
+    "acc": 0.417
+   },
+   "type/icon": {
+    "n": 604,
+    "acc": 0.4719
+   },
+   "type/text": {
+    "n": 977,
+    "acc": 0.6448
+   }
+  },
+  "piou": {
+   "all": {
+    "n": 1581,
+    "acc": 0.5971
+   },
+   "group/CAD": {
+    "n": 261,
+    "acc": 0.5747
+   },
+   "group/Creative": {
+    "n": 341,
+    "acc": 0.4985
+   },
+   "group/Dev": {
+    "n": 299,
+    "acc": 0.5853
+   },
+   "group/OS": {
+    "n": 196,
+    "acc": 0.5918
+   },
+   "group/Office": {
+    "n": 230,
+    "acc": 0.7609
+   },
+   "group/Scientific": {
+    "n": 254,
+    "acc": 0.622
+   },
+   "plat/linux": {
+    "n": 50,
+    "acc": 0.6
+   },
+   "plat/macos": {
+    "n": 604,
+    "acc": 0.6474
+   },
+   "plat/windows": {
+    "n": 927,
+    "acc": 0.5642
+   },
+   "size/l>=0.2%": {
+    "n": 55,
+    "acc": 0.6182
+   },
+   "size/m<0.2%": {
+    "n": 597,
+    "acc": 0.6834
+   },
+   "size/s<0.05%": {
+    "n": 670,
+    "acc": 0.5791
+   },
+   "size/xs<0.01%": {
+    "n": 259,
+    "acc": 0.4402
+   },
+   "type/icon": {
+    "n": 604,
+    "acc": 0.495
+   },
+   "type/text": {
+    "n": 977,
+    "acc": 0.6602
+   }
+  },
+  "presence": {
+   "all": {
+    "n": 1581,
+    "acc": 0.6237
+   },
+   "group/CAD": {
+    "n": 261,
+    "acc": 0.6169
+   },
+   "group/Creative": {
+    "n": 341,
+    "acc": 0.5161
+   },
+   "group/Dev": {
+    "n": 299,
+    "acc": 0.6254
+   },
+   "group/OS": {
+    "n": 196,
+    "acc": 0.602
+   },
+   "group/Office": {
+    "n": 230,
+    "acc": 0.7739
+   },
+   "group/Scientific": {
+    "n": 254,
+    "acc": 0.6535
+   },
+   "plat/linux": {
+    "n": 50,
+    "acc": 0.6
+   },
+   "plat/macos": {
+    "n": 604,
+    "acc": 0.6755
+   },
+   "plat/windows": {
+    "n": 927,
+    "acc": 0.5912
+   },
+   "size/l>=0.2%": {
+    "n": 55,
+    "acc": 0.6727
+   },
+   "size/m<0.2%": {
+    "n": 597,
+    "acc": 0.7136
+   },
+   "size/s<0.05%": {
+    "n": 670,
+    "acc": 0.594
+   },
+   "size/xs<0.01%": {
+    "n": 259,
+    "acc": 0.4826
+   },
+   "type/icon": {
+    "n": 604,
+    "acc": 0.505
+   },
+   "type/text": {
+    "n": 977,
+    "acc": 0.697
+   }
+  },
+  "pres_peak": {
+   "all": {
+    "n": 1581,
+    "acc": 0.6224
+   },
+   "group/CAD": {
+    "n": 261,
+    "acc": 0.6015
+   },
+   "group/Creative": {
+    "n": 341,
+    "acc": 0.522
+   },
+   "group/Dev": {
+    "n": 299,
+    "acc": 0.6221
+   },
+   "group/OS": {
+    "n": 196,
+    "acc": 0.6122
+   },
+   "group/Office": {
+    "n": 230,
+    "acc": 0.7739
+   },
+   "group/Scientific": {
+    "n": 254,
+    "acc": 0.6496
+   },
+   "plat/linux": {
+    "n": 50,
+    "acc": 0.62
+   },
+   "plat/macos": {
+    "n": 604,
+    "acc": 0.6755
+   },
+   "plat/windows": {
+    "n": 927,
+    "acc": 0.5879
+   },
+   "size/l>=0.2%": {
+    "n": 55,
+    "acc": 0.6727
+   },
+   "size/m<0.2%": {
+    "n": 597,
+    "acc": 0.7119
+   },
+   "size/s<0.05%": {
+    "n": 670,
+    "acc": 0.5955
+   },
+   "size/xs<0.01%": {
+    "n": 259,
+    "acc": 0.4749
+   },
+   "type/icon": {
+    "n": 604,
+    "acc": 0.505
+   },
+   "type/text": {
+    "n": 977,
+    "acc": 0.695
+   }
+  },
+  "oracle_any": {
+   "all": {
+    "n": 1581,
+    "acc": 0.6591
+   },
+   "group/CAD": {
+    "n": 261,
+    "acc": 0.6513
+   },
+   "group/Creative": {
+    "n": 341,
+    "acc": 0.5484
+   },
+   "group/Dev": {
+    "n": 299,
+    "acc": 0.6622
+   },
+   "group/OS": {
+    "n": 196,
+    "acc": 0.6633
+   },
+   "group/Office": {
+    "n": 230,
+    "acc": 0.7826
+   },
+   "group/Scientific": {
+    "n": 254,
+    "acc": 0.6969
+   },
+   "plat/linux": {
+    "n": 50,
+    "acc": 0.68
+   },
+   "plat/macos": {
+    "n": 604,
+    "acc": 0.702
+   },
+   "plat/windows": {
+    "n": 927,
+    "acc": 0.63
+   },
+   "size/l>=0.2%": {
+    "n": 55,
+    "acc": 0.6909
+   },
+   "size/m<0.2%": {
+    "n": 597,
+    "acc": 0.7337
+   },
+   "size/s<0.05%": {
+    "n": 670,
+    "acc": 0.6478
+   },
+   "size/xs<0.01%": {
+    "n": 259,
+    "acc": 0.5097
+   },
+   "type/icon": {
+    "n": 604,
+    "acc": 0.5679
+   },
+   "type/text": {
+    "n": 977,
+    "acc": 0.7155
+   }
+  }
+ }
+}

@@ -1,0 +1,89 @@
+{
+ "args": {
+  "model": "Qwen/Qwen3.8-27B",
+  "quant": "bf16",
+  "mode": "throughput",
+  "mbs": "1,4",
+  "img": "1024,896",
+  "prompt_len": 40,
+  "qblocks": 8,
+  "qlen": 25,
+  "lora_r": 64,
+  "steps": 4,
+  "maskmode": "causal",
+  "attn": "sdpa",
+  "no_gc": false,
+  "out": "/content/27b_out/tp_bf16_causal.json"
+ },
+ "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+ "gpu_mem_gb": 94.97076416015625,
+ "runs": [
+  {
+   "quant": "bf16",
+   "mbs": 1,
+   "maskmode": "causal",
+   "attn": "sdpa",
+   "gc": true,
+   "ok": true,
+   "step_s": 0.9667463302612305,
+   "tok_per_s": 1177.1443701187818,
+   "records_per_s": 1.034397513285397,
+   "peak_alloc_gb": 58.16629219055176,
+   "peak_reserved_gb": 58.42578125,
+   "step_times": [
+    1.70554518699646,
+    0.9668362140655518,
+    0.966444730758667,
+    0.9669580459594727
+   ]
+  },
+  {
+   "quant": "bf16",
+   "mbs": 4,
+   "maskmode": "causal",
+   "attn": "sdpa",
+   "gc": true,
+   "ok": true,
+   "step_s": 4.3423841794331866,
+   "tok_per_s": 1048.2720579076388,
+   "records_per_s": 0.9211529507097002,
+   "peak_alloc_gb": 61.352179527282715,
+   "peak_reserved_gb": 61.830078125,
+   "step_times": [
+    4.327465534210205,
+    4.319066047668457,
+    4.384225845336914,
+    4.3238606452941895
+   ]
+  }
+ ],
+ "env": {
+  "torch": "2.14.1+cu130",
+  "transformers": "5.23.0",
+  "fla": "0.6.0",
+  "causal_conv1d": "missing (ModuleNotFoundError)",
+  "peft": "0.21.2",
+  "bitsandbytes": "0.50.2",
+  "kernels": "0.18.3"
+ },
+ "load_s": 4.8659844398498535,
+ "mem_after_load_gb": 50.955976486206055,
+ "lora_target_suffixes": [
+  "linear_attn.in_proj_qkv",
+  "linear_attn.in_proj_z",
+  "linear_attn.out_proj",
+  "mlp.down_proj",
+  "mlp.gate_proj",
+  "mlp.up_proj",
+  "self_attn.k_proj",
+  "self_attn.o_proj",
+  "self_attn.q_proj",
+  "self_attn.v_proj"
+ ],
+ "lora_params_M": 435.15904,
+ "seq": {
+  "visual_tokens": 896,
+  "prefix_len": 938,
+  "total_len": 1138
+ }
+}

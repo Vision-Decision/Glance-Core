@@ -1,0 +1,23 @@
+{
+ "ckpt": "/content/ckpt/ablation/ar_digits_neg25_bf16.pt",
+ "variant": "ar_digits",
+ "image_stride": 1,
+ "max_nodes": 4000,
+ "n_present": 41,
+ "n_absent": 28,
+ "wall_s": 114.20026230812073,
+ "n_forward": 893,
+ "present": {
+  "refuse": 0.2682926829268293,
+  "accept": 0.3170731707317073,
+  "undecided": 0.4146341463414634,
+  "refuse_upper": 0.6829268292682926
+ },
+ "absent": {
+  "refuse": 1.0,
+  "accept": 0.0,
+  "undecided": 0.0
+ },
+ "acc50_map_box_accepted": 0.9230769230769231,
+ "mean_expanded": 1343.7536231884058
+}

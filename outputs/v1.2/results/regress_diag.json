@@ -1,0 +1,639 @@
+{
+ "refcoco_val": {
+  "n": 10834,
+  "lost": 306,
+  "gained": 139,
+  "net_pts": -1.54,
+  "lost_mode": {
+   "present->rejected": 60,
+   "present->wrong_box": 246
+  },
+  "lost_by_feature": {
+   "cat_word": {
+    "lost": 221,
+    "gained": 99,
+    "share_of_set": 0.742,
+    "net_pts_within": -1.52
+   },
+   "pos_word": {
+    "lost": 208,
+    "gained": 100,
+    "share_of_set": 0.644,
+    "net_pts_within": -1.55
+   },
+   "len3-5": {
+    "lost": 124,
+    "gained": 71,
+    "share_of_set": 0.493,
+    "net_pts_within": -0.99
+   },
+   "len>=6": {
+    "lost": 110,
+    "gained": 39,
+    "share_of_set": 0.148,
+    "net_pts_within": -4.42
+   },
+   "relation_word": {
+    "lost": 106,
+    "gained": 40,
+    "share_of_set": 0.268,
+    "net_pts_within": -2.27
+   },
+   "no_pos_word": {
+    "lost": 98,
+    "gained": 39,
+    "share_of_set": 0.356,
+    "net_pts_within": -1.53
+   },
+   "no_cat_word": {
+    "lost": 85,
+    "gained": 40,
+    "share_of_set": 0.258,
+    "net_pts_within": -1.61
+   },
+   "len<=2": {
+    "lost": 72,
+    "gained": 29,
+    "share_of_set": 0.359,
+    "net_pts_within": -1.11
+   },
+   "numeral": {
+    "lost": 8,
+    "gained": 2,
+    "share_of_set": 0.012,
+    "net_pts_within": -4.51
+   }
+  },
+  "lost_examples": [
+   {
+    "text": "man in beige shirt sitting on the right side",
+    "present": true,
+    "p11": 0.923,
+    "p12": 0.165,
+    "iou11": 0.85,
+    "iou12": 0.74
+   },
+   {
+    "text": "a chair",
+    "present": true,
+    "p11": 0.998,
+    "p12": 0.047,
+    "iou11": 0.9,
+    "iou12": 0.94
+   },
+   {
+    "text": "guy left of umbrella",
+    "present": true,
+    "p11": 0.998,
+    "p12": 0.989,
+    "iou11": 0.79,
+    "iou12": 0.16
+   },
+   {
+    "text": "person right of umbrella",
+    "present": true,
+    "p11": 1.0,
+    "p12": 0.991,
+    "iou11": 0.86,
+    "iou12": 0.18
+   },
+   {
+    "text": "girl next to the unbrella on the right",
+    "present": true,
+    "p11": 1.0,
+    "p12": 0.984,
+    "iou11": 0.69,
+    "iou12": 0.06
+   },
+   {
+    "text": "person in blue sweatshirt just right of the red umbrella",
+    "present": true,
+    "p11": 0.932,
+    "p12": 0.375,
+    "iou11": 0.86,
+    "iou12": 0.92
+   },
+   {
+    "text": "left orange behind the one in the very bottom left",
+    "present": true,
+    "p11": 1.0,
+    "p12": 0.99,
+    "iou11": 0.65,
+    "iou12": 0.35
+   },
+   {
+    "text": "orange below big one left",
+    "present": true,
+    "p11": 0.999,
+    "p12": 0.992,
+    "iou11": 0.88,
+    "iou12": 0.12
+   },
+   {
+    "text": "white computer in back",
+    "present": true,
+    "p11": 0.868,
+    "p12": 0.445,
+    "iou11": 0.84,
+    "iou12": 0.88
+   },
+   {
+    "text": "first one left of pole",
+    "present": true,
+    "p11": 0.996,
+    "p12": 0.991,
+    "iou11": 0.86,
+    "iou12": 0.5
+   },
+   {
+    "text": "pink toilet on left towards front",
+    "present": true,
+    "p11": 0.998,
+    "p12": 0.88,
+    "iou11": 0.53,
+    "iou12": 0.47
+   },
+   {
+    "text": "was a wii remote and left girl stunned by camera",
+    "present": true,
+    "p11": 0.946,
+    "p12": 0.263,
+    "iou11": 0.88,
+    "iou12": 0.88
+   }
+  ]
+ },
+ "grefcoco_no_target": {
+  "n": 8905,
+  "lost": 469,
+  "gained": 270,
+  "net_pts": -2.23,
+  "lost_mode": {
+   "absent->accepted": 469
+  },
+  "lost_by_feature": {
+   "cat_word": {
+    "lost": 327,
+    "gained": 207,
+    "share_of_set": 0.793,
+    "net_pts_within": -1.7
+   },
+   "pos_word": {
+    "lost": 278,
+    "gained": 158,
+    "share_of_set": 0.65,
+    "net_pts_within": -2.07
+   },
+   "no_pos_word": {
+    "lost": 191,
+    "gained": 112,
+    "share_of_set": 0.35,
+    "net_pts_within": -2.53
+   },
+   "len3-5": {
+    "lost": 182,
+    "gained": 69,
+    "share_of_set": 0.456,
+    "net_pts_within": -2.78
+   },
+   "len<=2": {
+    "lost": 168,
+    "gained": 50,
+    "share_of_set": 0.232,
+    "net_pts_within": -5.7
+   },
+   "no_cat_word": {
+    "lost": 142,
+    "gained": 63,
+    "share_of_set": 0.207,
+    "net_pts_within": -4.29
+   },
+   "relation_word": {
+    "lost": 136,
+    "gained": 116,
+    "share_of_set": 0.36,
+    "net_pts_within": -0.62
+   },
+   "len>=6": {
+    "lost": 119,
+    "gained": 151,
+    "share_of_set": 0.312,
+    "net_pts_within": 1.15
+   },
+   "numeral": {
+    "lost": 4,
+    "gained": 28,
+    "share_of_set": 0.019,
+    "net_pts_within": 14.46
+   }
+  },
+  "lost_examples": [
+   {
+    "text": "rear pizza",
+    "present": false,
+    "p11": 0.309,
+    "p12": 0.539,
+    "iou11": 0,
+    "iou12": 0
+   },
+   {
+    "text": "chest right",
+    "present": false,
+    "p11": 0.253,
+    "p12": 0.91,
+    "iou11": 0,
+    "iou12": 0
+   },
+   {
+    "text": "left seat",
+    "present": false,
+    "p11": 0.02,
+    "p12": 0.708,
+    "iou11": 0,
+    "iou12": 0
+   },
+   {
+    "text": "blue guy",
+    "present": false,
+    "p11": 0.339,
+    "p12": 0.611,
+    "iou11": 0,
+    "iou12": 0
+   },
+   {
+    "text": "red head",
+    "present": false,
+    "p11": 0.238,
+    "p12": 0.7,
+    "iou11": 0,
+    "iou12": 0
+   },
+   {
+    "text": "the large giraffe on the right side",
+    "present": false,
+    "p11": 0.316,
+    "p12": 0.777,
+    "iou11": 0,
+    "iou12": 0
+   },
+   {
+    "text": "first buss",
+    "present": false,
+    "p11": 0.193,
+    "p12": 0.579,
+    "iou11": 0,
+    "iou12": 0
+   },
+   {
+    "text": "suitcase on the left side",
+    "present": false,
+    "p11": 0.0,
+    "p12": 0.777,
+    "iou11": 0,
+    "iou12": 0
+   },
+   {
+    "text": "red truck",
+    "present": false,
+    "p11": 0.181,
+    "p12": 0.977,
+    "iou11": 0,
+    "iou12": 0
+   },
+   {
+    "text": "the table between the persons hands",
+    "present": false,
+    "p11": 0.443,
+    "p12": 0.937,
+    "iou11": 0,
+    "iou12": 0
+   },
+   {
+    "text": "brocoli lower right",
+    "present": false,
+    "p11": 0.073,
+    "p12": 0.73,
+    "iou11": 0,
+    "iou12": 0
+   },
+   {
+    "text": "person in tie dye shirt",
+    "present": false,
+    "p11": 0.408,
+    "p12": 0.595,
+    "iou11": 0,
+    "iou12": 0
+   }
+  ]
+ },
+ "robust_zh": {
+  "n": 2479,
+  "lost": 191,
+  "gained": 60,
+  "net_pts": -5.28,
+  "lost_mode": {
+   "present->wrong_box": 71,
+   "present->rejected": 72,
+   "absent->accepted": 48
+  },
+  "lost_by_feature": {
+   "no_cat_word": {
+    "lost": 191,
+    "gained": 60,
+    "share_of_set": 1.0,
+    "net_pts_within": -5.28
+   },
+   "len3-5": {
+    "lost": 107,
+    "gained": 21,
+    "share_of_set": 0.573,
+    "net_pts_within": -6.05
+   },
+   "pos_word": {
+    "lost": 103,
+    "gained": 34,
+    "share_of_set": 0.48,
+    "net_pts_within": -5.79
+   },
+   "no_pos_word": {
+    "lost": 88,
+    "gained": 26,
+    "share_of_set": 0.52,
+    "net_pts_within": -4.81
+   },
+   "len>=6": {
+    "lost": 63,
+    "gained": 32,
+    "share_of_set": 0.26,
+    "net_pts_within": -4.81
+   },
+   "len<=2": {
+    "lost": 21,
+    "gained": 7,
+    "share_of_set": 0.167,
+    "net_pts_within": -3.38
+   },
+   "relation_word": {
+    "lost": 20,
+    "gained": 10,
+    "share_of_set": 0.111,
+    "net_pts_within": -3.64
+   },
+   "numeral": {
+    "lost": 11,
+    "gained": 4,
+    "share_of_set": 0.049,
+    "net_pts_within": -5.79
+   }
+  },
+  "lost_examples": [
+   {
+    "text": "颜色深一点的那匹马",
+    "present": true,
+    "p11": 0.87,
+    "p12": 0.894,
+    "iou11": 0.81,
+    "iou12": 0.3
+   },
+   {
+    "text": "坐在绿色沙发上的一个男的",
+    "present": true,
+    "p11": 0.968,
+    "p12": 0.256,
+    "iou11": 0.82,
+    "iou12": 0.82
+   },
+   {
+    "text": "左边那头牛",
+    "present": false,
+    "p11": 0.07,
+    "p12": 0.566,
+    "iou11": 0,
+    "iou12": 0
+   },
+   {
+    "text": "穿蓝衬衫戴眼镜抬头看的男的",
+    "present": true,
+    "p11": 0.999,
+    "p12": 0.311,
+    "iou11": 0.69,
+    "iou12": 0.69
+   },
+   {
+    "text": "左下角的那个容器",
+    "present": false,
+    "p11": 0.001,
+    "p12": 0.572,
+    "iou11": 0,
+    "iou12": 0
+   },
+   {
+    "text": "戴眼镜、露肚子的人",
+    "present": true,
+    "p11": 0.986,
+    "p12": 0.504,
+    "iou11": 0.75,
+    "iou12": 0.35
+   },
+   {
+    "text": "右下角那个穿红衬衫、头上戴蓝围巾的男的",
+    "present": true,
+    "p11": 0.872,
+    "p12": 0.431,
+    "iou11": 0.89,
+    "iou12": 0.86
+   },
+   {
+    "text": "右边有车牌的那辆车",
+    "present": true,
+    "p11": 0.993,
+    "p12": 0.87,
+    "iou11": 0.94,
+    "iou12": 0.0
+   },
+   {
+    "text": "一只全白、正看着狗的山羊",
+    "present": true,
+    "p11": 0.999,
+    "p12": 0.431,
+    "iou11": 0.86,
+    "iou12": 0.76
+   },
+   {
+    "text": "八点钟方向的那个橙子",
+    "present": true,
+    "p11": 0.999,
+    "p12": 0.987,
+    "iou11": 0.82,
+    "iou12": 0.42
+   },
+   {
+    "text": "右下角的那个甜甜圈",
+    "present": true,
+    "p11": 0.998,
+    "p12": 0.981,
+    "iou11": 0.74,
+    "iou12": 0.03
+   },
+   {
+    "text": "花盆里的猫",
+    "present": true,
+    "p11": 0.999,
+    "p12": 0.986,
+    "iou11": 0.65,
+    "iou12": 0.13
+   }
+  ]
+ },
+ "relational_absent": {
+  "n": 154,
+  "lost": 35,
+  "gained": 10,
+  "net_pts": -16.23,
+  "lost_mode": {
+   "absent->accepted": 35
+  },
+  "lost_by_feature": {
+   "pos_word": {
+    "lost": 25,
+    "gained": 6,
+    "share_of_set": 0.701,
+    "net_pts_within": -17.59
+   },
+   "relation_word": {
+    "lost": 24,
+    "gained": 6,
+    "share_of_set": 0.74,
+    "net_pts_within": -15.79
+   },
+   "cat_word": {
+    "lost": 20,
+    "gained": 6,
+    "share_of_set": 0.649,
+    "net_pts_within": -14.0
+   },
+   "len3-5": {
+    "lost": 19,
+    "gained": 6,
+    "share_of_set": 0.455,
+    "net_pts_within": -18.57
+   },
+   "len>=6": {
+    "lost": 16,
+    "gained": 4,
+    "share_of_set": 0.545,
+    "net_pts_within": -14.29
+   },
+   "no_cat_word": {
+    "lost": 15,
+    "gained": 4,
+    "share_of_set": 0.351,
+    "net_pts_within": -20.37
+   },
+   "no_pos_word": {
+    "lost": 10,
+    "gained": 4,
+    "share_of_set": 0.299,
+    "net_pts_within": -13.04
+   }
+  },
+  "lost_examples": [
+   {
+    "text": "电视左边那个东西",
+    "present": false,
+    "p11": 0.381,
+    "p12": 0.997,
+    "iou11": 0,
+    "iou12": 0
+   },
+   {
+    "text": "the food behind the dining table",
+    "present": false,
+    "p11": 0.493,
+    "p12": 0.687,
+    "iou11": 0,
+    "iou12": 0
+   },
+   {
+    "text": "餐桌右边的那个东西",
+    "present": false,
+    "p11": 0.294,
+    "p12": 0.982,
+    "iou11": 0,
+    "iou12": 0
+   },
+   {
+    "text": "the sports item left of the chair",
+    "present": false,
+    "p11": 0.004,
+    "p12": 0.517,
+    "iou11": 0,
+    "iou12": 0
+   },
+   {
+    "text": "长椅左边的那个东西",
+    "present": false,
+    "p11": 0.222,
+    "p12": 0.929,
+    "iou11": 0,
+    "iou12": 0
+   },
+   {
+    "text": "沙发左边那个东西",
+    "present": false,
+    "p11": 0.474,
+    "p12": 0.792,
+    "iou11": 0,
+    "iou12": 0
+   },
+   {
+    "text": "摩托车右边的那个东西",
+    "present": false,
+    "p11": 0.469,
+    "p12": 0.987,
+    "iou11": 0,
+    "iou12": 0
+   },
+   {
+    "text": "餐桌旁边那个东西",
+    "present": false,
+    "p11": 0.213,
+    "p12": 0.99,
+    "iou11": 0,
+    "iou12": 0
+   },
+   {
+    "text": "餐桌旁边的那个东西",
+    "present": false,
+    "p11": 0.417,
+    "p12": 0.978,
+    "iou11": 0,
+    "iou12": 0
+   },
+   {
+    "text": "the animal on the dining table",
+    "present": false,
+    "p11": 0.185,
+    "p12": 0.761,
+    "iou11": 0,
+    "iou12": 0
+   },
+   {
+    "text": "the vehicle left of the couch",
+    "present": false,
+    "p11": 0.019,
+    "p12": 0.634,
+    "iou11": 0,
+    "iou12": 0
+   },
+   {
+    "text": "the gadget right of the couch",
+    "present": false,
+    "p11": 0.112,
+    "p12": 0.972,
+    "iou11": 0,
+    "iou12": 0
+   }
+  ]
+ }
+}

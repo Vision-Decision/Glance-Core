@@ -1,0 +1,17 @@
+{
+ "replay_text": 86015,
+ "replay_q": 195771,
+ "replay_img": 12010,
+ "q_ulit": 2915,
+ "q_ufunc": 4183,
+ "q_ugeneric": 1648,
+ "q_None": 53390,
+ "q_zh": 6066,
+ "q_para": 6014,
+ "q_func": 3347,
+ "q_vague": 1769,
+ "q_absfunc": 3377,
+ "q_absgeneric": 1735,
+ "records": 103752,
+ "questions": 280215
+}

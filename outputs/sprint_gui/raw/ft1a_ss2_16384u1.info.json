@@ -1,0 +1,12 @@
+{
+ "out": "/content/sprint/ft1a_ss2_16384u1",
+ "n": 1272,
+ "click_acc_box": 0.8946540880503144,
+ "wall_s": 264.0710699558258,
+ "ckpt": "/content/ckpt/ft1a/sprint_gui/ft1/ckpt_last.pt",
+ "max_vis": 16384,
+ "upscale": 1.0,
+ "zoom_from": "",
+ "zoom_frac": 0.4,
+ "vis_tokens_median": 2923.0
+}

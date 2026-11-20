@@ -1,0 +1,970 @@
+{
+ "ar_digits_neg25": {
+  "rules": {
+   "thresh [beam subset]": {
+    "refusal_present": 0.004434589800443459,
+    "refusal_present_ci95": [
+     0.0022172949002217295,
+     0.007390983000739098
+    ],
+    "N_acc": 0.7457704618198445,
+    "n_present": 2706,
+    "n_absent": 2187,
+    "subset": "beam stride4"
+   },
+   "greedy_c [beam subset]": {
+    "refusal_present": 0.005543237250554324,
+    "refusal_present_ci95": [
+     0.0029563932002956393,
+     0.008499630450849963
+    ],
+    "N_acc": 0.7700045724737082,
+    "n_present": 2706,
+    "n_absent": 2187,
+    "subset": "beam stride4"
+   },
+   "proxy (greedy-cand. MAP) [beam subset]": {
+    "refusal_present": 0.4079822616407982,
+    "refusal_present_ci95": [
+     0.38654841093865483,
+     0.4272080561714708
+    ],
+    "N_acc": 0.9780521262002744,
+    "n_present": 2706,
+    "n_absent": 2187,
+    "subset": "beam stride4"
+   },
+   "b4lp0_fixed": {
+    "refusal_present": 0.3924611973392461,
+    "refusal_present_ci95": [
+     0.3713968957871397,
+     0.41131744271988174
+    ],
+    "N_acc": 0.9762231367169639,
+    "n_present": 2706,
+    "n_absent": 2187,
+    "subset": "beam stride4"
+   },
+   "b4lp0_hf": {
+    "refusal_present": 0.22062084257206208,
+    "refusal_present_ci95": [
+     0.20288248337028825,
+     0.23651145602365115
+    ],
+    "N_acc": 0.9469593049839964,
+    "n_present": 2706,
+    "n_absent": 2187,
+    "subset": "beam stride4"
+   },
+   "b8lp0_fixed": {
+    "refusal_present": 0.3887657058388766,
+    "refusal_present_ci95": [
+     0.3684405025868441,
+     0.4079822616407982
+    ],
+    "N_acc": 0.9753086419753086,
+    "n_present": 2706,
+    "n_absent": 2187,
+    "subset": "beam stride4"
+   },
+   "b8lp0_hf": {
+    "refusal_present": 0.3887657058388766,
+    "refusal_present_ci95": [
+     0.3684405025868441,
+     0.4079822616407982
+    ],
+    "N_acc": 0.9753086419753086,
+    "n_present": 2706,
+    "n_absent": 2187,
+    "subset": "beam stride4"
+   },
+   "b16lp0_fixed": {
+    "refusal_present": 0.3817442719881744,
+    "refusal_present_ci95": [
+     0.360679970436068,
+     0.400970066518847
+    ],
+    "N_acc": 0.9743941472336534,
+    "n_present": 2706,
+    "n_absent": 2187,
+    "subset": "beam stride4"
+   },
+   "b16lp0_hf": {
+    "refusal_present": 0.3817442719881744,
+    "refusal_present_ci95": [
+     0.360679970436068,
+     0.400970066518847
+    ],
+    "N_acc": 0.9743941472336534,
+    "n_present": 2706,
+    "n_absent": 2187,
+    "subset": "beam stride4"
+   },
+   "b4lp1_fixed": {
+    "refusal_present": 0.009608277900960829,
+    "refusal_present_ci95": [
+     0.006282335550628234,
+     0.013303769401330377
+    ],
+    "N_acc": 0.790580704160951,
+    "n_present": 2706,
+    "n_absent": 2187,
+    "subset": "beam stride4"
+   },
+   "b4lp1_hf": {
+    "refusal_present": 0.009608277900960829,
+    "refusal_present_ci95": [
+     0.006282335550628234,
+     0.013303769401330377
+    ],
+    "N_acc": 0.790580704160951,
+    "n_present": 2706,
+    "n_absent": 2187,
+    "subset": "beam stride4"
+   },
+   "b8lp1_fixed": {
+    "refusal_present": 0.009608277900960829,
+    "refusal_present_ci95": [
+     0.006282335550628234,
+     0.013303769401330377
+    ],
+    "N_acc": 0.7892089620484682,
+    "n_present": 2706,
+    "n_absent": 2187,
+    "subset": "beam stride4"
+   },
+   "b8lp1_hf": {
+    "refusal_present": 0.009608277900960829,
+    "refusal_present_ci95": [
+     0.006282335550628234,
+     0.013303769401330377
+    ],
+    "N_acc": 0.7892089620484682,
+    "n_present": 2706,
+    "n_absent": 2187,
+    "subset": "beam stride4"
+   },
+   "b16lp1_fixed": {
+    "refusal_present": 0.009977827050997782,
+    "refusal_present_ci95": [
+     0.0066518847006651885,
+     0.013673318551367332
+    ],
+    "N_acc": 0.7887517146776406,
+    "n_present": 2706,
+    "n_absent": 2187,
+    "subset": "beam stride4"
+   },
+   "b16lp1_hf": {
+    "refusal_present": 0.009977827050997782,
+    "refusal_present_ci95": [
+     0.0066518847006651885,
+     0.013673318551367332
+    ],
+    "N_acc": 0.7887517146776406,
+    "n_present": 2706,
+    "n_absent": 2187,
+    "subset": "beam stride4"
+   },
+   "thresh [map subset]": {
+    "refusal_present": 0.0028653295128939827,
+    "refusal_present_ci95": [
+     0.0,
+     0.0071633237822349575
+    ],
+    "N_acc": 0.7554744525547445,
+    "n_present": 698,
+    "n_absent": 548,
+    "subset": "map stride16"
+   },
+   "greedy_c [map subset]": {
+    "refusal_present": 0.004297994269340974,
+    "refusal_present_ci95": [
+     0.0,
+     0.01002865329512894
+    ],
+    "N_acc": 0.7737226277372263,
+    "n_present": 698,
+    "n_absent": 548,
+    "subset": "map stride16"
+   },
+   "proxy (greedy-cand. MAP) [map subset]": {
+    "refusal_present": 0.41260744985673353,
+    "refusal_present_ci95": [
+     0.3767550143266476,
+     0.4484240687679083
+    ],
+    "N_acc": 0.9653284671532847,
+    "n_present": 698,
+    "n_absent": 548,
+    "subset": "map stride16"
+   },
+   "exact_map": {
+    "refusal_present": 0.33954154727793695,
+    "refusal_present_ci95": [
+     0.30515759312320917,
+     0.3739613180515759
+    ],
+    "N_acc": 0.9635036496350365,
+    "n_present": 698,
+    "n_absent": 548,
+    "subset": "map stride16"
+   }
+  },
+  "none_outside_top2B_step1_present": {
+   "B=4": 0.7172949002217295,
+   "B=8": 0.0,
+   "B=16": 0.0
+  },
+  "acc50_accepted": {
+   "b4lp0": 0.9829683698296837,
+   "b8lp0": 0.9830713422007256,
+   "b16lp0": 0.9826658696951583,
+   "b4lp1": 0.9507462686567164,
+   "b8lp1": 0.9503731343283582,
+   "b16lp1": 0.9511011571481897
+  },
+  "exact_map_undecided": {
+   "present": 0.16475644699140402,
+   "absent": 0.0072992700729927005
+  },
+  "exact_map_refuse_upper": 0.504297994269341,
+  "proxy_vs_exact_present": {
+   "both_refuse": 236,
+   "proxy_refuse_exact_accept": 26,
+   "proxy_accept_exact_refuse": 1,
+   "n_present": 698
+  },
+  "exact_map_refused_present_greedy_box": {
+   "acc50": 0.8818565400843882,
+   "mean_iou": 0.8084365626333384
+  },
+  "exact_map_accepted_present_greedy_box_acc50": 0.9855491329479769
+ },
+ "ar_hier_neg25": {
+  "rules": {
+   "thresh [beam subset]": {
+    "refusal_present": 0.004434589800443459,
+    "refusal_present_ci95": [
+     0.0018477457501847746,
+     0.007021433850702144
+    ],
+    "N_acc": 0.7421124828532236,
+    "n_present": 2706,
+    "n_absent": 2187,
+    "subset": "beam stride4"
+   },
+   "greedy_c [beam subset]": {
+    "refusal_present": 0.007021433850702144,
+    "refusal_present_ci95": [
+     0.0040650406504065045,
+     0.010347376201034738
+    ],
+    "N_acc": 0.7622313671696388,
+    "n_present": 2706,
+    "n_absent": 2187,
+    "subset": "beam stride4"
+   },
+   "proxy (greedy-cand. MAP) [beam subset]": {
+    "refusal_present": 0.22801182557280117,
+    "refusal_present_ci95": [
+     0.21175166297117518,
+     0.24390243902439024
+    ],
+    "N_acc": 0.965249199817101,
+    "n_present": 2706,
+    "n_absent": 2187,
+    "subset": "beam stride4"
+   },
+   "b4lp0_fixed": {
+    "refusal_present": 0.2261640798226164,
+    "refusal_present_ci95": [
+     0.2099039172209904,
+     0.24243348115299335
+    ],
+    "N_acc": 0.9647919524462735,
+    "n_present": 2706,
+    "n_absent": 2187,
+    "subset": "beam stride4"
+   },
+   "b4lp0_hf": {
+    "refusal_present": 0.1378418329637842,
+    "refusal_present_ci95": [
+     0.12379896526237989,
+     0.15151515151515152
+    ],
+    "N_acc": 0.9295839048925468,
+    "n_present": 2706,
+    "n_absent": 2187,
+    "subset": "beam stride4"
+   },
+   "b8lp0_fixed": {
+    "refusal_present": 0.22394678492239467,
+    "refusal_present_ci95": [
+     0.2080469327420547,
+     0.24058573540280856
+    ],
+    "N_acc": 0.9638774577046182,
+    "n_present": 2706,
+    "n_absent": 2187,
+    "subset": "beam stride4"
+   },
+   "b8lp0_hf": {
+    "refusal_present": 0.17516629711751663,
+    "refusal_present_ci95": [
+     0.1607538802660754,
+     0.18995750184774574
+    ],
+    "N_acc": 0.9469593049839964,
+    "n_present": 2706,
+    "n_absent": 2187,
+    "subset": "beam stride4"
+   },
+   "b16lp0_fixed": {
+    "refusal_present": 0.22283813747228381,
+    "refusal_present_ci95": [
+     0.20730783444198078,
+     0.2394678492239468
+    ],
+    "N_acc": 0.9625057155921354,
+    "n_present": 2706,
+    "n_absent": 2187,
+    "subset": "beam stride4"
+   },
+   "b16lp0_hf": {
+    "refusal_present": 0.21544715447154472,
+    "refusal_present_ci95": [
+     0.19955654101995565,
+     0.23170731707317074
+    ],
+    "N_acc": 0.9611339734796525,
+    "n_present": 2706,
+    "n_absent": 2187,
+    "subset": "beam stride4"
+   },
+   "b4lp1_fixed": {
+    "refusal_present": 0.02180339985218034,
+    "refusal_present_ci95": [
+     0.016250923872875096,
+     0.02771618625277162
+    ],
+    "N_acc": 0.8340192043895748,
+    "n_present": 2706,
+    "n_absent": 2187,
+    "subset": "beam stride4"
+   },
+   "b4lp1_hf": {
+    "refusal_present": 0.02180339985218034,
+    "refusal_present_ci95": [
+     0.016250923872875096,
+     0.02771618625277162
+    ],
+    "N_acc": 0.8340192043895748,
+    "n_present": 2706,
+    "n_absent": 2187,
+    "subset": "beam stride4"
+   },
+   "b8lp1_fixed": {
+    "refusal_present": 0.021433850702143386,
+    "refusal_present_ci95": [
+     0.015521064301552107,
+     0.027346637102734665
+    ],
+    "N_acc": 0.8331047096479195,
+    "n_present": 2706,
+    "n_absent": 2187,
+    "subset": "beam stride4"
+   },
+   "b8lp1_hf": {
+    "refusal_present": 0.021433850702143386,
+    "refusal_present_ci95": [
+     0.015521064301552107,
+     0.027346637102734665
+    ],
+    "N_acc": 0.8331047096479195,
+    "n_present": 2706,
+    "n_absent": 2187,
+    "subset": "beam stride4"
+   },
+   "b16lp1_fixed": {
+    "refusal_present": 0.021433850702143386,
+    "refusal_present_ci95": [
+     0.015521064301552107,
+     0.027346637102734665
+    ],
+    "N_acc": 0.8326474622770919,
+    "n_present": 2706,
+    "n_absent": 2187,
+    "subset": "beam stride4"
+   },
+   "b16lp1_hf": {
+    "refusal_present": 0.021433850702143386,
+    "refusal_present_ci95": [
+     0.015521064301552107,
+     0.027346637102734665
+    ],
+    "N_acc": 0.8326474622770919,
+    "n_present": 2706,
+    "n_absent": 2187,
+    "subset": "beam stride4"
+   },
+   "thresh [map subset]": {
+    "refusal_present": 0.0057306590257879654,
+    "refusal_present_ci95": [
+     0.0014326647564469914,
+     0.011461318051575931
+    ],
+    "N_acc": 0.7427007299270073,
+    "n_present": 698,
+    "n_absent": 548,
+    "subset": "map stride16"
+   },
+   "greedy_c [map subset]": {
+    "refusal_present": 0.008595988538681949,
+    "refusal_present_ci95": [
+     0.0028653295128939827,
+     0.015759312320916905
+    ],
+    "N_acc": 0.7572992700729927,
+    "n_present": 698,
+    "n_absent": 548,
+    "subset": "map stride16"
+   },
+   "proxy (greedy-cand. MAP) [map subset]": {
+    "refusal_present": 0.24785100286532952,
+    "refusal_present_ci95": [
+     0.2148997134670487,
+     0.2779727793696275
+    ],
+    "N_acc": 0.9525547445255474,
+    "n_present": 698,
+    "n_absent": 548,
+    "subset": "map stride16"
+   },
+   "exact_map": {
+    "refusal_present": 0.23065902578796563,
+    "refusal_present_ci95": [
+     0.1991404011461318,
+     0.2607808022922636
+    ],
+    "N_acc": 0.9507299270072993,
+    "n_present": 698,
+    "n_absent": 548,
+    "subset": "map stride16"
+   }
+  },
+  "none_outside_top2B_step1_present": {
+   "B=4": 0.819660014781966,
+   "B=8": 0.754619364375462,
+   "B=16": 0.5861049519586105
+  },
+  "acc50_accepted": {
+   "b4lp0": 0.9646609360076409,
+   "b8lp0": 0.9642857142857143,
+   "b16lp0": 0.9624346172135045,
+   "b4lp1": 0.9478655081224027,
+   "b8lp1": 0.9478851963746223,
+   "b16lp1": 0.9459969788519638
+  },
+  "exact_map_undecided": {
+   "present": 0.21060171919770773,
+   "absent": 0.014598540145985401
+  },
+  "exact_map_refuse_upper": 0.44126074498567336,
+  "proxy_vs_exact_present": {
+   "both_refuse": 161,
+   "proxy_refuse_exact_accept": 3,
+   "proxy_accept_exact_refuse": 0,
+   "n_present": 698
+  },
+  "exact_map_refused_present_greedy_box": {
+   "acc50": 0.9006211180124224,
+   "mean_iou": 0.8101218634556909
+  },
+  "exact_map_accepted_present_greedy_box_acc50": 0.9743589743589743
+ },
+ "ar_atomic100_neg25": {
+  "rules": {
+   "thresh [beam subset]": {
+    "refusal_present": 0.00422250780246007,
+    "refusal_present_ci95": [
+     0.0025702221406278683,
+     0.006058380760051404
+    ],
+    "N_acc": 0.7586050724637681,
+    "n_present": 5447,
+    "n_absent": 4416,
+    "subset": "beam stride2"
+   },
+   "greedy_c [beam subset]": {
+    "refusal_present": 0.008077841013401872,
+    "refusal_present_ci95": [
+     0.005874793464292271,
+     0.010648063154029741
+    ],
+    "N_acc": 0.7966485507246377,
+    "n_present": 5447,
+    "n_absent": 4416,
+    "subset": "beam stride2"
+   },
+   "proxy (greedy-cand. MAP) [beam subset]": {
+    "refusal_present": 0.03910409399669543,
+    "refusal_present_ci95": [
+     0.03396364971543969,
+     0.04461171286946943
+    ],
+    "N_acc": 0.8768115942028986,
+    "n_present": 5447,
+    "n_absent": 4416,
+    "subset": "beam stride2"
+   },
+   "b4lp0_fixed": {
+    "refusal_present": 0.039287681292454565,
+    "refusal_present_ci95": [
+     0.034147237011198824,
+     0.04479530016522856
+    ],
+    "N_acc": 0.8765851449275363,
+    "n_present": 5447,
+    "n_absent": 4416,
+    "subset": "beam stride2"
+   },
+   "b4lp0_hf": {
+    "refusal_present": 0.03635028456030843,
+    "refusal_present_ci95": [
+     0.031393427574811825,
+     0.041674316137323295
+    ],
+    "N_acc": 0.8747735507246377,
+    "n_present": 5447,
+    "n_absent": 4416,
+    "subset": "beam stride2"
+   },
+   "b8lp0_fixed": {
+    "refusal_present": 0.038736919405177164,
+    "refusal_present_ci95": [
+     0.03359647512392142,
+     0.04424453827795117
+    ],
+    "N_acc": 0.8759057971014492,
+    "n_present": 5447,
+    "n_absent": 4416,
+    "subset": "beam stride2"
+   },
+   "b8lp0_hf": {
+    "refusal_present": 0.03781898292638149,
+    "refusal_present_ci95": [
+     0.03267853864512576,
+     0.04314301450339637
+    ],
+    "N_acc": 0.8745471014492754,
+    "n_present": 5447,
+    "n_absent": 4416,
+    "subset": "beam stride2"
+   },
+   "b16lp0_fixed": {
+    "refusal_present": 0.038920506700936296,
+    "refusal_present_ci95": [
+     0.03378006241968056,
+     0.0444281255737103
+    ],
+    "N_acc": 0.8761322463768116,
+    "n_present": 5447,
+    "n_absent": 4416,
+    "subset": "beam stride2"
+   },
+   "b16lp0_hf": {
+    "refusal_present": 0.038736919405177164,
+    "refusal_present_ci95": [
+     0.03359188544152744,
+     0.04424453827795117
+    ],
+    "N_acc": 0.8759057971014492,
+    "n_present": 5447,
+    "n_absent": 4416,
+    "subset": "beam stride2"
+   },
+   "b4lp1_fixed": {
+    "refusal_present": 0.012300348815861943,
+    "refusal_present_ci95": [
+     0.00954653937947494,
+     0.015421332843767212
+    ],
+    "N_acc": 0.8100090579710145,
+    "n_present": 5447,
+    "n_absent": 4416,
+    "subset": "beam stride2"
+   },
+   "b4lp1_hf": {
+    "refusal_present": 0.012300348815861943,
+    "refusal_present_ci95": [
+     0.00954653937947494,
+     0.015421332843767212
+    ],
+    "N_acc": 0.8100090579710145,
+    "n_present": 5447,
+    "n_absent": 4416,
+    "subset": "beam stride2"
+   },
+   "b8lp1_fixed": {
+    "refusal_present": 0.012300348815861943,
+    "refusal_present_ci95": [
+     0.00954653937947494,
+     0.015421332843767212
+    ],
+    "N_acc": 0.8093297101449275,
+    "n_present": 5447,
+    "n_absent": 4416,
+    "subset": "beam stride2"
+   },
+   "b8lp1_hf": {
+    "refusal_present": 0.012300348815861943,
+    "refusal_present_ci95": [
+     0.00954653937947494,
+     0.015421332843767212
+    ],
+    "N_acc": 0.8093297101449275,
+    "n_present": 5447,
+    "n_absent": 4416,
+    "subset": "beam stride2"
+   },
+   "b16lp1_fixed": {
+    "refusal_present": 0.012116761520102808,
+    "refusal_present_ci95": [
+     0.009362952083715808,
+     0.015058747934642918
+    ],
+    "N_acc": 0.8093297101449275,
+    "n_present": 5447,
+    "n_absent": 4416,
+    "subset": "beam stride2"
+   },
+   "b16lp1_hf": {
+    "refusal_present": 0.012116761520102808,
+    "refusal_present_ci95": [
+     0.009362952083715808,
+     0.015058747934642918
+    ],
+    "N_acc": 0.8093297101449275,
+    "n_present": 5447,
+    "n_absent": 4416,
+    "subset": "beam stride2"
+   },
+   "thresh [map subset]": {
+    "refusal_present": 0.006607929515418502,
+    "refusal_present_ci95": [
+     0.0022026431718061676,
+     0.011013215859030838
+    ],
+    "N_acc": 0.7328959700093721,
+    "n_present": 1362,
+    "n_absent": 1067,
+    "subset": "map stride8"
+   },
+   "greedy_c [map subset]": {
+    "refusal_present": 0.012481644640234948,
+    "refusal_present_ci95": [
+     0.007342143906020558,
+     0.018355359765051395
+    ],
+    "N_acc": 0.7713214620431116,
+    "n_present": 1362,
+    "n_absent": 1067,
+    "subset": "map stride8"
+   },
+   "proxy (greedy-cand. MAP) [map subset]": {
+    "refusal_present": 0.046255506607929514,
+    "refusal_present_ci95": [
+     0.03524229074889868,
+     0.05726872246696035
+    ],
+    "N_acc": 0.8547328959700093,
+    "n_present": 1362,
+    "n_absent": 1067,
+    "subset": "map stride8"
+   },
+   "exact_map": {
+    "refusal_present": 0.046255506607929514,
+    "refusal_present_ci95": [
+     0.03524229074889868,
+     0.05726872246696035
+    ],
+    "N_acc": 0.8537956888472352,
+    "n_present": 1362,
+    "n_absent": 1067,
+    "subset": "map stride8"
+   }
+  },
+  "none_outside_top2B_step1_present": {
+   "B=4": 0.8874609876996512,
+   "B=8": 0.8540480998714889,
+   "B=16": 0.8199008628602901
+  },
+  "acc50_accepted": {
+   "b4lp0": 0.9489776418880184,
+   "b8lp0": 0.9476699770817418,
+   "b16lp0": 0.9470869149952245,
+   "b4lp1": 0.9431226765799257,
+   "b8lp1": 0.94182156133829,
+   "b16lp1": 0.9412748559747259
+  },
+  "exact_map_undecided": {
+   "present": 0.0,
+   "absent": 0.0
+  },
+  "exact_map_refuse_upper": 0.046255506607929514,
+  "proxy_vs_exact_present": {
+   "both_refuse": 63,
+   "proxy_refuse_exact_accept": 0,
+   "proxy_accept_exact_refuse": 0,
+   "n_present": 1362
+  },
+  "exact_map_refused_present_greedy_box": {
+   "acc50": 0.7936507936507936,
+   "mean_iou": 0.7289256162586666
+  },
+  "exact_map_accepted_present_greedy_box_acc50": 0.9591993841416474
+ },
+ "ar_atomic1000_neg25": {
+  "rules": {
+   "thresh [beam subset]": {
+    "refusal_present": 0.005507618872774004,
+    "refusal_present_ci95": [
+     0.003488158619423536,
+     0.007527079126124472
+    ],
+    "N_acc": 0.7728713768115942,
+    "n_present": 5447,
+    "n_absent": 4416,
+    "subset": "beam stride2"
+   },
+   "greedy_c [beam subset]": {
+    "refusal_present": 0.019276666054709013,
+    "refusal_present_ci95": [
+     0.015788507435285478,
+     0.022948411969891683
+    ],
+    "N_acc": 0.8430706521739131,
+    "n_present": 5447,
+    "n_absent": 4416,
+    "subset": "beam stride2"
+   },
+   "proxy (greedy-cand. MAP) [beam subset]": {
+    "refusal_present": 0.1048283458784652,
+    "refusal_present_ci95": [
+     0.0971176794565816,
+     0.11308977418762621
+    ],
+    "N_acc": 0.9298007246376812,
+    "n_present": 5447,
+    "n_absent": 4416,
+    "subset": "beam stride2"
+   },
+   "b4lp0_fixed": {
+    "refusal_present": 0.1037268221039104,
+    "refusal_present_ci95": [
+     0.09619974297778594,
+     0.11180925279970626
+    ],
+    "N_acc": 0.9288949275362319,
+    "n_present": 5447,
+    "n_absent": 4416,
+    "subset": "beam stride2"
+   },
+   "b4lp0_hf": {
+    "refusal_present": 0.042041490728841564,
+    "refusal_present_ci95": [
+     0.03708463374334496,
+     0.04754910960161557
+    ],
+    "N_acc": 0.8847373188405797,
+    "n_present": 5447,
+    "n_absent": 4416,
+    "subset": "beam stride2"
+   },
+   "b8lp0_fixed": {
+    "refusal_present": 0.10354323480815128,
+    "refusal_present_ci95": [
+     0.0960161556820268,
+     0.11162566550394712
+    ],
+    "N_acc": 0.9286684782608695,
+    "n_present": 5447,
+    "n_absent": 4416,
+    "subset": "beam stride2"
+   },
+   "b8lp0_hf": {
+    "refusal_present": 0.05984945841747751,
+    "refusal_present_ci95": [
+     0.054158252248944376,
+     0.06609142647328804
+    ],
+    "N_acc": 0.8974184782608695,
+    "n_present": 5447,
+    "n_absent": 4416,
+    "subset": "beam stride2"
+   },
+   "b16lp0_fixed": {
+    "refusal_present": 0.103176060216633,
+    "refusal_present_ci95": [
+     0.09583256838626766,
+     0.11107490361666972
+    ],
+    "N_acc": 0.9288949275362319,
+    "n_present": 5447,
+    "n_absent": 4416,
+    "subset": "beam stride2"
+   },
+   "b16lp0_hf": {
+    "refusal_present": 0.07600514044428125,
+    "refusal_present_ci95": [
+     0.06921241050119331,
+     0.08335322195704056
+    ],
+    "N_acc": 0.9134963768115942,
+    "n_present": 5447,
+    "n_absent": 4416,
+    "subset": "beam stride2"
+   },
+   "b4lp1_fixed": {
+    "refusal_present": 0.031026252983293555,
+    "refusal_present_ci95": [
+     0.02679915549843951,
+     0.03543693776390673
+    ],
+    "N_acc": 0.8731884057971014,
+    "n_present": 5447,
+    "n_absent": 4416,
+    "subset": "beam stride2"
+   },
+   "b4lp1_hf": {
+    "refusal_present": 0.030291903800257022,
+    "refusal_present_ci95": [
+     0.02588580870203782,
+     0.034697998898476225
+    ],
+    "N_acc": 0.8722826086956522,
+    "n_present": 5447,
+    "n_absent": 4416,
+    "subset": "beam stride2"
+   },
+   "b8lp1_fixed": {
+    "refusal_present": 0.030842665687534424,
+    "refusal_present_ci95": [
+     0.026620157885074353,
+     0.035248760785753626
+    ],
+    "N_acc": 0.8731884057971014,
+    "n_present": 5447,
+    "n_absent": 4416,
+    "subset": "beam stride2"
+   },
+   "b8lp1_hf": {
+    "refusal_present": 0.030842665687534424,
+    "refusal_present_ci95": [
+     0.026620157885074353,
+     0.035248760785753626
+    ],
+    "N_acc": 0.8731884057971014,
+    "n_present": 5447,
+    "n_absent": 4416,
+    "subset": "beam stride2"
+   },
+   "b16lp1_fixed": {
+    "refusal_present": 0.031026252983293555,
+    "refusal_present_ci95": [
+     0.026620157885074353,
+     0.03543693776390673
+    ],
+    "N_acc": 0.8731884057971014,
+    "n_present": 5447,
+    "n_absent": 4416,
+    "subset": "beam stride2"
+   },
+   "b16lp1_hf": {
+    "refusal_present": 0.031026252983293555,
+    "refusal_present_ci95": [
+     0.026620157885074353,
+     0.03543693776390673
+    ],
+    "N_acc": 0.8731884057971014,
+    "n_present": 5447,
+    "n_absent": 4416,
+    "subset": "beam stride2"
+   },
+   "thresh [map subset]": {
+    "refusal_present": 0.005139500734214391,
+    "refusal_present_ci95": [
+     0.0014684287812041115,
+     0.00881057268722467
+    ],
+    "N_acc": 0.7582005623242737,
+    "n_present": 1362,
+    "n_absent": 1067,
+    "subset": "map stride8"
+   },
+   "greedy_c [map subset]": {
+    "refusal_present": 0.02569750367107195,
+    "refusal_present_ci95": [
+     0.01762114537444934,
+     0.03450807635829662
+    ],
+    "N_acc": 0.8331771321462043,
+    "n_present": 1362,
+    "n_absent": 1067,
+    "subset": "map stride8"
+   },
+   "proxy (greedy-cand. MAP) [map subset]": {
+    "refusal_present": 0.12481644640234948,
+    "refusal_present_ci95": [
+     0.10866372980910426,
+     0.14317180616740088
+    ],
+    "N_acc": 0.9203373945641987,
+    "n_present": 1362,
+    "n_absent": 1067,
+    "subset": "map stride8"
+   },
+   "exact_map": {
+    "refusal_present": 0.12261380323054331,
+    "refusal_present_ci95": [
+     0.10572687224669604,
+     0.1402533039647577
+    ],
+    "N_acc": 0.9194001874414246,
+    "n_present": 1362,
+    "n_absent": 1067,
+    "subset": "map stride8"
+   }
+  },
+  "none_outside_top2B_step1_present": {
+   "B=4": 0.9579585092711584,
+   "B=8": 0.9344593354139894,
+   "B=16": 0.9085735267119516
+  },
+  "acc50_accepted": {
+   "b4lp0": 0.9547316673494469,
+   "b8lp0": 0.9539217694040549,
+   "b16lp0": 0.9539406345957011,
+   "b4lp1": 0.9435392194012884,
+   "b8lp1": 0.9424133358590642,
+   "b16lp1": 0.9424024251610459
+  },
+  "exact_map_undecided": {
+   "present": 0.00881057268722467,
+   "absent": 0.0
+  },
+  "exact_map_refuse_upper": 0.13142437591776798,
+  "proxy_vs_exact_present": {
+   "both_refuse": 164,
+   "proxy_refuse_exact_accept": 6,
+   "proxy_accept_exact_refuse": 3,
+   "n_present": 1362
+  },
+  "exact_map_refused_present_greedy_box": {
+   "acc50": 0.8083832335329342,
+   "mean_iou": 0.757510137972896
+  },
+  "exact_map_accepted_present_greedy_box_acc50": 0.9653423499577346
+ }
+}

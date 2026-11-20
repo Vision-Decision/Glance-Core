@@ -1,0 +1,108 @@
+{
+ "args": {
+  "model": "Qwen/Qwen3.8-27B",
+  "quant": "bf16",
+  "mode": "throughput",
+  "mbs": "1,2,4",
+  "img": "1024,896",
+  "prompt_len": 40,
+  "qblocks": 8,
+  "qlen": 25,
+  "lora_r": 64,
+  "steps": 4,
+  "maskmode": "block",
+  "attn": "sdpa",
+  "no_gc": false,
+  "out": "/content/27b_out/tp_bf16_block.json"
+ },
+ "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+ "gpu_mem_gb": 94.97076416015625,
+ "runs": [
+  {
+   "quant": "bf16",
+   "mbs": 1,
+   "maskmode": "block",
+   "attn": "sdpa",
+   "gc": true,
+   "ok": true,
+   "step_s": 1.0130452315012615,
+   "tok_per_s": 1123.3456953482366,
+   "records_per_s": 0.9871227551390481,
+   "peak_alloc_gb": 58.16870450973511,
+   "peak_reserved_gb": 58.4453125,
+   "step_times": [
+    46.51671886444092,
+    1.0150549411773682,
+    1.0117111206054688,
+    1.0123696327209473
+   ]
+  },
+  {
+   "quant": "bf16",
+   "mbs": 2,
+   "maskmode": "block",
+   "attn": "sdpa",
+   "gc": true,
+   "ok": true,
+   "step_s": 2.099495013554891,
+   "tok_per_s": 1084.0702098864472,
+   "records_per_s": 0.9526100262622559,
+   "peak_alloc_gb": 58.85685682296753,
+   "peak_reserved_gb": 59.1328125,
+   "step_times": [
+    4.023367166519165,
+    2.0991997718811035,
+    2.0993285179138184,
+    2.099956750869751
+   ]
+  },
+  {
+   "quant": "bf16",
+   "mbs": 4,
+   "maskmode": "block",
+   "attn": "sdpa",
+   "gc": true,
+   "ok": true,
+   "step_s": 4.461266438166301,
+   "tok_per_s": 1020.3380728524686,
+   "records_per_s": 0.8966063909072659,
+   "peak_alloc_gb": 61.354591846466064,
+   "peak_reserved_gb": 61.791015625,
+   "step_times": [
+    19.49348735809326,
+    4.458769798278809,
+    4.461480140686035,
+    4.463549375534058
+   ]
+  }
+ ],
+ "env": {
+  "torch": "2.14.1+cu130",
+  "transformers": "5.23.0",
+  "fla": "0.6.0",
+  "causal_conv1d": "missing (ModuleNotFoundError)",
+  "peft": "0.21.2",
+  "bitsandbytes": "0.50.2",
+  "kernels": "0.18.3"
+ },
+ "load_s": 4.888888120651245,
+ "mem_after_load_gb": 50.955976486206055,
+ "lora_target_suffixes": [
+  "linear_attn.in_proj_qkv",
+  "linear_attn.in_proj_z",
+  "linear_attn.out_proj",
+  "mlp.down_proj",
+  "mlp.gate_proj",
+  "mlp.up_proj",
+  "self_attn.k_proj",
+  "self_attn.o_proj",
+  "self_attn.q_proj",
+  "self_attn.v_proj"
+ ],
+ "lora_params_M": 435.15904,
+ "seq": {
+  "visual_tokens": 896,
+  "prefix_len": 938,
+  "total_len": 1138
+ }
+}

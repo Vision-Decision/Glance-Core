@@ -1,0 +1,107 @@
+{
+ "image_first": {
+  "diag": {
+   "n_a": 3931,
+   "n_b": 3931,
+   "n_matched": 3931,
+   "max_abs_p_logit": 0.0,
+   "max_abs_iou_logit": 0.0,
+   "max_abs_box_px": 0.0,
+   "max_abs_cand": 0.0,
+   "decision_mismatch": 0,
+   "bitwise_equal": true
+  },
+  "grefcoco_testA": {
+   "n_a": 1239,
+   "n_b": 1239,
+   "n_matched": 1239,
+   "max_abs_p_logit": 0.0,
+   "max_abs_iou_logit": 0.0,
+   "max_abs_box_px": 0.0,
+   "max_abs_cand": 0.0,
+   "decision_mismatch": 0,
+   "bitwise_equal": true
+  },
+  "refcoco_val": {
+   "n_a": 369,
+   "n_b": 369,
+   "n_matched": 369,
+   "max_abs_p_logit": 0.0,
+   "max_abs_iou_logit": 0.0,
+   "max_abs_box_px": 0.0,
+   "max_abs_cand": 0.0,
+   "decision_mismatch": 0,
+   "bitwise_equal": true
+  }
+ },
+ "text_first": {
+  "diag": {
+   "n_a": 3931,
+   "n_b": 3931,
+   "n_matched": 3931,
+   "max_abs_p_logit": 0.0,
+   "max_abs_iou_logit": 0.0,
+   "max_abs_box_px": 0.0,
+   "max_abs_cand": 0.0,
+   "decision_mismatch": 0,
+   "bitwise_equal": true
+  },
+  "grefcoco_testA": {
+   "n_a": 1239,
+   "n_b": 1239,
+   "n_matched": 1239,
+   "max_abs_p_logit": 0.0,
+   "max_abs_iou_logit": 0.0,
+   "max_abs_box_px": 0.0,
+   "max_abs_cand": 0.0,
+   "decision_mismatch": 0,
+   "bitwise_equal": true
+  },
+  "refcoco_val": {
+   "n_a": 369,
+   "n_b": 369,
+   "n_matched": 369,
+   "max_abs_p_logit": 0.0,
+   "max_abs_iou_logit": 0.0,
+   "max_abs_box_px": 0.0,
+   "max_abs_cand": 0.0,
+   "decision_mismatch": 0,
+   "bitwise_equal": true
+  }
+ },
+ "joint": {
+  "diag": {
+   "n_a": 3931,
+   "n_b": 3931,
+   "n_matched": 3931,
+   "max_abs_p_logit": 0.0,
+   "max_abs_iou_logit": 0.0,
+   "max_abs_box_px": 0.0,
+   "max_abs_cand": 0.0,
+   "decision_mismatch": 0,
+   "bitwise_equal": true
+  },
+  "grefcoco_testA": {
+   "n_a": 1239,
+   "n_b": 1239,
+   "n_matched": 1239,
+   "max_abs_p_logit": 0.0,
+   "max_abs_iou_logit": 0.0,
+   "max_abs_box_px": 0.0,
+   "max_abs_cand": 0.0,
+   "decision_mismatch": 0,
+   "bitwise_equal": true
+  },
+  "refcoco_val": {
+   "n_a": 369,
+   "n_b": 369,
+   "n_matched": 369,
+   "max_abs_p_logit": 0.0,
+   "max_abs_iou_logit": 0.0,
+   "max_abs_box_px": 0.0,
+   "max_abs_cand": 0.0,
+   "decision_mismatch": 0,
+   "bitwise_equal": true
+  }
+ }
+}

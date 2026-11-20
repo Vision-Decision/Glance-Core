@@ -1,0 +1,47 @@
+{
+ "ours/gate": {
+  "neg_ratio": [
+   5,
+   25
+  ],
+  "halluc_pct": [
+   35.6765861875351,
+   24.32341381246491
+  ],
+  "refusal_present_pct": [
+   0.11076241462063872,
+   0.38766845117223553
+  ],
+  "halluc_pct_5pct_prior_corrected": 27.299270072992698
+ },
+ "ar_digits/greedy": {
+  "neg_ratio": [
+   5,
+   25
+  ],
+  "halluc_pct": [
+   32.79056709713644,
+   21.998877035373386
+  ],
+  "refusal_present_pct": [
+   0.1661436219309581,
+   0.48920066457448774
+  ],
+  "halluc_pct_5pct_prior_corrected": null
+ },
+ "ar_digits/thresh": {
+  "neg_ratio": [
+   5,
+   25
+  ],
+  "halluc_pct": [
+   35.025266704098826,
+   24.166198764738912
+  ],
+  "refusal_present_pct": [
+   0.12922281705741184,
+   0.4061288536090087
+  ],
+  "halluc_pct_5pct_prior_corrected": 24.604154969118472
+ }
+}

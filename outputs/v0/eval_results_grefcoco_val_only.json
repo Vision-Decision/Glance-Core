@@ -1,0 +1,26 @@
+{
+ "ckpt": "/content/out/v0/ckpt_final.pt",
+ "step": 3058,
+ "sets": {
+  "refcoco_val": {
+   "n": 10834,
+   "acc50": 0.9496954033597932,
+   "gated_acc50": 0.9456341148237032,
+   "mean_iou": 0.8386692963460286,
+   "ece_box_conf": 0.005786724148988255,
+   "ece_iou_head_present_only": 0.005499725490505905,
+   "wall_s": 78.30405068397522
+  },
+  "grefcoco_val": {
+   "n": 14229,
+   "N_acc": 0.7704660303200449,
+   "T_acc_single": null,
+   "present_recall_multi": 0.987603305785124,
+   "auroc_presence": 0.9409261020092292,
+   "ece_presence": 0.13895235560749297,
+   "ece_box_conf": 0.19710484603106743,
+   "ece_iou_head_present_only": null,
+   "wall_s": 84.75863146781921
+  }
+ }
+}

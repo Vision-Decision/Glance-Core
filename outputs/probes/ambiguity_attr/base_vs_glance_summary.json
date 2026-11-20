@@ -1,0 +1,344 @@
+{
+ "B": {
+  "color": {
+   "n_pos": 26,
+   "n_neg": 58,
+   "base_FA": [
+    31.0,
+    20.6,
+    43.8
+   ],
+   "glance_FA_0_5": [
+    1.7,
+    0.3,
+    9.1
+   ],
+   "base_FR": [
+    0.0,
+    0.0,
+    12.9
+   ],
+   "glance_FR_0_5": [
+    0.0,
+    0.0,
+    12.9
+   ],
+   "base_neg_boxed_on_object": [
+    31.0,
+    20.6,
+    43.8
+   ],
+   "base_pos_acc50": [
+    100.0,
+    87.1,
+    100.0
+   ],
+   "glance_pos_acc50_gated": [
+    100.0,
+    87.1,
+    100.0
+   ]
+  },
+  "size": {
+   "n_pos": 17,
+   "n_neg": 17,
+   "base_FA": [
+    94.1,
+    73.0,
+    99.0
+   ],
+   "glance_FA_0_5": [
+    17.6,
+    6.2,
+    41.0
+   ],
+   "base_FR": [
+    0.0,
+    0.0,
+    18.4
+   ],
+   "glance_FR_0_5": [
+    5.9,
+    1.0,
+    27.0
+   ],
+   "base_neg_boxed_on_object": [
+    76.5,
+    52.7,
+    90.4
+   ],
+   "base_pos_acc50": [
+    100.0,
+    81.6,
+    100.0
+   ],
+   "glance_pos_acc50_gated": [
+    94.1,
+    73.0,
+    99.0
+   ]
+  },
+  "position": {
+   "n_pos": 21,
+   "n_neg": 21,
+   "base_FA": [
+    76.2,
+    54.9,
+    89.4
+   ],
+   "glance_FA_0_5": [
+    0.0,
+    0.0,
+    15.5
+   ],
+   "base_FR": [
+    0.0,
+    0.0,
+    15.5
+   ],
+   "glance_FR_0_5": [
+    57.1,
+    36.5,
+    75.5
+   ],
+   "base_neg_boxed_on_object": [
+    71.4,
+    50.0,
+    86.2
+   ],
+   "base_pos_acc50": [
+    95.2,
+    77.3,
+    99.2
+   ],
+   "glance_pos_acc50_gated": [
+    38.1,
+    20.8,
+    59.1
+   ]
+  },
+  "count": {
+   "n_pos": 0,
+   "n_neg": 52,
+   "base_FA": [
+    25.0,
+    15.2,
+    38.2
+   ],
+   "glance_FA_0_5": [
+    21.2,
+    12.2,
+    34.0
+   ],
+   "base_FR": null,
+   "glance_FR_0_5": null,
+   "base_neg_boxed_on_object": [
+    21.2,
+    12.2,
+    34.0
+   ],
+   "base_pos_acc50": null,
+   "glance_pos_acc50_gated": null
+  },
+  "action": {
+   "n_pos": 13,
+   "n_neg": 23,
+   "base_FA": [
+    8.7,
+    2.4,
+    26.8
+   ],
+   "glance_FA_0_5": [
+    0.0,
+    0.0,
+    14.3
+   ],
+   "base_FR": [
+    0.0,
+    0.0,
+    22.8
+   ],
+   "glance_FR_0_5": [
+    0.0,
+    0.0,
+    22.8
+   ],
+   "base_neg_boxed_on_object": [
+    8.7,
+    2.4,
+    26.8
+   ],
+   "base_pos_acc50": [
+    100.0,
+    77.2,
+    100.0
+   ],
+   "glance_pos_acc50_gated": [
+    100.0,
+    77.2,
+    100.0
+   ]
+  },
+  "bare": {
+   "n_pos": 26,
+   "n_neg": 0,
+   "base_FA": null,
+   "glance_FA_0_5": null,
+   "base_FR": [
+    0.0,
+    0.0,
+    12.9
+   ],
+   "glance_FR_0_5": [
+    0.0,
+    0.0,
+    12.9
+   ],
+   "base_neg_boxed_on_object": null,
+   "base_pos_acc50": [
+    100.0,
+    87.1,
+    100.0
+   ],
+   "glance_pos_acc50_gated": [
+    96.2,
+    81.1,
+    99.3
+   ]
+  }
+ },
+ "A": {
+  "single/bare_the": {
+   "n": 20,
+   "base_none": [
+    0.0,
+    0.0,
+    16.1
+   ],
+   "base_hit_any": [
+    100.0,
+    83.9,
+    100.0
+   ],
+   "base_iou_union_ge_0_5": [
+    100.0,
+    83.9,
+    100.0
+   ],
+   "glance_hit_any": [
+    100.0,
+    83.9,
+    100.0
+   ],
+   "glance_iou_union_ge_0_5": [
+    100.0,
+    83.9,
+    100.0
+   ],
+   "glance_p_lt_0_5": [
+    0.0,
+    0.0,
+    16.1
+   ]
+  },
+  "single/plural": {
+   "n": 20,
+   "base_none": [
+    0.0,
+    0.0,
+    16.1
+   ],
+   "base_hit_any": [
+    100.0,
+    83.9,
+    100.0
+   ],
+   "base_iou_union_ge_0_5": [
+    100.0,
+    83.9,
+    100.0
+   ],
+   "glance_hit_any": [
+    100.0,
+    83.9,
+    100.0
+   ],
+   "glance_iou_union_ge_0_5": [
+    100.0,
+    83.9,
+    100.0
+   ],
+   "glance_p_lt_0_5": [
+    0.0,
+    0.0,
+    16.1
+   ]
+  },
+  "multi/bare_the": {
+   "n": 20,
+   "base_none": [
+    0.0,
+    0.0,
+    16.1
+   ],
+   "base_hit_any": [
+    100.0,
+    83.9,
+    100.0
+   ],
+   "base_iou_union_ge_0_5": [
+    65.0,
+    43.3,
+    81.9
+   ],
+   "glance_hit_any": [
+    95.0,
+    76.4,
+    99.1
+   ],
+   "glance_iou_union_ge_0_5": [
+    80.0,
+    58.4,
+    91.9
+   ],
+   "glance_p_lt_0_5": [
+    0.0,
+    0.0,
+    16.1
+   ]
+  },
+  "multi/plural": {
+   "n": 20,
+   "base_none": [
+    0.0,
+    0.0,
+    16.1
+   ],
+   "base_hit_any": [
+    95.0,
+    76.4,
+    99.1
+   ],
+   "base_iou_union_ge_0_5": [
+    60.0,
+    38.7,
+    78.1
+   ],
+   "glance_hit_any": [
+    90.0,
+    69.9,
+    97.2
+   ],
+   "glance_iou_union_ge_0_5": [
+    80.0,
+    58.4,
+    91.9
+   ],
+   "glance_p_lt_0_5": [
+    0.0,
+    0.0,
+    16.1
+   ]
+  }
+ }
+}

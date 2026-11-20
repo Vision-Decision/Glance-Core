@@ -1,0 +1,4 @@
+# weights are uploaded to the Hub, not committed
+*.safetensors
+*.pt
+merged-bf16/

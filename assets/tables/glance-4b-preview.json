@@ -1,0 +1,490 @@
+{
+ "columns": [
+  "Glance-4B-preview",
+  "Qwen3.5-4B",
+  "Qwen3-VL-4B",
+  "Qwen3-VL-8B",
+  "Glance-X-4B joint"
+ ],
+ "rows": [
+  {
+   "cat": "Referring\ngrounding",
+   "bench": "RefCOCO val",
+   "note": "Acc@0.5",
+   "vals": [
+    93.17,
+    91.4,
+    null,
+    null,
+    93.1
+   ],
+   "marks": [
+    "",
+    "‡",
+    "",
+    "",
+    "†"
+   ]
+  },
+  {
+   "cat": "Referring\ngrounding",
+   "bench": "RefCOCO testA",
+   "note": "Acc@0.5",
+   "vals": [
+    94.52,
+    null,
+    null,
+    null,
+    94.9
+   ],
+   "marks": [
+    "",
+    "",
+    "",
+    "",
+    "†"
+   ]
+  },
+  {
+   "cat": "Referring\ngrounding",
+   "bench": "RefCOCO testB",
+   "note": "Acc@0.5",
+   "vals": [
+    90.66,
+    null,
+    null,
+    null,
+    90.5
+   ],
+   "marks": [
+    "",
+    "",
+    "",
+    "",
+    "†"
+   ]
+  },
+  {
+   "cat": "Referring\ngrounding",
+   "bench": "RefCOCO+ val",
+   "note": "Acc@0.5",
+   "vals": [
+    89.67,
+    null,
+    null,
+    null,
+    89.6
+   ],
+   "marks": [
+    "",
+    "",
+    "",
+    "",
+    "†"
+   ]
+  },
+  {
+   "cat": "Referring\ngrounding",
+   "bench": "RefCOCO+ testA",
+   "note": "Acc@0.5",
+   "vals": [
+    93.33,
+    null,
+    null,
+    null,
+    93.1
+   ],
+   "marks": [
+    "",
+    "",
+    "",
+    "",
+    "†"
+   ]
+  },
+  {
+   "cat": "Referring\ngrounding",
+   "bench": "RefCOCO+ testB",
+   "note": "Acc@0.5",
+   "vals": [
+    84.58,
+    null,
+    null,
+    null,
+    84.9
+   ],
+   "marks": [
+    "",
+    "",
+    "",
+    "",
+    "†"
+   ]
+  },
+  {
+   "cat": "Referring\ngrounding",
+   "bench": "RefCOCOg val",
+   "note": "Acc@0.5",
+   "vals": [
+    89.95,
+    null,
+    null,
+    null,
+    90.3
+   ],
+   "marks": [
+    "",
+    "",
+    "",
+    "",
+    "†"
+   ]
+  },
+  {
+   "cat": "Referring\ngrounding",
+   "bench": "RefCOCOg test",
+   "note": "Acc@0.5",
+   "vals": [
+    90.44,
+    null,
+    null,
+    null,
+    90.5
+   ],
+   "marks": [
+    "",
+    "",
+    "",
+    "",
+    "†"
+   ]
+  },
+  {
+   "cat": "Referring\ngrounding",
+   "bench": "RefCOCO / + / g mean",
+   "note": "8 splits",
+   "vals": [
+    90.79,
+    88.1,
+    null,
+    null,
+    90.9
+   ],
+   "marks": [
+    "",
+    "†",
+    "",
+    "",
+    "†"
+   ]
+  },
+  {
+   "cat": "Absence",
+   "bench": "gRefCOCO val, no target",
+   "note": "rejected",
+   "vals": [
+    87.4,
+    65.0,
+    77.2,
+    null,
+    78.9
+   ],
+   "marks": [
+    "",
+    "‡",
+    "†",
+    "",
+    "†"
+   ]
+  },
+  {
+   "cat": "Absence",
+   "bench": "gRefCOCO testA, no target",
+   "note": "rejected",
+   "vals": [
+    80.8,
+    null,
+    70.2,
+    null,
+    71.3
+   ],
+   "marks": [
+    "",
+    "",
+    "†",
+    "",
+    "†"
+   ]
+  },
+  {
+   "cat": "Absence",
+   "bench": "gRefCOCO testB, no target",
+   "note": "rejected",
+   "vals": [
+    77.1,
+    null,
+    70.2,
+    null,
+    73.0
+   ],
+   "marks": [
+    "",
+    "",
+    "†",
+    "",
+    "†"
+   ]
+  },
+  {
+   "cat": "Absence",
+   "bench": "gRefCOCO val",
+   "note": "AUROC of\nP(present)",
+   "vals": [
+    97.92,
+    null,
+    null,
+    null,
+    98.2
+   ],
+   "marks": [
+    "",
+    "",
+    "",
+    "",
+    "†"
+   ]
+  },
+  {
+   "cat": "Absence",
+   "bench": "gRefCOCO testA",
+   "note": "AUROC of\nP(present)",
+   "vals": [
+    94.1,
+    null,
+    null,
+    null,
+    97.4
+   ],
+   "marks": [
+    "",
+    "",
+    "",
+    "",
+    "†"
+   ]
+  },
+  {
+   "cat": "Absence",
+   "bench": "gRefCOCO testB",
+   "note": "AUROC of\nP(present)",
+   "vals": [
+    88.7,
+    null,
+    null,
+    null,
+    93.5
+   ],
+   "marks": [
+    "",
+    "",
+    "",
+    "",
+    "†"
+   ]
+  },
+  {
+   "cat": "Absence",
+   "bench": "GREC val / official",
+   "note": "Pr@(F1=1)",
+   "vals": [
+    71.6,
+    null,
+    72.4,
+    null,
+    null
+   ],
+   "marks": [
+    "",
+    "",
+    "†",
+    "",
+    ""
+   ]
+  },
+  {
+   "cat": "Absence",
+   "bench": "GREC testA / official",
+   "note": "Pr@(F1=1)",
+   "vals": [
+    47.5,
+    null,
+    68.0,
+    null,
+    null
+   ],
+   "marks": [
+    "",
+    "",
+    "†",
+    "",
+    ""
+   ]
+  },
+  {
+   "cat": "Absence",
+   "bench": "GREC testB / official",
+   "note": "Pr@(F1=1)",
+   "vals": [
+    51.3,
+    null,
+    62.2,
+    null,
+    null
+   ],
+   "marks": [
+    "",
+    "",
+    "†",
+    "",
+    ""
+   ]
+  },
+  {
+   "cat": "Absence",
+   "bench": "VenusBench-GD refusal",
+   "note": "official scorer",
+   "vals": [
+    81.76,
+    null,
+    31.55,
+    63.78,
+    null
+   ],
+   "fmt": "{:.2f}",
+   "marks": [
+    "",
+    "",
+    "†",
+    "†",
+    ""
+   ]
+  },
+  {
+   "cat": "Multi-target",
+   "bench": "gRefCOCO val",
+   "note": "multi-target F1",
+   "vals": [
+    null,
+    null,
+    null,
+    null,
+    82.7
+   ],
+   "marks": [
+    "",
+    "",
+    "",
+    "",
+    "†"
+   ]
+  },
+  {
+   "cat": "GUI\ngrounding",
+   "bench": "ScreenSpot-v2",
+   "note": "click acc.; Glance ≤2,048\ntokens, base ≤4,000",
+   "vals": [
+    89.39,
+    93.4,
+    null,
+    92.1,
+    null
+   ],
+   "marks": [
+    "",
+    "",
+    "",
+    "†",
+    ""
+   ]
+  },
+  {
+   "cat": "GUI\ngrounding",
+   "bench": "ScreenSpot-Pro",
+   "note": "native resolution",
+   "vals": [
+    39.34,
+    59.9,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "cat": "GUI\ngrounding",
+   "bench": "ScreenSpot-Pro, zoom track",
+   "note": "2 passes",
+   "vals": [
+    58.13,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "cat": "GUI\ngrounding",
+   "bench": "VenusBench-GD overall",
+   "note": "official scorer",
+   "vals": [
+    40.06,
+    null,
+    56.15,
+    62.34,
+    null
+   ],
+   "fmt": "{:.2f}",
+   "marks": [
+    "",
+    "",
+    "†",
+    "†",
+    ""
+   ]
+  },
+  {
+   "cat": "Speed (ms, ↓)",
+   "bench": "8 box questions, one image",
+   "note": "vs 8 HF generate\ncalls",
+   "vals": [
+    85.6,
+    3161.2,
+    null,
+    null,
+    null
+   ],
+   "fmt": "{:,.1f}",
+   "better": "low"
+  },
+  {
+   "cat": "Speed (ms, ↓)",
+   "bench": "32 box questions, served",
+   "note": "Glance Engine vs\nvLLM BF16",
+   "vals": [
+    48.9,
+    334.0,
+    null,
+    null,
+    null
+   ],
+   "fmt": "{:,.1f}",
+   "better": "low"
+  }
+ ],
+ "footer": [
+  "Glance-4B-preview is the v1 checkpoint (step 3,844). Unmarked cells: measured by us on one RTX PRO 6000, single pass unless noted. Blue: Glance best in the row;",
+  "grey: another model is best; ties at the shown precision colour every tied cell. GREC: official protocol (threshold 0.7). Rejected: share of no-target expressions refused.",
+  "† Reported elsewhere, with its own prompts and resolutions: Qwen3.5-4B model card; RC-GRPO (arXiv 2608.04698) for Qwen3-VL-4B gRefCOCO/GREC; VenusBench-GD",
+  "   (2512.16501) Table 5; UI-Venus-1.5 (2602.09082) Table 1 for Qwen3-VL-8B ScreenSpot-v2; Glanece-Training docs/RESULTS.md (Glance-X-4B, joint direction).   ‡ 500-expression random sample.",
+  "Cell-by-cell sources: github.com/Vision-Decision/glance-core/blob/main/assets/tables/glance-4b-preview.md"
+ ]
+}

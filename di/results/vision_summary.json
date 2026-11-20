@@ -1,0 +1,284 @@
+{
+ "run_dir": "/content/out/di/vision-glance-v1",
+ "status": {
+  "ok": 12210
+ },
+ "latency_all_rows": {
+  "n": 12210,
+  "median_ms": 114.53140400010398,
+  "mean_ms": 139.6848027022925,
+  "p80_ms": 179.3129449999924,
+  "p95_ms": 241.1427960000765,
+  "max_ms": 25863.213943000006
+ },
+ "latency_per_benchmark": {
+  "BLINK": {
+   "n": 961,
+   "median_ms": 98.1489859998419,
+   "mean_ms": 162.64212474817765,
+   "p80_ms": 261.4597510000749,
+   "p95_ms": 298.4999599998446,
+   "max_ms": 345.24509000016224
+  },
+  "CV-Bench": {
+   "n": 2038,
+   "median_ms": 90.42099049997887,
+   "mean_ms": 116.22663764376858,
+   "p80_ms": 105.42232699992837,
+   "p95_ms": 182.08656199999496,
+   "max_ms": 25863.213943000006
+  },
+  "CharXiv": {
+   "n": 532,
+   "median_ms": 102.49438300002112,
+   "mean_ms": 103.09453225564587,
+   "p80_ms": 109.58684000001995,
+   "p95_ms": 114.1180400002213,
+   "max_ms": 121.5525099999013
+  },
+  "InfographicVQA": {
+   "n": 244,
+   "median_ms": 173.68691100000433,
+   "mean_ms": 160.8916069139345,
+   "p80_ms": 186.449310999933,
+   "p95_ms": 212.0216639998489,
+   "max_ms": 304.00596899994525
+  },
+  "KIE (CORD+FUNSD)": {
+   "n": 2465,
+   "median_ms": 114.22058000016477,
+   "mean_ms": 142.6148034393505,
+   "p80_ms": 134.34562999987065,
+   "p95_ms": 317.72837299990897,
+   "max_ms": 375.1958000000286
+  },
+  "MMMU-Pro vision": {
+   "n": 1730,
+   "median_ms": 187.12799699983407,
+   "mean_ms": 178.82843939478965,
+   "p80_ms": 222.26702599982673,
+   "p95_ms": 238.89378499961822,
+   "max_ms": 318.14923399997497
+  },
+  "Mind2Web": {
+   "n": 973,
+   "median_ms": 139.96343600001637,
+   "mean_ms": 140.25436574409323,
+   "p80_ms": 140.89207500001066,
+   "p95_ms": 141.46017899997787,
+   "max_ms": 179.36193399987133
+  },
+  "Moderation (Hateful Memes)": {
+   "n": 1213,
+   "median_ms": 101.43085700019583,
+   "mean_ms": 99.51538356059453,
+   "p80_ms": 106.77368799997566,
+   "p95_ms": 108.94683800006533,
+   "max_ms": 116.51624600017385
+  },
+  "R-Bench-M": {
+   "n": 665,
+   "median_ms": 88.68414700009453,
+   "mean_ms": 97.69661392481083,
+   "p80_ms": 95.69709700008389,
+   "p95_ms": 150.2330759999495,
+   "max_ms": 306.106410999746
+  },
+  "RealWorldQA": {
+   "n": 589,
+   "median_ms": 156.40204000010272,
+   "mean_ms": 156.3303221748691,
+   "p80_ms": 181.74345000011272,
+   "p95_ms": 192.46709000003648,
+   "max_ms": 199.36202899998534
+  },
+  "Winoground": {
+   "n": 800,
+   "median_ms": 178.4191199999441,
+   "mean_ms": 178.91683945875312,
+   "p80_ms": 181.07498400013355,
+   "p95_ms": 190.41414299999815,
+   "max_ms": 220.15053300015097
+  }
+ },
+ "chunked_rows": {},
+ "vision-scores.json": {
+  "edition": "0.3",
+  "public_vision_index": 55.45888002422477,
+  "complete": true,
+  "missing_rows": 0,
+  "benchmarks": {
+   "CV-Bench": {
+    "rows": 2038,
+    "answered": 2038,
+    "accuracy": 0.7507360157016683,
+    "chance": 0.393825646058227,
+    "skill": 0.5887916031461219,
+    "skill_clipped": 0.5887916031461219,
+    "weight": 1.0
+   },
+   "BLINK": {
+    "rows": 961,
+    "answered": 961,
+    "accuracy": 0.6618106139438086,
+    "chance": 0.3540582726326743,
+    "skill": 0.4764397905759163,
+    "skill_clipped": 0.4764397905759163,
+    "weight": 1.0
+   },
+   "RealWorldQA": {
+    "rows": 589,
+    "answered": 589,
+    "accuracy": 0.733446519524618,
+    "chance": 0.38808715336728916,
+    "skill": 0.564393063583815,
+    "skill_clipped": 0.564393063583815,
+    "weight": 1.0
+   },
+   "CharXiv": {
+    "rows": 532,
+    "answered": 532,
+    "accuracy": 0.7180451127819549,
+    "chance": 0.25,
+    "skill": 0.6240601503759399,
+    "skill_clipped": 0.6240601503759399,
+    "weight": 1.0
+   },
+   "InfographicVQA": {
+    "rows": 244,
+    "answered": 244,
+    "accuracy": 0.8934426229508197,
+    "chance": 0.25,
+    "skill": 0.8579234972677595,
+    "skill_clipped": 0.8579234972677595,
+    "weight": 1.0
+   },
+   "Mind2Web": {
+    "rows": 973,
+    "answered": 973,
+    "accuracy": 0.5837615621788284,
+    "chance": 0.25,
+    "skill": 0.4450154162384378,
+    "skill_clipped": 0.4450154162384378,
+    "weight": 1.0
+   },
+   "Winoground": {
+    "rows": 800,
+    "answered": 800,
+    "accuracy": 0.875,
+    "chance": 0.5,
+    "skill": 0.75,
+    "skill_clipped": 0.75,
+    "weight": 1.0
+   },
+   "KIE (CORD+FUNSD)": {
+    "rows": 2465,
+    "answered": 2465,
+    "accuracy": 0.8888438133874239,
+    "chance": 0.39259634888438133,
+    "skill": 0.8169978293538153,
+    "skill_clipped": 0.8169978293538153,
+    "weight": 1.0
+   },
+   "Moderation (Hateful Memes)": {
+    "rows": 1213,
+    "answered": 1213,
+    "accuracy": 0.5836768342951361,
+    "chance": 0.5,
+    "skill": 0.16735366859027212,
+    "skill_clipped": 0.16735366859027212,
+    "weight": 1.0
+   },
+   "R-Bench-M": {
+    "rows": 665,
+    "answered": 665,
+    "accuracy": 0.28421052631578947,
+    "chance": 0.16679197994987469,
+    "skill": 0.1409234471349075,
+    "skill_clipped": 0.1409234471349075,
+    "weight": 0.5
+   },
+   "MMMU-Pro vision": {
+    "rows": 1730,
+    "answered": 1730,
+    "accuracy": 0.2878612716763006,
+    "chance": 0.12811840535828975,
+    "skill": 0.18321623864953282,
+    "skill_clipped": 0.18321623864953282,
+    "weight": 0.25
+   }
+  },
+  "full_index": "0.5 x public + 0.5 x private; the private part is run by the maintainers and reported as an aggregate"
+ },
+ "environment.json": {
+  "engine": "di.engine:GlanceEngine",
+  "engine_options": {
+   "model": "Vision-Decision/Glance-4B-preview",
+   "max_vis_tokens": 1600
+  },
+  "model_source": {
+   "kind": "in-process",
+   "engine": "di.engine:GlanceEngine",
+   "base": "Qwen/Qwen3.5-4B",
+   "repo": "Vision-Decision/Glance-4B-preview",
+   "revision": "b6237b4a5856c1e44714b1204163b62a36832851",
+   "release": "Glance-4B-preview",
+   "version": "v1",
+   "train_step": 3844,
+   "device": "cuda",
+   "dtype": "bfloat16",
+   "temperatures": {
+    "presence": 0.948836,
+    "choice": 1.046105,
+    "noul": 0.889068,
+    "score": 1.046105
+   },
+   "attn_mask": "block_bidir",
+   "max_vis_tokens": 1600,
+   "max_pixels": 1638400,
+   "image_resize": "native, never upscaled; downscaled (bicubic, multiples of 32 px) only when over max_vis_tokens 32x32 tokens",
+   "declared_limits": {
+    "options_per_choice": 255,
+    "max_prefix_tokens": 65536,
+    "max_block_tokens": 32768
+   },
+   "large_option_fallback": {
+    "applies_to": "> 26 options",
+    "mode": "tournament",
+    "advance": 3,
+    "rule": "original-order near-equal chunks of <= 26 on the shared prefix; tournament: the top-k of every chunk (k = min(advance, 26 // chunks)) go, in original order, to a second forward; finalists share 1 - r in final-round proportions, other options get M_c * P_chunk(o) (M_c = final mass of chunk c's finalists, r = sum_c M_c * (1 - P_chunk(finalists of c)))"
+   },
+   "policy": "One fixed rendering for every benchmark (di/engine.py docstring); no truncation, no option filtering; over-limit requests raise Unsupported."
+  },
+  "torch": "2.14.1+cu130",
+  "device": "cuda",
+  "cuda": "13.0",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "transformers": "5.23.0",
+  "fla": "0.6.0",
+  "loaded_seconds": 5.901606427000047,
+  "rows_path": "/content/di/vwork/vision/vision-rows.jsonl",
+  "rows_sha256": "f5f1cfb5cd92ab48d4d14919dff9c56963f4bbbed483bdd45a4f102dba87c133",
+  "latency": "In-process, device-synchronized request wall time: tokenization, image decode/resize, vision tower, one shared-prefix forward (two for >26-option tournament fallback), readout; excludes model loading.",
+  "effective_image_budget": {
+   "max_image_pixels": 1638400,
+   "max_image_tokens": 3200,
+   "rows_with_image_tokens": 12210
+  }
+ },
+ "status.json": {
+  "time": "2026-11-18T05:25:22.060119+00:00",
+  "event": "complete",
+  "engine": "di.engine:GlanceEngine",
+  "completed": 12210,
+  "counts": {
+   "ok": 12210
+  },
+  "effective_image_budget": {
+   "max_image_pixels": 1638400,
+   "max_image_tokens": 3200,
+   "rows_with_image_tokens": 12210
+  },
+  "elapsed_seconds": 1706.0
+ }
+}

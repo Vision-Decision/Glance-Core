@@ -1,0 +1,4 @@
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 18441.49it/s]
+grefcoco_val_merged {"n": 25063, "acc50": 0.9500646114085287, "mean_iou": 0.8407122742961393, "gated_acc50_gate": 0.9463725309211741, "refusal_present_gate": 0.004338194572641683, "N_acc_gate": 0.7636159460976979, "halluc_gate": 0.2363840539023021, "auroc_presence": 0.9665519655390664, "ece_presence": 0.07908589292183932, "wall_s": 150.8312976360321}
+refcoco_testA {"n": 5657, "acc50": 0.9573979140887396, "mean_iou": 0.8507578796957335, "gated_acc50_gate": 0.9549231041187909, "refusal_present_gate": 0.0040657592363443525, "wall_s": 60.94779062271118}
+refcoco_testB {"n": 5095, "acc50": 0.9246319921491658, "mean_iou": 0.8100628967591987, "gated_acc50_gate": 0.9218842001962708, "refusal_present_gate": 0.0033366045142296367, "wall_s": 59.9684362411499}

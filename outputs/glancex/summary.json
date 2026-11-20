@@ -1,0 +1,53 @@
+{
+ "status": "stopped (user decision, 2026-11-19 ~08:20 UTC)",
+ "equivalence": {
+  "released_cuda_bf16": {
+   "requests": 16617,
+   "bitwise_equal": true,
+   "file": "outputs/glancex/equivalence.json"
+  },
+  "released_cpu_fp32": {
+   "requests": 177,
+   "bitwise_equal": true
+  },
+  "tiny_random_cpu": "ALL_OK"
+ },
+ "data": {
+  "hf": "Vision-Decision/glance-train-data:glancex/data/",
+  "images": 24407,
+  "requests": 2186531,
+  "orig": 355385,
+  "glance_data": 1831146,
+  "diagnostic_requests": 23578,
+  "glance_data_revision": "0da8cf88053728f58674c7d5b8357db4740d3f62"
+ },
+ "partial_reproduction": {
+  "mode": "image_first",
+  "acc50": {
+   "refcoco_val": 92.86,
+   "refcoco_testA": 94.87,
+   "refcoco_testB": 90.44
+  },
+  "reported": {
+   "refcoco_val": 92.9,
+   "refcoco_testA": 94.8,
+   "refcoco_testB": 90.4
+  }
+ },
+ "stopped": {
+  "i2t_only_s0": {
+   "step": 380,
+   "ckpt": null
+  },
+  "i2t_only_s1": {
+   "step": 260,
+   "ckpt": null
+  },
+  "dvmix_s0": {
+   "step": 230,
+   "ckpt_step": 159
+  },
+  "released_eval": "image_first 3/12 sets"
+ },
+ "hf_partial": "Vision-Decision/glance-train-ckpts:glancex/partial/{gx-b,gx-c}/"
+}

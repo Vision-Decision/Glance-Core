@@ -1,0 +1,51 @@
+{
+ "note": "Released Glance-X-4B, CPU fp32 (no fla), 4 COCO images (2 refcoco_val, 1 grefcoco_testA, 1 diagnostic); upstream glancex @73ee4ed vs dv.glancex; scripts/glancex/compare_rows.py",
+ "image_first": {
+  "diag": {
+   "n_a": 120,
+   "n_b": 120,
+   "n_matched": 120,
+   "max_abs_p_logit": 0.0,
+   "max_abs_iou_logit": 0.0,
+   "max_abs_box_px": 0.0,
+   "max_abs_cand": 0.0,
+   "decision_mismatch": 0,
+   "bitwise_equal": true
+  },
+  "grefcoco_testA": {
+   "n_a": 27,
+   "n_b": 27,
+   "n_matched": 27,
+   "max_abs_p_logit": 0.0,
+   "max_abs_iou_logit": 0.0,
+   "max_abs_box_px": 0.0,
+   "max_abs_cand": 0.0,
+   "decision_mismatch": 0,
+   "bitwise_equal": true
+  },
+  "refcoco_val": {
+   "n_a": 14,
+   "n_b": 14,
+   "n_matched": 14,
+   "max_abs_p_logit": 0.0,
+   "max_abs_iou_logit": 0.0,
+   "max_abs_box_px": 0.0,
+   "max_abs_cand": 0.0,
+   "decision_mismatch": 0,
+   "bitwise_equal": true
+  }
+ },
+ "joint": {
+  "refcoco_val": {
+   "n_a": 8,
+   "n_b": 8,
+   "n_matched": 8,
+   "max_abs_p_logit": 0.0,
+   "max_abs_iou_logit": 0.0,
+   "max_abs_box_px": 0.0,
+   "max_abs_cand": 0.0,
+   "decision_mismatch": 0,
+   "bitwise_equal": true
+  }
+ }
+}

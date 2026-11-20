@@ -1,0 +1,88 @@
+{
+ "ckpt": "/content/ckpt/ablation/ar_atomic100_neg25_bf16.pt",
+ "variant": "ar_atomic",
+ "n_present": 3625,
+ "n_absent": 2969,
+ "timing_s": {
+  "b4lp0": 245.40227437019348,
+  "b8lp0": 375.50117659568787,
+  "b4lp1": 233.85438656806946,
+  "b8lp1": 361.2173492908478,
+  "split2_b8lp0": 362.7388319969177,
+  "split4_b8lp0": 360.0412247180939,
+  "split10_b8lp0": 361.68761444091797
+ },
+ "image_stride": 3,
+ "configs": {
+  "b4lp0": {
+   "beams": 4,
+   "length_penalty": 0.0,
+   "split": 1,
+   "refusal_present": 0.026482758620689655,
+   "N_acc": 0.8588750421017177,
+   "acc50_present_accepted": 0.9523944460187022,
+   "gated_acc50": 0.9271724137931034,
+   "bad": 0.0
+  },
+  "b8lp0": {
+   "beams": 8,
+   "length_penalty": 0.0,
+   "split": 1,
+   "refusal_present": 0.03255172413793103,
+   "N_acc": 0.8669585719097339,
+   "acc50_present_accepted": 0.9509552323923581,
+   "gated_acc50": 0.92,
+   "bad": 0.0
+  },
+  "b4lp1": {
+   "beams": 4,
+   "length_penalty": 1.0,
+   "split": 1,
+   "refusal_present": 0.009655172413793104,
+   "N_acc": 0.7965644998315932,
+   "acc50_present_accepted": 0.9501392757660168,
+   "gated_acc50": 0.9409655172413793,
+   "bad": 0.0
+  },
+  "b8lp1": {
+   "beams": 8,
+   "length_penalty": 1.0,
+   "split": 1,
+   "refusal_present": 0.009655172413793104,
+   "N_acc": 0.7962276860895925,
+   "acc50_present_accepted": 0.9481894150417828,
+   "gated_acc50": 0.9390344827586207,
+   "bad": 0.0
+  },
+  "split2_b8lp0": {
+   "beams": 8,
+   "length_penalty": 0.0,
+   "split": 2,
+   "refusal_present": 0.03255172413793103,
+   "N_acc": 0.8669585719097339,
+   "acc50_present_accepted": 0.9509552323923581,
+   "gated_acc50": 0.92,
+   "bad": 0.0
+  },
+  "split4_b8lp0": {
+   "beams": 8,
+   "length_penalty": 0.0,
+   "split": 4,
+   "refusal_present": 0.03255172413793103,
+   "N_acc": 0.8669585719097339,
+   "acc50_present_accepted": 0.951240376390077,
+   "gated_acc50": 0.9202758620689655,
+   "bad": 0.0
+  },
+  "split10_b8lp0": {
+   "beams": 8,
+   "length_penalty": 0.0,
+   "split": 10,
+   "refusal_present": 0.03255172413793103,
+   "N_acc": 0.8672953856517346,
+   "acc50_present_accepted": 0.951240376390077,
+   "gated_acc50": 0.9202758620689655,
+   "bad": 0.0
+  }
+ }
+}

@@ -1,0 +1,16 @@
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 16730.93it/s]
+[beam] batch 0/751 q=22 6s b4lp0:1s b8lp0:2s b4lp1:1s b8lp1:1s
+[beam] batch 20/751 q=580 122s b4lp0:18s b8lp0:35s b4lp1:17s b8lp1:28s
+[beam] batch 40/751 q=1034 215s b4lp0:33s b8lp0:59s b4lp1:32s b8lp1:51s
+[beam] batch 60/751 q=1575 325s b4lp0:50s b8lp0:90s b4lp1:48s b8lp1:78s
+[beam] batch 80/751 q=2110 429s b4lp0:66s b8lp0:116s b4lp1:64s b8lp1:104s
+[beam] batch 100/751 q=2635 532s b4lp0:82s b8lp0:143s b4lp1:80s b8lp1:130s
+[beam] batch 120/751 q=3150 633s b4lp0:97s b8lp0:168s b4lp1:95s b8lp1:155s
+[beam] batch 140/751 q=3687 738s b4lp0:113s b8lp0:195s b4lp1:112s b8lp1:182s
+[beam] batch 160/751 q=4271 849s b4lp0:130s b8lp0:223s b4lp1:129s b8lp1:211s
+[beam] batch 180/751 q=4765 948s b4lp0:146s b8lp0:248s b4lp1:145s b8lp1:236s
+[beam] batch 200/751 q=5277 1051s b4lp0:162s b8lp0:275s b4lp1:161s b8lp1:261s
+[beam] batch 220/751 q=5758 1148s b4lp0:177s b8lp0:299s b4lp1:175s b8lp1:285s
+[beam] batch 240/751 q=6226 1243s b4lp0:192s b8lp0:322s b4lp1:190s b8lp1:309s
+[beam] batch 260/751 q=6714 1341s b4lp0:208s b8lp0:347s b4lp1:205s b8lp1:333s
+[beam] batch 280/751 q=7211 1441s b4lp0:223s b8lp0:372s b4lp1:221s b8lp1:358s

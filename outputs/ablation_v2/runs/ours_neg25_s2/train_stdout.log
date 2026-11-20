@@ -1,0 +1,9 @@
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 27971.05it/s]
+[load] 4.4s variant=ours
+[params] lora=121.9M extra=12.17M records=24462 steps=3058
+/content/dv/ablation/train_ab.py:133: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  acc["loss"] = acc.get("loss", 0.0) + float(loss)
+{"presence": 0.7252, "center": 6.4658, "cramer": 9.0124, "giou": 0.8069, "iou_head": 0.624, "_acc50": 0.0698, "loss": 10.0181, "step": 1, "total": 3058, "lr": 0.0, "gnorm": 6.4803, "tok_per_s": 120.3372, "s_per_step": 46.8849, "q_per_s": 1.4077, "mem_gb": 12.0382, "elapsed_min": 0.7814}
+{"presence": 0.3935, "center": 5.9802, "cramer": 6.7152, "giou": 0.7625, "iou_head": 0.3148, "_acc50": 0.0458, "loss": 8.7276, "step": 20, "total": 3058, "lr": 0.0, "gnorm": 3.55, "tok_per_s": 832.3739, "s_per_step": 6.7476, "q_per_s": 15.9168, "mem_gb": 16.5719, "elapsed_min": 3.0306}
+{"presence": 0.0935, "center": 5.8563, "cramer": 5.0638, "giou": 0.7498, "iou_head": 0.4048, "_acc50": 0.1267, "loss": 8.1581, "step": 40, "total": 3058, "lr": 0.0001, "gnorm": 5.0572, "tok_per_s": 970.4375, "s_per_step": 6.1755, "q_per_s": 19.3994, "mem_gb": 16.5719, "elapsed_min": 5.0891}

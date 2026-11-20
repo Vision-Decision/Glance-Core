@@ -1,0 +1,258 @@
+{
+ "ckpt": "/content/ckpt/v1.1/ckpt_final.pt",
+ "n_rows": 24342,
+ "per_kind": {
+  "casual/all": {
+   "n": 2760,
+   "acc50": 79.5,
+   "acc50_box": 81.5,
+   "recall": 93.4
+  },
+  "casual/en": {
+   "n": 1378,
+   "acc50": 80.0,
+   "acc50_box": 81.9,
+   "recall": 93.4
+  },
+  "casual/zh": {
+   "n": 1382,
+   "acc50": 79.0,
+   "acc50_box": 81.2,
+   "recall": 93.4
+  },
+  "cat_all/all": {
+   "n": 924,
+   "recall": 87.0,
+   "hit_any": 36.6,
+   "union50": 59.7
+  },
+  "cat_all/en": {
+   "n": 462,
+   "recall": 88.5,
+   "hit_any": 33.5,
+   "union50": 60.6
+  },
+  "cat_all/zh": {
+   "n": 462,
+   "recall": 85.5,
+   "hit_any": 39.6,
+   "union50": 58.9
+  },
+  "cat_only/all": {
+   "n": 526,
+   "acc50": 44.1,
+   "acc50_box": 46.4,
+   "recall": 73.0
+  },
+  "cat_only/en": {
+   "n": 308,
+   "acc50": 49.0,
+   "acc50_box": 51.9,
+   "recall": 69.8
+  },
+  "cat_only/zh": {
+   "n": 218,
+   "acc50": 37.2,
+   "acc50_box": 38.5,
+   "recall": 77.5
+  },
+  "function@1/all": {
+   "n": 356,
+   "acc50": 45.2,
+   "acc50_box": 51.4,
+   "recall": 68.5
+  },
+  "function@1/en": {
+   "n": 178,
+   "acc50": 44.9,
+   "acc50_box": 48.9,
+   "recall": 71.3
+  },
+  "function@1/zh": {
+   "n": 178,
+   "acc50": 45.5,
+   "acc50_box": 53.9,
+   "recall": 65.7
+  },
+  "function@multi/all": {
+   "n": 733,
+   "recall": 76.8,
+   "hit_any": 51.0,
+   "union50": 24.6
+  },
+  "function@multi/en": {
+   "n": 367,
+   "recall": 76.6,
+   "hit_any": 48.5,
+   "union50": 25.3
+  },
+  "function@multi/zh": {
+   "n": 366,
+   "recall": 77.0,
+   "hit_any": 53.6,
+   "union50": 23.8
+  },
+  "gref_multi/all": {
+   "n": 1014,
+   "recall": 96.1,
+   "hit_any": 75.5,
+   "union50": 41.0
+  },
+  "gref_multi/en": {
+   "n": 1014,
+   "recall": 96.1,
+   "hit_any": 75.5,
+   "union50": 41.0
+  },
+  "group/all": {
+   "n": 1065,
+   "recall": 98.8,
+   "hit_any": 65.5,
+   "union50": 79.5
+  },
+  "group/en": {
+   "n": 530,
+   "recall": 98.9,
+   "hit_any": 63.4,
+   "union50": 80.8
+  },
+  "group/zh": {
+   "n": 535,
+   "recall": 98.7,
+   "hit_any": 67.7,
+   "union50": 78.3
+  },
+  "hneg_attribute/all": {
+   "n": 2661,
+   "n_acc": 68.4
+  },
+  "hneg_attribute/en": {
+   "n": 1331,
+   "n_acc": 70.5
+  },
+  "hneg_attribute/zh": {
+   "n": 1330,
+   "n_acc": 66.2
+  },
+  "hneg_relation/all": {
+   "n": 1831,
+   "n_acc": 30.0
+  },
+  "hneg_relation/en": {
+   "n": 897,
+   "n_acc": 33.8
+  },
+  "hneg_relation/zh": {
+   "n": 934,
+   "n_acc": 26.3
+  },
+  "long/all": {
+   "n": 2732,
+   "acc50": 83.5,
+   "acc50_box": 84.3,
+   "recall": 94.9
+  },
+  "long/en": {
+   "n": 1368,
+   "acc50": 83.4,
+   "acc50_box": 84.4,
+   "recall": 94.5
+  },
+  "long/zh": {
+   "n": 1364,
+   "acc50": 83.5,
+   "acc50_box": 84.2,
+   "recall": 95.3
+  },
+  "medium/all": {
+   "n": 2749,
+   "acc50": 82.3,
+   "acc50_box": 83.6,
+   "recall": 94.6
+  },
+  "medium/en": {
+   "n": 1370,
+   "acc50": 82.8,
+   "acc50_box": 84.3,
+   "recall": 94.3
+  },
+  "medium/zh": {
+   "n": 1379,
+   "acc50": 81.9,
+   "acc50_box": 83.0,
+   "recall": 94.9
+  },
+  "neg_count/all": {
+   "n": 1728,
+   "n_acc": 46.9
+  },
+  "neg_count/en": {
+   "n": 864,
+   "n_acc": 49.1
+  },
+  "neg_count/zh": {
+   "n": 864,
+   "n_acc": 44.8
+  },
+  "neg_near/all": {
+   "n": 1032,
+   "n_acc": 90.2
+  },
+  "neg_near/en": {
+   "n": 516,
+   "n_acc": 91.5
+  },
+  "neg_near/zh": {
+   "n": 516,
+   "n_acc": 89.0
+  },
+  "neg_position/all": {
+   "n": 710,
+   "n_acc": 87.6
+  },
+  "neg_position/en": {
+   "n": 356,
+   "n_acc": 90.7
+  },
+  "neg_position/zh": {
+   "n": 354,
+   "n_acc": 84.5
+  },
+  "pos_pos_sole/all": {
+   "n": 764,
+   "acc50": 26.6,
+   "acc50_box": 53.3,
+   "recall": 33.8
+  },
+  "pos_pos_sole/en": {
+   "n": 382,
+   "acc50": 24.1,
+   "acc50_box": 52.1,
+   "recall": 32.2
+  },
+  "pos_pos_sole/zh": {
+   "n": 382,
+   "acc50": 29.1,
+   "acc50_box": 54.5,
+   "recall": 35.3
+  },
+  "short/all": {
+   "n": 2757,
+   "acc50": 77.9,
+   "acc50_box": 78.8,
+   "recall": 96.0
+  },
+  "short/en": {
+   "n": 1378,
+   "acc50": 78.2,
+   "acc50_box": 79.2,
+   "recall": 95.8
+  },
+  "short/zh": {
+   "n": 1379,
+   "acc50": 77.5,
+   "acc50_box": 78.4,
+   "recall": 96.3
+  }
+ }
+}

@@ -1,0 +1,34 @@
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 17506.03it/s]
+[beam] batch 0/501 q=15 12s b4lp0:1s b8lp0:1s b4lp1:0s b8lp1:1s split2_b8lp0:1s split4_b8lp0:1s split10_b8lp0:1s
+[beam] batch 20/501 q=305 149s b4lp0:14s b8lp0:18s b4lp1:11s b8lp1:17s split2_b8lp0:16s split4_b8lp0:16s split10_b8lp0:16s
+[beam] batch 40/501 q=547 263s b4lp0:27s b8lp0:33s b4lp1:20s b8lp1:31s split2_b8lp0:30s split4_b8lp0:29s split10_b8lp0:30s
+[beam] batch 60/501 q=801 376s b4lp0:36s b8lp0:48s b4lp1:29s b8lp1:45s split2_b8lp0:45s split4_b8lp0:44s split10_b8lp0:44s
+[beam] batch 80/501 q=1054 484s b4lp0:45s b8lp0:62s b4lp1:38s b8lp1:59s split2_b8lp0:59s split4_b8lp0:58s split10_b8lp0:58s
+[beam] batch 100/501 q=1317 598s b4lp0:55s b8lp0:77s b4lp1:48s b8lp1:74s split2_b8lp0:73s split4_b8lp0:73s split10_b8lp0:72s
+[beam] batch 120/501 q=1555 701s b4lp0:63s b8lp0:90s b4lp1:56s b8lp1:87s split2_b8lp0:87s split4_b8lp0:85s split10_b8lp0:86s
+[beam] batch 140/501 q=1803 810s b4lp0:72s b8lp0:105s b4lp1:65s b8lp1:100s split2_b8lp0:100s split4_b8lp0:99s split10_b8lp0:99s
+[beam] batch 160/501 q=2054 919s b4lp0:81s b8lp0:119s b4lp1:74s b8lp1:114s split2_b8lp0:114s split4_b8lp0:114s split10_b8lp0:113s
+[beam] batch 180/501 q=2304 1030s b4lp0:91s b8lp0:134s b4lp1:84s b8lp1:128s split2_b8lp0:129s split4_b8lp0:128s split10_b8lp0:127s
+[beam] batch 200/501 q=2551 1135s b4lp0:100s b8lp0:147s b4lp1:92s b8lp1:142s split2_b8lp0:142s split4_b8lp0:140s split10_b8lp0:141s
+[beam] batch 220/501 q=2820 1252s b4lp0:109s b8lp0:162s b4lp1:102s b8lp1:157s split2_b8lp0:157s split4_b8lp0:156s split10_b8lp0:156s
+[beam] batch 240/501 q=3081 1365s b4lp0:119s b8lp0:176s b4lp1:111s b8lp1:171s split2_b8lp0:172s split4_b8lp0:171s split10_b8lp0:171s
+[beam] batch 260/501 q=3328 1473s b4lp0:129s b8lp0:190s b4lp1:120s b8lp1:185s split2_b8lp0:186s split4_b8lp0:185s split10_b8lp0:185s
+[beam] batch 280/501 q=3639 1586s b4lp0:138s b8lp0:205s b4lp1:129s b8lp1:199s split2_b8lp0:201s split4_b8lp0:200s split10_b8lp0:199s
+[beam] batch 300/501 q=3905 1699s b4lp0:147s b8lp0:220s b4lp1:139s b8lp1:215s split2_b8lp0:215s split4_b8lp0:212s split10_b8lp0:214s
+[beam] batch 320/501 q=4146 1810s b4lp0:157s b8lp0:237s b4lp1:148s b8lp1:229s split2_b8lp0:229s split4_b8lp0:226s split10_b8lp0:227s
+[beam] batch 340/501 q=4444 1930s b4lp0:167s b8lp0:253s b4lp1:158s b8lp1:245s split2_b8lp0:244s split4_b8lp0:242s split10_b8lp0:242s
+[beam] batch 360/501 q=4718 2047s b4lp0:177s b8lp0:268s b4lp1:168s b8lp1:259s split2_b8lp0:259s split4_b8lp0:258s split10_b8lp0:258s
+[beam] batch 380/501 q=4991 2167s b4lp0:187s b8lp0:285s b4lp1:177s b8lp1:274s split2_b8lp0:275s split4_b8lp0:273s split10_b8lp0:273s
+[beam] batch 400/501 q=5255 2279s b4lp0:197s b8lp0:300s b4lp1:187s b8lp1:289s split2_b8lp0:289s split4_b8lp0:287s split10_b8lp0:288s
+[beam] batch 420/501 q=5499 2391s b4lp0:206s b8lp0:315s b4lp1:197s b8lp1:304s split2_b8lp0:304s split4_b8lp0:300s split10_b8lp0:302s
+[beam] batch 440/501 q=5815 2518s b4lp0:217s b8lp0:332s b4lp1:207s b8lp1:320s split2_b8lp0:320s split4_b8lp0:317s split10_b8lp0:319s
+[beam] batch 460/501 q=6103 2636s b4lp0:227s b8lp0:348s b4lp1:216s b8lp1:334s split2_b8lp0:335s split4_b8lp0:333s split10_b8lp0:334s
+[beam] batch 480/501 q=6362 2749s b4lp0:237s b8lp0:362s b4lp1:225s b8lp1:348s split2_b8lp0:350s split4_b8lp0:347s split10_b8lp0:349s
+[beam] batch 500/501 q=6594 2850s b4lp0:245s b8lp0:376s b4lp1:234s b8lp1:361s split2_b8lp0:363s split4_b8lp0:360s split10_b8lp0:362s
+b4lp0 {"beams": 4, "length_penalty": 0.0, "split": 1, "refusal_present": 0.026482758620689655, "N_acc": 0.8588750421017177, "acc50_present_accepted": 0.9523944460187022, "gated_acc50": 0.9271724137931034, "bad": 0.0}
+b8lp0 {"beams": 8, "length_penalty": 0.0, "split": 1, "refusal_present": 0.03255172413793103, "N_acc": 0.8669585719097339, "acc50_present_accepted": 0.9509552323923581, "gated_acc50": 0.92, "bad": 0.0}
+b4lp1 {"beams": 4, "length_penalty": 1.0, "split": 1, "refusal_present": 0.009655172413793104, "N_acc": 0.7965644998315932, "acc50_present_accepted": 0.9501392757660168, "gated_acc50": 0.9409655172413793, "bad": 0.0}
+b8lp1 {"beams": 8, "length_penalty": 1.0, "split": 1, "refusal_present": 0.009655172413793104, "N_acc": 0.7962276860895925, "acc50_present_accepted": 0.9481894150417828, "gated_acc50": 0.9390344827586207, "bad": 0.0}
+split2_b8lp0 {"beams": 8, "length_penalty": 0.0, "split": 2, "refusal_present": 0.03255172413793103, "N_acc": 0.8669585719097339, "acc50_present_accepted": 0.9509552323923581, "gated_acc50": 0.92, "bad": 0.0}
+split4_b8lp0 {"beams": 8, "length_penalty": 0.0, "split": 4, "refusal_present": 0.03255172413793103, "N_acc": 0.8669585719097339, "acc50_present_accepted": 0.951240376390077, "gated_acc50": 0.9202758620689655, "bad": 0.0}
+split10_b8lp0 {"beams": 8, "length_penalty": 0.0, "split": 10, "refusal_present": 0.03255172413793103, "N_acc": 0.8672953856517346, "acc50_present_accepted": 0.951240376390077, "gated_acc50": 0.9202758620689655, "bad": 0.0}

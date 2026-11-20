@@ -1,0 +1,70 @@
+{
+ "args": {
+  "model": "Qwen/Qwen3.8-27B",
+  "quant": "bf16",
+  "mode": "throughput",
+  "mbs": "8",
+  "img": "1024,896",
+  "prompt_len": 40,
+  "qblocks": 8,
+  "qlen": 25,
+  "lora_r": 64,
+  "steps": 4,
+  "maskmode": "block",
+  "attn": "sdpa",
+  "no_gc": false,
+  "out": "/content/27b_out/tp_bf16_block_mb8.json"
+ },
+ "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+ "gpu_mem_gb": 94.97076416015625,
+ "runs": [
+  {
+   "quant": "bf16",
+   "mbs": 8,
+   "maskmode": "block",
+   "attn": "sdpa",
+   "gc": true,
+   "ok": true,
+   "step_s": 9.226864337921143,
+   "tok_per_s": 986.6840636838901,
+   "records_per_s": 0.8670334478768806,
+   "peak_alloc_gb": 66.79870176315308,
+   "peak_reserved_gb": 67.763671875,
+   "step_times": [
+    24.461681127548218,
+    9.219261884689331,
+    9.228272676467896,
+    9.233058452606201
+   ]
+  }
+ ],
+ "env": {
+  "torch": "2.14.1+cu130",
+  "transformers": "5.23.0",
+  "fla": "0.6.0",
+  "causal_conv1d": "missing (ModuleNotFoundError)",
+  "peft": "0.21.2",
+  "bitsandbytes": "0.50.2",
+  "kernels": "0.18.3"
+ },
+ "load_s": 4.82619047164917,
+ "mem_after_load_gb": 50.955976486206055,
+ "lora_target_suffixes": [
+  "linear_attn.in_proj_qkv",
+  "linear_attn.in_proj_z",
+  "linear_attn.out_proj",
+  "mlp.down_proj",
+  "mlp.gate_proj",
+  "mlp.up_proj",
+  "self_attn.k_proj",
+  "self_attn.o_proj",
+  "self_attn.q_proj",
+  "self_attn.v_proj"
+ ],
+ "lora_params_M": 435.15904,
+ "seq": {
+  "visual_tokens": 896,
+  "prefix_len": 938,
+  "total_len": 1138
+ }
+}

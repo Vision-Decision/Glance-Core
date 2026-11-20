@@ -1,0 +1,947 @@
+{
+ "tau_dial": 0.5,
+ "color": {
+  "n_pos": 78,
+  "n_neg": 169,
+  "p_pos_med": 0.992,
+  "p_neg_med": 0.001,
+  "FA_0_5": [
+   0.6,
+   0.1,
+   3.3
+  ],
+  "FA_dial": [
+   0.6,
+   0.1,
+   3.3
+  ],
+  "FR_0_5_pos": [
+   3.8,
+   1.3,
+   10.7
+  ],
+  "false_abs_lt_0_1_pos": [
+   0.0,
+   0.0,
+   4.7
+  ],
+  "neg_boxed_on_object": [
+   0.6,
+   0.1,
+   3.3
+  ],
+  "conf_neg_mean": 0.01,
+  "auroc_p": 1.0,
+  "auroc_conf": 0.999,
+  "paired_swap_ge_correct": 0.013
+ },
+ "size": {
+  "n_pos": 37,
+  "n_neg": 37,
+  "p_pos_med": 0.875,
+  "p_neg_med": 0.136,
+  "FA_0_5": [
+   13.5,
+   5.9,
+   28.0
+  ],
+  "FA_dial": [
+   13.5,
+   5.9,
+   28.0
+  ],
+  "FR_0_5_pos": [
+   24.3,
+   13.4,
+   40.1
+  ],
+  "false_abs_lt_0_1_pos": [
+   2.7,
+   0.5,
+   13.8
+  ],
+  "neg_boxed_on_object": [
+   8.1,
+   2.8,
+   21.3
+  ],
+  "conf_neg_mean": 0.161,
+  "auroc_p": 0.905,
+  "auroc_conf": 0.912,
+  "paired_swap_ge_correct": 0.081
+ },
+ "position": {
+  "n_pos": 64,
+  "n_neg": 64,
+  "p_pos_med": 0.313,
+  "p_neg_med": 0.025,
+  "FA_0_5": [
+   1.6,
+   0.3,
+   8.3
+  ],
+  "FA_dial": [
+   1.6,
+   0.3,
+   8.3
+  ],
+  "FR_0_5_pos": [
+   64.1,
+   51.8,
+   74.7
+  ],
+  "false_abs_lt_0_1_pos": [
+   15.6,
+   8.7,
+   26.4
+  ],
+  "neg_boxed_on_object": [
+   0.0,
+   0.0,
+   5.7
+  ],
+  "conf_neg_mean": 0.06,
+  "auroc_p": 0.896,
+  "auroc_conf": 0.906,
+  "paired_swap_ge_correct": 0.062
+ },
+ "count": {
+  "n_pos": 78,
+  "n_neg": 156,
+  "p_pos_med": 0.999,
+  "p_neg_med": 0.136,
+  "FA_0_5": [
+   14.1,
+   9.5,
+   20.4
+  ],
+  "FA_dial": [
+   14.1,
+   9.5,
+   20.4
+  ],
+  "FR_0_5_pos": [
+   0.0,
+   0.0,
+   4.7
+  ],
+  "false_abs_lt_0_1_pos": [
+   0.0,
+   0.0,
+   4.7
+  ],
+  "neg_boxed_on_object": [
+   13.5,
+   9.0,
+   19.7
+  ],
+  "conf_neg_mean": 0.198,
+  "auroc_p": 0.998,
+  "auroc_conf": 0.995,
+  "paired_swap_ge_correct": 0.0
+ },
+ "action": {
+  "n_pos": 28,
+  "n_neg": 49,
+  "p_pos_med": 0.996,
+  "p_neg_med": 0.023,
+  "FA_0_5": [
+   4.1,
+   1.1,
+   13.7
+  ],
+  "FA_dial": [
+   4.1,
+   1.1,
+   13.7
+  ],
+  "FR_0_5_pos": [
+   0.0,
+   0.0,
+   12.1
+  ],
+  "false_abs_lt_0_1_pos": [
+   0.0,
+   0.0,
+   12.1
+  ],
+  "neg_boxed_on_object": [
+   4.1,
+   1.1,
+   13.7
+  ],
+  "conf_neg_mean": 0.061,
+  "auroc_p": 1.0,
+  "auroc_conf": 1.0,
+  "paired_swap_ge_correct": 0.0
+ },
+ "bare": {
+  "n": 78,
+  "p_med": 0.999,
+  "FR_0_5": [
+   0.0,
+   0.0,
+   4.7
+  ]
+ },
+ "color_by_swap": {
+  "contrast": {
+   "n_pos": 78,
+   "n_neg": 155,
+   "p_pos_med": 0.992,
+   "p_neg_med": 0.001,
+   "FA_0_5": [
+    0.6,
+    0.1,
+    3.6
+   ],
+   "FA_dial": [
+    0.6,
+    0.1,
+    3.6
+   ],
+   "FR_0_5_pos": [
+    3.8,
+    1.3,
+    10.7
+   ],
+   "false_abs_lt_0_1_pos": [
+    0.0,
+    0.0,
+    4.7
+   ],
+   "neg_boxed_on_object": [
+    0.6,
+    0.1,
+    3.6
+   ],
+   "conf_neg_mean": 0.01,
+   "auroc_p": 1.0,
+   "auroc_conf": 0.999
+  },
+  "scene_color": {
+   "n_pos": 78,
+   "n_neg": 14,
+   "p_pos_med": 0.992,
+   "p_neg_med": 0.004,
+   "FA_0_5": [
+    0.0,
+    0.0,
+    21.5
+   ],
+   "FA_dial": [
+    0.0,
+    0.0,
+    21.5
+   ],
+   "FR_0_5_pos": [
+    3.8,
+    1.3,
+    10.7
+   ],
+   "false_abs_lt_0_1_pos": [
+    0.0,
+    0.0,
+    4.7
+   ],
+   "neg_boxed_on_object": [
+    0.0,
+    0.0,
+    21.5
+   ],
+   "conf_neg_mean": 0.016,
+   "auroc_p": 1.0,
+   "auroc_conf": 1.0
+  }
+ },
+ "by_salience": {
+  "small": {
+   "color": {
+    "n_pos": 14,
+    "n_neg": 32,
+    "p_pos_med": 0.983,
+    "p_neg_med": 0.001,
+    "FA_0_5": [
+     0.0,
+     0.0,
+     10.7
+    ],
+    "FA_dial": [
+     0.0,
+     0.0,
+     10.7
+    ],
+    "FR_0_5_pos": [
+     14.3,
+     4.0,
+     39.9
+    ],
+    "false_abs_lt_0_1_pos": [
+     0.0,
+     0.0,
+     21.5
+    ],
+    "neg_boxed_on_object": [
+     0.0,
+     0.0,
+     10.7
+    ],
+    "conf_neg_mean": 0.003,
+    "auroc_p": 1.0,
+    "auroc_conf": 1.0
+   },
+   "count": {
+    "n_pos": 14,
+    "n_neg": 28,
+    "p_pos_med": 0.997,
+    "p_neg_med": 0.051,
+    "FA_0_5": [
+     0.0,
+     0.0,
+     12.1
+    ],
+    "FA_dial": [
+     0.0,
+     0.0,
+     12.1
+    ],
+    "FR_0_5_pos": [
+     0.0,
+     0.0,
+     21.5
+    ],
+    "false_abs_lt_0_1_pos": [
+     0.0,
+     0.0,
+     21.5
+    ],
+    "neg_boxed_on_object": [
+     0.0,
+     0.0,
+     12.1
+    ],
+    "conf_neg_mean": 0.067,
+    "auroc_p": 1.0,
+    "auroc_conf": 0.997
+   },
+   "position": {
+    "n_pos": 17,
+    "n_neg": 17,
+    "p_pos_med": 0.235,
+    "p_neg_med": 0.011,
+    "FA_0_5": [
+     0.0,
+     0.0,
+     18.4
+    ],
+    "FA_dial": [
+     0.0,
+     0.0,
+     18.4
+    ],
+    "FR_0_5_pos": [
+     100.0,
+     81.6,
+     100.0
+    ],
+    "false_abs_lt_0_1_pos": [
+     23.5,
+     9.6,
+     47.3
+    ],
+    "neg_boxed_on_object": [
+     0.0,
+     0.0,
+     18.4
+    ],
+    "conf_neg_mean": 0.009,
+    "auroc_p": 0.958,
+    "auroc_conf": 0.948
+   },
+   "action": {
+    "n_pos": 5,
+    "n_neg": 10,
+    "p_pos_med": 0.991,
+    "p_neg_med": 0.01,
+    "FA_0_5": [
+     0.0,
+     0.0,
+     27.8
+    ],
+    "FA_dial": [
+     0.0,
+     0.0,
+     27.8
+    ],
+    "FR_0_5_pos": [
+     0.0,
+     0.0,
+     43.4
+    ],
+    "false_abs_lt_0_1_pos": [
+     0.0,
+     0.0,
+     43.4
+    ],
+    "neg_boxed_on_object": [
+     0.0,
+     0.0,
+     27.8
+    ],
+    "conf_neg_mean": 0.038,
+    "auroc_p": 1.0,
+    "auroc_conf": 1.0
+   },
+   "size": {
+    "n_pos": 14,
+    "n_neg": 14,
+    "p_pos_med": 0.519,
+    "p_neg_med": 0.122,
+    "FA_0_5": [
+     7.1,
+     1.3,
+     31.5
+    ],
+    "FA_dial": [
+     7.1,
+     1.3,
+     31.5
+    ],
+    "FR_0_5_pos": [
+     50.0,
+     26.8,
+     73.2
+    ],
+    "false_abs_lt_0_1_pos": [
+     7.1,
+     1.3,
+     31.5
+    ],
+    "neg_boxed_on_object": [
+     0.0,
+     0.0,
+     21.5
+    ],
+    "conf_neg_mean": 0.13,
+    "auroc_p": 0.878,
+    "auroc_conf": 0.872
+   }
+  },
+  "medium": {
+   "color": {
+    "n_pos": 41,
+    "n_neg": 87,
+    "p_pos_med": 0.991,
+    "p_neg_med": 0.002,
+    "FA_0_5": [
+     1.1,
+     0.2,
+     6.2
+    ],
+    "FA_dial": [
+     1.1,
+     0.2,
+     6.2
+    ],
+    "FR_0_5_pos": [
+     0.0,
+     0.0,
+     8.6
+    ],
+    "false_abs_lt_0_1_pos": [
+     0.0,
+     0.0,
+     8.6
+    ],
+    "neg_boxed_on_object": [
+     1.1,
+     0.2,
+     6.2
+    ],
+    "conf_neg_mean": 0.012,
+    "auroc_p": 1.0,
+    "auroc_conf": 0.999
+   },
+   "count": {
+    "n_pos": 41,
+    "n_neg": 82,
+    "p_pos_med": 0.999,
+    "p_neg_med": 0.136,
+    "FA_0_5": [
+     12.2,
+     6.8,
+     21.0
+    ],
+    "FA_dial": [
+     12.2,
+     6.8,
+     21.0
+    ],
+    "FR_0_5_pos": [
+     0.0,
+     0.0,
+     8.6
+    ],
+    "false_abs_lt_0_1_pos": [
+     0.0,
+     0.0,
+     8.6
+    ],
+    "neg_boxed_on_object": [
+     11.0,
+     5.9,
+     19.6
+    ],
+    "conf_neg_mean": 0.193,
+    "auroc_p": 1.0,
+    "auroc_conf": 1.0
+   },
+   "position": {
+    "n_pos": 36,
+    "n_neg": 36,
+    "p_pos_med": 0.36,
+    "p_neg_med": 0.029,
+    "FA_0_5": [
+     0.0,
+     0.0,
+     9.6
+    ],
+    "FA_dial": [
+     0.0,
+     0.0,
+     9.6
+    ],
+    "FR_0_5_pos": [
+     55.6,
+     39.6,
+     70.5
+    ],
+    "false_abs_lt_0_1_pos": [
+     13.9,
+     6.1,
+     28.7
+    ],
+    "neg_boxed_on_object": [
+     0.0,
+     0.0,
+     9.6
+    ],
+    "conf_neg_mean": 0.046,
+    "auroc_p": 0.929,
+    "auroc_conf": 0.943
+   },
+   "action": {
+    "n_pos": 16,
+    "n_neg": 28,
+    "p_pos_med": 0.997,
+    "p_neg_med": 0.019,
+    "FA_0_5": [
+     7.1,
+     2.0,
+     22.6
+    ],
+    "FA_dial": [
+     7.1,
+     2.0,
+     22.6
+    ],
+    "FR_0_5_pos": [
+     0.0,
+     0.0,
+     19.4
+    ],
+    "false_abs_lt_0_1_pos": [
+     0.0,
+     0.0,
+     19.4
+    ],
+    "neg_boxed_on_object": [
+     7.1,
+     2.0,
+     22.6
+    ],
+    "conf_neg_mean": 0.072,
+    "auroc_p": 1.0,
+    "auroc_conf": 1.0
+   },
+   "size": {
+    "n_pos": 0,
+    "n_neg": 0,
+    "p_pos_med": null,
+    "p_neg_med": null,
+    "FA_0_5": null,
+    "FA_dial": null,
+    "FR_0_5_pos": null,
+    "false_abs_lt_0_1_pos": null,
+    "neg_boxed_on_object": null,
+    "conf_neg_mean": 0.0,
+    "auroc_p": null,
+    "auroc_conf": null
+   }
+  },
+  "large": {
+   "color": {
+    "n_pos": 23,
+    "n_neg": 50,
+    "p_pos_med": 0.994,
+    "p_neg_med": 0.002,
+    "FA_0_5": [
+     0.0,
+     0.0,
+     7.1
+    ],
+    "FA_dial": [
+     0.0,
+     0.0,
+     7.1
+    ],
+    "FR_0_5_pos": [
+     4.3,
+     0.8,
+     21.0
+    ],
+    "false_abs_lt_0_1_pos": [
+     0.0,
+     0.0,
+     14.3
+    ],
+    "neg_boxed_on_object": [
+     0.0,
+     0.0,
+     7.1
+    ],
+    "conf_neg_mean": 0.012,
+    "auroc_p": 1.0,
+    "auroc_conf": 1.0
+   },
+   "count": {
+    "n_pos": 23,
+    "n_neg": 46,
+    "p_pos_med": 0.998,
+    "p_neg_med": 0.299,
+    "FA_0_5": [
+     26.1,
+     15.6,
+     40.3
+    ],
+    "FA_dial": [
+     26.1,
+     15.6,
+     40.3
+    ],
+    "FR_0_5_pos": [
+     0.0,
+     0.0,
+     14.3
+    ],
+    "false_abs_lt_0_1_pos": [
+     0.0,
+     0.0,
+     14.3
+    ],
+    "neg_boxed_on_object": [
+     26.1,
+     15.6,
+     40.3
+    ],
+    "conf_neg_mean": 0.288,
+    "auroc_p": 0.999,
+    "auroc_conf": 0.996
+   },
+   "position": {
+    "n_pos": 11,
+    "n_neg": 11,
+    "p_pos_med": 0.557,
+    "p_neg_med": 0.056,
+    "FA_0_5": [
+     9.1,
+     1.6,
+     37.7
+    ],
+    "FA_dial": [
+     9.1,
+     1.6,
+     37.7
+    ],
+    "FR_0_5_pos": [
+     36.4,
+     15.2,
+     64.6
+    ],
+    "false_abs_lt_0_1_pos": [
+     9.1,
+     1.6,
+     37.7
+    ],
+    "neg_boxed_on_object": [
+     0.0,
+     0.0,
+     25.9
+    ],
+    "conf_neg_mean": 0.182,
+    "auroc_p": 0.802,
+    "auroc_conf": 0.835
+   },
+   "action": {
+    "n_pos": 7,
+    "n_neg": 11,
+    "p_pos_med": 0.991,
+    "p_neg_med": 0.026,
+    "FA_0_5": [
+     0.0,
+     0.0,
+     25.9
+    ],
+    "FA_dial": [
+     0.0,
+     0.0,
+     25.9
+    ],
+    "FR_0_5_pos": [
+     0.0,
+     0.0,
+     35.4
+    ],
+    "false_abs_lt_0_1_pos": [
+     0.0,
+     0.0,
+     35.4
+    ],
+    "neg_boxed_on_object": [
+     0.0,
+     0.0,
+     25.9
+    ],
+    "conf_neg_mean": 0.054,
+    "auroc_p": 1.0,
+    "auroc_conf": 1.0
+   },
+   "size": {
+    "n_pos": 23,
+    "n_neg": 23,
+    "p_pos_med": 0.942,
+    "p_neg_med": 0.166,
+    "FA_0_5": [
+     17.4,
+     7.0,
+     37.1
+    ],
+    "FA_dial": [
+     17.4,
+     7.0,
+     37.1
+    ],
+    "FR_0_5_pos": [
+     8.7,
+     2.4,
+     26.8
+    ],
+    "false_abs_lt_0_1_pos": [
+     0.0,
+     0.0,
+     14.3
+    ],
+    "neg_boxed_on_object": [
+     13.0,
+     4.5,
+     32.1
+    ],
+    "conf_neg_mean": 0.179,
+    "auroc_p": 0.94,
+    "auroc_conf": 0.938
+   }
+  }
+ },
+ "position_horizontal": {
+  "n_pos": 24,
+  "n_neg": 24,
+  "p_pos_med": 0.185,
+  "p_neg_med": 0.019,
+  "FA_0_5": [
+   4.2,
+   0.7,
+   20.2
+  ],
+  "FA_dial": [
+   4.2,
+   0.7,
+   20.2
+  ],
+  "FR_0_5_pos": [
+   79.2,
+   59.5,
+   90.8
+  ],
+  "false_abs_lt_0_1_pos": [
+   33.3,
+   18.0,
+   53.3
+  ],
+  "neg_boxed_on_object": [
+   0.0,
+   0.0,
+   13.8
+  ],
+  "conf_neg_mean": 0.059,
+  "auroc_p": 0.897,
+  "auroc_conf": 0.903
+ },
+ "position_vertical": {
+  "n_pos": 40,
+  "n_neg": 40,
+  "p_pos_med": 0.466,
+  "p_neg_med": 0.036,
+  "FA_0_5": [
+   0.0,
+   0.0,
+   8.8
+  ],
+  "FA_dial": [
+   0.0,
+   0.0,
+   8.8
+  ],
+  "FR_0_5_pos": [
+   55.0,
+   39.8,
+   69.3
+  ],
+  "false_abs_lt_0_1_pos": [
+   5.0,
+   1.4,
+   16.5
+  ],
+  "neg_boxed_on_object": [
+   0.0,
+   0.0,
+   8.8
+  ],
+  "conf_neg_mean": 0.06,
+  "auroc_p": 0.917,
+  "auroc_conf": 0.931
+ },
+ "count_FA_by_category": {
+  "couch": "3/4",
+  "truck": "3/4",
+  "train": "7/12",
+  "refrigerator": "2/4",
+  "umbrella": "2/8",
+  "fire hydrant": "2/10",
+  "toilet": "1/6",
+  "motorcycle": "1/8",
+  "horse": "1/12",
+  "cat": "0/12",
+  "dog": "0/12",
+  "bird": "0/12",
+  "bus": "0/12",
+  "bicycle": "0/4",
+  "suitcase": "0/4",
+  "bowl": "0/6",
+  "boat": "0/8",
+  "cow": "0/2",
+  "bench": "0/2",
+  "teddy bear": "0/6",
+  "frisbee": "0/4",
+  "chair": "0/2",
+  "airplane": "0/2"
+ },
+ "all_swaps": {
+  "n_pos": 285,
+  "n_neg": 475,
+  "p_pos_med": 0.99,
+  "p_neg_med": 0.03,
+  "FA_0_5": [
+   6.5,
+   4.6,
+   9.1
+  ],
+  "FA_dial": [
+   6.5,
+   4.6,
+   9.1
+  ],
+  "FR_0_5_pos": [
+   18.6,
+   14.5,
+   23.5
+  ],
+  "false_abs_lt_0_1_pos": [
+   3.9,
+   2.2,
+   6.8
+  ],
+  "neg_boxed_on_object": [
+   5.7,
+   3.9,
+   8.1
+  ],
+  "conf_neg_mean": 0.096,
+  "auroc_p": 0.955,
+  "auroc_conf": 0.958
+ },
+ "FA_at_tau_0.3": {
+  "color": [
+   0.6,
+   0.1,
+   3.3
+  ],
+  "action": [
+   6.1,
+   2.1,
+   16.5
+  ],
+  "position": [
+   10.9,
+   5.4,
+   20.9
+  ],
+  "size": [
+   16.2,
+   7.7,
+   31.1
+  ],
+  "count": [
+   29.5,
+   22.9,
+   37.1
+  ],
+  "all_swaps": [
+   13.3,
+   10.5,
+   16.6
+  ]
+ },
+ "FA_at_tau_0.1": {
+  "color": [
+   4.1,
+   2.0,
+   8.3
+  ],
+  "action": [
+   18.4,
+   10.0,
+   31.4
+  ],
+  "position": [
+   20.3,
+   12.3,
+   31.7
+  ],
+  "size": [
+   70.3,
+   54.2,
+   82.5
+  ],
+  "count": [
+   62.2,
+   54.4,
+   69.4
+  ],
+  "all_swaps": [
+   32.0,
+   28.0,
+   36.3
+  ]
+ },
+ "note_tau": "tau_dial=0.5 here; FA_at_tau_0.3 / 0.1 give dial sensitivity. v1 refuses >=1.15% of present RefCOCO-val targets at 0.5 (acc50 93.17 vs gated 92.03), so its 1%-refusal dial point is <=0.5; exact value pending the gRefCOCO rerun on Colab."
+}

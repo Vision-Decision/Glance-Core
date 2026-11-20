@@ -1,0 +1,124 @@
+{
+ "n_cal": {
+  "glance": 20684,
+  "gen": 20669
+ },
+ "cal_present_rate": {
+  "glance": 0.5590311351769484,
+  "gen": 0.558953021433064
+ },
+ "venus": {
+  "n": 6165,
+  "n_present": 5266,
+  "n_absent": 899,
+  "glance": {
+   "em_present_rate": 0.1322826599842843,
+   "raw": {
+    "false_refusal": 46.52487656665401,
+    "refusal_acc": 81.75750834260289
+   },
+   "platt": {
+    "false_refusal": 55.14622104063805,
+    "refusal_acc": 87.87541713014461
+   },
+   "platt_em": {
+    "false_refusal": 95.02468666919863,
+    "refusal_acc": 99.6662958843159
+   },
+   "auroc": 73.77828764458295
+  },
+  "gen": {
+   "em_present_rate": 4.665273836299186e-46,
+   "raw": {
+    "false_refusal": 72.40789973414357,
+    "refusal_acc": 94.88320355951056
+   },
+   "platt": {
+    "false_refusal": 81.06722369920243,
+    "refusal_acc": 96.440489432703
+   },
+   "platt_em": {
+    "false_refusal": 100.0,
+    "refusal_acc": 100.0
+   },
+   "auroc": 73.87429253164359
+  },
+  "fr_diff_glance_minus_gen_raw": {
+   "mean": -25.883023167489554,
+   "ci95": [
+    -27.47776688738996,
+    -24.470776747296924
+   ]
+  },
+  "fr_diff_glance_minus_gen_platt": {
+   "mean": -25.921002658564376,
+   "ci95": [
+    -27.588147570168992,
+    -24.42152231450819
+   ]
+  },
+  "fr_diff_glance_minus_gen_platt_em": {
+   "mean": -4.9753133308013675,
+   "ci95": [
+    -5.734075307557443,
+    -4.268556486522813
+   ]
+  }
+ },
+ "ss2": {
+  "n": 1272,
+  "n_present": 1272,
+  "n_absent": 0,
+  "glance": {
+   "em_present_rate": 0.999904266294772,
+   "raw": {
+    "false_refusal": 16.352201257861633,
+    "refusal_acc": null
+   },
+   "platt": {
+    "false_refusal": 23.19182389937107,
+    "refusal_acc": null
+   },
+   "platt_em": {
+    "false_refusal": 0.0,
+    "refusal_acc": null
+   }
+  },
+  "gen": {
+   "em_present_rate": 0.225787661869682,
+   "raw": {
+    "false_refusal": 33.490566037735846,
+    "refusal_acc": null
+   },
+   "platt": {
+    "false_refusal": 50.70754716981132,
+    "refusal_acc": null
+   },
+   "platt_em": {
+    "false_refusal": 93.86792452830188,
+    "refusal_acc": null
+   }
+  },
+  "fr_diff_glance_minus_gen_raw": {
+   "mean": -17.138364779874212,
+   "ci95": [
+    -19.686860198624906,
+    -14.607171876493643
+   ]
+  },
+  "fr_diff_glance_minus_gen_platt": {
+   "mean": -27.51572327044025,
+   "ci95": [
+    -30.34516220571394,
+    -24.610281694487234
+   ]
+  },
+  "fr_diff_glance_minus_gen_platt_em": {
+   "mean": -93.86792452830188,
+   "ci95": [
+    -95.09663826063465,
+    -92.5217689744911
+   ]
+  }
+ }
+}

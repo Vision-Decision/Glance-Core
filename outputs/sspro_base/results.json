@@ -1,0 +1,84 @@
+{
+ "setting": {
+  "model": "Qwen/Qwen3.5-4B (generative, greedy, enable_thinking=False)",
+  "prompt": "official ScreenSpot-Pro Qwen3.5 computer_use click prompt, assistant pre-filled to coordinate",
+  "resize": "resize_dims(W,H,16384,max_upscale=1.0), 32px per visual token (same rule as Glance v11f_sspro_16384u1)",
+  "order": "all items",
+  "scoring": "hit = predicted point inside GT box (same as base_sspro_4000)"
+ },
+ "n": 1581,
+ "n_total": 1581,
+ "native_16384u1": 59.9,
+ "cap4000_same_items": 55.98,
+ "cap4000_all_1581": 55.98,
+ "diff_native_minus_4000": 3.92,
+ "diff_bootstrap95": [
+  2.02,
+  5.82
+ ],
+ "mcnemar": {
+  "native_only": 149,
+  "cap4000_only": 87,
+  "p_exact": 0.0001
+ },
+ "vis_tokens_median": {
+  "native": 4080,
+  "cap4000": 3948
+ },
+ "refused_native": 0,
+ "ms_median_native": 563.8,
+ "by_group": {
+  "group/CAD": {
+   "n": 261,
+   "native": 50.57,
+   "cap4000": 49.43
+  },
+  "group/Creative": {
+   "n": 341,
+   "native": 55.72,
+   "cap4000": 52.79
+  },
+  "group/Dev": {
+   "n": 299,
+   "native": 60.2,
+   "cap4000": 52.51
+  },
+  "group/OS": {
+   "n": 196,
+   "native": 60.71,
+   "cap4000": 48.98
+  },
+  "group/Office": {
+   "n": 230,
+   "native": 75.22,
+   "cap4000": 73.04
+  },
+  "group/Scientific": {
+   "n": 254,
+   "native": 60.24,
+   "cap4000": 61.02
+  },
+  "type/icon": {
+   "n": 604,
+   "native": 36.26,
+   "cap4000": 28.97
+  },
+  "type/text": {
+   "n": 977,
+   "native": 74.51,
+   "cap4000": 72.67
+  }
+ },
+ "glance_v11f_native": {
+  "acc": 50.66,
+  "n": 1581,
+  "vis_tokens_median": 4080.0
+ },
+ "reconcile": {
+  "dc66d06_rows": 718,
+  "dc66d06_acc": 55.57,
+  "f804073_rows": 1581,
+  "f804073_acc": 55.98,
+  "first718_identical_hits": true
+ }
+}

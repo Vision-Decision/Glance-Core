@@ -1,0 +1,27 @@
+{
+ "model_id": "Qwen/Qwen3.5-4B",
+ "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition 96GB (Colab G4); H100 unavailable, A100 offered was 40GB -> released",
+ "compute_units_estimate": "~24 CU (G4 ~2h16m @ ~10.05 CU/hr + A100-40GB ~10 min); account acct-8 shared with other agents, balance 1517.2 -> 1450.2 overall",
+ "wall_clock_local_tz": {
+  "repo_data_prep_code": "22:03-22:24 (data prep 12 s locally)",
+  "vm_setup_env_weights_coco": "22:26-22:35 (~9 min)",
+  "equivalence_numerics_tests": "22:36-22:41",
+  "overfit_test": "22:41-22:46 (4.2 min train)",
+  "profiling": "22:46-22:52",
+  "train_1_epoch": "22:53-00:11 (77.7 min, 3058 steps)",
+  "full_eval_plus_latency": "00:11-00:22 (~11 min, 92k questions)",
+  "generative_baseline": "00:22-00:29",
+  "vm_stopped": "00:40"
+ },
+ "train": {"records": 24462, "questions": 355385, "absent_ratio": 0.25, "images_per_step": 8, "steps": 3058,
+           "median_s_per_step": 1.467, "median_tok_per_s": 4074, "median_questions_per_s": 78.5, "peak_mem_gb": 17.1,
+           "lora_params_M": 121.9, "head_params_M": 12.2},
+ "checkpoint": {
+  "local_fp32": "checkpoints/v0/ckpt_final.pt (LoRA fp32 + heads, 536 MB)",
+  "local_bf16": "checkpoints/v0/ckpt_final_bf16.pt (LoRA bf16 + heads, 293 MB)",
+  "load": "python eval.py --ckpt checkpoints/v0/ckpt_final.pt ... (base weights pulled from HF)",
+  "vm_copy": "deleted with the VM"
+ },
+ "files": ["config.json", "train_log.jsonl", "train_stdout.log", "eval_results.json", "eval_results_grefcoco_val_only.json",
+           "eval_rows_refcocoval_grefcocoval.json", "baseline_results.json", "ours_on_baseline_subsets.json", "post_train.log", "overfit/"]
+}

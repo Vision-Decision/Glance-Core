@@ -1,0 +1,59 @@
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 17061.34it/s]
+ 0 txt B=12 Lp=1024 M=12 Tq=336 prefix_tok=12288 q_tok=4032 valid=13748 6.60s -> 2082 tok/s
+ 1 img B=12 Lp=1024 M=133 Tq=16 prefix_tok=12288 q_tok=2128 valid=13153 3.13s -> 4208 tok/s
+ 2 txt B=32 Lp=384 M=32 Tq=192 prefix_tok=12288 q_tok=6144 valid=14518 3.15s -> 4613 tok/s
+ 3 txt B=64 Lp=64 M=69 Tq=64 prefix_tok=4096 q_tok=4416 valid=6133 1.30s -> 4722 tok/s
+ 4 img B=8 Lp=1536 M=51 Tq=48 prefix_tok=12288 q_tok=2448 valid=12894 3.05s -> 4228 tok/s
+ 5 img B=8 Lp=1536 M=10 Tq=16 prefix_tok=12288 q_tok=160 valid=12335 2.69s -> 4594 tok/s
+ 6 img B=8 Lp=1536 M=9 Tq=32 prefix_tok=12288 q_tok=288 valid=12001 2.71s -> 4428 tok/s
+ 7 img B=8 Lp=1536 M=12 Tq=64 prefix_tok=12288 q_tok=768 valid=12099 2.73s -> 4434 tok/s
+ 8 img B=8 Lp=1536 M=71 Tq=48 prefix_tok=12288 q_tok=3408 valid=13272 3.28s -> 4046 tok/s
+ 9 img B=8 Lp=1536 M=44 Tq=32 prefix_tok=12288 q_tok=1408 valid=12806 2.89s -> 4430 tok/s
+10 img B=8 Lp=1536 M=18 Tq=48 prefix_tok=12288 q_tok=864 valid=12128 2.75s -> 4418 tok/s
+11 img B=8 Lp=1536 M=23 Tq=32 prefix_tok=12288 q_tok=736 valid=12429 2.77s -> 4486 tok/s
+12 img B=8 Lp=1536 M=58 Tq=32 prefix_tok=12288 q_tok=1856 valid=13004 2.96s -> 4386 tok/s
+13 txt B=13 Lp=896 M=14 Tq=352 prefix_tok=11648 q_tok=4928 valid=13461 2.87s -> 4691 tok/s
+14 txt B=64 Lp=64 M=72 Tq=96 prefix_tok=4096 q_tok=6912 valid=5844 1.75s -> 3330 tok/s
+15 txt B=24 Lp=512 M=39 Tq=224 prefix_tok=12288 q_tok=8736 valid=14464 3.63s -> 3986 tok/s
+16 img B=6 Lp=1984 M=102 Tq=48 prefix_tok=11904 q_tok=4896 valid=13112 3.54s -> 3705 tok/s
+17 img B=14 Lp=704 M=181 Tq=32 prefix_tok=9856 q_tok=5792 valid=11571 3.02s -> 3837 tok/s
+18 img B=8 Lp=1536 M=52 Tq=32 prefix_tok=12288 q_tok=1664 valid=12874 2.94s -> 4374 tok/s
+19 txt B=14 Lp=896 M=18 Tq=288 prefix_tok=12544 q_tok=5184 valid=14436 3.09s -> 4676 tok/s
+20 img B=8 Lp=1536 M=44 Tq=32 prefix_tok=12288 q_tok=1408 valid=12764 2.89s -> 4421 tok/s
+21 txt B=24 Lp=512 M=24 Tq=336 prefix_tok=12288 q_tok=8064 valid=16444 3.53s -> 4658 tok/s
+22 txt B=64 Lp=64 M=68 Tq=80 prefix_tok=4096 q_tok=5440 valid=5106 1.50s -> 3403 tok/s
+23 img B=8 Lp=1536 M=67 Tq=48 prefix_tok=12288 q_tok=3216 valid=13015 3.19s -> 4083 tok/s
+USDT:2026-11-17 18:06:47 31750:31750 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-11-17 18:06:57 31750:31750 SyncActivityProfilerHandler.cpp:46] profiler_stop
+----------------------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                                                  Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg     Self CUDA   Self CUDA %    CUDA total  CUDA time avg    # of Calls  
+----------------------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16...         0.00%       0.000us         0.00%       0.000us       0.000us        1.859s        17.96%        1.859s     518.528us          3586  
+void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16...         0.00%       0.000us         0.00%       0.000us       0.000us        1.053s        10.17%        1.053s     347.768us          3029  
+void at::native::vectorized_elementwise_kernel<4, at::native::CUDAF...         0.00%       0.000us         0.00%       0.000us       0.000us     731.682ms         7.07%     731.682ms      81.010us          9032  
+void at::native::elementwise_kernel<128, 4, at::native::gpu_kernel_...         0.00%       0.000us         0.00%       0.000us       0.000us     579.988ms         5.60%     579.988ms     191.795us          3024  
+void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16...         0.00%       0.000us         0.00%       0.000us       0.000us     537.152ms         5.19%     537.152ms     197.337us          2722  
+void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_...         0.00%       0.000us         0.00%       0.000us       0.000us     437.463ms         4.22%     437.463ms      81.953us          5338  
+void at::native::vectorized_elementwise_kernel<4, at::native::AUnar...         0.00%       0.000us         0.00%       0.000us       0.000us     373.805ms         3.61%     373.805ms      82.445us          4534  
+fmha_cutlassB_bf16_aligned_128x64_k65536_sm80(PyTorchMemEffAttentio...         0.00%       0.000us         0.00%       0.000us       0.000us     322.583ms         3.11%     322.583ms       5.203ms            62  
+void at::native::vectorized_elementwise_kernel<4, at::native::Binar...         0.00%       0.000us         0.00%       0.000us       0.000us     274.308ms         2.65%     274.308ms     215.651us          1272  
+void at::native::vectorized_elementwise_kernel<4, at::native::Binar...         0.00%       0.000us         0.00%       0.000us       0.000us     265.039ms         2.56%     265.039ms     103.693us          2556  
+void at::native::unrolled_elementwise_kernel<at::native::direct_cop...         0.00%       0.000us         0.00%       0.000us       0.000us     258.519ms         2.50%     258.519ms      38.981us          6632  
+void at::native::vectorized_elementwise_kernel<4, at::native::bfloa...         0.00%       0.000us         0.00%       0.000us       0.000us     228.121ms         2.20%     228.121ms      33.686us          6772  
+                        chunk_gated_delta_rule_fwd_kernel_h_blockdim64         0.00%       0.000us         0.00%       0.000us       0.000us     222.062ms         2.14%     222.062ms     385.525us           576  
+void at::native::(anonymous namespace)::conv_depthwise2d_forward_ke...         0.00%       0.000us         0.00%       0.000us       0.000us     221.564ms         2.14%     221.564ms     576.990us           384  
+void at::native::vectorized_elementwise_kernel<4, at::native::CUDAF...         0.00%       0.000us         0.00%       0.000us       0.000us     164.175ms         1.59%     164.175ms      57.484us          2856  
+fmha_cutlassF_bf16_aligned_32x128_gmem_sm80(PyTorchMemEffAttention:...         0.00%       0.000us         0.00%       0.000us       0.000us     128.458ms         1.24%     128.458ms       1.004ms           128  
+void at::native::vectorized_elementwise_kernel<4, at::native::(anon...         0.00%       0.000us         0.00%       0.000us       0.000us     127.037ms         1.23%     127.037ms      75.797us          1676  
+void at::native::unrolled_elementwise_kernel<at::native::BinaryFunc...         0.00%       0.000us         0.00%       0.000us       0.000us     109.038ms         1.05%     109.038ms     187.351us           582  
+                      chunk_gated_delta_rule_bwd_kernel_dhu_blockdim64         0.00%       0.000us         0.00%       0.000us       0.000us     107.795ms         1.04%     107.795ms     561.434us           192  
+void at::native::(anonymous namespace)::conv_depthwise2d_backward_k...         0.00%       0.000us         0.00%       0.000us       0.000us      97.567ms         0.94%      97.567ms     508.160us           192  
+                                                chunk_bwd_kernel_dqkwg         0.00%       0.000us         0.00%       0.000us       0.000us      95.876ms         0.93%      95.876ms     499.355us           192  
+                                                    chunk_fwd_kernel_o         0.00%       0.000us         0.00%       0.000us       0.000us      94.855ms         0.92%      94.855ms     247.018us           384  
+void at::native::vectorized_elementwise_kernel<4, at::native::(anon...         0.00%       0.000us         0.00%       0.000us       0.000us      89.493ms         0.86%      89.493ms     127.121us           704  
+void pytorch_flash::flash_fwd_kernel<Flash_fwd_kernel_traits<64, 12...         0.00%       0.000us         0.00%       0.000us       0.000us      84.435ms         0.82%      84.435ms     206.948us           408  
+void at::native::elementwise_kernel<128, 4, at::native::gpu_kernel_...         0.00%       0.000us         0.00%       0.000us       0.000us      83.607ms         0.81%      83.607ms     435.453us           192  
+----------------------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+Self CPU time total: 8.555s
+Self CUDA time total: 10.356s
+

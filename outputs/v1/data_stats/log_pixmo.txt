@@ -1,0 +1,23 @@
+/usr/local/lib/python3.13/dist-packages/PIL/JpegImagePlugin.py:887: UserWarning: Image appears to be a malformed MPO file, it will be interpreted as a base JPEG file
+  warnings.warn(
+/usr/local/lib/python3.13/dist-packages/PIL/TiffImagePlugin.py:950: UserWarning: Corrupt EXIF data.  Expecting to read 2 bytes but only got 0. 
+  warnings.warn(str(msg))
+/usr/local/lib/python3.13/dist-packages/PIL/Image.py:1047: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+wrote /content/data/prep_v1/pool_pixmo.jsonl 23779 records 277203 questions
+{
+ "points_rows": 2376222,
+ "count_rows": 36916,
+ "url_eval_overlap_removed": 0,
+ "download_ok": 24006,
+ "download_tried": 50000,
+ "eval_hash_dup_removed": 227,
+ "records": 23779,
+ "questions": 277203,
+ "by_type": {
+  "box": 244884,
+  "score": 32279,
+  "noul": 40
+ },
+ "absent": 37361
+}

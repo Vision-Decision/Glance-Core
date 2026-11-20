@@ -1,0 +1,12 @@
+{
+ "out": "/content/sprint/v11f_venus_16384u1",
+ "n": 6165,
+ "click_acc_box": 0.5556399544246107,
+ "wall_s": 1744.4503104686737,
+ "ckpt": "/content/ckpt/v11f/v1.1/ckpt_final.pt",
+ "max_vis": 16384,
+ "upscale": 1.0,
+ "zoom_from": "",
+ "zoom_frac": 0.4,
+ "vis_tokens_median": 5734.0
+}

@@ -1,0 +1,28 @@
+{
+ "drop": {
+  "present/func/names_cat": 5,
+  "present/no_llm": 2,
+  "para_identical": 3,
+  "absent_func/no_llm": 1
+ },
+ "rows": 6278,
+ "images": 1199,
+ "by": {
+  "present/orig/en": 598,
+  "present/zh/zh": 598,
+  "present/para/en": 597,
+  "present/func/en": 571,
+  "present/vague/en": 598,
+  "present/zh_vague/zh": 598,
+  "present/func/zh": 22,
+  "unique/func_only/en": 300,
+  "unique/func_only/zh": 300,
+  "unique/generic/en": 300,
+  "unique/generic/zh": 300,
+  "absent/orig/en": 300,
+  "absent/zh/zh": 300,
+  "absent/para/en": 298,
+  "absent_func/func_only/en": 299,
+  "absent_func/func_only/zh": 299
+ }
+}

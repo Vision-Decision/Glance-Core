@@ -1,0 +1,485 @@
+{
+ "ckpt": "/content/out/v1_2/ckpt_final.pt",
+ "base": false,
+ "step": 3800,
+ "sets": {
+  "ss2": {
+   "raw": {
+    "n": 1272,
+    "click_acc": 0.89937106918239,
+    "acc50": 0.5888364779874213,
+    "by_group": {
+     "desktop/icon": {
+      "n": 140,
+      "click_acc": 0.9142857142857143
+     },
+     "desktop/text": {
+      "n": 194,
+      "click_acc": 0.9278350515463918
+     },
+     "mobile/icon": {
+      "n": 211,
+      "click_acc": 0.8862559241706162
+     },
+     "mobile/text": {
+      "n": 290,
+      "click_acc": 0.9724137931034482
+     },
+     "web/icon": {
+      "n": 203,
+      "click_acc": 0.7980295566502463
+     },
+     "web/text": {
+      "n": 234,
+      "click_acc": 0.8760683760683761
+     }
+    }
+   },
+   "cal": {
+    "n": 1272,
+    "click_acc": 0.89937106918239,
+    "acc50": 0.5888364779874213,
+    "by_group": {
+     "desktop/icon": {
+      "n": 140,
+      "click_acc": 0.9142857142857143
+     },
+     "desktop/text": {
+      "n": 194,
+      "click_acc": 0.9278350515463918
+     },
+     "mobile/icon": {
+      "n": 211,
+      "click_acc": 0.8862559241706162
+     },
+     "mobile/text": {
+      "n": 290,
+      "click_acc": 0.9724137931034482
+     },
+     "web/icon": {
+      "n": 203,
+      "click_acc": 0.7980295566502463
+     },
+     "web/text": {
+      "n": 234,
+      "click_acc": 0.8760683760683761
+     }
+    }
+   },
+   "wall_s": 173.79244256019592
+  },
+  "venus": {
+   "raw": {
+    "n": 6165,
+    "click_acc": 0.5600075958982149,
+    "acc50": 0.37219901253323207,
+    "refusal_acc": 0.8375973303670745,
+    "auroc_presence": 0.7931211917533386,
+    "by_group": {
+     "desktop/element_grounding": {
+      "n": 747,
+      "click_acc": 0.5890227576974565
+     },
+     "desktop/functional_grounding": {
+      "n": 415,
+      "click_acc": 0.4530120481927711
+     },
+     "desktop/spatial_grounding": {
+      "n": 492,
+      "click_acc": 0.6626016260162602
+     },
+     "desktop/visual_grounding": {
+      "n": 222,
+      "click_acc": 0.7117117117117117
+     },
+     "mobile/element_grounding": {
+      "n": 461,
+      "click_acc": 0.7505422993492408
+     },
+     "mobile/functional_grounding": {
+      "n": 181,
+      "click_acc": 0.46408839779005523
+     },
+     "mobile/reason_grounding": {
+      "n": 151,
+      "click_acc": 0.2781456953642384
+     },
+     "mobile/spatial_grounding": {
+      "n": 288,
+      "click_acc": 0.6979166666666666
+     },
+     "mobile/visual_grounding": {
+      "n": 470,
+      "click_acc": 0.8723404255319149
+     },
+     "web/element_grounding": {
+      "n": 383,
+      "click_acc": 0.6762402088772846
+     },
+     "web/functional_grounding": {
+      "n": 104,
+      "click_acc": 0.46153846153846156
+     },
+     "web/reason_grounding": {
+      "n": 956,
+      "click_acc": 0.14644351464435146
+     },
+     "web/spatial_grounding": {
+      "n": 249,
+      "click_acc": 0.7028112449799196
+     },
+     "web/visual_grounding": {
+      "n": 147,
+      "click_acc": 0.8979591836734694
+     }
+    }
+   },
+   "cal": {
+    "n": 6165,
+    "click_acc": 0.5600075958982149,
+    "acc50": 0.37219901253323207,
+    "refusal_acc": 0.8375973303670745,
+    "auroc_presence": 0.7931211917533386,
+    "by_group": {
+     "desktop/element_grounding": {
+      "n": 747,
+      "click_acc": 0.5890227576974565
+     },
+     "desktop/functional_grounding": {
+      "n": 415,
+      "click_acc": 0.4530120481927711
+     },
+     "desktop/spatial_grounding": {
+      "n": 492,
+      "click_acc": 0.6626016260162602
+     },
+     "desktop/visual_grounding": {
+      "n": 222,
+      "click_acc": 0.7117117117117117
+     },
+     "mobile/element_grounding": {
+      "n": 461,
+      "click_acc": 0.7505422993492408
+     },
+     "mobile/functional_grounding": {
+      "n": 181,
+      "click_acc": 0.46408839779005523
+     },
+     "mobile/reason_grounding": {
+      "n": 151,
+      "click_acc": 0.2781456953642384
+     },
+     "mobile/spatial_grounding": {
+      "n": 288,
+      "click_acc": 0.6979166666666666
+     },
+     "mobile/visual_grounding": {
+      "n": 470,
+      "click_acc": 0.8723404255319149
+     },
+     "web/element_grounding": {
+      "n": 383,
+      "click_acc": 0.6762402088772846
+     },
+     "web/functional_grounding": {
+      "n": 104,
+      "click_acc": 0.46153846153846156
+     },
+     "web/reason_grounding": {
+      "n": 956,
+      "click_acc": 0.14644351464435146
+     },
+     "web/spatial_grounding": {
+      "n": 249,
+      "click_acc": 0.7028112449799196
+     },
+     "web/visual_grounding": {
+      "n": 147,
+      "click_acc": 0.8979591836734694
+     }
+    }
+   },
+   "official_protocol": {
+    "official_eval_py": false,
+    "element_grounding": {
+     "acc": 0.6568196103079824,
+     "n": 1591
+    },
+    "functional_grounding": {
+     "acc": 0.45714285714285713,
+     "n": 700
+    },
+    "overall": {
+     "acc": 0.6006488240064882,
+     "n": 6165
+    },
+    "reason_grounding": {
+     "acc": 0.16531165311653118,
+     "n": 1107
+    },
+    "refusal_grounding": {
+     "acc": 0.8375973303670745,
+     "n": 899
+    },
+    "spatial_grounding": {
+     "acc": 0.6822157434402333,
+     "n": 1029
+    },
+    "visual_grounding": {
+     "acc": 0.834326579261025,
+     "n": 839
+    }
+   },
+   "wall_s": 1015.3242390155792
+  },
+  "sspro": {
+   "raw": {
+    "n": 1581,
+    "click_acc": 0.4864010120177103,
+    "acc50": 0.27450980392156865,
+    "by_group": {
+     "linux/icon": {
+      "n": 19,
+      "click_acc": 0.42105263157894735
+     },
+     "linux/text": {
+      "n": 31,
+      "click_acc": 0.3870967741935484
+     },
+     "macos/icon": {
+      "n": 206,
+      "click_acc": 0.41262135922330095
+     },
+     "macos/text": {
+      "n": 398,
+      "click_acc": 0.5703517587939698
+     },
+     "windows/icon": {
+      "n": 379,
+      "click_acc": 0.3641160949868074
+     },
+     "windows/text": {
+      "n": 548,
+      "click_acc": 0.5456204379562044
+     }
+    }
+   },
+   "cal": {
+    "n": 1581,
+    "click_acc": 0.4864010120177103,
+    "acc50": 0.27450980392156865,
+    "by_group": {
+     "linux/icon": {
+      "n": 19,
+      "click_acc": 0.42105263157894735
+     },
+     "linux/text": {
+      "n": 31,
+      "click_acc": 0.3870967741935484
+     },
+     "macos/icon": {
+      "n": 206,
+      "click_acc": 0.41262135922330095
+     },
+     "macos/text": {
+      "n": 398,
+      "click_acc": 0.5703517587939698
+     },
+     "windows/icon": {
+      "n": 379,
+      "click_acc": 0.3641160949868074
+     },
+     "windows/text": {
+      "n": 548,
+      "click_acc": 0.5456204379562044
+     }
+    }
+   },
+   "zoom": {
+    "n": 1581,
+    "click_acc": 0.13219481340923467,
+    "acc50": 0.10183428209993675,
+    "by_group": {
+     "linux/icon": {
+      "n": 19,
+      "click_acc": 0.0
+     },
+     "linux/text": {
+      "n": 31,
+      "click_acc": 0.06451612903225806
+     },
+     "macos/icon": {
+      "n": 206,
+      "click_acc": 0.13592233009708737
+     },
+     "macos/text": {
+      "n": 398,
+      "click_acc": 0.14824120603015076
+     },
+     "windows/icon": {
+      "n": 379,
+      "click_acc": 0.12137203166226913
+     },
+     "windows/text": {
+      "n": 548,
+      "click_acc": 0.13503649635036497
+     }
+    }
+   },
+   "wall_s": 1348.020706653595
+  }
+ },
+ "temps_hard_split": {
+  "choice": 0.9184932053283862,
+  "score": 1.0090398790095605
+ },
+ "temps_hard_split_fit": {
+  "choice": {
+   "nll_T1": 0.25137397183674365,
+   "nll_best": 0.2495672363593868,
+   "grid_T": 0.9184660624993274,
+   "n": 1303
+  },
+  "score": {
+   "nll_T1": 0.18264421698353364,
+   "nll_best": 0.18262756171806716,
+   "grid_T": 1.0126219720406466,
+   "n": 615
+  }
+ },
+ "calib_text_hard_heldout": {
+  "raw": {
+   "choice": {
+    "n": 1303,
+    "acc": 0.9109746738296239,
+    "ece_top": 0.03205224432247134,
+    "T": 1.0
+   },
+   "score": {
+    "n": 615,
+    "acc": 0.9463414634146341,
+    "ece_top": 0.02291336938568285,
+    "T": 1.0
+   }
+  },
+  "cal": {
+   "choice": {
+    "n": 1303,
+    "acc": 0.9109746738296239,
+    "ece_top": 0.02873232644693354,
+    "T": 0.9184932053283862
+   },
+   "score": {
+    "n": 615,
+    "acc": 0.9463414634146341,
+    "ece_top": 0.023460011889584857,
+    "T": 1.0090398790095605
+   }
+  }
+ },
+ "temps_choice_hard": {
+  "presence": 0.9973561951095199,
+  "choice": 0.9184932053283862,
+  "noul": 1.066407643704775,
+  "score": 1.013213334031907
+ },
+ "calib_text_heldout": {
+  "raw": {
+   "choice": {
+    "n": 4158,
+    "acc": 0.8292448292448292,
+    "ece_top": 0.0249982182505435,
+    "T": 1.0
+   },
+   "noul": {
+    "n": 874,
+    "acc": 0.879862700228833,
+    "ece_top": 0.02750181059685463,
+    "T": 1.0
+   },
+   "score": {
+    "n": 563,
+    "acc": 0.7566607460035524,
+    "ece_top": 0.04389275993238917,
+    "T": 1.0
+   }
+  },
+  "cal": {
+   "choice": {
+    "n": 4158,
+    "acc": 0.8292448292448292,
+    "ece_top": 0.02573371362816494,
+    "T": 0.912109814253681
+   },
+   "noul": {
+    "n": 874,
+    "acc": 0.879862700228833,
+    "ece_top": 0.03232556666591099,
+    "T": 1.066407643704775
+   },
+   "score": {
+    "n": 563,
+    "acc": 0.7566607460035524,
+    "ece_top": 0.046429318030606,
+    "T": 1.013213334031907
+   }
+  }
+ },
+ "calib_natural_heldout": {
+  "raw": {
+   "n": 9225,
+   "acc50": 0.9148425787106447,
+   "gated_acc50": 0.9020989505247377,
+   "mean_iou": 0.810182081826366,
+   "N_acc": 0.938160469667319,
+   "T_acc_single": 0.9020989505247377,
+   "auroc_presence": 0.9915009227284597,
+   "ece_presence": 0.005642567421130711,
+   "ece_box_conf": 0.007381498971966757,
+   "ece_iou_head_present_only": 0.012225960871983837
+  },
+  "cal": {
+   "n": 9225,
+   "acc50": 0.9148425787106447,
+   "gated_acc50": 0.9020989505247377,
+   "mean_iou": 0.810182081826366,
+   "N_acc": 0.938160469667319,
+   "T_acc_single": 0.9020989505247377,
+   "auroc_presence": 0.9915009227284597,
+   "ece_presence": 0.005643083959508957,
+   "ece_box_conf": 0.007475664909435332,
+   "ece_iou_head_present_only": 0.012225960871983837
+  }
+ },
+ "temps": {
+  "presence": 0.9973561951095199,
+  "choice": 0.912109814253681,
+  "noul": 1.066407643704775,
+  "score": 1.013213334031907
+ },
+ "temps_fit": {
+  "presence": {
+   "nll_T1": 0.09003593586526225,
+   "nll_best": 0.09003535685251428,
+   "grid_T": 1.0126219720406466
+  },
+  "choice": {
+   "nll_T1": 0.44936497072097786,
+   "nll_best": 0.44691224967270027,
+   "grid_T": 0.9184660624993274,
+   "n": 4158
+  },
+  "noul": {
+   "nll_T1": 0.30499573406798425,
+   "nll_best": 0.3045686947270161,
+   "grid_T": 1.0806958949613739,
+   "n": 874
+  },
+  "score": {
+   "nll_T1": 0.7156013651128826,
+   "nll_best": 0.715554176566374,
+   "grid_T": 1.0126219720406466,
+   "n": 563
+  }
+ }
+}

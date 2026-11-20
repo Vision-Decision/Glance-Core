@@ -1,0 +1,255 @@
+{
+ "fig_8q": {
+  "local_secs": 1.81,
+  "questions": [
+   "YesNo(question='Is a save dialog open?')",
+   "Box(text='the Export button')",
+   "Box(text='the Cancel button in the dialog')",
+   "Box(text='the Delete all button')",
+   "Box(text='the Print button')",
+   "Box(text='the Sharpen setting')",
+   "Choice(question='Task: export the photo as a PNG file. What is the next action?', options=['click', 'type', 'scroll', 'done'])",
+   "YesNo(question='Are there unsaved changes?')"
+  ],
+  "results": [
+   {
+    "question": "Is a save dialog open?",
+    "p_yes": 0.9922,
+    "answer": true,
+    "kind": "yesno"
+   },
+   {
+    "text": "the Export button",
+    "present_prob": 0.9064,
+    "box": [
+     196.6,
+     90.2,
+     246.0,
+     115.4
+    ],
+    "iou_prob": 0.9408,
+    "confidence": 0.8528,
+    "present": true,
+    "kind": "box"
+   },
+   {
+    "text": "the Cancel button in the dialog",
+    "present_prob": 0.9983,
+    "box": [
+     695.0,
+     361.1,
+     759.3,
+     393.7
+    ],
+    "iou_prob": 0.9476,
+    "confidence": 0.9461,
+    "present": true,
+    "kind": "box"
+   },
+   {
+    "text": "the Delete all button",
+    "present_prob": 0.8182,
+    "box": [
+     696.3,
+     85.0,
+     796.9,
+     114.0
+    ],
+    "iou_prob": 0.9517,
+    "confidence": 0.7787,
+    "present": true,
+    "kind": "box"
+   },
+   {
+    "text": "the Print button",
+    "present_prob": 0.0043,
+    "box": [
+     34.2,
+     89.9,
+     75.3,
+     115.7
+    ],
+    "iou_prob": 0.1043,
+    "confidence": 0.0005,
+    "present": false,
+    "kind": "box"
+   },
+   {
+    "text": "the Sharpen setting",
+    "present_prob": 0.1495,
+    "box": [
+     84.1,
+     333.2,
+     218.7,
+     351.8
+    ],
+    "iou_prob": 0.2716,
+    "confidence": 0.0406,
+    "present": false,
+    "kind": "box"
+   },
+   {
+    "question": "Task: export the photo as a PNG file. What is the next action?",
+    "probs": {
+     "click": 0.7894,
+     "type": 0.0465,
+     "scroll": 0.0183,
+     "done": 0.1458
+    },
+    "answer": "click",
+    "kind": "choice"
+   },
+   {
+    "question": "Are there unsaved changes?",
+    "p_yes": 0.994,
+    "answer": true,
+    "kind": "yesno"
+   }
+  ]
+ },
+ "probes": {
+  "local_secs": 1.6,
+  "questions": [
+   "Box(text='the Export button')",
+   "Box(text='导出按钮')",
+   "Box(text='the button that saves the picture as a PNG')",
+   "Box(text='the Save button in the dialog')",
+   "Box(text='对话框里的保存按钮')",
+   "Box(text='the button that keeps my edits')",
+   "Box(text='the Cancel button in the dialog')",
+   "Box(text='取消按钮')",
+   "Box(text='the button that closes the dialog without doing anything')"
+  ],
+  "results": [
+   {
+    "text": "the Export button",
+    "present_prob": 0.9064,
+    "box": [
+     196.6,
+     90.2,
+     246.0,
+     115.4
+    ],
+    "iou_prob": 0.9408,
+    "confidence": 0.8528,
+    "present": true,
+    "kind": "box"
+   },
+   {
+    "text": "导出按钮",
+    "present_prob": 0.9987,
+    "box": [
+     198.9,
+     90.1,
+     245.4,
+     114.7
+    ],
+    "iou_prob": 0.9371,
+    "confidence": 0.9359,
+    "present": true,
+    "kind": "box"
+   },
+   {
+    "text": "the button that saves the picture as a PNG",
+    "present_prob": 0.1129,
+    "box": [
+     790.2,
+     360.0,
+     852.1,
+     392.1
+    ],
+    "iou_prob": 0.2116,
+    "confidence": 0.0239,
+    "present": false,
+    "kind": "box"
+   },
+   {
+    "text": "the Save button in the dialog",
+    "present_prob": 0.9965,
+    "box": [
+     796.0,
+     361.5,
+     854.4,
+     393.0
+    ],
+    "iou_prob": 0.9234,
+    "confidence": 0.9201,
+    "present": true,
+    "kind": "box"
+   },
+   {
+    "text": "对话框里的保存按钮",
+    "present_prob": 0.9974,
+    "box": [
+     794.6,
+     361.3,
+     852.4,
+     392.5
+    ],
+    "iou_prob": 0.9074,
+    "confidence": 0.905,
+    "present": true,
+    "kind": "box"
+   },
+   {
+    "text": "the button that keeps my edits",
+    "present_prob": 0.93,
+    "box": [
+     581.0,
+     361.7,
+     670.3,
+     392.4
+    ],
+    "iou_prob": 0.7946,
+    "confidence": 0.739,
+    "present": true,
+    "kind": "box"
+   },
+   {
+    "text": "the Cancel button in the dialog",
+    "present_prob": 0.9983,
+    "box": [
+     695.0,
+     361.1,
+     759.3,
+     393.7
+    ],
+    "iou_prob": 0.9476,
+    "confidence": 0.9461,
+    "present": true,
+    "kind": "box"
+   },
+   {
+    "text": "取消按钮",
+    "present_prob": 0.9975,
+    "box": [
+     695.3,
+     359.9,
+     757.5,
+     392.7
+    ],
+    "iou_prob": 0.8807,
+    "confidence": 0.8785,
+    "present": true,
+    "kind": "box"
+   },
+   {
+    "text": "the button that closes the dialog without doing anything",
+    "present_prob": 0.9686,
+    "box": [
+     587.2,
+     361.2,
+     673.6,
+     391.8
+    ],
+    "iou_prob": 0.5991,
+    "confidence": 0.5802,
+    "present": true,
+    "kind": "box"
+   }
+  ]
+ },
+ "model": "Vision-Decision/Glance-4B-preview (v1 preview checkpoint)",
+ "device": "mps",
+ "image": "Glance/assets/examples/editor.png (rendered from examples/gui_mock.html)"
+}

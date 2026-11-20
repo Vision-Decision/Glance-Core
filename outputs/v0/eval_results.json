@@ -1,0 +1,107 @@
+{
+ "ckpt": "/content/out/v0/ckpt_final.pt",
+ "step": 3058,
+ "sets": {
+  "refcoco_val": {
+   "n": 10834,
+   "acc50": 0.9496954033597932,
+   "gated_acc50": 0.9456341148237032,
+   "mean_iou": 0.8386692963460286,
+   "ece_box_conf": 0.005786724148988255,
+   "ece_iou_head_present_only": 0.005499725490505905,
+   "wall_s": 77.87015199661255
+  },
+  "refcoco_testA": {
+   "n": 5657,
+   "acc50": 0.961463673325084,
+   "gated_acc50": 0.9593424076365564,
+   "mean_iou": 0.8523665136013615,
+   "ece_box_conf": 0.005804151285969458,
+   "ece_iou_head_present_only": 0.007279475515062007,
+   "wall_s": 39.02112030982971
+  },
+  "refcoco_testB": {
+   "n": 5095,
+   "acc50": 0.9275760549558391,
+   "gated_acc50": 0.9242394504416094,
+   "mean_iou": 0.8114006759969918,
+   "ece_box_conf": 0.011697018828011285,
+   "ece_iou_head_present_only": 0.009194922295122043,
+   "wall_s": 38.62594985961914
+  },
+  "refcocoplus_val": {
+   "n": 10758,
+   "acc50": 0.9183863171593233,
+   "gated_acc50": 0.9152258784160625,
+   "mean_iou": 0.8111089001395523,
+   "ece_box_conf": 0.012027434144385472,
+   "ece_iou_head_present_only": 0.012049150295994692,
+   "wall_s": 77.92399477958679
+  },
+  "refcocoplus_testA": {
+   "n": 5726,
+   "acc50": 0.9523227383863081,
+   "gated_acc50": 0.9505763185469787,
+   "mean_iou": 0.8445898906330687,
+   "ece_box_conf": 0.010833079577236658,
+   "ece_iou_head_present_only": 0.011363184508268023,
+   "wall_s": 39.15070056915283
+  },
+  "refcocoplus_testB": {
+   "n": 4889,
+   "acc50": 0.8746164859889548,
+   "gated_acc50": 0.8703211290652485,
+   "mean_iou": 0.7692268910637142,
+   "ece_box_conf": 0.015644266909114978,
+   "ece_iou_head_present_only": 0.017005609640633346,
+   "wall_s": 38.57316207885742
+  },
+  "refcocog_val": {
+   "n": 4896,
+   "acc50": 0.920751633986928,
+   "gated_acc50": 0.9195261437908496,
+   "mean_iou": 0.8120389246112941,
+   "ece_box_conf": 0.0158755795912301,
+   "ece_iou_head_present_only": 0.018172545735937316,
+   "wall_s": 68.83531737327576
+  },
+  "refcocog_test": {
+   "n": 9602,
+   "acc50": 0.9204332430743595,
+   "gated_acc50": 0.9185586336179963,
+   "mean_iou": 0.8127093233870888,
+   "ece_box_conf": 0.01404708955619205,
+   "ece_iou_head_present_only": 0.016097374381472317,
+   "wall_s": 129.10570406913757
+  },
+  "grefcoco_val_merged": {
+   "n": 25063,
+   "acc50": 0.9495107993354255,
+   "gated_acc50": 0.9454495107993355,
+   "mean_iou": 0.8386611253202009,
+   "N_acc": 0.7702414373947221,
+   "T_acc_single": 0.9454495107993355,
+   "present_recall_multi": 0.9877911344853494,
+   "auroc_presence": 0.9640467251417241,
+   "ece_presence": 0.07475896702387895,
+   "ece_box_conf": 0.08686817257366675,
+   "ece_iou_head_present_only": 0.005529037994642537,
+   "wall_s": 100.15340757369995
+  }
+ },
+ "latency": {
+  "1q": {
+   "model_ms_median": 83.72788299993772,
+   "model_ms_p90": 84.58181600035459,
+   "preprocess_ms_median": 9.510926000075415,
+   "vis_tokens_median": null
+  },
+  "8q": {
+   "model_ms_median": 84.69613299939738,
+   "model_ms_p90": 85.47324890014352,
+   "preprocess_ms_median": 9.491922000052,
+   "vis_tokens_median": null
+  },
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+ }
+}

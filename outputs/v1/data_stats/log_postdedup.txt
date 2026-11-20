@@ -1,0 +1,7 @@
+/usr/local/lib/python3.13/dist-packages/PIL/Image.py:1047: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+/usr/local/lib/python3.13/dist-packages/PIL/JpegImagePlugin.py:887: UserWarning: Image appears to be a malformed MPO file, it will be interpreted as a base JPEG file
+  warnings.warn(
+wrote /content/data/prep_v1/pool_pixmo.jsonl 23749 records 276771 questions
+wrote /content/data/prep_v1/pool_gui.jsonl 50630 records 166962 questions
+{'point_bench_images': 982, 'point_bench_hashes': 982, 'pool_pixmo': {'before': 23779, 'after': 23749}, 'pool_gui': {'before': 50751, 'after': 50630}}

@@ -1,0 +1,13 @@
+{
+ "test_redecode_vs_rows_c": {
+  "same_box": 1.0,
+  "max_abs_dlp_box": 0.0,
+  "median_abs_dlp_box": 0.0,
+  "max_abs_dp_none": 0.0
+ },
+ "n_test": 19739,
+ "n_cal": 20669,
+ "cal_absent": 9116,
+ "cal_acc50_ar": 0.8963039903055483,
+ "cal_acc50_gate": 0.9018436769670215
+}

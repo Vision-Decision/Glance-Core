@@ -1,0 +1,54 @@
+{
+ "glance_data_revision": "0da8cf88053728f58674c7d5b8357db4740d3f62",
+ "train": {
+  "images": 24406,
+  "questions": 1831146,
+  "kinds": {
+   "short": 210336,
+   "medium": 210602,
+   "long": 208176,
+   "casual": 211142,
+   "hneg_attribute": 202299,
+   "hneg_relation": 140938,
+   "group": 84304,
+   "function": 87390,
+   "cat_all": 76590,
+   "neg_count": 149931,
+   "cat_only": 46917,
+   "neg_position": 63198,
+   "neg_near": 84482,
+   "gref_multi": 54841
+  }
+ },
+ "diagnostic": {
+  "images": 300,
+  "questions": 23578,
+  "kinds": {
+   "short": 2757,
+   "medium": 2749,
+   "long": 2732,
+   "casual": 2760,
+   "hneg_attribute": 2661,
+   "hneg_relation": 1831,
+   "group": 1065,
+   "function": 1089,
+   "neg_count": 1728,
+   "neg_position": 710,
+   "cat_all": 924,
+   "cat_only": 526,
+   "neg_near": 1032,
+   "gref_multi": 1014
+  }
+ },
+ "merged": {
+  "images": 24407,
+  "questions": 2186531,
+  "orig": 355385,
+  "aug": 1831146
+ },
+ "dv_single": {
+  "images": 24407,
+  "questions": 1912715,
+  "dropped_multi_target": 273816
+ }
+}

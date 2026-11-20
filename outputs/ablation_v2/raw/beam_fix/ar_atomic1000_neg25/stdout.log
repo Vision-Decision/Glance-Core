@@ -1,0 +1,45 @@
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 17607.67it/s]
+[beam] batch 0/751 q=15 10s b4lp0:1s b8lp0:1s b16lp0:2s b4lp1:1s b8lp1:1s b16lp1:2s
+[beam] batch 20/751 q=300 168s b4lp0:13s b8lp0:22s b16lp0:44s b4lp1:12s b8lp1:21s b16lp1:44s
+[beam] batch 40/751 q=513 285s b4lp0:23s b8lp0:36s b16lp0:73s b4lp1:22s b8lp1:36s b16lp1:74s
+[beam] batch 60/751 q=762 423s b4lp0:34s b8lp0:54s b16lp0:106s b4lp1:32s b8lp1:54s b16lp1:111s
+[beam] batch 80/751 q=1044 575s b4lp0:45s b8lp0:73s b16lp0:147s b4lp1:44s b8lp1:73s b16lp1:151s
+[beam] batch 100/751 q=1311 728s b4lp0:57s b8lp0:93s b16lp0:187s b4lp1:56s b8lp1:93s b16lp1:191s
+[beam] batch 120/751 q=1552 859s b4lp0:67s b8lp0:110s b16lp0:221s b4lp1:66s b8lp1:110s b16lp1:223s
+[beam] batch 140/751 q=1804 1005s b4lp0:78s b8lp0:129s b16lp0:259s b4lp1:77s b8lp1:128s b16lp1:262s
+[beam] batch 160/751 q=2074 1151s b4lp0:90s b8lp0:147s b16lp0:297s b4lp1:88s b8lp1:147s b16lp1:300s
+[beam] batch 180/751 q=2301 1282s b4lp0:100s b8lp0:164s b16lp0:331s b4lp1:99s b8lp1:163s b16lp1:334s
+[beam] batch 200/751 q=2564 1429s b4lp0:112s b8lp0:183s b16lp0:369s b4lp1:109s b8lp1:182s b16lp1:372s
+[beam] batch 220/751 q=2782 1554s b4lp0:122s b8lp0:198s b16lp0:401s b4lp1:119s b8lp1:198s b16lp1:405s
+[beam] batch 240/751 q=3010 1684s b4lp0:132s b8lp0:215s b16lp0:434s b4lp1:130s b8lp1:214s b16lp1:438s
+[beam] batch 260/751 q=3272 1830s b4lp0:143s b8lp0:233s b16lp0:472s b4lp1:141s b8lp1:232s b16lp1:477s
+[beam] batch 280/751 q=3516 1964s b4lp0:154s b8lp0:251s b16lp0:506s b4lp1:152s b8lp1:250s b16lp1:511s
+[beam] batch 300/751 q=3785 2111s b4lp0:165s b8lp0:271s b16lp0:544s b4lp1:163s b8lp1:269s b16lp1:549s
+[beam] batch 320/751 q=4089 2281s b4lp0:178s b8lp0:292s b16lp0:590s b4lp1:175s b8lp1:290s b16lp1:595s
+[beam] batch 340/751 q=4369 2434s b4lp0:190s b8lp0:312s b16lp0:630s b4lp1:187s b8lp1:311s b16lp1:634s
+[beam] batch 360/751 q=4634 2582s b4lp0:202s b8lp0:331s b16lp0:669s b4lp1:199s b8lp1:330s b16lp1:672s
+[beam] batch 380/751 q=4905 2734s b4lp0:213s b8lp0:351s b16lp0:708s b4lp1:210s b8lp1:350s b16lp1:712s
+[beam] batch 400/751 q=5174 2884s b4lp0:225s b8lp0:370s b16lp0:748s b4lp1:222s b8lp1:368s b16lp1:752s
+[beam] batch 420/751 q=5450 3038s b4lp0:236s b8lp0:389s b16lp0:789s b4lp1:233s b8lp1:388s b16lp1:793s
+[beam] batch 440/751 q=5723 3183s b4lp0:248s b8lp0:408s b16lp0:826s b4lp1:244s b8lp1:406s b16lp1:830s
+[beam] batch 460/751 q=6006 3344s b4lp0:260s b8lp0:429s b16lp0:868s b4lp1:256s b8lp1:427s b16lp1:873s
+[beam] batch 480/751 q=6243 3441s b4lp0:268s b8lp0:441s b16lp0:892s b4lp1:263s b8lp1:438s b16lp1:898s
+[beam] batch 500/751 q=6491 3536s b4lp0:276s b8lp0:453s b16lp0:917s b4lp1:271s b8lp1:450s b16lp1:922s
+[beam] batch 520/751 q=6756 3639s b4lp0:284s b8lp0:466s b16lp0:942s b4lp1:279s b8lp1:462s b16lp1:948s
+[beam] batch 540/751 q=7017 3740s b4lp0:293s b8lp0:478s b16lp0:967s b4lp1:287s b8lp1:476s b16lp1:973s
+[beam] batch 560/751 q=7285 3844s b4lp0:300s b8lp0:492s b16lp0:993s b4lp1:294s b8lp1:489s b16lp1:1000s
+[beam] batch 580/751 q=7580 3958s b4lp0:309s b8lp0:506s b16lp0:1022s b4lp1:303s b8lp1:503s b16lp1:1029s
+[beam] batch 600/751 q=7852 4062s b4lp0:317s b8lp0:519s b16lp0:1048s b4lp1:310s b8lp1:516s b16lp1:1056s
+[beam] batch 620/751 q=8147 4175s b4lp0:326s b8lp0:533s b16lp0:1077s b4lp1:319s b8lp1:530s b16lp1:1085s
+[beam] batch 640/751 q=8414 4276s b4lp0:334s b8lp0:546s b16lp0:1102s b4lp1:326s b8lp1:543s b16lp1:1112s
+[beam] batch 660/751 q=8687 4381s b4lp0:342s b8lp0:559s b16lp0:1129s b4lp1:334s b8lp1:556s b16lp1:1139s
+[beam] batch 680/751 q=8954 4479s b4lp0:349s b8lp0:571s b16lp0:1153s b4lp1:342s b8lp1:568s b16lp1:1164s
+[beam] batch 700/751 q=9197 4574s b4lp0:357s b8lp0:583s b16lp0:1177s b4lp1:349s b8lp1:580s b16lp1:1187s
+[beam] batch 720/751 q=9471 4681s b4lp0:364s b8lp0:597s b16lp0:1205s b4lp1:358s b8lp1:593s b16lp1:1214s
+[beam] batch 740/751 q=9744 4784s b4lp0:372s b8lp0:609s b16lp0:1233s b4lp1:366s b8lp1:605s b16lp1:1239s
+b4lp0 {"beams": 4, "length_penalty": 0.0, "split": 1, "refusal_present": 0.1037268221039104, "N_acc": 0.9288949275362319, "acc50_present_accepted": 0.9547316673494469, "gated_acc50": 0.8557003855333211, "bad": 0.0}
+b8lp0 {"beams": 8, "length_penalty": 0.0, "split": 1, "refusal_present": 0.10354323480815128, "N_acc": 0.9286684782608695, "acc50_present_accepted": 0.9539217694040549, "gated_acc50": 0.8551496236460437, "bad": 0.0}
+b16lp0 {"beams": 16, "length_penalty": 0.0, "split": 1, "refusal_present": 0.103176060216633, "N_acc": 0.9288949275362319, "acc50_present_accepted": 0.9539406345957011, "gated_acc50": 0.855516798237562, "bad": 0.0}
+b4lp1 {"beams": 4, "length_penalty": 1.0, "split": 1, "refusal_present": 0.031026252983293555, "N_acc": 0.8731884057971014, "acc50_present_accepted": 0.9435392194012884, "gated_acc50": 0.9142647328804847, "bad": 0.0}
+b8lp1 {"beams": 8, "length_penalty": 1.0, "split": 1, "refusal_present": 0.030842665687534424, "N_acc": 0.8731884057971014, "acc50_present_accepted": 0.9424133358590642, "gated_acc50": 0.913346796401689, "bad": 0.0}
+b16lp1 {"beams": 16, "length_penalty": 1.0, "split": 1, "refusal_present": 0.031026252983293555, "N_acc": 0.8731884057971014, "acc50_present_accepted": 0.9424024251610459, "gated_acc50": 0.9131632091059299, "bad": 0.0}

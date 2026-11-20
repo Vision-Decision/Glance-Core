@@ -1,0 +1,43 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.DS_Store
+wandb/
+# large local data and weights (code dirs like dv/data/ are NOT ignored)
+/data/*
+!/data/prep/
+/checkpoints/
+*.pt
+*.safetensors
+*.tar.gz
+outputs/**/ckpt/
+*.tgz
+video/sandbox/vendor/
+di/smoke_results*.json*
+di/results/text_diagnostics.json
+
+# packaging
+*.egg-info/
+build/
+dist/
+
+# >5 MB files restored from HF by scripts/fetch_large_files.py (see LARGE_FILES.tsv)
+/data/prep/train.jsonl
+/data/prep/train_neg05.jsonl
+/outputs/ablation/ar_atomic100_neg25/rows.json
+/outputs/ablation/ar_atomic100_neg25/rows_c.json
+/outputs/ablation/ar_hier_neg25/rows_c.json
+/outputs/ablation/ar_hier_neg25/rows.json
+/outputs/ablation/ar_atomic1000_neg25/rows_c.json
+/outputs/ablation/ar_digits_neg05/rows.json
+/outputs/ablation/ar_digits_neg05/rows_c.json
+/outputs/ablation/ar_digits_neg25/rows_c.json
+/outputs/ablation_v2/runs/ar_digits_neg25_s1/rows_c.json
+/outputs/ablation/ar_digits_neg25/rows.json
+/outputs/ablation/ar_atomic1000_neg25/rows.json
+/outputs/ablation_v2/runs/ours_neg25_s1/rows.json
+/outputs/ablation/ours_neg05/rows.json
+/outputs/ablation/ours_neg25/rows.json
+/outputs/probes/ambiguity_attr/grefcoco_full.json
+/outputs/v0/eval_rows_refcocoval_grefcocoval.json

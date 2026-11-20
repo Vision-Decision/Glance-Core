@@ -1,0 +1,262 @@
+{
+ "source": {
+  "gen": "/content/arch/gdn/gen",
+  "ablate": "/content/arch/gdn/ablate_v1.1.json"
+ },
+ "needle": {
+  "Qwen3-VL-4B-Instruct": {
+   "128": {
+    "n": 200,
+    "click_acc": 0.7133,
+    "click_acc_ci95": [
+     0.64,
+     0.7867
+    ],
+    "absent_refusal": 0.96
+   },
+   "16": {
+    "n": 200,
+    "click_acc": 0.9867,
+    "click_acc_ci95": [
+     0.9667,
+     1.0
+    ],
+    "absent_refusal": 0.98
+   },
+   "256": {
+    "n": 200,
+    "click_acc": 0.5733,
+    "click_acc_ci95": [
+     0.4933,
+     0.6467
+    ],
+    "absent_refusal": 0.88
+   },
+   "32": {
+    "n": 200,
+    "click_acc": 0.96,
+    "click_acc_ci95": [
+     0.9267,
+     0.9867
+    ],
+    "absent_refusal": 0.96
+   },
+   "512": {
+    "n": 200,
+    "click_acc": 0.2267,
+    "click_acc_ci95": [
+     0.16,
+     0.2933
+    ],
+    "absent_refusal": 0.6
+   },
+   "64": {
+    "n": 200,
+    "click_acc": 0.92,
+    "click_acc_ci95": [
+     0.8733,
+     0.9667
+    ],
+    "absent_refusal": 0.96
+   },
+   "8": {
+    "n": 200,
+    "click_acc": 0.9933,
+    "click_acc_ci95": [
+     0.98,
+     1.0
+    ],
+    "absent_refusal": 0.98
+   }
+  },
+  "Qwen3.5-4B": {
+   "128": {
+    "n": 200,
+    "click_acc": 0.5067,
+    "click_acc_ci95": [
+     0.4267,
+     0.58
+    ],
+    "absent_refusal": 0.8
+   },
+   "16": {
+    "n": 200,
+    "click_acc": 1.0,
+    "click_acc_ci95": [
+     1.0,
+     1.0
+    ],
+    "absent_refusal": 0.96
+   },
+   "256": {
+    "n": 200,
+    "click_acc": 0.3333,
+    "click_acc_ci95": [
+     0.26,
+     0.4068
+    ],
+    "absent_refusal": 0.64
+   },
+   "32": {
+    "n": 200,
+    "click_acc": 1.0,
+    "click_acc_ci95": [
+     1.0,
+     1.0
+    ],
+    "absent_refusal": 0.92
+   },
+   "512": {
+    "n": 200,
+    "click_acc": 0.1067,
+    "click_acc_ci95": [
+     0.06,
+     0.16
+    ],
+    "absent_refusal": 0.12
+   },
+   "64": {
+    "n": 200,
+    "click_acc": 0.9133,
+    "click_acc_ci95": [
+     0.8665,
+     0.9533
+    ],
+    "absent_refusal": 0.92
+   },
+   "8": {
+    "n": 200,
+    "click_acc": 1.0,
+    "click_acc_ci95": [
+     1.0,
+     1.0
+    ],
+    "absent_refusal": 0.98
+   }
+  },
+  "Glance-v1.1 (head readout)": {
+   "8": {
+    "click_acc": 1.0,
+    "N_acc": 1.0,
+    "attn_noimg_click": 0.18,
+    "gdn_reset_click": 0.9533333333333334
+   },
+   "16": {
+    "click_acc": 1.0,
+    "N_acc": 0.98,
+    "attn_noimg_click": 0.12,
+    "gdn_reset_click": 0.9333333333333333
+   },
+   "32": {
+    "click_acc": 0.9933333333333333,
+    "N_acc": 0.98,
+    "attn_noimg_click": 0.08666666666666667,
+    "gdn_reset_click": 0.8066666666666666
+   },
+   "64": {
+    "click_acc": 1.0,
+    "N_acc": 0.98,
+    "attn_noimg_click": 0.0,
+    "gdn_reset_click": 0.54
+   },
+   "128": {
+    "click_acc": 1.0,
+    "N_acc": 0.98,
+    "attn_noimg_click": 0.013333333333333334,
+    "gdn_reset_click": 0.4
+   },
+   "256": {
+    "click_acc": 0.98,
+    "N_acc": 0.98,
+    "attn_noimg_click": 0.006666666666666667,
+    "gdn_reset_click": 0.19333333333333333
+   },
+   "512": {
+    "click_acc": 0.9866666666666667,
+    "N_acc": 0.96,
+    "attn_noimg_click": 0.006666666666666667,
+    "gdn_reset_click": 0.14
+   }
+  }
+ },
+ "sspro": {
+  "Qwen3-VL-4B-Instruct": {
+   "1024": {
+    "n": 400,
+    "click_acc": 0.3525,
+    "click_acc_ci95": [
+     0.3075,
+     0.4025
+    ]
+   },
+   "16384": {
+    "n": 400,
+    "click_acc": 0.5475,
+    "click_acc_ci95": [
+     0.5,
+     0.5975
+    ]
+   },
+   "4096": {
+    "n": 400,
+    "click_acc": 0.53,
+    "click_acc_ci95": [
+     0.48,
+     0.58
+    ]
+   }
+  },
+  "Qwen3.5-4B": {
+   "1024": {
+    "n": 400,
+    "click_acc": 0.3325,
+    "click_acc_ci95": [
+     0.2874,
+     0.3775
+    ]
+   },
+   "16384": {
+    "n": 400,
+    "click_acc": 0.5175,
+    "click_acc_ci95": [
+     0.47,
+     0.5675
+    ]
+   },
+   "4096": {
+    "n": 400,
+    "click_acc": 0.5075,
+    "click_acc_ci95": [
+     0.4624,
+     0.5575
+    ]
+   }
+  }
+ },
+ "refcoco_ablation": {
+  "full": {
+   "n": 2190,
+   "click_acc": 0.982648401826484,
+   "acc50": 0.9511415525114155,
+   "presence_auroc": null,
+   "recall_0": 0.9894977168949771,
+   "N_acc": null
+  },
+  "attn_noimg": {
+   "n": 2190,
+   "click_acc": 0.6863013698630137,
+   "acc50": 0.2968036529680365,
+   "presence_auroc": null,
+   "recall_0": 0.38401826484018264,
+   "N_acc": null
+  },
+  "gdn_reset": {
+   "n": 2190,
+   "click_acc": 0.9712328767123287,
+   "acc50": 0.9237442922374429,
+   "presence_auroc": null,
+   "recall_0": 0.9899543378995433,
+   "N_acc": null
+  }
+ }
+}

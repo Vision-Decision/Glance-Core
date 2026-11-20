@@ -1,0 +1,86 @@
+{
+ "base": "p0_control",
+ "source": "<scratch>",
+ "runs": {
+  "p0_control": {
+   "sspro": 0.413,
+   "sspro_delta": 0.0,
+   "sspro_delta_ci95": [
+    0.0,
+    0.0
+   ],
+   "refcoco_testA": 0.9206,
+   "refcoco_testA_delta": 0.0,
+   "refcoco_testA_delta_ci95": [
+    0.0,
+    0.0
+   ],
+   "refcoco_testB": 0.8665,
+   "refcoco_testB_delta": 0.0,
+   "refcoco_testB_delta_ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "p1_attn": {
+   "sspro": 0.4301,
+   "sspro_delta": 0.0171,
+   "sspro_delta_ci95": [
+    -0.0044,
+    0.038
+   ],
+   "refcoco_testA": 0.9157,
+   "refcoco_testA_delta": -0.0049,
+   "refcoco_testA_delta_ci95": [
+    -0.0115,
+    0.0012
+   ],
+   "refcoco_testB": 0.8646,
+   "refcoco_testB_delta": -0.002,
+   "refcoco_testB_delta_ci95": [
+    -0.0098,
+    0.0061
+   ]
+  },
+  "p2_mlp_gateup": {
+   "sspro": 0.3782,
+   "sspro_delta": -0.0348,
+   "sspro_delta_ci95": [
+    -0.0569,
+    -0.012
+   ],
+   "refcoco_testA": 0.9173,
+   "refcoco_testA_delta": -0.0034,
+   "refcoco_testA_delta_ci95": [
+    -0.0099,
+    0.0025
+   ],
+   "refcoco_testB": 0.8718,
+   "refcoco_testB_delta": 0.0053,
+   "refcoco_testB_delta_ci95": [
+    -0.0022,
+    0.0124
+   ]
+  },
+  "p3_replay": {
+   "sspro": 0.4029,
+   "sspro_delta": -0.0101,
+   "sspro_delta_ci95": [
+    -0.0348,
+    0.0139
+   ],
+   "refcoco_testA": 0.921,
+   "refcoco_testA_delta": 0.0004,
+   "refcoco_testA_delta_ci95": [
+    -0.0057,
+    0.006
+   ],
+   "refcoco_testB": 0.8681,
+   "refcoco_testB_delta": 0.0016,
+   "refcoco_testB_delta_ci95": [
+    -0.0061,
+    0.0094
+   ]
+  }
+ }
+}

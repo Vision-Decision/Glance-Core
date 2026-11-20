@@ -1,0 +1,13 @@
+[post] eval_c ar_digits_neg25 Wed Nov 18 04:18:41 AM UTC 2026
+[post] eval_c ar_atomic1000_neg25 Wed Nov 18 04:36:10 AM UTC 2026
+[post] eval_c ar_hier_neg25 Wed Nov 18 04:43:31 AM UTC 2026
+[post] eval_c ar_digits_neg05 Wed Nov 18 04:54:17 AM UTC 2026
+[post] eval_c ar_atomic100_neg25 Wed Nov 18 05:11:46 AM UTC 2026
+[post] latency ours_neg25 Wed Nov 18 05:18:58 AM UTC 2026
+[post] latency ar_digits_neg25 Wed Nov 18 05:19:27 AM UTC 2026
+[post] latency ar_hier_neg25 Wed Nov 18 05:21:47 AM UTC 2026
+[post] latency ar_atomic1000_neg25 Wed Nov 18 05:23:16 AM UTC 2026
+[post] latency ar_atomic100_neg25 Wed Nov 18 05:24:16 AM UTC 2026
+[post] latency ours_neg05 Wed Nov 18 05:25:15 AM UTC 2026
+[post] latency ar_digits_neg05 Wed Nov 18 05:25:44 AM UTC 2026
+[post] ALL DONE Wed Nov 18 05:28:04 AM UTC 2026

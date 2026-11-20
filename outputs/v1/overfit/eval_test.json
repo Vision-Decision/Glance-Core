@@ -1,0 +1,377 @@
+{
+ "ckpt": "/content/out/overfit_v1/ckpt_final.pt",
+ "base": false,
+ "step": 150,
+ "sets": {
+  "refcoco_testB": {
+   "n": 5095,
+   "acc50": 0.1297350343473994,
+   "gated_acc50": 0.12855740922473013,
+   "mean_iou": 0.2663644982225906,
+   "ece_box_conf": 0.41057119267457887,
+   "ece_iou_head_present_only": 0.42127054580820905,
+   "wall_s": 100.75137996673584
+  },
+  "grefcoco_val": {
+   "n": 14229,
+   "N_acc": 0.79921392476137,
+   "T_acc_single": null,
+   "present_recall_multi": 0.9624342599549212,
+   "auroc_presence": 0.9460036886561589,
+   "ece_presence": 0.12936308331534344,
+   "ece_box_conf": 0.12559125249413416,
+   "ece_iou_head_present_only": null,
+   "calibrated": {
+    "n": 14229,
+    "N_acc": 0.79921392476137,
+    "T_acc_single": null,
+    "present_recall_multi": 0.9624342599549212,
+    "auroc_presence": 0.9460036886561589,
+    "ece_presence": 0.10334445763973998,
+    "ece_box_conf": 0.13034360385379068,
+    "ece_iou_head_present_only": null
+   },
+   "wall_s": 233.55808854103088
+  },
+  "opendecisions": {
+   "raw": {
+    "capability": 35.103450746609944,
+    "intelligence": 29.655968142996812,
+    "calibration": 40.550933350223076,
+    "competence_per_type": {
+     "choice": 51.42810123505372,
+     "noul": 30.76780462856413,
+     "score": 6.771998565372586
+    },
+    "calibration_per_type": {
+     "choice": 15.92444628341415,
+     "noul": 53.28770107443999,
+     "score": 52.44065269281509
+    },
+    "accuracy_per_type": {
+     "choice": 63.75212224108658,
+     "noul": 68.94197952218431,
+     "score": 49.14965986394558
+    },
+    "items": 2352,
+    "predicted": 2352,
+    "calibration_items_tvd": 0.42490416898654526,
+    "calibration_items": 129
+   },
+   "cal": {
+    "capability": 53.68141940601262,
+    "intelligence": 31.111891158440294,
+    "calibration": 76.25094765358494,
+    "competence_per_type": {
+     "choice": 51.42810123505372,
+     "noul": 30.76780462856413,
+     "score": 11.139767611703038
+    },
+    "calibration_per_type": {
+     "choice": 63.97799869253007,
+     "noul": 83.6611862989061,
+     "score": 81.11365796931867
+    },
+    "accuracy_per_type": {
+     "choice": 63.75212224108658,
+     "noul": 68.94197952218431,
+     "score": 49.14965986394558
+    },
+    "items": 2352,
+    "predicted": 2352,
+    "calibration_items_tvd": 0.2719976992642747,
+    "calibration_items": 129
+   },
+   "typed_raw": {
+    "choice": {
+     "n": 1178,
+     "acc": 0.29456706281833617,
+     "ece_top": 0.5954700324663451,
+     "T": 1.0
+    },
+    "noul": {
+     "n": 586,
+     "acc": 0.5273037542662116,
+     "ece_top": 0.3843976821746524,
+     "T": 1.0
+    },
+    "score": {
+     "n": 588,
+     "acc": 0.13435374149659865,
+     "ece_top": 0.7200169113494432,
+     "T": 1.0
+    }
+   },
+   "typed_cal": {
+    "choice": {
+     "n": 1178,
+     "acc": 0.29456706281833617,
+     "ece_top": 0.36341083777442607,
+     "T": 2.6011272427773946
+    },
+    "noul": {
+     "n": 586,
+     "acc": 0.5273037542662116,
+     "ece_top": 0.19406919431674116,
+     "T": 5.320829043665795
+    },
+    "score": {
+     "n": 588,
+     "acc": 0.13435374149659865,
+     "ece_top": 0.4256553427836929,
+     "T": 3.1617684640355206
+    }
+   },
+   "wall_s": 173.47515654563904
+  },
+  "venus": {
+   "raw": {
+    "n": 6165,
+    "click_acc": 0.008165590581086214,
+    "acc50": 0.0007595898214963919,
+    "refusal_acc": 0.657397107897664,
+    "auroc_presence": 0.8689297768081765,
+    "by_group": {
+     "desktop/element_grounding": {
+      "n": 747,
+      "click_acc": 0.009370816599732263
+     },
+     "desktop/functional_grounding": {
+      "n": 415,
+      "click_acc": 0.007228915662650603
+     },
+     "desktop/spatial_grounding": {
+      "n": 492,
+      "click_acc": 0.008130081300813009
+     },
+     "desktop/visual_grounding": {
+      "n": 222,
+      "click_acc": 0.0
+     },
+     "mobile/element_grounding": {
+      "n": 461,
+      "click_acc": 0.019522776572668113
+     },
+     "mobile/functional_grounding": {
+      "n": 181,
+      "click_acc": 0.03867403314917127
+     },
+     "mobile/reason_grounding": {
+      "n": 151,
+      "click_acc": 0.0
+     },
+     "mobile/spatial_grounding": {
+      "n": 288,
+      "click_acc": 0.006944444444444444
+     },
+     "mobile/visual_grounding": {
+      "n": 470,
+      "click_acc": 0.00425531914893617
+     },
+     "web/element_grounding": {
+      "n": 383,
+      "click_acc": 0.005221932114882507
+     },
+     "web/functional_grounding": {
+      "n": 104,
+      "click_acc": 0.009615384615384616
+     },
+     "web/reason_grounding": {
+      "n": 956,
+      "click_acc": 0.0010460251046025104
+     },
+     "web/spatial_grounding": {
+      "n": 249,
+      "click_acc": 0.008032128514056224
+     },
+     "web/visual_grounding": {
+      "n": 147,
+      "click_acc": 0.02040816326530612
+     }
+    }
+   },
+   "cal": {
+    "n": 6165,
+    "click_acc": 0.008165590581086214,
+    "acc50": 0.0007595898214963919,
+    "refusal_acc": 0.657397107897664,
+    "auroc_presence": 0.8689297768081765,
+    "by_group": {
+     "desktop/element_grounding": {
+      "n": 747,
+      "click_acc": 0.009370816599732263
+     },
+     "desktop/functional_grounding": {
+      "n": 415,
+      "click_acc": 0.007228915662650603
+     },
+     "desktop/spatial_grounding": {
+      "n": 492,
+      "click_acc": 0.008130081300813009
+     },
+     "desktop/visual_grounding": {
+      "n": 222,
+      "click_acc": 0.0
+     },
+     "mobile/element_grounding": {
+      "n": 461,
+      "click_acc": 0.019522776572668113
+     },
+     "mobile/functional_grounding": {
+      "n": 181,
+      "click_acc": 0.03867403314917127
+     },
+     "mobile/reason_grounding": {
+      "n": 151,
+      "click_acc": 0.0
+     },
+     "mobile/spatial_grounding": {
+      "n": 288,
+      "click_acc": 0.006944444444444444
+     },
+     "mobile/visual_grounding": {
+      "n": 470,
+      "click_acc": 0.00425531914893617
+     },
+     "web/element_grounding": {
+      "n": 383,
+      "click_acc": 0.005221932114882507
+     },
+     "web/functional_grounding": {
+      "n": 104,
+      "click_acc": 0.009615384615384616
+     },
+     "web/reason_grounding": {
+      "n": 956,
+      "click_acc": 0.0010460251046025104
+     },
+     "web/spatial_grounding": {
+      "n": 249,
+      "click_acc": 0.008032128514056224
+     },
+     "web/visual_grounding": {
+      "n": 147,
+      "click_acc": 0.02040816326530612
+     }
+    }
+   },
+   "wall_s": 762.6829433441162
+  }
+ },
+ "calib_text_heldout": {
+  "raw": {
+   "choice": {
+    "n": 3966,
+    "acc": 0.6792738275340393,
+    "ece_top": 0.20120813597044387,
+    "T": 1.0
+   },
+   "noul": {
+    "n": 763,
+    "acc": 0.6933158584534731,
+    "ece_top": 0.21755847754622504,
+    "T": 1.0
+   },
+   "score": {
+    "n": 639,
+    "acc": 0.5039123630672926,
+    "ece_top": 0.3130326160194611,
+    "T": 1.0
+   }
+  },
+  "cal": {
+   "choice": {
+    "n": 3966,
+    "acc": 0.6792738275340393,
+    "ece_top": 0.051396531524516724,
+    "T": 2.6011272427773946
+   },
+   "noul": {
+    "n": 763,
+    "acc": 0.6933158584534731,
+    "ece_top": 0.028646803961073726,
+    "T": 5.320829043665795
+   },
+   "score": {
+    "n": 639,
+    "acc": 0.5039123630672926,
+    "ece_top": 0.05041108075691681,
+    "T": 3.1617684640355206
+   }
+  }
+ },
+ "calib_natural_heldout": {
+  "raw": {
+   "n": 9225,
+   "acc50": 0.18425787106446775,
+   "gated_acc50": 0.18215892053973012,
+   "mean_iou": 0.30358112526397696,
+   "N_acc": 0.8395303326810176,
+   "T_acc_single": 0.18215892053973012,
+   "auroc_presence": 0.9597288439928764,
+   "ece_presence": 0.05313622535215019,
+   "ece_box_conf": 0.347645565258893,
+   "ece_iou_head_present_only": 0.4566172551938976
+  },
+  "cal": {
+   "n": 9225,
+   "acc50": 0.18425787106446775,
+   "gated_acc50": 0.18215892053973012,
+   "mean_iou": 0.30358112526397696,
+   "N_acc": 0.8395303326810176,
+   "T_acc_single": 0.18215892053973012,
+   "auroc_presence": 0.9597288439928764,
+   "ece_presence": 0.01695476560007684,
+   "ece_box_conf": 0.32799755244025147,
+   "ece_iou_head_present_only": 0.4566172551938976
+  }
+ },
+ "temps": {
+  "presence": 2.210656215011232,
+  "choice": 2.6011272427773946,
+  "noul": 5.320829043665795,
+  "score": 3.1617684640355206
+ },
+ "temps_fit": {
+  "presence": {
+   "nll_T1": 0.30388338077287674,
+   "nll_best": 0.1911119683760896
+  },
+  "choice": {
+   "nll_T1": 1.277319546956547,
+   "nll_best": 0.8851584085538885,
+   "n": 3966
+  },
+  "noul": {
+   "nll_T1": 1.1519643405528817,
+   "nll_best": 0.5905381902828609,
+   "n": 763
+  },
+  "score": {
+   "nll_T1": 1.9715764931382607,
+   "nll_best": 1.2959172248188744,
+   "n": 639
+  }
+ },
+ "latency": {
+  "box_1q": {
+   "ms_median": 219.35188150018803,
+   "ms_mean": 218.88761447000434,
+   "ms_p80": 231.71921220000513,
+   "ms_p90": 232.1351551000589
+  },
+  "box_8q": {
+   "ms_median": 228.04367500066292,
+   "ms_mean": 220.69448970005396,
+   "ms_p80": 236.54598480006825,
+   "ms_p90": 237.40398100035236
+  },
+  "text_1q": {
+   "ms_median": 87.59833300018727,
+   "ms_mean": 88.46745327996359,
+   "ms_p80": 92.4497562004035,
+   "ms_p90": 96.25225589943511
+  },
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+ }
+}

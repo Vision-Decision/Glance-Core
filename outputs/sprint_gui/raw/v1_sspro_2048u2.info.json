@@ -1,0 +1,12 @@
+{
+ "out": "/content/sprint/v1_sspro_2048u2",
+ "n": 1581,
+ "click_acc_box": 0.2890575585072739,
+ "wall_s": 502.7183783054352,
+ "ckpt": "/content/ckpt/v1/ckpt_final.pt",
+ "max_vis": 2048,
+ "upscale": 2.0,
+ "zoom_from": "",
+ "zoom_frac": 0.4,
+ "vis_tokens_median": 2040.0
+}

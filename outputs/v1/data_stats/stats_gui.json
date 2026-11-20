@@ -1,0 +1,56 @@
+{
+ "missing_img_desktop_linux": 6,
+ "missing_img_desktop_macos": 1,
+ "missing_img_mobile_widgetcap": 88717,
+ "missing_img_mobile_ricosca": 158172,
+ "guienv_skip": 262271,
+ "imgs_desktop_linux": 1180,
+ "imgs_desktop_macos": 1312,
+ "imgs_mobile_uibert": 5682,
+ "imgs_mobile_aw": 15905,
+ "imgs_mobile_widgetcap": 1450,
+ "imgs_mobile_ricosca": 1499,
+ "imgs_web_guienv": 45326,
+ "elems_desktop_linux": 43146,
+ "elems_desktop_macos": 18398,
+ "elems_mobile_uibert": 16660,
+ "elems_mobile_aw": 89860,
+ "elems_mobile_widgetcap": 12709,
+ "elems_mobile_ricosca": 15103,
+ "elems_web_guienv": 65701,
+ "used_desktop_linux": {
+  "images": 1005,
+  "questions": 21546
+ },
+ "used_desktop_macos": {
+  "images": 1217,
+  "questions": 14667
+ },
+ "used_mobile_aw": {
+  "images": 4923,
+  "questions": 30012
+ },
+ "used_mobile_uibert": {
+  "images": 4653,
+  "questions": 15000
+ },
+ "used_mobile_widgetcap": {
+  "images": 1444,
+  "questions": 12209
+ },
+ "used_mobile_ricosca": {
+  "images": 1492,
+  "questions": 16041
+ },
+ "used_web_guienv": {
+  "images": 36437,
+  "questions": 57659
+ },
+ "eval_hash_dup_removed": 8057,
+ "unreadable": 1,
+ "records": 50751,
+ "questions": 167134,
+ "absent": 16701,
+ "hard_neg": 8268,
+ "point_only": 51908
+}

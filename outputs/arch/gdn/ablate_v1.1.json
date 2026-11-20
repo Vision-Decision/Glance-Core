@@ -1,0 +1,214 @@
+{
+ "ckpt": "/content/ckpt/glance-train-ckpts/v1.1/ckpt_final.pt",
+ "max_vis": 1600,
+ "sets": {
+  "needle_8.jsonl": {
+   "full": {
+    "n": 200,
+    "click_acc": 1.0,
+    "acc50": 1.0,
+    "presence_auroc": 1.0,
+    "recall_0": 1.0,
+    "N_acc": 1.0
+   },
+   "attn_noimg": {
+    "n": 200,
+    "click_acc": 0.18,
+    "acc50": 0.17333333333333334,
+    "presence_auroc": 0.7626666666666667,
+    "recall_0": 0.006666666666666667,
+    "N_acc": 1.0
+   },
+   "gdn_reset": {
+    "n": 200,
+    "click_acc": 0.9533333333333334,
+    "acc50": 0.9533333333333334,
+    "presence_auroc": 0.9422666666666667,
+    "recall_0": 0.7266666666666667,
+    "N_acc": 1.0
+   }
+  },
+  "needle_16.jsonl": {
+   "full": {
+    "n": 200,
+    "click_acc": 1.0,
+    "acc50": 1.0,
+    "presence_auroc": 1.0,
+    "recall_0": 1.0,
+    "N_acc": 0.98
+   },
+   "attn_noimg": {
+    "n": 200,
+    "click_acc": 0.12,
+    "acc50": 0.11333333333333333,
+    "presence_auroc": 0.6594666666666666,
+    "recall_0": 0.0,
+    "N_acc": 1.0
+   },
+   "gdn_reset": {
+    "n": 200,
+    "click_acc": 0.9333333333333333,
+    "acc50": 0.9333333333333333,
+    "presence_auroc": 0.9428,
+    "recall_0": 0.6066666666666667,
+    "N_acc": 1.0
+   }
+  },
+  "needle_32.jsonl": {
+   "full": {
+    "n": 200,
+    "click_acc": 0.9933333333333333,
+    "acc50": 0.9933333333333333,
+    "presence_auroc": 0.9986666666666667,
+    "recall_0": 1.0,
+    "N_acc": 0.98
+   },
+   "attn_noimg": {
+    "n": 200,
+    "click_acc": 0.08666666666666667,
+    "acc50": 0.07333333333333333,
+    "presence_auroc": 0.5522666666666667,
+    "recall_0": 0.0,
+    "N_acc": 1.0
+   },
+   "gdn_reset": {
+    "n": 200,
+    "click_acc": 0.8066666666666666,
+    "acc50": 0.7866666666666666,
+    "presence_auroc": 0.8956,
+    "recall_0": 0.5533333333333333,
+    "N_acc": 1.0
+   }
+  },
+  "needle_64.jsonl": {
+   "full": {
+    "n": 200,
+    "click_acc": 1.0,
+    "acc50": 0.9933333333333333,
+    "presence_auroc": 1.0,
+    "recall_0": 1.0,
+    "N_acc": 0.98
+   },
+   "attn_noimg": {
+    "n": 200,
+    "click_acc": 0.0,
+    "acc50": 0.0,
+    "presence_auroc": 0.5909333333333333,
+    "recall_0": 0.006666666666666667,
+    "N_acc": 1.0
+   },
+   "gdn_reset": {
+    "n": 200,
+    "click_acc": 0.54,
+    "acc50": 0.5066666666666667,
+    "presence_auroc": 0.8344,
+    "recall_0": 0.3333333333333333,
+    "N_acc": 1.0
+   }
+  },
+  "needle_128.jsonl": {
+   "full": {
+    "n": 200,
+    "click_acc": 1.0,
+    "acc50": 0.9933333333333333,
+    "presence_auroc": 1.0,
+    "recall_0": 1.0,
+    "N_acc": 0.98
+   },
+   "attn_noimg": {
+    "n": 200,
+    "click_acc": 0.013333333333333334,
+    "acc50": 0.013333333333333334,
+    "presence_auroc": 0.556,
+    "recall_0": 0.0,
+    "N_acc": 1.0
+   },
+   "gdn_reset": {
+    "n": 200,
+    "click_acc": 0.4,
+    "acc50": 0.3466666666666667,
+    "presence_auroc": 0.7086666666666667,
+    "recall_0": 0.18666666666666668,
+    "N_acc": 1.0
+   }
+  },
+  "needle_256.jsonl": {
+   "full": {
+    "n": 200,
+    "click_acc": 0.98,
+    "acc50": 0.9,
+    "presence_auroc": 0.9949333333333333,
+    "recall_0": 0.9933333333333333,
+    "N_acc": 0.98
+   },
+   "attn_noimg": {
+    "n": 200,
+    "click_acc": 0.006666666666666667,
+    "acc50": 0.006666666666666667,
+    "presence_auroc": 0.46826666666666666,
+    "recall_0": 0.0,
+    "N_acc": 1.0
+   },
+   "gdn_reset": {
+    "n": 200,
+    "click_acc": 0.19333333333333333,
+    "acc50": 0.18666666666666668,
+    "presence_auroc": 0.5917333333333333,
+    "recall_0": 0.09333333333333334,
+    "N_acc": 1.0
+   }
+  },
+  "needle_512.jsonl": {
+   "full": {
+    "n": 200,
+    "click_acc": 0.9866666666666667,
+    "acc50": 0.7933333333333333,
+    "presence_auroc": 0.9992,
+    "recall_0": 1.0,
+    "N_acc": 0.96
+   },
+   "attn_noimg": {
+    "n": 200,
+    "click_acc": 0.006666666666666667,
+    "acc50": 0.006666666666666667,
+    "presence_auroc": 0.5456,
+    "recall_0": 0.0,
+    "N_acc": 1.0
+   },
+   "gdn_reset": {
+    "n": 200,
+    "click_acc": 0.14,
+    "acc50": 0.08,
+    "presence_auroc": 0.6148,
+    "recall_0": 0.08666666666666667,
+    "N_acc": 1.0
+   }
+  },
+  "refcoco": {
+   "full": {
+    "n": 2190,
+    "click_acc": 0.982648401826484,
+    "acc50": 0.9511415525114155,
+    "presence_auroc": null,
+    "recall_0": 0.9894977168949771,
+    "N_acc": null
+   },
+   "attn_noimg": {
+    "n": 2190,
+    "click_acc": 0.6863013698630137,
+    "acc50": 0.2968036529680365,
+    "presence_auroc": null,
+    "recall_0": 0.38401826484018264,
+    "N_acc": null
+   },
+   "gdn_reset": {
+    "n": 2190,
+    "click_acc": 0.9712328767123287,
+    "acc50": 0.9237442922374429,
+    "presence_auroc": null,
+    "recall_0": 0.9899543378995433,
+    "N_acc": null
+   }
+  }
+ }
+}

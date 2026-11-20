@@ -1,0 +1,109 @@
+{
+ "ckpt": "/content/out/pilot_ckpt.pt",
+ "base": false,
+ "step": 304,
+ "sets": {
+  "refcoco_testB": {
+   "n": 5095,
+   "acc50": 0.30049067713444555,
+   "gated_acc50": 0.30029440628066734,
+   "mean_iou": 0.42074424174122543,
+   "ece_box_conf": 0.11163150224486187,
+   "ece_iou_head_present_only": 0.1091104766732343,
+   "wall_s": 103.45633268356323
+  },
+  "opendecisions": {
+   "raw": {
+    "capability": 59.06264544173848,
+    "intelligence": 51.97483174265561,
+    "calibration": 66.15045914082135,
+    "competence_per_type": {
+     "choice": 64.92807244129193,
+     "noul": 55.04586017309719,
+     "score": 35.95056261357771
+    },
+    "calibration_per_type": {
+     "choice": 43.421632042478976,
+     "noul": 72.78090268114154,
+     "score": 82.24884269884356
+    },
+    "accuracy_per_type": {
+     "choice": 72.15619694397284,
+     "noul": 79.18088737201366,
+     "score": 60.03401360544217
+    },
+    "items": 2352,
+    "predicted": 2352,
+    "calibration_items_tvd": 0.22766331546980242,
+    "calibration_items": 129
+   },
+   "cal": {
+    "capability": 59.06264544173848,
+    "intelligence": 51.97483174265561,
+    "calibration": 66.15045914082135,
+    "competence_per_type": {
+     "choice": 64.92807244129193,
+     "noul": 55.04586017309719,
+     "score": 35.95056261357771
+    },
+    "calibration_per_type": {
+     "choice": 43.421632042478976,
+     "noul": 72.78090268114154,
+     "score": 82.24884269884356
+    },
+    "accuracy_per_type": {
+     "choice": 72.15619694397284,
+     "noul": 79.18088737201366,
+     "score": 60.03401360544217
+    },
+    "items": 2352,
+    "predicted": 2352,
+    "calibration_items_tvd": 0.22766331546980242,
+    "calibration_items": 129
+   },
+   "typed_raw": {
+    "choice": {
+     "n": 1178,
+     "acc": 0.7215619694397284,
+     "ece_top": 0.14187674414455775,
+     "T": 1.0
+    },
+    "noul": {
+     "n": 586,
+     "acc": 0.7918088737201365,
+     "ece_top": 0.08994403802977635,
+     "T": 1.0
+    },
+    "score": {
+     "n": 588,
+     "acc": 0.6003401360544217,
+     "ece_top": 0.12892687223188193,
+     "T": 1.0
+    }
+   },
+   "typed_cal": {
+    "choice": {
+     "n": 1178,
+     "acc": 0.7215619694397284,
+     "ece_top": 0.14187674414455775,
+     "T": 1.0
+    },
+    "noul": {
+     "n": 586,
+     "acc": 0.7918088737201365,
+     "ece_top": 0.08994403802977635,
+     "T": 1.0
+    },
+    "score": {
+     "n": 588,
+     "acc": 0.6003401360544217,
+     "ece_top": 0.12892687223188193,
+     "T": 1.0
+    }
+   },
+   "wall_s": 164.64016199111938
+  }
+ },
+ "temps": {},
+ "temps_fit": {}
+}

@@ -1,0 +1,82 @@
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 20083.59it/s]
+[beam] batch 0/1501 q=15 5s b4lp0:0s b8lp0:1s b4lp1:1s b8lp1:1s
+[beam] batch 20/1501 q=285 76s b4lp0:11s b8lp0:16s b4lp1:10s b8lp1:16s
+[beam] batch 40/1501 q=573 148s b4lp0:21s b8lp0:31s b4lp1:21s b8lp1:31s
+[beam] batch 60/1501 q=816 214s b4lp0:30s b8lp0:45s b4lp1:29s b8lp1:45s
+[beam] batch 80/1501 q=1023 276s b4lp0:38s b8lp0:58s b4lp1:38s b8lp1:59s
+[beam] batch 100/1501 q=1286 346s b4lp0:48s b8lp0:72s b4lp1:48s b8lp1:73s
+[beam] batch 120/1501 q=1560 417s b4lp0:58s b8lp0:88s b4lp1:57s b8lp1:88s
+[beam] batch 140/1501 q=1841 487s b4lp0:68s b8lp0:103s b4lp1:67s b8lp1:102s
+[beam] batch 160/1501 q=2097 557s b4lp0:77s b8lp0:118s b4lp1:76s b8lp1:117s
+[beam] batch 180/1501 q=2317 618s b4lp0:85s b8lp0:131s b4lp1:85s b8lp1:130s
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/content/dv/ablation/beam_ab.py", line 141, in <module>
+    main()
+    ~~~~^^
+  File "/content/dv/ablation/beam_ab.py", line 91, in main
+    res[name] = incdec.beam_search(net, fmt, cache, lg0, B=B, length_penalty=L, split=split)
+                ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/content/dv/ablation/incdec.py", line 290, in beam_search
+    cache, lg = step(net, cache, torch.tensor(nxt_tok, device=dev))
+                ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/content/dv/ablation/incdec.py", line 147, in step
+    a, S2 = bb._gdn_core(m, conv, z, beta, g, S.contiguous())
+            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/dv/ablation/dvcore/backbone.py", line 54, in _gdn_core
+    o, S = _gdr(q, k, v, g, beta, init)
+           ~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/dv/ablation/dvcore/backbone.py", line 30, in _gdr
+    return fla_chunk_gdr(q, k, v, g=g, beta=beta, initial_state=initial_state, output_final_state=True,
+                         use_qk_l2norm_in_kernel=True)
+  File "/usr/local/lib/python3.13/dist-packages/torch/_dynamo/eval_frame.py", line 1548, in _fn
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/fla/backends.py", line 200, in wrapper
+    return default_function(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/fla/ops/gated_delta_rule/chunk.py", line 571, in chunk_gated_delta_rule
+    o, final_state = ChunkGatedDeltaRuleFunction.apply(
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        q,
+        ^^
+    ...<18 lines>...
+        chunk_size,
+        ^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/fla/utils/decorators.py", line 152, in wrapper
+    return fn(*processed_args, **processed_kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/torch/amp/autocast_mode.py", line 481, in decorate_fwd
+    return fwd(*args, **kwargs)  # pyrefly: ignore [not-callable]
+  File "/usr/local/lib/python3.13/dist-packages/fla/ops/gated_delta_rule/chunk.py", line 292, in forward
+    g, o, A, final_state, initial_state, g_input = chunk_gated_delta_rule_fwd(
+                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        q=q,
+        ^^^^
+    ...<14 lines>...
+        chunk_size=chunk_size,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/fla/ops/gated_delta_rule/chunk.py", line 95, in chunk_gated_delta_rule_fwd
+    h, v_new, final_state = chunk_gated_delta_rule_fwd_h(
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        k=k,
+        ^^^^
+    ...<8 lines>...
+        chunk_size=chunk_size,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/torch/_dynamo/eval_frame.py", line 1548, in _fn
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/fla/backends.py", line 200, in wrapper
+    return default_function(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/fla/ops/common/chunk_delta_h.py", line 723, in chunk_gated_delta_rule_fwd_h
+    final_state = k.new_zeros(N, HV, K, V, dtype=torch.float32) if output_final_state else None
+                  ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 608.00 MiB. GPU 0 has a total capacity of 94.97 GiB of which 14.25 GiB is free. Process 8087 has 27.98 GiB memory in use. Including non-PyTorch memory, this process has 52.73 GiB memory in use. 52.23 GiB allowed; Of the allocated memory 51.74 GiB is allocated by PyTorch, and 346.13 MiB is reserved by PyTorch but unallocated.

@@ -1,0 +1,1435 @@
+{
+ "grefcoco": {
+  "n": 25063,
+  "n_absent": 8905,
+  "n_single": 10834,
+  "n_multi": 5324,
+  "missing_glance_rows": 0,
+  "jev_failures": {},
+  "N_acc": {
+   "v": 0.873778775968557,
+   "n": 8905,
+   "ci": [
+    0.8667040988208872,
+    0.8804042672655812
+   ],
+   "glance": 0.8740033688938799,
+   "diff": -0.0002245929253228418,
+   "diff_ci": [
+    -0.0073020774845592275,
+    0.006625491297024166
+   ]
+  },
+  "auroc_presence": {
+   "jev": {
+    "v": 0.9526216407751666,
+    "n": 25063,
+    "ci": [
+     0.9499761640376735,
+     0.9554287390738332
+    ]
+   },
+   "glance": 0.9792274061748043,
+   "jev_box_confidence_as_presence": 0.7484000985773627,
+   "diff_ci": [
+    -0.028944843129398136,
+    -0.02431306660348224
+   ]
+  },
+  "ece_presence": {
+   "jev": 0.1551574033435742,
+   "glance": 0.02411609543949255,
+   "jev_ci": [
+    0.15218803614890475,
+    0.15863785261141927
+   ]
+  },
+  "acc50_single": {
+   "v": 0.7414620638729924,
+   "n": 10834,
+   "ci": [
+    0.7329702787520768,
+    0.7501407605685804
+   ],
+   "glance": 0.9320657190326749,
+   "diff": -0.19060365515968247,
+   "diff_ci": [
+    -0.19900313826841431,
+    -0.18219955695034143
+   ]
+  },
+  "gated_acc50_single": {
+   "v": 0.7132176481447295,
+   "n": 10834,
+   "ci": [
+    0.7046312534613255,
+    0.7220786413143806
+   ],
+   "glance": 0.9208048735462433,
+   "diff": -0.20758722540151375,
+   "diff_ci": [
+    -0.2164482185711648,
+    -0.19900083071810962
+   ]
+  },
+  "mean_iou_single": {
+   "jev": 0.6690177848537399,
+   "glance": 0.7650302750599963
+  },
+  "false_refusal_single": {
+   "v": 0.05067380468894222,
+   "n": 10834,
+   "ci": [
+    0.0464279121284844,
+    0.0547374007753369
+   ],
+   "glance": 0.01366069780321211,
+   "diff": 0.037013106885730104,
+   "diff_ci": [
+    0.032949510799335426,
+    0.040982093409636336
+   ]
+  },
+  "box_conf_auroc_single": {
+   "jev": {
+    "v": 0.7573482919195377,
+    "n": 10834,
+    "ci": [
+     0.7472929550271777,
+     0.7673992250614425
+    ]
+   },
+   "glance": {
+    "v": 0.901457160048912,
+    "n": 10834,
+    "ci": [
+     0.8894845071416893,
+     0.9121286862459197
+    ]
+   },
+   "jev_p_times_conf": 0.7561718256710882
+  },
+  "box_conf_ece_single": {
+   "jev": 0.32927727524460026,
+   "glance": 0.00680262137714604
+  },
+  "multi_present_recall": {
+   "v": 0.8392186326070623,
+   "n": 5324,
+   "ci": [
+    0.8287002253944402,
+    0.8486147633358377
+   ],
+   "glance": 0.9492862509391435,
+   "diff": -0.11006761833208123,
+   "diff_ci": [
+    -0.12077854996243434,
+    -0.09954921111945914
+   ]
+  },
+  "multi_hit_any": {
+   "v": 0.709992486851991,
+   "n": 5324,
+   "ci": [
+    0.6979714500375658,
+    0.7222013523666416
+   ],
+   "glance": 0.7362885048835462,
+   "diff": -0.026296018031555235,
+   "diff_ci": [
+    -0.04019534184823437,
+    -0.01108189331329823
+   ]
+  },
+  "multi_union_iou50": {
+   "v": 0.40401953418482345,
+   "n": 5324,
+   "ci": [
+    0.39068369646882045,
+    0.41698441021788124
+   ],
+   "glance": 0.4124718256949662,
+   "diff": -0.008452291510142762,
+   "diff_ci": [
+    -0.02405146506386174,
+    0.005822689706987185
+   ]
+  },
+  "N_acc_at_1pct_false_refusal": {
+   "jev": {
+    "tau": 0.31,
+    "N_acc": 0.7253228523301516
+   },
+   "glance": {
+    "tau": 0.376973,
+    "N_acc": 0.8450308815272319
+   }
+  },
+  "run": {
+   "requests": 1501,
+   "ok": 1501,
+   "failed_requests": 0,
+   "cost_usd": 1.742930616,
+   "input_tokens": 41498348,
+   "questions_per_request_median": 32.0,
+   "latency_ms_median": 401.52454376220703,
+   "latency_ms_p80": 468.66583824157715,
+   "note": "per-request wall time under concurrent bulk load from gen-host (network + OpenRouter + Jev)"
+  }
+ },
+ "refcoco8": {
+  "refcoco_val": {
+   "acc50": {
+    "v": 0.7389699095440281,
+    "n": 10834,
+    "ci": [
+     0.7309350193834225,
+     0.7468155805796567
+    ],
+    "glance": 0.9320657190326749,
+    "diff": -0.1930958094886468,
+    "diff_ci": [
+     -0.20131068857301093,
+     -0.18497323241646668
+    ]
+   },
+   "gated_acc50": 0.7110023998523168,
+   "glance_acc50_eval_results": 0.9316965109839395,
+   "glance_gated_acc50": 0.9202510614731401,
+   "jev_false_refusal": 0.049843086579287425,
+   "jev_failures": {},
+   "run": {
+    "requests": 1500,
+    "ok": 1500,
+    "failed_requests": 0,
+    "cost_usd": 0.79157904,
+    "input_tokens": 18847120,
+    "questions_per_request_median": 12.0,
+    "latency_ms_median": 322.5959539413452,
+    "latency_ms_p80": 367.23008155822754,
+    "note": "per-request wall time under concurrent bulk load from gen-host (network + OpenRouter + Jev)"
+   },
+   "paired_with_glance_rows": true
+  },
+  "refcoco_testA": {
+   "acc50": {
+    "v": 0.7937069117907017,
+    "n": 5657,
+    "ci": [
+     0.7834541276294856,
+     0.8043132402333393
+    ],
+    "glance": 0.9453774085204172,
+    "diff": -0.15167049672971544,
+    "diff_ci": [
+     -0.16280714159448473,
+     -0.14124094042778856
+    ]
+   },
+   "gated_acc50": 0.7648930528548701,
+   "glance_acc50_eval_results": 0.9452006363797065,
+   "glance_gated_acc50": 0.9354781686406223,
+   "jev_false_refusal": 0.05108714866537034,
+   "jev_failures": {},
+   "run": {
+    "requests": 750,
+    "ok": 750,
+    "failed_requests": 0,
+    "cost_usd": 0.407599458,
+    "input_tokens": 9704749,
+    "questions_per_request_median": 12.0,
+    "latency_ms_median": 324.97870922088623,
+    "latency_ms_p80": 374.883508682251,
+    "note": "per-request wall time under concurrent bulk load from gen-host (network + OpenRouter + Jev)"
+   },
+   "paired_with_glance_rows": true
+  },
+  "refcoco_testB": {
+   "acc50": {
+    "v": 0.6779195289499509,
+    "n": 5095,
+    "ci": [
+     0.6645682041216879,
+     0.6902894995093228
+    ],
+    "glance": 0.9053974484789009,
+    "diff": -0.22747791952895002,
+    "diff_ci": [
+     -0.24043670264965655,
+     -0.21432777232580968
+    ]
+   },
+   "gated_acc50": 0.6465161923454367,
+   "glance_acc50_eval_results": 0.9065750736015702,
+   "glance_gated_acc50": 0.8928361138370952,
+   "jev_false_refusal": 0.05986261040235525,
+   "jev_failures": {},
+   "run": {
+    "requests": 750,
+    "ok": 750,
+    "failed_requests": 0,
+    "cost_usd": 0.371678202,
+    "input_tokens": 8849481,
+    "questions_per_request_median": 12.0,
+    "latency_ms_median": 319.3904161453247,
+    "latency_ms_p80": 358.42251777648926,
+    "note": "per-request wall time under concurrent bulk load from gen-host (network + OpenRouter + Jev)"
+   },
+   "paired_with_glance_rows": true
+  },
+  "refcocoplus_val": {
+   "acc50": {
+    "v": 0.6945528908719093,
+    "n": 10758,
+    "ci": [
+     0.6861823759063023,
+     0.702918758133482
+    ],
+    "glance": 0.8970998326826548,
+    "diff": -0.2025469418107455,
+    "diff_ci": [
+     -0.21203058189254503,
+     -0.19427170477783967
+    ]
+   },
+   "gated_acc50": 0.6509574270310466,
+   "glance_acc50_eval_results": 0.8967280163599182,
+   "glance_gated_acc50": 0.8832496746607176,
+   "jev_false_refusal": 0.08644729503625209,
+   "jev_failures": {},
+   "run": {
+    "requests": 1500,
+    "ok": 1500,
+    "failed_requests": 0,
+    "cost_usd": 0.784563108,
+    "input_tokens": 18680074,
+    "questions_per_request_median": 12.0,
+    "latency_ms_median": 341.0220146179199,
+    "latency_ms_p80": 383.01897048950195,
+    "note": "per-request wall time under concurrent bulk load from gen-host (network + OpenRouter + Jev)"
+   },
+   "paired_with_glance_rows": true
+  },
+  "refcocoplus_testA": {
+   "acc50": {
+    "v": 0.7479916171847713,
+    "n": 5726,
+    "ci": [
+     0.7361115962277331,
+     0.7591687041564792
+    ],
+    "glance": 0.932937478169752,
+    "diff": -0.18494586098498078,
+    "diff_ci": [
+     -0.19700052392595183,
+     -0.17394341599720575
+    ]
+   },
+   "gated_acc50": 0.7118407265106531,
+   "glance_acc50_eval_results": 0.9332867621376179,
+   "glance_gated_acc50": 0.9219350331819769,
+   "jev_false_refusal": 0.0689835836535103,
+   "jev_failures": {},
+   "run": {
+    "requests": 750,
+    "ok": 750,
+    "failed_requests": 0,
+    "cost_usd": 0.4121754,
+    "input_tokens": 9813700,
+    "questions_per_request_median": 12.0,
+    "latency_ms_median": 352.2762060165405,
+    "latency_ms_p80": 395.5521583557129,
+    "note": "per-request wall time under concurrent bulk load from gen-host (network + OpenRouter + Jev)"
+   },
+   "paired_with_glance_rows": true
+  },
+  "refcocoplus_testB": {
+   "acc50": {
+    "v": 0.6348946614849662,
+    "n": 4889,
+    "ci": [
+     0.6205716915524647,
+     0.6482051544283085
+    ],
+    "glance": 0.8451626099406832,
+    "diff": -0.21026794845571695,
+    "diff_ci": [
+     -0.22458580486807111,
+     -0.19574555123747184
+    ]
+   },
+   "gated_acc50": 0.5901002249948865,
+   "glance_acc50_eval_results": 0.8457762323583555,
+   "glance_gated_acc50": 0.8320719983636735,
+   "jev_false_refusal": 0.10288402536305993,
+   "jev_failures": {},
+   "run": {
+    "requests": 750,
+    "ok": 750,
+    "failed_requests": 0,
+    "cost_usd": 0.357541506,
+    "input_tokens": 8512893,
+    "questions_per_request_median": 12.0,
+    "latency_ms_median": 341.3902521133423,
+    "latency_ms_p80": 381.8324089050293,
+    "note": "per-request wall time under concurrent bulk load from gen-host (network + OpenRouter + Jev)"
+   },
+   "paired_with_glance_rows": true
+  },
+  "refcocog_val": {
+   "acc50": {
+    "v": 0.7790032679738562,
+    "n": 4896,
+    "ci": [
+     0.7675653594771242,
+     0.7900326797385621
+    ],
+    "glance": 0.8997140522875817,
+    "diff": -0.1207107843137255,
+    "diff_ci": [
+     -0.13235294117647056,
+     -0.10947201797385626
+    ]
+   },
+   "gated_acc50": 0.7432598039215687,
+   "glance_acc50_eval_results": 0.8995098039215687,
+   "glance_gated_acc50": 0.8817401960784313,
+   "jev_false_refusal": 0.06209150326797386,
+   "jev_failures": {},
+   "run": {
+    "requests": 1300,
+    "ok": 1300,
+    "failed_requests": 0,
+    "cost_usd": 0.37382436,
+    "input_tokens": 8900580,
+    "questions_per_request_median": 8.0,
+    "latency_ms_median": 308.47203731536865,
+    "latency_ms_p80": 344.1930294036865,
+    "note": "per-request wall time under concurrent bulk load from gen-host (network + OpenRouter + Jev)"
+   },
+   "paired_with_glance_rows": true
+  },
+  "refcocog_test": {
+   "acc50": {
+    "v": 0.7717142262028744,
+    "n": 9602,
+    "ci": [
+     0.7632758800249948,
+     0.7799416788169131
+    ],
+    "glance": 0.9046032076650697,
+    "diff": -0.1328889814621953,
+    "diff_ci": [
+     -0.14111903770047904,
+     -0.12413820037492188
+    ]
+   },
+   "gated_acc50": 0.7351593418037908,
+   "glance_acc50_eval_results": 0.9043949177254739,
+   "glance_gated_acc50": 0.8856488231618412,
+   "jev_false_refusal": 0.06675692564049157,
+   "jev_failures": {},
+   "run": {
+    "requests": 2600,
+    "ok": 2600,
+    "failed_requests": 0,
+    "cost_usd": 0.743501556,
+    "input_tokens": 17702418,
+    "questions_per_request_median": 8.0,
+    "latency_ms_median": 293.39611530303955,
+    "latency_ms_p80": 327.7553081512451,
+    "note": "per-request wall time under concurrent bulk load from gen-host (network + OpenRouter + Jev)"
+   },
+   "paired_with_glance_rows": true
+  },
+  "avg8": {
+   "jev": 0.7298441267503823,
+   "glance_v1": 0.9078959941835187,
+   "glance_v0": 0.928
+  }
+ },
+ "robust": {
+  "zh": {
+   "n": 2479,
+   "n_absent": 497,
+   "acc50": {
+    "v": 0.7265388496468214,
+    "n": 1982,
+    "ci": [
+     0.7073662966700303,
+     0.7457114026236125
+    ],
+    "glance": 0.8905146316851665,
+    "diff": -0.16397578203834517,
+    "diff_ci": [
+     -0.18467457114026234,
+     -0.14480322906155407
+    ]
+   },
+   "gated_acc50": {
+    "v": 0.6856710393541877,
+    "n": 1982,
+    "ci": [
+     0.665489404641776,
+     0.7048562058526741
+    ],
+    "glance": 0.8768920282542886,
+    "diff": -0.19122098890010086,
+    "diff_ci": [
+     -0.21343340060544905,
+     -0.1715438950554995
+    ]
+   },
+   "N_acc": {
+    "v": 0.8933601609657947,
+    "n": 497,
+    "ci": [
+     0.8672032193158954,
+     0.9195674044265594
+    ],
+    "glance": 0.8712273641851107,
+    "diff": 0.022132796780684028,
+    "diff_ci": [
+     -0.006036217303822977,
+     0.0523138832997988
+    ]
+   },
+   "auroc_presence": {
+    "jev": 0.9613183642724156,
+    "glance": 0.9830496602216732
+   },
+   "ece_presence": {
+    "jev": 0.22929407018959258,
+    "glance": 0.014109044164982225
+   }
+  },
+  "para": {
+   "n": 2459,
+   "n_absent": 489,
+   "acc50": {
+    "v": 0.7467005076142132,
+    "n": 1970,
+    "ci": [
+     0.7273984771573604,
+     0.765494923857868
+    ],
+    "glance": 0.8949238578680203,
+    "diff": -0.14822335025380706,
+    "diff_ci": [
+     -0.166497461928934,
+     -0.12842639593908634
+    ]
+   },
+   "gated_acc50": {
+    "v": 0.7055837563451777,
+    "n": 1970,
+    "ci": [
+     0.683248730964467,
+     0.7248730964467005
+    ],
+    "glance": 0.8781725888324873,
+    "diff": -0.1725888324873096,
+    "diff_ci": [
+     -0.1918908629441625,
+     -0.15177664974619298
+    ]
+   },
+   "N_acc": {
+    "v": 0.869120654396728,
+    "n": 489,
+    "ci": [
+     0.8383946830265848,
+     0.8997955010224948
+    ],
+    "glance": 0.8773006134969326,
+    "diff": -0.008179959100204526,
+    "diff_ci": [
+     -0.03885480572597133,
+     0.020449897750511314
+    ]
+   },
+   "auroc_presence": {
+    "jev": 0.9595559154183925,
+    "glance": 0.9823570323772747
+   },
+   "ece_presence": {
+    "jev": 0.17724684831232207,
+    "glance": 0.015415524880438878
+   }
+  },
+  "func": {
+   "n": 2325,
+   "n_absent": 500,
+   "acc50": {
+    "v": 0.7013698630136986,
+    "n": 1825,
+    "ci": [
+     0.6794520547945205,
+     0.7205616438356165
+    ],
+    "glance": 0.6871232876712329,
+    "diff": 0.014246575342465762,
+    "diff_ci": [
+     -0.010958904109589107,
+     0.038904109589041114
+    ]
+   },
+   "gated_acc50": {
+    "v": 0.6586301369863014,
+    "n": 1825,
+    "ci": [
+     0.6356027397260274,
+     0.6794657534246575
+    ],
+    "glance": 0.6219178082191781,
+    "diff": 0.03671232876712327,
+    "diff_ci": [
+     0.008219178082191858,
+     0.06356164383561647
+    ]
+   },
+   "N_acc": {
+    "v": 0.988,
+    "n": 500,
+    "ci": [
+     0.978,
+     0.996
+    ],
+    "glance": 0.996,
+    "diff": -0.008000000000000007,
+    "diff_ci": [
+     -0.020000000000000018,
+     0.0020000000000000018
+    ]
+   },
+   "auroc_presence": {
+    "jev": 0.9904098630136986,
+    "glance": 0.9894575342465753
+   },
+   "ece_presence": {
+    "jev": 0.21420645161290325,
+    "glance": 0.16959403591695046
+   }
+  },
+  "vague": {
+   "n": 2273,
+   "n_absent": 500,
+   "acc50": {
+    "v": 0.544839255499154,
+    "n": 1773,
+    "ci": [
+     0.5211505922165821,
+     0.568542019176537
+    ],
+    "glance": 0.6170332769317541,
+    "diff": -0.07219402143260012,
+    "diff_ci": [
+     -0.09646080090242523,
+     -0.04737732656514382
+    ]
+   },
+   "gated_acc50": {
+    "v": 0.5115623237450648,
+    "n": 1773,
+    "ci": [
+     0.4861816130851664,
+     0.5363790186125211
+    ],
+    "glance": 0.55668358714044,
+    "diff": -0.045121263395375144,
+    "diff_ci": [
+     -0.07106598984771567,
+     -0.01974055273547659
+    ]
+   },
+   "N_acc": {
+    "v": 0.85,
+    "n": 500,
+    "ci": [
+     0.822,
+     0.882
+    ],
+    "glance": 0.896,
+    "diff": -0.04600000000000004,
+    "diff_ci": [
+     -0.07200000000000006,
+     -0.016000000000000014
+    ]
+   },
+   "auroc_presence": {
+    "jev": 0.9289695431472081,
+    "glance": 0.9347681895093063
+   },
+   "ece_presence": {
+    "jev": 0.22448746150461943,
+    "glance": 0.16024343926454104
+   }
+  },
+  "jev_failures": {},
+  "run": {
+   "requests": 2621,
+   "ok": 2621,
+   "failed_requests": 0,
+   "cost_usd": 0.745790346,
+   "input_tokens": 17756913,
+   "questions_per_request_median": 6.0,
+   "latency_ms_median": 297.652006149292,
+   "latency_ms_p80": 331.129789352417,
+   "note": "per-request wall time under concurrent bulk load from gen-host (network + OpenRouter + Jev)"
+  }
+ },
+ "gui": {
+  "ss2": {
+   "n": 1272,
+   "n_pos": 1272,
+   "n_refusal": 0,
+   "click_acc": {
+    "v": 0.8970125786163522,
+    "n": 1272,
+    "ci": [
+     0.8789308176100629,
+     0.9127358490566038
+    ],
+    "glance": 0.8922955974842768,
+    "diff": 0.004716981132075415,
+    "diff_ci": [
+     -0.01650943396226412,
+     0.025943396226415172
+    ]
+   },
+   "glance_click_acc_eval_results": 0.8938679245283019,
+   "gated_click_acc": 0.8309748427672956,
+   "jev_false_refusal_pos": 0.08647798742138364,
+   "jev_failures": {},
+   "run": {
+    "requests": 730,
+    "ok": 730,
+    "failed_requests": 0,
+    "cost_usd": 0.552941466,
+    "input_tokens": 13165273,
+    "questions_per_request_median": 2.0,
+    "latency_ms_median": 394.6918249130249,
+    "latency_ms_p80": 477.3780822753906,
+    "note": "per-request wall time under concurrent bulk load from gen-host (network + OpenRouter + Jev)"
+   },
+   "by_group": {
+    "desktop/icon": {
+     "n": 140,
+     "click_acc": 0.8642857142857143,
+     "glance": 0.8357142857142857
+    },
+    "desktop/text": {
+     "n": 194,
+     "click_acc": 0.9587628865979382,
+     "glance": 0.9381443298969072
+    },
+    "mobile/icon": {
+     "n": 211,
+     "click_acc": 0.8767772511848341,
+     "glance": 0.8862559241706162
+    },
+    "mobile/text": {
+     "n": 290,
+     "click_acc": 0.9758620689655172,
+     "glance": 0.9517241379310345
+    },
+    "web/icon": {
+     "n": 203,
+     "click_acc": 0.7635467980295566,
+     "glance": 0.8374384236453202
+    },
+    "web/text": {
+     "n": 234,
+     "click_acc": 0.9017094017094017,
+     "glance": 0.8760683760683761
+    }
+   },
+   "image_prep": {
+    "downscaled": 566,
+    "sent_max_side": 1568
+   }
+  },
+  "sspro": {
+   "n": 1581,
+   "n_pos": 1581,
+   "n_refusal": 0,
+   "click_acc": {
+    "v": 0.20556609740670462,
+    "n": 1581,
+    "ci": [
+     0.18657495256166984,
+     0.2251739405439595
+    ]
+   },
+   "glance_click_acc_eval_results": 0.2934851359898798,
+   "gated_click_acc": 0.17710309930423782,
+   "jev_false_refusal_pos": 0.3308032890575585,
+   "jev_failures": {},
+   "run": {
+    "requests": 1581,
+    "ok": 1581,
+    "failed_requests": 0,
+    "cost_usd": 0.944153616,
+    "input_tokens": 22479848,
+    "questions_per_request_median": 2.0,
+    "latency_ms_median": 412.98747062683105,
+    "latency_ms_p80": 486.2213134765625,
+    "note": "per-request wall time under concurrent bulk load from gen-host (network + OpenRouter + Jev)"
+   },
+   "by_group": {
+    "linux/icon": {
+     "n": 19,
+     "click_acc": 0.05263157894736842,
+     "glance": 0.05263157894736842
+    },
+    "linux/text": {
+     "n": 31,
+     "click_acc": 0.22580645161290322,
+     "glance": 0.3548387096774194
+    },
+    "macos/icon": {
+     "n": 206,
+     "click_acc": 0.06796116504854369,
+     "glance": 0.15048543689320387
+    },
+    "macos/text": {
+     "n": 398,
+     "click_acc": 0.35678391959798994,
+     "glance": 0.4221105527638191
+    },
+    "windows/icon": {
+     "n": 379,
+     "click_acc": 0.07651715039577836,
+     "glance": 0.1424802110817942
+    },
+    "windows/text": {
+     "n": 548,
+     "click_acc": 0.24087591240875914,
+     "glance": 0.36313868613138683
+    }
+   },
+   "image_prep": {
+    "downscaled": 1581,
+    "sent_max_side": 1568
+   }
+  },
+  "venus": {
+   "n": 6165,
+   "n_pos": 5266,
+   "n_refusal": 899,
+   "click_acc": {
+    "v": 0.4143562476262818,
+    "n": 5266,
+    "ci": [
+     0.40106342575009496,
+     0.42803835928598555
+    ],
+    "glance": 0.472844663881504,
+    "diff": -0.058488416255222164,
+    "diff_ci": [
+     -0.07462969996202051,
+     -0.04386156475503228
+    ]
+   },
+   "glance_click_acc_eval_results": 0.4734143562476263,
+   "gated_click_acc": 0.3406760349411318,
+   "jev_false_refusal_pos": 0.27136346372958603,
+   "jev_failures": {},
+   "run": {
+    "requests": 1819,
+    "ok": 1819,
+    "failed_requests": 0,
+    "cost_usd": 2.484267576,
+    "input_tokens": 59149228,
+    "questions_per_request_median": 6.0,
+    "latency_ms_median": 474.3685722351074,
+    "latency_ms_p80": 587.750244140625,
+    "note": "per-request wall time under concurrent bulk load from gen-host (network + OpenRouter + Jev)"
+   },
+   "refusal_acc": {
+    "v": 0.8754171301446051,
+    "n": 899,
+    "ci": [
+     0.8542825361512792,
+     0.8976640711902113
+    ],
+    "glance": 0.8175750834260289,
+    "diff": 0.05784204671857618,
+    "diff_ci": [
+     0.028921023359288145,
+     0.08565072302558396
+    ]
+   },
+   "glance_refusal_acc_eval_results": 0.8153503893214683,
+   "auroc_presence": {
+    "jev": 0.9015649958366198,
+    "glance_eval_results": 0.7378056894882993
+   },
+   "overall_micro": 0.4815896188158962,
+   "glance_overall_micro": 0.5232765612327656,
+   "by_group": {
+    "desktop/element_grounding": {
+     "n": 747,
+     "click_acc": 0.35876840696117807,
+     "glance": 0.47523427041499333
+    },
+    "desktop/functional_grounding": {
+     "n": 415,
+     "click_acc": 0.3325301204819277,
+     "glance": 0.3349397590361446
+    },
+    "desktop/spatial_grounding": {
+     "n": 492,
+     "click_acc": 0.28252032520325204,
+     "glance": 0.4715447154471545
+    },
+    "desktop/visual_grounding": {
+     "n": 222,
+     "click_acc": 0.2927927927927928,
+     "glance": 0.509009009009009
+    },
+    "mobile/element_grounding": {
+     "n": 461,
+     "click_acc": 0.6095444685466378,
+     "glance": 0.7310195227765727
+    },
+    "mobile/functional_grounding": {
+     "n": 181,
+     "click_acc": 0.5414364640883977,
+     "glance": 0.47513812154696133
+    },
+    "mobile/reason_grounding": {
+     "n": 151,
+     "click_acc": 0.5364238410596026,
+     "glance": 0.25165562913907286
+    },
+    "mobile/spatial_grounding": {
+     "n": 288,
+     "click_acc": 0.4131944444444444,
+     "glance": 0.625
+    },
+    "mobile/visual_grounding": {
+     "n": 470,
+     "click_acc": 0.6723404255319149,
+     "glance": 0.8063829787234043
+    },
+    "web/element_grounding": {
+     "n": 383,
+     "click_acc": 0.4621409921671018,
+     "glance": 0.5926892950391645
+    },
+    "web/functional_grounding": {
+     "n": 104,
+     "click_acc": 0.40384615384615385,
+     "glance": 0.27884615384615385
+    },
+    "web/reason_grounding": {
+     "n": 956,
+     "click_acc": 0.27405857740585776,
+     "glance": 0.11401673640167365
+    },
+    "web/spatial_grounding": {
+     "n": 249,
+     "click_acc": 0.46586345381526106,
+     "glance": 0.6345381526104418
+    },
+    "web/visual_grounding": {
+     "n": 147,
+     "click_acc": 0.54421768707483,
+     "glance": 0.7551020408163265
+    }
+   },
+   "image_prep": {
+    "downscaled": 1809,
+    "sent_max_side": 1568
+   }
+  }
+ },
+ "attr": {
+  "color": {
+   "jev": {
+    "FA_0_5": [
+     2.9585798816568047,
+     1.2701935834832458,
+     6.738063687914381
+    ],
+    "FR_0_5_pos": [
+     0.0,
+     0,
+     4.693945377411976
+    ],
+    "auroc": 0.9995448338643604,
+    "neg_boxed_on_object": [
+     2.9585798816568047,
+     1.2701935834832458,
+     6.738063687914381
+    ]
+   },
+   "glance": {
+    "FA_0_5": [
+     0.591715976331361,
+     0.10452618665798483,
+     3.2752157273256852
+    ],
+    "FR_0_5_pos": [
+     3.8461538461538463,
+     1.316558678081521,
+     10.708621670298763
+    ],
+    "auroc": 0.999620694886967,
+    "neg_boxed_on_object": [
+     0.591715976331361,
+     0.10452618665798483,
+     3.2752157273256852
+    ]
+   },
+   "n_pos": 78,
+   "n_neg": 169
+  },
+  "action": {
+   "jev": {
+    "FA_0_5": [
+     0.0,
+     0,
+     7.270029673590504
+    ],
+    "FR_0_5_pos": [
+     0.0,
+     0,
+     12.064720365810762
+    ],
+    "auroc": 1.0,
+    "neg_boxed_on_object": [
+     0.0,
+     0,
+     7.270029673590504
+    ]
+   },
+   "glance": {
+    "FA_0_5": [
+     4.081632653061225,
+     1.1265396927928273,
+     13.713283476831107
+    ],
+    "FR_0_5_pos": [
+     0.0,
+     0,
+     12.064720365810762
+    ],
+    "auroc": 1.0,
+    "neg_boxed_on_object": [
+     4.081632653061225,
+     1.1265396927928273,
+     13.713283476831107
+    ]
+   },
+   "n_pos": 28,
+   "n_neg": 49
+  },
+  "position": {
+   "jev": {
+    "FA_0_5": [
+     3.125,
+     0.8611957712516591,
+     10.697493882294246
+    ],
+    "FR_0_5_pos": [
+     3.125,
+     0.8611957712516591,
+     10.697493882294246
+    ],
+    "auroc": 0.99072265625,
+    "neg_boxed_on_object": [
+     1.5625,
+     0.27634707504014044,
+     8.33429890029063
+    ]
+   },
+   "glance": {
+    "FA_0_5": [
+     1.5625,
+     0.27634707504014044,
+     8.33429890029063
+    ],
+    "FR_0_5_pos": [
+     64.0625,
+     51.82062363615084,
+     74.71176946778539
+    ],
+    "auroc": 0.8961181640625,
+    "neg_boxed_on_object": [
+     0.0,
+     0,
+     5.662602297115633
+    ]
+   },
+   "n_pos": 64,
+   "n_neg": 64
+  },
+  "size": {
+   "jev": {
+    "FA_0_5": [
+     24.324324324324326,
+     13.361203432663304,
+     40.11760249070895
+    ],
+    "FR_0_5_pos": [
+     10.81081081081081,
+     4.2851205205062675,
+     24.708846415167162
+    ],
+    "auroc": 0.9247626004382761,
+    "neg_boxed_on_object": [
+     24.324324324324326,
+     13.361203432663304,
+     40.11760249070895
+    ]
+   },
+   "glance": {
+    "FA_0_5": [
+     13.513513513513514,
+     5.9132072625076235,
+     27.97772747070557
+    ],
+    "FR_0_5_pos": [
+     24.324324324324326,
+     13.361203432663304,
+     40.11760249070895
+    ],
+    "auroc": 0.9050401753104456,
+    "neg_boxed_on_object": [
+     8.108108108108109,
+     2.7960066396321386,
+     21.300992498501532
+    ]
+   },
+   "n_pos": 37,
+   "n_neg": 37
+  },
+  "count": {
+   "jev": {
+    "FA_0_5": [
+     1.282051282051282,
+     0.3522843269481466,
+     4.553572471282101
+    ],
+    "FR_0_5_pos": [
+     0.0,
+     0,
+     4.693945377411976
+    ],
+    "auroc": 0.999465811965812,
+    "neg_boxed_on_object": [
+     0.641025641025641,
+     0.1132436172597704,
+     3.541374454631402
+    ]
+   },
+   "glance": {
+    "FA_0_5": [
+     14.102564102564102,
+     9.501044890064092,
+     20.429586434947666
+    ],
+    "FR_0_5_pos": [
+     0.0,
+     0,
+     4.693945377411976
+    ],
+    "auroc": 0.9978632478632479,
+    "neg_boxed_on_object": [
+     13.461538461538462,
+     8.976012076172953,
+     19.703380522499728
+    ]
+   },
+   "n_pos": 78,
+   "n_neg": 156
+  },
+  "bare": {
+   "n": 78,
+   "jev_FR": [
+    0.0,
+    0,
+    4.693945377411976
+   ],
+   "glance_FR": [
+    0.0,
+    0,
+    4.693945377411976
+   ],
+   "jev_acc50": 0.9615384615384616,
+   "glance_acc50": 0.9487179487179487
+  },
+  "jev_failures": {},
+  "run": {
+   "requests": 78,
+   "ok": 78,
+   "failed_requests": 0,
+   "cost_usd": 0.050278788,
+   "input_tokens": 1197114,
+   "questions_per_request_median": 20.0,
+   "latency_ms_median": 345.9320068359375,
+   "latency_ms_p80": 394.5326328277588,
+   "note": "per-request wall time under concurrent bulk load from gen-host (network + OpenRouter + Jev)"
+  }
+ },
+ "ambig": {
+  "single/bare_the": {
+   "n": 37,
+   "jev": {
+    "p_med": 0.78,
+    "rejected": 0.0,
+    "hit_any_instance": 0.972972972972973
+   },
+   "glance": {
+    "p_med": 0.9981,
+    "rejected": 0.0,
+    "hit_any_instance": 0.972972972972973
+   }
+  },
+  "single/bare_a": {
+   "n": 37,
+   "jev": {
+    "p_med": 0.9,
+    "rejected": 0.02702702702702703,
+    "hit_any_instance": 0.972972972972973
+   },
+   "glance": {
+    "p_med": 0.9965,
+    "rejected": 0.02702702702702703,
+    "hit_any_instance": 0.972972972972973
+   }
+  },
+  "single/plural": {
+   "n": 37,
+   "jev": {
+    "p_med": 0.69,
+    "rejected": 0.02702702702702703,
+    "hit_any_instance": 0.972972972972973
+   },
+   "glance": {
+    "p_med": 0.9901,
+    "rejected": 0.02702702702702703,
+    "hit_any_instance": 0.972972972972973
+   }
+  },
+  "single/leftmost": {
+   "n": 37,
+   "jev": {
+    "p_med": 0.54,
+    "rejected": 0.3783783783783784,
+    "hit_any_instance": 0.918918918918919
+   },
+   "glance": {
+    "p_med": 0.0555,
+    "rejected": 0.8648648648648649,
+    "hit_any_instance": 0.8378378378378378
+   }
+  },
+  "single/rightmost": {
+   "n": 37,
+   "jev": {
+    "p_med": 0.55,
+    "rejected": 0.32432432432432434,
+    "hit_any_instance": 0.972972972972973
+   },
+   "glance": {
+    "p_med": 0.0566,
+    "rejected": 0.8648648648648649,
+    "hit_any_instance": 0.8648648648648649
+   }
+  },
+  "single/biggest": {
+   "n": 37,
+   "jev": {
+    "p_med": 0.63,
+    "rejected": 0.10810810810810811,
+    "hit_any_instance": 0.972972972972973
+   },
+   "glance": {
+    "p_med": 0.4527,
+    "rejected": 0.5135135135135135,
+    "hit_any_instance": 0.972972972972973
+   }
+  },
+  "multi/bare_the": {
+   "n": 39,
+   "jev": {
+    "p_med": 0.69,
+    "rejected": 0.02564102564102564,
+    "hit_any_instance": 0.8461538461538461
+   },
+   "glance": {
+    "p_med": 0.9929,
+    "rejected": 0.0,
+    "hit_any_instance": 0.9487179487179487
+   }
+  },
+  "multi/bare_a": {
+   "n": 39,
+   "jev": {
+    "p_med": 0.93,
+    "rejected": 0.02564102564102564,
+    "hit_any_instance": 0.8717948717948718
+   },
+   "glance": {
+    "p_med": 0.9926,
+    "rejected": 0.0,
+    "hit_any_instance": 0.7435897435897436
+   }
+  },
+  "multi/plural": {
+   "n": 39,
+   "jev": {
+    "p_med": 0.81,
+    "rejected": 0.02564102564102564,
+    "hit_any_instance": 0.8205128205128205
+   },
+   "glance": {
+    "p_med": 0.9979,
+    "rejected": 0.0,
+    "hit_any_instance": 0.7435897435897436
+   }
+  },
+  "multi/leftmost": {
+   "n": 34,
+   "jev": {
+    "p_med": 0.71,
+    "rejected": 0.0,
+    "hit_any_instance": 0.8823529411764706
+   },
+   "glance": {
+    "p_med": 0.98255,
+    "rejected": 0.17647058823529413,
+    "hit_any_instance": 0.9117647058823529
+   }
+  },
+  "multi/rightmost": {
+   "n": 31,
+   "jev": {
+    "p_med": 0.79,
+    "rejected": 0.03225806451612903,
+    "hit_any_instance": 0.7419354838709677
+   },
+   "glance": {
+    "p_med": 0.9842,
+    "rejected": 0.0967741935483871,
+    "hit_any_instance": 0.967741935483871
+   }
+  },
+  "multi/biggest": {
+   "n": 24,
+   "jev": {
+    "p_med": 0.63,
+    "rejected": 0.25,
+    "hit_any_instance": 0.875
+   },
+   "glance": {
+    "p_med": 0.9843,
+    "rejected": 0.08333333333333333,
+    "hit_any_instance": 1.0
+   }
+  },
+  "more_than_one_auroc": {
+   "n": 76,
+   "jev": 0.9892584892584892,
+   "glance": 0.990990990990991
+  },
+  "count_acc": {
+   "n": 76,
+   "jev": 0.8289473684210527,
+   "glance": 0.6842105263157895
+  },
+  "run": {
+   "requests": 76,
+   "ok": 76,
+   "failed_requests": 0,
+   "cost_usd": 0.037074576,
+   "input_tokens": 882728,
+   "questions_per_request_median": 14.0,
+   "latency_ms_median": 330.17897605895996,
+   "latency_ms_p80": 382.8904628753662,
+   "note": "per-request wall time under concurrent bulk load from gen-host (network + OpenRouter + Jev)"
+  }
+ },
+ "od": {
+  "jev": {
+   "capability": 80.89137120551453,
+   "intelligence": 72.98642046884083,
+   "calibration": 88.79632194218823,
+   "competence_per_type": {
+    "choice": 80.4459870848887,
+    "noul": 76.23196389913981,
+    "score": 62.281310422493995
+   },
+   "calibration_per_type": {
+    "choice": 81.16349809885934,
+    "noul": 92.45051194539245,
+    "score": 92.77495578231292
+   },
+   "accuracy_per_type": {
+    "choice": 84.55008488964346,
+    "noul": 89.59044368600682,
+    "score": 81.97278911564626
+   },
+   "items": 2352,
+   "predicted": 2352,
+   "calibration_items_tvd": 0.08987976701823791,
+   "calibration_items": 129
+  },
+  "glance_v1_clipped": {
+   "capability": 67.65091497855803,
+   "intelligence": 54.813072163655875,
+   "calibration": 80.4887577934602,
+   "competence_per_type": {
+    "choice": 67.91305851445935,
+    "noul": 53.922207672535045,
+    "score": 42.60395030397324
+   },
+   "calibration_per_type": {
+    "choice": 64.59389511433979,
+    "noul": 88.73416604979131,
+    "score": 88.13821221624949
+   },
+   "accuracy_per_type": {
+    "choice": 75.21222410865875,
+    "noul": 79.01023890784982,
+    "score": 66.66666666666666
+   },
+   "items": 2352,
+   "predicted": 2352,
+   "calibration_items_tvd": 0.1900516515122169,
+   "calibration_items": 129
+  },
+  "predicted": 2352,
+  "jev_failures": {},
+  "run": {
+   "requests": 2352,
+   "ok": 2352,
+   "failed_requests": 0,
+   "cost_usd": 0.063722736,
+   "input_tokens": 1517208,
+   "questions_per_request_median": 1.0,
+   "latency_ms_median": 211.14087104797363,
+   "latency_ms_p80": 241.70775413513184,
+   "note": "per-request wall time under concurrent bulk load from gen-host (network + OpenRouter + Jev)"
+  }
+ },
+ "solo": {
+  "n": 1089,
+  "acc50_solo_vs_grouped": {
+   "solo": 0.7658402203856749,
+   "grouped": 0.7630853994490359,
+   "diff": 0.0027548209366390353,
+   "diff_ci": [
+    -0.010101010101010055,
+    0.015610651974288348
+   ]
+  },
+  "false_refusal_solo": 0.047750229568411386,
+  "false_refusal_grouped": 0.050505050505050504,
+  "p_mean_abs_diff": 0.02726354453627181,
+  "note": "'glance' fields inside mean_ci here mean the grouped Jev run, not Glance"
+ }
+}

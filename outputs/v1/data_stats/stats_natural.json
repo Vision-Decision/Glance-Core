@@ -1,0 +1,20 @@
+{
+ "images": 23807,
+ "calib_images": 600,
+ "held_out_eval_images": 6549,
+ "questions": 360968,
+ "src": {
+  "refcocog": 69990,
+  "swap": 35371,
+  "colorswap": 24606,
+  "samecat": 24579,
+  "refcocoplus": 91025,
+  "refcoco": 98854,
+  "grefcoco_nt": 16543
+ },
+ "absent": 101099,
+ "hard_neg": 65728,
+ "easy_neg": 35371,
+ "absent_ratio": 0.28007745838966336,
+ "hard_frac_of_neg": 0.6501350161722668
+}

@@ -1,0 +1,24 @@
+{
+ "ckpt": "/content/ckpt/ablation/ar_hier_neg25_bf16.pt",
+ "variant": "ar_hier",
+ "split_k": 1,
+ "image_stride": 16,
+ "max_nodes": 10000,
+ "n_present": 698,
+ "n_absent": 548,
+ "wall_s": 3295.0942492485046,
+ "n_forward": 10958,
+ "present": {
+  "refuse": 0.23065902578796563,
+  "accept": 0.5587392550143266,
+  "undecided": 0.21060171919770773,
+  "refuse_upper": 0.44126074498567336
+ },
+ "absent": {
+  "refuse": 0.9507299270072993,
+  "accept": 0.03467153284671533,
+  "undecided": 0.014598540145985401
+ },
+ "acc50_map_box_accepted": 0.9615384615384616,
+ "mean_expanded": 2533.61316211878
+}

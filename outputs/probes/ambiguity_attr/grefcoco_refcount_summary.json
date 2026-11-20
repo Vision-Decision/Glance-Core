@@ -1,0 +1,27 @@
+{
+ "n": {
+  "2": 821,
+  "1": 890,
+  "0": 590
+ },
+ "n_images": 300,
+ "auroc_multi_vs_single_choice_P_ge2": 0.7841,
+ "auroc_multi_vs_single_yesno": 0.8932,
+ "auroc_absent_vs_present_choice_P0": 0.9701,
+ "confusion_true_to_pred": {
+  "0->0": 575,
+  "0->1": 12,
+  "0->2+": 3,
+  "1->0": 302,
+  "1->1": 471,
+  "1->2+": 117,
+  "2+->0": 411,
+  "2+->1": 29,
+  "2+->2+": 381
+ },
+ "acc_3way": 0.6202,
+ "multi_pred_2plus": 0.4641,
+ "single_pred_2plus": 0.1315,
+ "multi_yes_gt_0_5": 0.5883,
+ "single_yes_gt_0_5": 0.0775
+}

@@ -1,0 +1,17 @@
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 16631.28it/s]
+[beam] batch 0/188 q=32 14s b4lp0:1s b8lp0:2s b16lp0:4s b4lp1:1s b8lp1:2s b16lp1:4s
+[beam] batch 20/188 q=567 246s b4lp0:19s b8lp0:35s b16lp0:64s b4lp1:19s b8lp1:35s b16lp1:64s
+[beam] batch 40/188 q=1067 462s b4lp0:34s b8lp0:66s b16lp0:122s b4lp1:34s b8lp1:66s b16lp1:122s
+[beam] batch 60/188 q=1529 668s b4lp0:49s b8lp0:95s b16lp0:176s b4lp1:49s b8lp1:95s b16lp1:177s
+[beam] batch 80/188 q=2059 900s b4lp0:67s b8lp0:129s b16lp0:237s b4lp1:66s b8lp1:129s b16lp1:237s
+[beam] batch 100/188 q=2647 1149s b4lp0:85s b8lp0:164s b16lp0:303s b4lp1:85s b8lp1:164s b16lp1:304s
+[beam] batch 120/188 q=3162 1373s b4lp0:102s b8lp0:197s b16lp0:362s b4lp1:101s b8lp1:197s b16lp1:363s
+[beam] batch 140/188 q=3641 1585s b4lp0:117s b8lp0:228s b16lp0:418s b4lp1:117s b8lp1:227s b16lp1:418s
+[beam] batch 160/188 q=4230 1836s b4lp0:136s b8lp0:263s b16lp0:485s b4lp1:136s b8lp1:263s b16lp1:485s
+[beam] batch 180/188 q=4703 2044s b4lp0:152s b8lp0:294s b16lp0:539s b4lp1:151s b8lp1:293s b16lp1:539s
+b4lp0 {"beams": 4, "length_penalty": 0.0, "split": 1, "refusal_present": 0.3924611973392461, "N_acc": 0.9762231367169639, "acc50_present_accepted": 0.9829683698296837, "gated_acc50": 0.5971914264597191, "bad": 0.0}
+b8lp0 {"beams": 8, "length_penalty": 0.0, "split": 1, "refusal_present": 0.3887657058388766, "N_acc": 0.9753086419753086, "acc50_present_accepted": 0.9830713422007256, "gated_acc50": 0.6008869179600886, "bad": 0.0}
+b16lp0 {"beams": 16, "length_penalty": 0.0, "split": 1, "refusal_present": 0.3817442719881744, "N_acc": 0.9743941472336534, "acc50_present_accepted": 0.9826658696951583, "gated_acc50": 0.6075388026607539, "bad": 0.0}
+b4lp1 {"beams": 4, "length_penalty": 1.0, "split": 1, "refusal_present": 0.009608277900960829, "N_acc": 0.790580704160951, "acc50_present_accepted": 0.9507462686567164, "gated_acc50": 0.9416112342941612, "bad": 0.0}
+b8lp1 {"beams": 8, "length_penalty": 1.0, "split": 1, "refusal_present": 0.009608277900960829, "N_acc": 0.7892089620484682, "acc50_present_accepted": 0.9503731343283582, "gated_acc50": 0.9412416851441242, "bad": 0.0}
+b16lp1 {"beams": 16, "length_penalty": 1.0, "split": 1, "refusal_present": 0.009977827050997782, "N_acc": 0.7887517146776406, "acc50_present_accepted": 0.9511011571481897, "gated_acc50": 0.9416112342941612, "bad": 0.0}

@@ -1,0 +1,5 @@
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 17835.30it/s]
+[beam] batch 0/6 q=42 36s b4lp0:4s
+[W1118 06:57:33.865536117 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 360710144 bytes (free: 188612608, total: 101974081536).
+[W1118 06:58:03.916112773 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 679477248 bytes (free: 262012928, total: 101974081536).
+b4lp0 {"beams": 4, "length_penalty": 0.0, "split": 1, "refusal_present": 0.04712041884816754, "N_acc": 0.9084967320261438, "acc50_present_accepted": 0.9505494505494505, "gated_acc50": 0.9057591623036649, "bad": 0.0}

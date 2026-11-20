@@ -1,0 +1,44 @@
+[lat] check Wed Nov 18 06:56:47 AM UTC 2026
+[lat] ours+ar Wed Nov 18 06:58:12 AM UTC 2026
+[lat] vllm Wed Nov 18 07:06:09 AM UTC 2026
+[lat] vllm-nopc Wed Nov 18 07:12:59 AM UTC 2026
+[lat] ALL DONE Wed Nov 18 07:17:08 AM UTC 2026
+[lat] presence-1pass Wed Nov 18 07:17:08 AM UTC 2026
+[lat] presence-1pass done Wed Nov 18 07:18:11 AM UTC 2026
+[beam] start ar_digits_neg25 stride=1 Wed Nov 18 07:26:46 AM UTC 2026
+[map] start ar_digits_neg25 stride=8 Wed Nov 18 08:03:22 AM UTC 2026
+[map] restarted with stride16/max_nodes10000
+[map] start ar_digits_neg25 stride=16 Wed Nov 18 08:36:06 AM UTC 2026
+[map] done ar_digits_neg25 Wed Nov 18 09:38:07 AM UTC 2026
+[beamfix] start ar_digits_neg25 stride=4 Wed Nov 18 09:38:07 AM UTC 2026
+[beamfix] done ar_digits_neg25 Wed Nov 18 10:13:46 AM UTC 2026
+[map] start ar_hier_neg25 stride=16 Wed Nov 18 10:13:46 AM UTC 2026
+[map] FAIL ar_hier_neg25 Wed Nov 18 10:13:50 AM UTC 2026
+[beamfix] start ar_hier_neg25 stride=4 Wed Nov 18 10:13:50 AM UTC 2026
+[beamfix] FAIL ar_hier_neg25 Wed Nov 18 10:13:55 AM UTC 2026
+[map] start ar_atomic100_neg25 stride=8 Wed Nov 18 10:13:55 AM UTC 2026
+[map] FAIL ar_atomic100_neg25 Wed Nov 18 10:13:59 AM UTC 2026
+[map] start ar_atomic1000_neg25 stride=8 Wed Nov 18 10:13:59 AM UTC 2026
+[map] FAIL ar_atomic1000_neg25 Wed Nov 18 10:14:03 AM UTC 2026
+[lat_jobs] ALL DONE Wed Nov 18 10:14:03 AM UTC 2026
+[map] start atomic100 split2 Wed Nov 18 10:14:06 AM UTC 2026
+[map] FAIL atomic100 split2
+[map] start atomic100 split4 Wed Nov 18 10:14:10 AM UTC 2026
+[map] FAIL atomic100 split4
+[map] start atomic100 split10 Wed Nov 18 10:14:14 AM UTC 2026
+[map] FAIL atomic100 split10
+[lat] mixed-ours Wed Nov 18 10:14:19 AM UTC 2026
+[lat] mixed-vllm Wed Nov 18 10:15:14 AM UTC 2026
+[lat] mixed done Wed Nov 18 10:20:20 AM UTC 2026
+[chain2] ALL DONE Wed Nov 18 10:20:20 AM UTC 2026
+[map] start ar_hier_neg25 stride=16 Wed Nov 18 10:30:38 AM UTC 2026
+[map] done ar_hier_neg25 Wed Nov 18 11:25:42 AM UTC 2026
+[map] start ar_atomic100_neg25 stride=8 Wed Nov 18 11:25:42 AM UTC 2026
+[map] done ar_atomic100_neg25 Wed Nov 18 11:31:14 AM UTC 2026
+[beamfix] start ar_hier_neg25 stride=4 Wed Nov 18 11:31:14 AM UTC 2026
+[beamfix] done ar_hier_neg25 Wed Nov 18 11:51:06 AM UTC 2026
+[map] start ar_atomic1000_neg25 stride=8 Wed Nov 18 11:51:06 AM UTC 2026
+[map] done ar_atomic1000_neg25 Wed Nov 18 12:21:00 PM UTC 2026
+[map] start atomic100 split2 Wed Nov 18 12:21:00 PM UTC 2026
+[map] done atomic100 split2 Wed Nov 18 12:25:47 PM UTC 2026
+[map] start atomic100 split4 Wed Nov 18 12:25:47 PM UTC 2026

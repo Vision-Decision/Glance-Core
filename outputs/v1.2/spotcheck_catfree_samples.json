@@ -1,0 +1,296 @@
+{
+ "cf_anchor": [
+  {
+   "image_id": 572814,
+   "text": "the oven",
+   "present": true
+  },
+  {
+   "image_id": 1397,
+   "text": "the surfboard",
+   "present": true
+  },
+  {
+   "image_id": 478475,
+   "text": "the cell phone",
+   "present": true
+  },
+  {
+   "image_id": 425480,
+   "text": "the TV",
+   "present": true
+  },
+  {
+   "image_id": 459543,
+   "text": "the motorcycle",
+   "present": true
+  },
+  {
+   "image_id": 427493,
+   "text": "the oven",
+   "present": true
+  },
+  {
+   "image_id": 120818,
+   "text": "the knife",
+   "present": true
+  },
+  {
+   "image_id": 186493,
+   "text": "the horse",
+   "present": true
+  }
+ ],
+ "cf_func": [
+  {
+   "image_id": 400216,
+   "text": "a place for sleeping at night",
+   "present": true
+  },
+  {
+   "image_id": 425480,
+   "text": "what I use to see video",
+   "present": true
+  },
+  {
+   "image_id": 372801,
+   "text": "上面铺满料的餐点",
+   "present": true
+  },
+  {
+   "image_id": 485926,
+   "text": "something to drive people around in",
+   "present": true
+  },
+  {
+   "image_id": 447108,
+   "text": "a large beast to ride",
+   "present": true
+  },
+  {
+   "image_id": 195791,
+   "text": "用来打扮自己的",
+   "present": true
+  },
+  {
+   "image_id": 334735,
+   "text": "what I could ride to get around",
+   "present": true
+  },
+  {
+   "image_id": 425041,
+   "text": "the animal reaching out to grab food",
+   "present": true
+  }
+ ],
+ "cf_func_neg": [
+  {
+   "image_id": 122539,
+   "text": "something you use to bake bread in",
+   "present": false
+  },
+  {
+   "image_id": 359857,
+   "text": "something to throw in a game",
+   "present": false
+  },
+  {
+   "image_id": 116588,
+   "text": "something to ride around on two wheels",
+   "present": false
+  },
+  {
+   "image_id": 385695,
+   "text": "something to cut paper with",
+   "present": false
+  },
+  {
+   "image_id": 238857,
+   "text": "something you can peel and eat as a snack",
+   "present": false
+  },
+  {
+   "image_id": 282002,
+   "text": "something green to eat as a vegetable",
+   "present": false
+  },
+  {
+   "image_id": 539575,
+   "text": "something you can peel and eat the segments of",
+   "present": false
+  },
+  {
+   "image_id": 13144,
+   "text": "能直接剥皮吃的黄色水果",
+   "present": false
+  }
+ ],
+ "cf_generic": [
+  {
+   "image_id": 33612,
+   "text": "the furniture over there",
+   "present": true
+  },
+  {
+   "image_id": 508870,
+   "text": "那台运载工具",
+   "present": true
+  },
+  {
+   "image_id": 415026,
+   "text": "that creature",
+   "present": true
+  },
+  {
+   "image_id": 222926,
+   "text": "这辆载具",
+   "present": true
+  },
+  {
+   "image_id": 440938,
+   "text": "that piece of furniture",
+   "present": true
+  },
+  {
+   "image_id": 241248,
+   "text": "那个毛茸茸的家伙",
+   "present": true
+  },
+  {
+   "image_id": 121340,
+   "text": "the animal",
+   "present": true
+  },
+  {
+   "image_id": 336546,
+   "text": "that piece of furniture",
+   "present": true
+  }
+ ],
+ "cf_generic_neg": [
+  {
+   "image_id": 141695,
+   "text": "the sports equipment",
+   "present": false
+  },
+  {
+   "image_id": 394747,
+   "text": "那个餐具",
+   "present": false
+  },
+  {
+   "image_id": 50790,
+   "text": "that utensil",
+   "present": false
+  },
+  {
+   "image_id": 68158,
+   "text": "那个餐具",
+   "present": false
+  },
+  {
+   "image_id": 51993,
+   "text": "that animal",
+   "present": false
+  },
+  {
+   "image_id": 563914,
+   "text": "那个电器",
+   "present": false
+  },
+  {
+   "image_id": 304759,
+   "text": "the kitchen appliance",
+   "present": false
+  },
+  {
+   "image_id": 494891,
+   "text": "有啥吃的吗",
+   "present": false
+  }
+ ],
+ "cf_rel": [
+  {
+   "image_id": 396082,
+   "text": "what's up above the dining table, that utensil",
+   "present": true
+  },
+  {
+   "image_id": 443349,
+   "text": "the belonging up from the cat",
+   "present": true
+  },
+  {
+   "image_id": 385695,
+   "text": "the thing to the right of the cow",
+   "present": true
+  },
+  {
+   "image_id": 1397,
+   "text": "what is beneath the person",
+   "present": true
+  },
+  {
+   "image_id": 456391,
+   "text": "床上放着的那个东西",
+   "present": true
+  },
+  {
+   "image_id": 535445,
+   "text": "that kitchen appliance next to the couch",
+   "present": true
+  },
+  {
+   "image_id": 509419,
+   "text": "the device to the right of the person",
+   "present": true
+  },
+  {
+   "image_id": 205917,
+   "text": "放在长凳上的那个随身物品",
+   "present": true
+  }
+ ],
+ "cf_rel_neg": [
+  {
+   "image_id": 456491,
+   "text": "the piece of furniture to the left of the cat",
+   "present": false
+  },
+  {
+   "image_id": 53644,
+   "text": "the food below the person",
+   "present": false
+  },
+  {
+   "image_id": 438237,
+   "text": "the thing below the skateboard",
+   "present": false
+  },
+  {
+   "image_id": 269597,
+   "text": "那个人头顶上的东西",
+   "present": false
+  },
+  {
+   "image_id": 413847,
+   "text": "the tableware to the left of the banana",
+   "present": false
+  },
+  {
+   "image_id": 395800,
+   "text": "the object to the right of the cat",
+   "present": false
+  },
+  {
+   "image_id": 180287,
+   "text": "the animal to the left of the bed",
+   "present": false
+  },
+  {
+   "image_id": 163660,
+   "text": "the thing below the bed",
+   "present": false
+  }
+ ]
+}

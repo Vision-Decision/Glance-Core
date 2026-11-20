@@ -1,0 +1,312 @@
+== bf16 block-mask mbs 1,2,4
+env {'torch': '2.14.1+cu130', 'transformers': '5.23.0', 'fla': '0.6.0', 'causal_conv1d': 'missing (ModuleNotFoundError)', 'peft': '0.21.2', 'bitsandbytes': '0.50.2', 'kernels': '0.18.3'}
+Loading weights:   0%|          | 0/1184 [00:00<?, ?it/s]Loading weights:   1%|          | 12/1184 [00:00<00:09, 117.94it/s]Loading weights:   3%|▎         | 36/1184 [00:00<00:06, 181.13it/s]Loading weights:   5%|▌         | 61/1184 [00:00<00:05, 207.53it/s]Loading weights:   7%|▋         | 82/1184 [00:00<00:05, 201.60it/s]Loading weights:   9%|▉         | 105/1184 [00:00<00:05, 210.17it/s]Loading weights:  11%|█▏        | 134/1184 [00:00<00:04, 220.19it/s]Loading weights:  14%|█▎        | 160/1184 [00:00<00:04, 226.89it/s]Loading weights:  16%|█▌        | 187/1184 [00:00<00:04, 231.06it/s]Loading weights:  18%|█▊        | 211/1184 [00:00<00:04, 233.38it/s]Loading weights:  20%|██        | 240/1184 [00:01<00:03, 236.18it/s]Loading weights:  22%|██▏       | 266/1184 [00:01<00:03, 237.96it/s]Loading weights:  25%|██▍       | 293/1184 [00:01<00:03, 239.24it/s]Loading weights:  27%|██▋       | 319/1184 [00:01<00:03, 239.55it/s]Loading weights:  29%|██▉       | 347/1184 [00:01<00:03, 243.43it/s]Loading weights:  31%|███▏      | 372/1184 [00:01<00:03, 239.14it/s]Loading weights:  34%|███▍      | 400/1184 [00:01<00:03, 243.03it/s]Loading weights:  36%|███▌      | 425/1184 [00:01<00:03, 239.31it/s]Loading weights:  38%|███▊      | 453/1184 [00:01<00:03, 242.98it/s]Loading weights:  40%|████      | 478/1184 [00:02<00:02, 240.01it/s]Loading weights:  43%|████▎     | 505/1184 [00:02<00:02, 248.21it/s]Loading weights:  45%|████▍     | 530/1184 [00:02<00:02, 241.09it/s]Loading weights:  47%|████▋     | 557/1184 [00:02<00:02, 243.78it/s]Loading weights:  49%|████▉     | 582/1184 [00:02<00:02, 236.98it/s]Loading weights:  52%|█████▏    | 611/1184 [00:02<00:02, 238.70it/s]Loading weights:  54%|█████▎    | 635/1184 [00:02<00:02, 238.81it/s]Loading weights:  56%|█████▌    | 664/1184 [00:02<00:02, 249.29it/s]Loading weights:  58%|█████▊    | 689/1184 [00:02<00:02, 241.21it/s]Loading weights:  61%|██████    | 717/1184 [00:03<00:01, 247.78it/s]Loading weights:  63%|██████▎   | 742/1184 [00:03<00:01, 239.10it/s]Loading weights:  65%|██████▌   | 770/1184 [00:03<00:01, 243.64it/s]Loading weights:  67%|██████▋   | 795/1184 [00:03<00:01, 235.23it/s]Loading weights:  70%|██████▉   | 823/1184 [00:03<00:01, 231.30it/s]Loading weights:  72%|███████▏  | 847/1184 [00:03<00:01, 231.92it/s]Loading weights: 100%|██████████| 1184/1184 [00:03<00:00, 319.77it/s]
+loaded Qwen/Qwen3.8-27B in 5s, mem 51.0 GB
+lora targets 400 ['linear_attn.in_proj_qkv', 'linear_attn.in_proj_z', 'linear_attn.out_proj', 'mlp.down_proj', 'mlp.gate_proj', 'mlp.up_proj', 'self_attn.k_proj', 'self_attn.o_proj', 'self_attn.q_proj', 'self_attn.v_proj']
+/usr/local/lib/python3.13/dist-packages/transformers/modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+trainable LoRA params 435.2M
+/usr/local/lib/python3.13/dist-packages/transformers/modeling_utils.py:3195: FutureWarning: `gradient_checkpointing_enable` is deprecated and will be removed in v6. Use `activation_checkpointing_enable` instead.
+  warnings.warn(
+visual tokens 896, prefix 938, total 1138
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+  mbs=1 step0 46.52s loss=14.313 peak=57.5GB
+  mbs=1 step1 1.02s loss=13.818 peak=58.2GB
+  mbs=1 step2 1.01s loss=13.890 peak=58.2GB
+  mbs=1 step3 1.01s loss=13.073 peak=58.2GB
+{"quant": "bf16", "mbs": 1, "maskmode": "block", "attn": "sdpa", "gc": true, "ok": true, "step_s": 1.0130452315012615, "tok_per_s": 1123.3456953482366, "records_per_s": 0.9871227551390481, "peak_alloc_gb": 58.16870450973511, "peak_reserved_gb": 58.4453125, "step_times": [46.51671886444092, 1.0150549411773682, 1.0117111206054688, 1.0123696327209473]}
+  mbs=2 step0 4.02s loss=12.932 peak=58.9GB
+  mbs=2 step1 2.10s loss=13.549 peak=58.9GB
+  mbs=2 step2 2.10s loss=13.004 peak=58.9GB
+  mbs=2 step3 2.10s loss=13.176 peak=58.9GB
+{"quant": "bf16", "mbs": 2, "maskmode": "block", "attn": "sdpa", "gc": true, "ok": true, "step_s": 2.099495013554891, "tok_per_s": 1084.0702098864472, "records_per_s": 0.9526100262622559, "peak_alloc_gb": 58.85685682296753, "peak_reserved_gb": 59.1328125, "step_times": [4.023367166519165, 2.0991997718811035, 2.0993285179138184, 2.099956750869751]}
+  mbs=4 step0 19.49s loss=13.090 peak=61.4GB
+  mbs=4 step1 4.46s loss=13.264 peak=61.4GB
+  mbs=4 step2 4.46s loss=12.943 peak=61.4GB
+  mbs=4 step3 4.46s loss=13.199 peak=61.4GB
+{"quant": "bf16", "mbs": 4, "maskmode": "block", "attn": "sdpa", "gc": true, "ok": true, "step_s": 4.461266438166301, "tok_per_s": 1020.3380728524686, "records_per_s": 0.8966063909072659, "peak_alloc_gb": 61.354591846466064, "peak_reserved_gb": 61.791015625, "step_times": [19.49348735809326, 4.458769798278809, 4.461480140686035, 4.463549375534058]}
+DONE /content/27b_out/tp_bf16_block.json
+== bf16 causal mbs 1,4 (baseline: sdpa flash path)
+env {'torch': '2.14.1+cu130', 'transformers': '5.23.0', 'fla': '0.6.0', 'causal_conv1d': 'missing (ModuleNotFoundError)', 'peft': '0.21.2', 'bitsandbytes': '0.50.2', 'kernels': '0.18.3'}
+Loading weights:   0%|          | 0/1184 [00:00<?, ?it/s]Loading weights:   1%|          | 12/1184 [00:00<00:09, 119.00it/s]Loading weights:   3%|▎         | 41/1184 [00:00<00:05, 206.29it/s]Loading weights:   6%|▌         | 66/1184 [00:00<00:05, 215.63it/s]Loading weights:   8%|▊         | 93/1184 [00:00<00:04, 226.10it/s]Loading weights:  10%|█         | 119/1184 [00:00<00:04, 230.33it/s]Loading weights:  12%|█▏        | 147/1184 [00:00<00:04, 236.13it/s]Loading weights:  15%|█▍        | 172/1184 [00:00<00:04, 233.77it/s]Loading weights:  17%|█▋        | 200/1184 [00:00<00:04, 239.07it/s]Loading weights:  19%|█▉        | 224/1184 [00:00<00:04, 233.24it/s]Loading weights:  21%|██▏       | 253/1184 [00:01<00:03, 241.62it/s]Loading weights:  23%|██▎       | 278/1184 [00:01<00:03, 237.99it/s]Loading weights:  26%|██▌       | 306/1184 [00:01<00:03, 242.73it/s]Loading weights:  28%|██▊       | 331/1184 [00:01<00:03, 239.59it/s]Loading weights:  30%|███       | 359/1184 [00:01<00:03, 236.63it/s]Loading weights:  33%|███▎      | 385/1184 [00:01<00:03, 237.26it/s]Loading weights:  35%|███▍      | 412/1184 [00:01<00:03, 246.20it/s]Loading weights:  37%|███▋      | 437/1184 [00:01<00:03, 240.58it/s]Loading weights:  39%|███▉      | 465/1184 [00:01<00:02, 243.80it/s]Loading weights:  41%|████▏     | 490/1184 [00:02<00:02, 238.36it/s]Loading weights:  44%|████▎     | 517/1184 [00:02<00:02, 237.59it/s]Loading weights:  46%|████▌     | 542/1184 [00:02<00:02, 234.57it/s]Loading weights:  48%|████▊     | 570/1184 [00:02<00:02, 239.36it/s]Loading weights:  50%|█████     | 596/1184 [00:02<00:02, 237.02it/s]Loading weights:  53%|█████▎    | 624/1184 [00:02<00:02, 240.51it/s]Loading weights:  55%|█████▍    | 649/1184 [00:02<00:02, 235.17it/s]Loading weights:  57%|█████▋    | 677/1184 [00:02<00:02, 239.08it/s]Loading weights:  59%|█████▉    | 702/1184 [00:02<00:02, 235.07it/s]Loading weights:  62%|██████▏   | 730/1184 [00:03<00:01, 239.02it/s]Loading weights:  64%|██████▍   | 755/1184 [00:03<00:01, 235.50it/s]Loading weights:  66%|██████▌   | 782/1184 [00:03<00:01, 244.45it/s]Loading weights:  68%|██████▊   | 807/1184 [00:03<00:01, 236.09it/s]Loading weights:  70%|███████   | 832/1184 [00:03<00:01, 233.93it/s]Loading weights:  72%|███████▏  | 856/1184 [00:03<00:01, 235.14it/s]Loading weights: 100%|██████████| 1184/1184 [00:03<00:00, 319.38it/s]
+loaded Qwen/Qwen3.8-27B in 5s, mem 51.0 GB
+lora targets 400 ['linear_attn.in_proj_qkv', 'linear_attn.in_proj_z', 'linear_attn.out_proj', 'mlp.down_proj', 'mlp.gate_proj', 'mlp.up_proj', 'self_attn.k_proj', 'self_attn.o_proj', 'self_attn.q_proj', 'self_attn.v_proj']
+/usr/local/lib/python3.13/dist-packages/transformers/modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+trainable LoRA params 435.2M
+/usr/local/lib/python3.13/dist-packages/transformers/modeling_utils.py:3195: FutureWarning: `gradient_checkpointing_enable` is deprecated and will be removed in v6. Use `activation_checkpointing_enable` instead.
+  warnings.warn(
+visual tokens 896, prefix 938, total 1138
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+  mbs=1 step0 1.71s loss=14.167 peak=57.5GB
+  mbs=1 step1 0.97s loss=13.835 peak=58.2GB
+  mbs=1 step2 0.97s loss=13.971 peak=58.2GB
+  mbs=1 step3 0.97s loss=13.150 peak=58.2GB
+{"quant": "bf16", "mbs": 1, "maskmode": "causal", "attn": "sdpa", "gc": true, "ok": true, "step_s": 0.9667463302612305, "tok_per_s": 1177.1443701187818, "records_per_s": 1.034397513285397, "peak_alloc_gb": 58.16629219055176, "peak_reserved_gb": 58.42578125, "step_times": [1.70554518699646, 0.9668362140655518, 0.966444730758667, 0.9669580459594727]}
+  mbs=4 step0 4.33s loss=13.109 peak=61.4GB
+  mbs=4 step1 4.32s loss=13.241 peak=61.4GB
+  mbs=4 step2 4.38s loss=13.278 peak=61.4GB
+  mbs=4 step3 4.32s loss=12.960 peak=61.4GB
+{"quant": "bf16", "mbs": 4, "maskmode": "causal", "attn": "sdpa", "gc": true, "ok": true, "step_s": 4.3423841794331866, "tok_per_s": 1048.2720579076388, "records_per_s": 0.9211529507097002, "peak_alloc_gb": 61.352179527282715, "peak_reserved_gb": 61.830078125, "step_times": [4.327465534210205, 4.319066047668457, 4.384225845336914, 4.3238606452941895]}
+DONE /content/27b_out/tp_bf16_causal.json
+== bf16 block-mask mbs 8
+env {'torch': '2.14.1+cu130', 'transformers': '5.23.0', 'fla': '0.6.0', 'causal_conv1d': 'missing (ModuleNotFoundError)', 'peft': '0.21.2', 'bitsandbytes': '0.50.2', 'kernels': '0.18.3'}
+Loading weights:   0%|          | 0/1184 [00:00<?, ?it/s]Loading weights:   1%|          | 13/1184 [00:00<00:09, 118.96it/s]Loading weights:   4%|▎         | 42/1184 [00:00<00:05, 204.23it/s]Loading weights:   6%|▌         | 67/1184 [00:00<00:05, 214.78it/s]Loading weights:   8%|▊         | 95/1184 [00:00<00:04, 219.34it/s]Loading weights:  10%|█         | 121/1184 [00:00<00:04, 226.29it/s]Loading weights:  13%|█▎        | 149/1184 [00:00<00:04, 234.23it/s]Loading weights:  15%|█▍        | 174/1184 [00:00<00:04, 233.24it/s]Loading weights:  17%|█▋        | 202/1184 [00:00<00:04, 238.58it/s]Loading weights:  19%|█▉        | 227/1184 [00:01<00:04, 235.81it/s]Loading weights:  21%|██▏       | 254/1184 [00:01<00:03, 238.69it/s]Loading weights:  24%|██▎       | 280/1184 [00:01<00:03, 239.30it/s]Loading weights:  26%|██▌       | 308/1184 [00:01<00:03, 243.88it/s]Loading weights:  28%|██▊       | 333/1184 [00:01<00:03, 240.38it/s]Loading weights:  30%|███       | 361/1184 [00:01<00:03, 244.84it/s]Loading weights:  33%|███▎      | 386/1184 [00:01<00:03, 241.26it/s]Loading weights:  35%|███▍      | 414/1184 [00:01<00:03, 244.93it/s]Loading weights:  37%|███▋      | 439/1184 [00:01<00:03, 240.85it/s]Loading weights:  39%|███▉      | 467/1184 [00:01<00:02, 244.54it/s]Loading weights:  42%|████▏     | 492/1184 [00:02<00:02, 239.80it/s]Loading weights:  44%|████▍     | 520/1184 [00:02<00:02, 243.53it/s]Loading weights:  46%|████▌     | 545/1184 [00:02<00:02, 240.02it/s]Loading weights:  48%|████▊     | 573/1184 [00:02<00:02, 243.63it/s]Loading weights:  51%|█████     | 598/1184 [00:02<00:02, 239.44it/s]Loading weights:  53%|█████▎    | 626/1184 [00:02<00:02, 243.71it/s]Loading weights:  55%|█████▍    | 651/1184 [00:02<00:02, 239.20it/s]Loading weights:  57%|█████▋    | 679/1184 [00:02<00:02, 243.07it/s]Loading weights:  59%|█████▉    | 704/1184 [00:02<00:02, 239.12it/s]Loading weights:  62%|██████▏   | 732/1184 [00:03<00:01, 243.48it/s]Loading weights:  64%|██████▍   | 757/1184 [00:03<00:01, 239.27it/s]Loading weights:  66%|██████▋   | 785/1184 [00:03<00:01, 242.86it/s]Loading weights:  68%|██████▊   | 810/1184 [00:03<00:01, 236.15it/s]Loading weights:  71%|███████   | 838/1184 [00:03<00:01, 240.74it/s]Loading weights:  90%|█████████ | 1070/1184 [00:03<00:00, 818.58it/s]Loading weights: 100%|██████████| 1184/1184 [00:03<00:00, 323.78it/s]
+loaded Qwen/Qwen3.8-27B in 5s, mem 51.0 GB
+lora targets 400 ['linear_attn.in_proj_qkv', 'linear_attn.in_proj_z', 'linear_attn.out_proj', 'mlp.down_proj', 'mlp.gate_proj', 'mlp.up_proj', 'self_attn.k_proj', 'self_attn.o_proj', 'self_attn.q_proj', 'self_attn.v_proj']
+/usr/local/lib/python3.13/dist-packages/transformers/modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+trainable LoRA params 435.2M
+/usr/local/lib/python3.13/dist-packages/transformers/modeling_utils.py:3195: FutureWarning: `gradient_checkpointing_enable` is deprecated and will be removed in v6. Use `activation_checkpointing_enable` instead.
+  warnings.warn(
+visual tokens 896, prefix 938, total 1138
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+  mbs=8 step0 24.46s loss=13.838 peak=63.6GB
+  mbs=8 step1 9.22s loss=13.193 peak=66.8GB
+  mbs=8 step2 9.23s loss=13.670 peak=66.8GB
+  mbs=8 step3 9.23s loss=12.945 peak=66.8GB
+{"quant": "bf16", "mbs": 8, "maskmode": "block", "attn": "sdpa", "gc": true, "ok": true, "step_s": 9.226864337921143, "tok_per_s": 986.6840636838901, "records_per_s": 0.8670334478768806, "peak_alloc_gb": 66.79870176315308, "peak_reserved_gb": 67.763671875, "step_times": [24.461681127548218, 9.219261884689331, 9.228272676467896, 9.233058452606201]}
+DONE /content/27b_out/tp_bf16_block_mb8.json
+== mask test sdpa,flex
+env {'torch': '2.14.1+cu130', 'transformers': '5.23.0', 'fla': '0.6.0', 'causal_conv1d': 'missing (ModuleNotFoundError)', 'peft': '0.21.2', 'bitsandbytes': '0.50.2', 'kernels': '0.18.3'}
+Loading weights:   0%|          | 0/1184 [00:00<?, ?it/s]Loading weights:   1%|          | 14/1184 [00:00<00:09, 126.21it/s]Loading weights:   3%|▎         | 41/1184 [00:00<00:05, 195.17it/s]Loading weights:   6%|▌         | 67/1184 [00:00<00:05, 213.89it/s]Loading weights:   8%|▊         | 95/1184 [00:00<00:04, 228.84it/s]Loading weights:  10%|█         | 120/1184 [00:00<00:04, 228.85it/s]Loading weights:  12%|█▎        | 148/1184 [00:00<00:04, 236.81it/s]Loading weights:  15%|█▍        | 173/1184 [00:00<00:04, 225.88it/s]Loading weights:  17%|█▋        | 202/1184 [00:00<00:04, 236.02it/s]Loading weights:  19%|█▉        | 227/1184 [00:01<00:04, 235.05it/s]Loading weights:  22%|██▏       | 255/1184 [00:01<00:03, 240.32it/s]Loading weights:  24%|██▎       | 280/1184 [00:01<00:03, 236.89it/s]Loading weights:  26%|██▌       | 308/1184 [00:01<00:03, 242.03it/s]Loading weights:  28%|██▊       | 333/1184 [00:01<00:03, 238.62it/s]Loading weights:  30%|███       | 360/1184 [00:01<00:03, 239.62it/s]Loading weights:  33%|███▎      | 386/1184 [00:01<00:03, 239.79it/s]Loading weights:  35%|███▍      | 414/1184 [00:01<00:03, 243.96it/s]Loading weights:  37%|███▋      | 439/1184 [00:01<00:03, 239.24it/s]Loading weights:  39%|███▉      | 467/1184 [00:01<00:02, 243.97it/s]Loading weights:  42%|████▏     | 492/1184 [00:02<00:02, 239.88it/s]Loading weights:  44%|████▍     | 520/1184 [00:02<00:02, 244.19it/s]Loading weights:  46%|████▌     | 545/1184 [00:02<00:02, 240.33it/s]Loading weights:  48%|████▊     | 573/1184 [00:02<00:02, 243.31it/s]Loading weights:  51%|█████     | 598/1184 [00:02<00:02, 238.68it/s]Loading weights:  53%|█████▎    | 625/1184 [00:02<00:02, 239.20it/s]Loading weights:  55%|█████▍    | 651/1184 [00:02<00:02, 238.27it/s]Loading weights:  57%|█████▋    | 679/1184 [00:02<00:02, 241.50it/s]Loading weights:  59%|█████▉    | 704/1184 [00:02<00:02, 237.94it/s]Loading weights:  62%|██████▏   | 732/1184 [00:03<00:01, 241.94it/s]Loading weights:  64%|██████▍   | 757/1184 [00:03<00:01, 237.13it/s]Loading weights:  66%|██████▋   | 785/1184 [00:03<00:01, 240.00it/s]Loading weights:  68%|██████▊   | 809/1184 [00:03<00:01, 230.23it/s]Loading weights:  71%|███████   | 837/1184 [00:03<00:01, 243.18it/s]Loading weights:  83%|████████▎ | 986/1184 [00:03<00:00, 594.19it/s]Loading weights: 100%|██████████| 1184/1184 [00:03<00:00, 321.39it/s]
+loaded Qwen/Qwen3.8-27B in 5s, mem 51.0 GB
+lora targets 400 ['linear_attn.in_proj_qkv', 'linear_attn.in_proj_z', 'linear_attn.out_proj', 'mlp.down_proj', 'mlp.gate_proj', 'mlp.up_proj', 'self_attn.k_proj', 'self_attn.o_proj', 'self_attn.q_proj', 'self_attn.v_proj']
+/usr/local/lib/python3.13/dist-packages/transformers/modeling_utils.py:3303: FutureWarning: `is_gradient_checkpointing` is deprecated and will be removed in v6. Use `is_activation_checkpointing` instead.
+  warnings.warn(
+trainable LoRA params 435.2M
+/usr/local/lib/python3.13/dist-packages/transformers/modeling_utils.py:3195: FutureWarning: `gradient_checkpointing_enable` is deprecated and will be removed in v6. Use `activation_checkpointing_enable` instead.
+  warnings.warn(
+visual tokens 896, prefix 938, total 1138
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+sdpa {
+ "how": "set_attn_implementation(dict)",
+ "prefix_block_vs_causal_reldiff": 0.29668089747428894,
+ "blk0_block_vs_isolated_reldiff": 0.017880989238619804,
+ "blk3_block_vs_causal_reldiff(mask applied if >0)": 0.1581701636314392,
+ "blk3_block_vs_isolated_reldiff(leak via linear-attn)": 0.3976847529411316,
+ "blk3_causal_vs_isolated_reldiff(no-mask reference)": 0.44089335203170776,
+ "blk3_read_KL(block||isolated)": 0.16583824157714844,
+ "backward_ok": true,
+ "fwd_bwd_s": 1.0850768089294434,
+ "lora_grad_norm": 9.496722058845949,
+ "peak_gb": 55.029282569885254
+}
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3] failed to eagerly compile backwards for dynamic, suppressing in case backwards not needed
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3] Traceback (most recent call last):
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]   File "/usr/local/lib/python3.13/dist-packages/torch/_functorch/_aot_autograd/graph_compile.py", line 2409, in _aot_stage2b_bw_compile
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     compiled_bw_func = bw_compiler(bw_module_copy, placeholder_list)
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]   File "/usr/local/lib/python3.13/dist-packages/torch/_functorch/_aot_autograd/schemas.py", line 1504, in __call__
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     output_code = self.compiler_fn(gm, example_inputs)
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]   File "/usr/local/lib/python3.13/dist-packages/torch/_dynamo/backends/common.py", line 108, in _wrapped_bw_compiler
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     disable(
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     ~~~~~~~~
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]         bw_compiler_fn, reason="do not trace backward compiler function"
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     )(*args, **kwargs),  # type: ignore[misc]
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     ~^^^^^^^^^^^^^^^^^
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]   File "/usr/local/lib/python3.13/dist-packages/torch/_dynamo/eval_frame.py", line 1548, in _fn
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     return fn(*args, **kwargs)
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]   File "/usr/local/lib/python3.13/dist-packages/torch/_utils_internal.py", line 114, in wrapper_function
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     return function(*args, **kwargs)
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/compile_fx.py", line 3204, in bw_compiler
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     return compile_fx_backward(
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]         gm,
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     ...<2 lines>...
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]         inner_compile=inner_compile,
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     )
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/compile_fx.py", line 2825, in compile_fx_backward
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     return inner_compile(
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]         gm,
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     ...<5 lines>...
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]         boxed_forward_device_index=compiler_config_extra.forward_device,
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     )
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/compile_fx.py", line 919, in compile_fx_inner
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     compiled_graph = wrap_compiler_debug(
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]         _compile_fx_inner, compiler_name="inductor"
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     )(
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]         gm,
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     ...<2 lines>...
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]         **kwargs,
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     )
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]   File "/usr/local/lib/python3.13/dist-packages/torch/_dynamo/repro/after_aot.py", line 325, in debug_wrapper
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     inner_compiled_fn = compiler_fn(gm, example_inputs)
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/compile_fx.py", line 1192, in _compile_fx_inner
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     raise InductorError(e, currentframe()).with_traceback(
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]         e.__traceback__
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     ) from None
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/compile_fx.py", line 1169, in _compile_fx_inner
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     mb_compiled_graph = fx_codegen_and_compile(
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]         gm,
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     ...<3 lines>...
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]         **graph_kwargs,
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     )
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/compile_fx.py", line 2001, in fx_codegen_and_compile
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     return scheme.codegen_and_compile(gm, example_inputs, inputs_to_check, graph_kwargs)
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]            ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/compile_fx.py", line 1749, in codegen_and_compile
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     compiled_module = graph.compile_to_module()
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/graph.py", line 3060, in compile_to_module
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     return self._compile_to_module()
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]            ~~~~~~~~~~~~~~~~~~~~~~~^^
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/graph.py", line 3070, in _compile_to_module
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     mod = self._compile_to_module_lines(wrapper_code)
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/graph.py", line 3146, in _compile_to_module_lines
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     mod = PyCodeCache.load_by_key_path(
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]         key,
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     ...<6 lines>...
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]         },
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     )
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/codecache.py", line 4820, in load_by_key_path
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     mod = _reload_python_module(key, path, set_sys_modules=set_sys_modules)
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/runtime/compile_tasks.py", line 37, in _reload_python_module
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     exec(code, mod.__dict__, mod.__dict__)
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]   File "/tmp/torchinductor_root/fr/cfr6futea2n34b5ht24unjljzccaznjbuziufy75w7r3toyeytgm.py", line 917, in <module>
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     async_compile.wait(globals())
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/async_compile.py", line 912, in wait
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     self._wait_futures(scope)
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     ~~~~~~~~~~~~~~~~~~^^^^^^^
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/async_compile.py", line 942, in _wait_futures
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     kernel = result.result(timeout=wait_timeout)
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/codecache.py", line 5508, in result
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     return self.result_fn()
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]            ~~~~~~~~~~~~~~^^
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/async_compile.py", line 558, in get_result
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     kernel.precompile(
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     ~~~~~~~~~~~~~~~~~^
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]         warm_cache_only=False,
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]         ^^^^^^^^^^^^^^^^^^^^^^
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]         reload_kernel=reload_kernel_in_parent,
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]         static_triton_bundle_key=CompiledTritonKernels.key(source_code),
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     )
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     ^
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/runtime/triton_heuristics.py", line 807, in precompile
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     self._make_launchers()
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     ~~~~~~~~~~~~~~~~~~~~^^
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/runtime/triton_heuristics.py", line 1092, in _make_launchers
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     raise RuntimeError(
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]         f"No valid triton configs. {type(exc).__name__}: {exc}"
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3]     )
+W1117 14:39:46.296000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/3] torch._inductor.exc.InductorError: RuntimeError: No valid triton configs. OutOfMemoryError: out of resource: triton_tem_fused_flex_attention_backward_mul_1 Required: 114688 Hardware limit:101376 Reducing block sizes or `num_stages` may help.
+flex {
+ "how": "direct config set (ValueError: Qwen3_5TextModel does not support an attention implementation through torch's flex_attention. Please request the support)",
+ "prefix_block_vs_causal_reldiff": 0.26963332295417786,
+ "blk0_block_vs_isolated_reldiff": 0.018452327698469162,
+ "blk3_block_vs_causal_reldiff(mask applied if >0)": 0.15851444005966187,
+ "blk3_block_vs_isolated_reldiff(leak via linear-attn)": 0.3873679041862488,
+ "blk3_causal_vs_isolated_reldiff(no-mask reference)": 0.4295731484889984,
+ "blk3_read_KL(block||isolated)": 0.15302182734012604,
+ "ok": false,
+ "err": "InductorError: RuntimeError: No valid triton configs. OutOfMemoryError: out of resource: triton_tem_fused_flex_attention_backward_mul_1 Required: 114688 Hardware limit:101376 Reducing block sizes or `num_stages` may help."
+}
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5] failed to eagerly compile backwards for dynamic, suppressing in case backwards not needed
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5] Traceback (most recent call last):
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]   File "/usr/local/lib/python3.13/dist-packages/torch/_functorch/_aot_autograd/graph_compile.py", line 2409, in _aot_stage2b_bw_compile
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     compiled_bw_func = bw_compiler(bw_module_copy, placeholder_list)
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]   File "/usr/local/lib/python3.13/dist-packages/torch/_functorch/_aot_autograd/schemas.py", line 1504, in __call__
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     output_code = self.compiler_fn(gm, example_inputs)
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]   File "/usr/local/lib/python3.13/dist-packages/torch/_dynamo/backends/common.py", line 108, in _wrapped_bw_compiler
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     disable(
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     ~~~~~~~~
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]         bw_compiler_fn, reason="do not trace backward compiler function"
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     )(*args, **kwargs),  # type: ignore[misc]
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     ~^^^^^^^^^^^^^^^^^
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]   File "/usr/local/lib/python3.13/dist-packages/torch/_dynamo/eval_frame.py", line 1548, in _fn
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     return fn(*args, **kwargs)
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]   File "/usr/local/lib/python3.13/dist-packages/torch/_utils_internal.py", line 114, in wrapper_function
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     return function(*args, **kwargs)
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/compile_fx.py", line 3204, in bw_compiler
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     return compile_fx_backward(
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]         gm,
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     ...<2 lines>...
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]         inner_compile=inner_compile,
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     )
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/compile_fx.py", line 2825, in compile_fx_backward
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     return inner_compile(
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]         gm,
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     ...<5 lines>...
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]         boxed_forward_device_index=compiler_config_extra.forward_device,
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     )
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/compile_fx.py", line 919, in compile_fx_inner
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     compiled_graph = wrap_compiler_debug(
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]         _compile_fx_inner, compiler_name="inductor"
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     )(
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]         gm,
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     ...<2 lines>...
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]         **kwargs,
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     )
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]   File "/usr/local/lib/python3.13/dist-packages/torch/_dynamo/repro/after_aot.py", line 325, in debug_wrapper
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     inner_compiled_fn = compiler_fn(gm, example_inputs)
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/compile_fx.py", line 1192, in _compile_fx_inner
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     raise InductorError(e, currentframe()).with_traceback(
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]         e.__traceback__
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     ) from None
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/compile_fx.py", line 1169, in _compile_fx_inner
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     mb_compiled_graph = fx_codegen_and_compile(
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]         gm,
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     ...<3 lines>...
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]         **graph_kwargs,
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     )
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/compile_fx.py", line 2001, in fx_codegen_and_compile
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     return scheme.codegen_and_compile(gm, example_inputs, inputs_to_check, graph_kwargs)
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]            ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/compile_fx.py", line 1749, in codegen_and_compile
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     compiled_module = graph.compile_to_module()
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/graph.py", line 3060, in compile_to_module
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     return self._compile_to_module()
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]            ~~~~~~~~~~~~~~~~~~~~~~~^^
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/graph.py", line 3070, in _compile_to_module
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     mod = self._compile_to_module_lines(wrapper_code)
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/graph.py", line 3146, in _compile_to_module_lines
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     mod = PyCodeCache.load_by_key_path(
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]         key,
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     ...<6 lines>...
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]         },
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     )
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/codecache.py", line 4820, in load_by_key_path
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     mod = _reload_python_module(key, path, set_sys_modules=set_sys_modules)
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/runtime/compile_tasks.py", line 37, in _reload_python_module
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     exec(code, mod.__dict__, mod.__dict__)
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]   File "/tmp/torchinductor_root/sf/csfvmfdzqgjarxsfdlahorctstfvhzgfhn7dqhzd3yyau6n32a6e.py", line 935, in <module>
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     async_compile.wait(globals())
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/async_compile.py", line 912, in wait
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     self._wait_futures(scope)
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     ~~~~~~~~~~~~~~~~~~^^^^^^^
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/async_compile.py", line 942, in _wait_futures
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     kernel = result.result(timeout=wait_timeout)
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/codecache.py", line 5508, in result
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     return self.result_fn()
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]            ~~~~~~~~~~~~~~^^
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/async_compile.py", line 558, in get_result
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     kernel.precompile(
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     ~~~~~~~~~~~~~~~~~^
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]         warm_cache_only=False,
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]         ^^^^^^^^^^^^^^^^^^^^^^
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]         reload_kernel=reload_kernel_in_parent,
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]         static_triton_bundle_key=CompiledTritonKernels.key(source_code),
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     )
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     ^
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/runtime/triton_heuristics.py", line 807, in precompile
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     self._make_launchers()
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     ~~~~~~~~~~~~~~~~~~~~^^
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]   File "/usr/local/lib/python3.13/dist-packages/torch/_inductor/runtime/triton_heuristics.py", line 1092, in _make_launchers
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     raise RuntimeError(
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]         f"No valid triton configs. {type(exc).__name__}: {exc}"
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5]     )
+W1117 14:39:53.075000 4584 torch/_functorch/_aot_autograd/graph_compile.py:2427] [1/5] torch._inductor.exc.InductorError: RuntimeError: No valid triton configs. OutOfMemoryError: out of resource: triton_tem_fused_flex_attention_backward_mul_1 Required: 114688 Hardware limit:101376 Reducing block sizes or `num_stages` may help.
+flex_blockmask {
+ "flex_BlockMask_vs_sdpa_dense_reldiff": 0.27470821142196655,
+ "ok": false,
+ "err": "InductorError: RuntimeError: No valid triton configs. OutOfMemoryError: out of resource: triton_tem_fused_flex_attention_backward_mul_1 Required: 114688 Hardware limit:101376 Reducing block sizes or `num_stages` may help."
+}
+DONE /content/27b_out/masktest.json
+ALL DONE

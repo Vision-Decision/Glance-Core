@@ -1,0 +1,9 @@
+{
+ "model_id": "Qwen/Qwen3.5-4B", "task": "v1 (box + choice/score/noul)", "gpu": "RTX PRO 6000 Blackwell 96GB (Colab G4, session dv-v1, account acct-8)",
+ "wall_clock_local": {"vm_up": "2026-11-18 00:51", "data_fetch_prep": "00:52-01:50", "overfit": "01:52-02:02 (150 steps, typed acc->1.0)",
+                      "pilot_window": "first ~60 min of main run (step 304 eval: RefCOCO testB 30.0, OpenDecisions cap 59.1)",
+                      "train": "02:09-08:45 (396.3 min, 3844 steps)", "eval": "08:46-09:20", "vm_stopped": "~09:25"},
+ "compute_units_estimate": "~85 CU (G4 ~10 CU/h x ~8.5 h)",
+ "train": {"records": 212373, "questions": 520048, "steps": 3844, "s_per_step": "~6.0", "tok_per_s": "~3.9k", "peak_mem_gb": 27.5},
+ "checkpoint": "checkpoints/v1/ckpt_final.pt (LoRA fp32 + heads, 513 MB); temps stored in eval_results.json['temps']"
+}

@@ -1,0 +1,113 @@
+{
+ "fig_8q": {
+  "local_secs": 2.07,
+  "questions": [
+   "YesNo(question='Is a save dialog open?')",
+   "Box(text='the Export button')",
+   "Box(text='the Cancel button in the dialog')",
+   "Box(text='the Delete all button')",
+   "Box(text='the Print button')",
+   "Box(text='the Save button in the dialog')",
+   "Choice(question='Task: export the photo as a PNG file. What is the next action?', options=['click', 'type', 'scroll', 'done'])",
+   "YesNo(question='Are there unsaved changes?')"
+  ],
+  "results": [
+   {
+    "question": "Is a save dialog open?",
+    "p_yes": 0.9922,
+    "answer": true,
+    "kind": "yesno"
+   },
+   {
+    "text": "the Export button",
+    "present_prob": 0.9064,
+    "box": [
+     196.6,
+     90.2,
+     246.0,
+     115.4
+    ],
+    "iou_prob": 0.9408,
+    "confidence": 0.8528,
+    "present": true,
+    "kind": "box"
+   },
+   {
+    "text": "the Cancel button in the dialog",
+    "present_prob": 0.9983,
+    "box": [
+     695.0,
+     361.1,
+     759.3,
+     393.7
+    ],
+    "iou_prob": 0.9476,
+    "confidence": 0.9461,
+    "present": true,
+    "kind": "box"
+   },
+   {
+    "text": "the Delete all button",
+    "present_prob": 0.8182,
+    "box": [
+     696.3,
+     85.0,
+     796.9,
+     114.0
+    ],
+    "iou_prob": 0.9517,
+    "confidence": 0.7787,
+    "present": true,
+    "kind": "box"
+   },
+   {
+    "text": "the Print button",
+    "present_prob": 0.0043,
+    "box": [
+     34.2,
+     89.9,
+     75.3,
+     115.7
+    ],
+    "iou_prob": 0.1043,
+    "confidence": 0.0005,
+    "present": false,
+    "kind": "box"
+   },
+   {
+    "text": "the Save button in the dialog",
+    "present_prob": 0.9965,
+    "box": [
+     796.0,
+     361.5,
+     854.4,
+     393.0
+    ],
+    "iou_prob": 0.9234,
+    "confidence": 0.9201,
+    "present": true,
+    "kind": "box"
+   },
+   {
+    "question": "Task: export the photo as a PNG file. What is the next action?",
+    "probs": {
+     "click": 0.7894,
+     "type": 0.0465,
+     "scroll": 0.0183,
+     "done": 0.1458
+    },
+    "answer": "click",
+    "kind": "choice"
+   },
+   {
+    "question": "Are there unsaved changes?",
+    "p_yes": 0.994,
+    "answer": true,
+    "kind": "yesno"
+   }
+  ]
+ },
+ "model": "Vision-Decision/Glance-4B-preview (v1 preview checkpoint)",
+ "device": "mps",
+ "image": "Glance/assets/examples/editor.png (rendered from examples/gui_mock.html)"
+}

@@ -1,0 +1,478 @@
+{
+ "decision_index_vision": {
+  "official_weighted_skill": 55.45888002422476,
+  "unweighted_skill": 51.0464973174229,
+  "macro_acc": 66.00758993414861,
+  "micro_acc": 65.94594594594595,
+  "without_winoground_weighted_skill": 53.22560916985045,
+  "official_ci95_binomial_bootstrap": [
+   54.038282984223144,
+   56.886366804226554
+  ],
+  "per_benchmark": {
+   "CV-Bench": {
+    "n": 2038,
+    "acc": 75.07360157016683,
+    "acc_ci95_halfwidth": 1.8781374535079522,
+    "skill": 58.879160314612186,
+    "weight": 1.0
+   },
+   "BLINK": {
+    "n": 961,
+    "acc": 66.18106139438086,
+    "acc_ci95_halfwidth": 2.9911709075186246,
+    "skill": 47.64397905759163,
+    "weight": 1.0
+   },
+   "RealWorldQA": {
+    "n": 589,
+    "acc": 73.3446519524618,
+    "acc_ci95_halfwidth": 3.5708764881631816,
+    "skill": 56.439306358381515,
+    "weight": 1.0
+   },
+   "CharXiv": {
+    "n": 532,
+    "acc": 71.80451127819549,
+    "acc_ci95_halfwidth": 3.82354260575529,
+    "skill": 62.40601503759399,
+    "weight": 1.0
+   },
+   "InfographicVQA": {
+    "n": 244,
+    "acc": 89.34426229508196,
+    "acc_ci95_halfwidth": 3.871562303975358,
+    "skill": 85.79234972677595,
+    "weight": 1.0
+   },
+   "Mind2Web": {
+    "n": 973,
+    "acc": 58.37615621788284,
+    "acc_ci95_halfwidth": 3.097337213133865,
+    "skill": 44.501541623843785,
+    "weight": 1.0
+   },
+   "Winoground": {
+    "n": 800,
+    "acc": 87.5,
+    "acc_ci95_halfwidth": 2.291765149399039,
+    "skill": 75.0,
+    "weight": 1.0
+   },
+   "KIE (CORD+FUNSD)": {
+    "n": 2465,
+    "acc": 88.88438133874239,
+    "acc_ci95_halfwidth": 1.2408724891904426,
+    "skill": 81.69978293538152,
+    "weight": 1.0
+   },
+   "Moderation (Hateful Memes)": {
+    "n": 1213,
+    "acc": 58.367683429513605,
+    "acc_ci95_halfwidth": 2.7741324211777565,
+    "skill": 16.735366859027213,
+    "weight": 1.0
+   },
+   "R-Bench-M": {
+    "n": 665,
+    "acc": 28.421052631578945,
+    "acc_ci95_halfwidth": 3.4281355189119433,
+    "skill": 14.092344713490752,
+    "weight": 0.5
+   },
+   "MMMU-Pro vision": {
+    "n": 1730,
+    "acc": 28.78612716763006,
+    "acc_ci95_halfwidth": 2.133570225107504,
+    "skill": 18.321623864953285,
+    "weight": 0.25
+   }
+  }
+ },
+ "decision_index_text": {
+  "status": "no scores saved; only latency summaries for 2 shards (49,537 + 42,002 = 91,539 of 140,620 rows)",
+  "latency_probe_median_ms": 73.7,
+  "latency_probe_p95_ms": 254.6,
+  "agreement": 1.0
+ },
+ "video_wilson_ci95": {
+  "DeepSeek V4.1 Flash no tool (v1.1 random subset)": {
+   "k": 10,
+   "n": 42,
+   "acc": 23.8,
+   "ci95": [
+    13.5,
+    38.5
+   ]
+  },
+  "DeepSeek V4.1 Flash +vdm (hard set)": {
+   "k": 0,
+   "n": 4,
+   "acc": 0.0,
+   "ci95": [
+    0.0,
+    49.0
+   ]
+  },
+  "Gemini 4 Hydrogen no tool (hard set)": {
+   "k": 10,
+   "n": 23,
+   "acc": 43.5,
+   "ci95": [
+    25.6,
+    63.2
+   ]
+  },
+  "Gemini 4 Hydrogen +vdm (hard set)": {
+   "k": 1,
+   "n": 6,
+   "acc": 16.7,
+   "ci95": [
+    3.0,
+    56.4
+   ]
+  },
+  "Opus 5.5 no tool (hard)": {
+   "k": 1,
+   "n": 2,
+   "acc": 50.0,
+   "ci95": [
+    9.5,
+    90.5
+   ]
+  },
+  "Opus 5.5 +vdm (hard)": {
+   "k": 1,
+   "n": 1,
+   "acc": 100.0,
+   "ci95": [
+    20.7,
+    100.0
+   ]
+  },
+  "vdm choose argmax (v1.1 all)": {
+   "k": 3,
+   "n": 144,
+   "acc": 2.1,
+   "ci95": [
+    0.7,
+    5.9
+   ]
+  },
+  "vdm choose argmin (v1.1 all)": {
+   "k": 96,
+   "n": 144,
+   "acc": 66.7,
+   "ci95": [
+    58.6,
+    73.8
+   ]
+  },
+  "always-last-option (v1.1)": {
+   "k": 59,
+   "n": 144,
+   "acc": 41.0,
+   "ci95": [
+    33.3,
+    49.1
+   ]
+  },
+  "published Opus 5.5": {
+   "k": 69,
+   "n": 144,
+   "acc": 47.9,
+   "ci95": [
+    39.9,
+    56.0
+   ]
+  },
+  "published Gemini 4 Argon": {
+   "k": 59,
+   "n": 144,
+   "acc": 41.0,
+   "ci95": [
+    33.3,
+    49.1
+   ]
+  }
+ },
+ "video_choose_only": {
+  "n": 144,
+  "chance": 24.78753306878307,
+  "argmax_acc": 2.0833333333333335,
+  "argmax_ci": [
+   0.0,
+   4.861111111111112
+  ],
+  "argmin_acc": 66.66666666666667,
+  "argmin_ci": [
+   59.02777777777778,
+   74.30555555555556
+  ],
+  "always_last_acc": 40.97222222222222,
+  "argmin_picks_last_share": 37.5,
+  "argmax_picks_first_share": 31.944444444444443,
+  "argmin_acc_on_items_key_not_last": 61.1764705882353,
+  "chance_on_items_key_not_last": 21.990196078431374,
+  "argmax_z_below_chance": -6.501572476039249,
+  "key_rank_hist": {
+   "1": 3,
+   "2": 27,
+   "3": 12,
+   "4": 39,
+   "5": 54,
+   "6": 5,
+   "7": 2,
+   "8": 2
+  }
+ },
+ "venusbench_same_protocol_rows": {
+  "base_venus_4000.jsonl": {
+   "n": 2116,
+   "n_pos": 1861,
+   "n_ref": 255,
+   "refusal_acc": 3.9,
+   "refusal_ci95": [
+    2.1,
+    7.1
+   ],
+   "pos_click_acc": 64.7,
+   "pos_ci95": [
+    62.5,
+    66.8
+   ],
+   "false_refusal_pos": 0.4
+  },
+  "ours_venus_640.jsonl": {
+   "n": 6165,
+   "n_pos": 5266,
+   "n_ref": 899,
+   "refusal_acc": 54.1,
+   "refusal_ci95": [
+    50.8,
+    57.3
+   ],
+   "pos_click_acc": 5.7,
+   "pos_ci95": [
+    5.1,
+    6.4
+   ],
+   "false_refusal_pos": 16.8
+  },
+  "ours_venus_4000.jsonl": {
+   "n": 6165,
+   "n_pos": 5266,
+   "n_ref": 899,
+   "refusal_acc": 40.2,
+   "refusal_ci95": [
+    37.0,
+    43.4
+   ],
+   "pos_click_acc": 9.7,
+   "pos_ci95": [
+    8.9,
+    10.5
+   ],
+   "false_refusal_pos": 8.4
+  }
+ },
+ "probe_check": {
+  "paper_claim": "甜点 p=0.01 while dessert found; something to drink -> confident box on a person",
+  "saved_probe(outputs/blog/widgets/probe.json, Glance-4B-preview)": {
+   "cake: 甜点": 0.9994,
+   "cake: dessert": 0.9992,
+   "umbrella: 甜点": 0.0822,
+   "umbrella: dessert": 0.1021,
+   "umbrella: something to drink": 0.1349,
+   "cake: something to drink": 0.9955,
+   "wine: something to drink": 0.987
+  }
+ },
+ "beam_check_note": "outputs/ablation_v2/raw/beam_check: beam-4 refusal 4.7% vs greedy-candidate MAP 40.8% on same 191 present items; beam pruned none",
+ "findings": [
+  {
+   "id": "P1",
+   "file": "paper/sections/robustness.tex",
+   "stated": "甜点 p=0.01 while \"dessert\" found; \"something to drink\" -> confident box on a person",
+   "outputs": "outputs/blog/widgets/probe.json (Glance-4B-preview = v1): cake 甜点 0.9994 / dessert 0.9992; umbrella 甜点 0.082 / dessert 0.102; something to drink 0.135 (umbrella), 0.9955 (cake), 0.987 (wine)",
+   "severity": "error/unverifiable",
+   "fix": "Replace with a probe saved in outputs/ (or save the original one). If none reproduces, write: \"In our saved probes the shift failures are not yet systematic; Sec. 7 measures them.\" Do not keep the 0.01 anecdote."
+  },
+  {
+   "id": "S1",
+   "file": "slides/slides.md:139-149",
+   "stated": "sequence-MAP refusal 40.0% / 22.0% / 9.5%; \"Exact MAP picks none\"",
+   "outputs": "current constrained greedy-candidate MAP 39.9 / 21.9 / 9.9 (derived.json); beam-4 check (ablation_v2/raw/beam_check, n=191 present) refuses 4.7% (beam prunes none), tighter MAP upper bound 37.7%",
+   "severity": "stale + overstated",
+   "fix": "\"39.9% / 21.9% / 9.9% under the greedy-candidate MAP rule (an upper bound on exact-MAP refusal)\"; drop \"Exact MAP\"; drop \"24.2% parse failures\" from the constrained number or label it \"(unconstrained greedy)\"."
+  },
+  {
+   "id": "S2",
+   "file": "slides/slides.md:124 and :97",
+   "stated": "37x: 86 ms vs 3,161 ms (8 questions); 8 questions = 86 vs 85 ms",
+   "outputs": "outputs/ablation_v2/latency: Glance 67 ms (N=1..16), vLLM+prefix cache 174 (N=1) / 218 (N=8) / 331 (N=32); ratio 2.6x / 3.3x / 4.7x; 8 img x 8 q throughput 1.9x",
+   "severity": "overstated + stale",
+   "fix": "Stat \"3.3x\": \"8 questions/image: 67 ms vs 218 ms (Qwen3.5-4B, vLLM + prefix caching); 4.7x at 32 questions\". Keep HF-generate 3,161 ms only as a footnote."
+  },
+  {
+   "id": "S3",
+   "file": "slides/slides.md:121",
+   "stated": "N-acc 87.4 (base Qwen3.5-4B: 65.0)",
+   "outputs": "87.4 is full gRefCOCO val (8,905); base 65.0 is a 500-item subset (v0 on that subset 75.0 vs 77.0 full); v1 multi-target refusal 5.1%",
+   "severity": "inconsistent comparison",
+   "fix": "\"87.4 at 5.1% multi-target refusal (generative base on a 500-item subset: 65.0)\"."
+  },
+  {
+   "id": "S4",
+   "file": "slides/slides.md:122",
+   "stated": "VenusBench refusal 81.5 (Qwen3-VL-8B 63.8, UI-Venus 61.6)",
+   "outputs": "cross-protocol comparators; same-protocol base Qwen3.5-4B (outputs/eval_v0_xdomain/rows/base_venus_4000.jsonl, main checkout, partial 2,116/6,165 rows, first rows not random): refusal 3.9% [2.1, 7.1] (10/255), positives 64.7%",
+   "severity": "ok-strengthen opportunity (and fairness caveat)",
+   "fix": "Add same-protocol base: \"81.5 vs 3.9 for its own generative base (same script, n=255 refusal items, partial run)\"; keep positives 47.3 / overall 52.3 next to it."
+  },
+  {
+   "id": "S5",
+   "file": "slides/slides.md:123 and :88",
+   "stated": "\"Calibrated\"; ECE 2.4% headline",
+   "outputs": "merged-set ECE (includes easy RefCOCO positives); gRefCOCO-only ECE for v1 not computed (v0 13.9 vs 7.5 merged; ablation heads 14.0-15.0)",
+   "severity": "overstated",
+   "fix": "\"ECE 2.4% (gRefCOCO+RefCOCO merged; harder gRefCOCO-only pending)\"."
+  },
+  {
+   "id": "S6",
+   "file": "slides/slides.md:149",
+   "stated": "Greedy / threshold decoding hides it (0.4-0.5%)",
+   "outputs": "default-rule refusal 0.4-1.5% (atomic-1000 greedy 1.5%)",
+   "severity": "minor error",
+   "fix": "\"(0.4-1.5%)\""
+  },
+  {
+   "id": "S7",
+   "file": "slides/slides.md:410",
+   "stated": "vdm prototype uses raw Qwen3.5-4B logprob; P(t) test not run",
+   "outputs": "video/vdm/README.md: vdm v0 = Glance-4B-preview, served and used in +vdm runs",
+   "severity": "stale",
+   "fix": "Update to \"vdm v0 (Glance-4B per-frame scorer) is running; first +vdm runs in SNAPSHOT.md\"."
+  },
+  {
+   "id": "S8",
+   "file": "slides/slides.md:463-467",
+   "stated": "DeepSeek no-tool table TBD",
+   "outputs": "video/results/SNAPSHOT.md: 10/42 = 23.8% [13.5, 38.5] (partial, random subset); chance 24.8%",
+   "severity": "stale",
+   "fix": "Fill as partial: \"23.8% (10/42, partial) -- at chance; n too small\"."
+  },
+  {
+   "id": "B1",
+   "file": "blog-new/content/posts/glance-single-prefill-decision-model.md (v1 section)",
+   "stated": "\"生成式底座在 SS-Pro 上我们只跑完了 718/1,581 题\"",
+   "outputs": "base_sspro_4000.jsonl complete: 56.0 on 1,581",
+   "severity": "stale",
+   "fix": "\"生成式底座在全部 1,581 题上是 56.0\""
+  },
+  {
+   "id": "B2",
+   "file": "blog (v0 cross-domain)",
+   "stated": "\"要分开，得让 v0 也用 2,048 个 token 再测一次，我们还没做\"",
+   "outputs": "ours_sspro_640 0.9, ours_sspro_4000 1.8 (resolution recovers almost nothing)",
+   "severity": "stale (and unfavourable-to-us ambiguity now resolved)",
+   "fix": "Replace with the SS-Pro 640 vs 4,000-token result: 0.9 -> 1.8, so the gap is data/domain, not resolution."
+  },
+  {
+   "id": "B3",
+   "file": "blog (v1 table)",
+   "stated": "OpenDecisions 67.6; ECE 0.023",
+   "outputs": "paper uses 67.7 (benchmark T>=1 clipping) and calibrated ECE 2.4 (raw 2.3)",
+   "severity": "inconsistent with paper",
+   "fix": "67.7 (benchmark protocol) and 0.024; or say \"raw 0.023\"."
+  },
+  {
+   "id": "B4",
+   "file": "blog (ablation section)",
+   "stated": "序列级 MAP \"近似于 beam search 会做的事\"; AR 数字 40% 拒答",
+   "outputs": "beam-4 refuses 4.7% on 191 items because it prunes \"none\"; tighter MAP bound 37.7%",
+   "severity": "overstated",
+   "fix": "\"比较 none 与贪心框（贪心候选 MAP，精确 MAP 拒答的上界）\"; drop the beam-search equivalence."
+  },
+  {
+   "id": "B5",
+   "file": "blog (27B and conclusions)",
+   "stated": "\"问题在数据，不在规模\"; \"v0 → 27B → v1 也是同一个结论\"",
+   "outputs": "paper: 27B confounded (generation, LR, batch), no scaling conclusion; v0->v1 gain not attributed to negatives",
+   "severity": "overstated",
+   "fix": "\"在这次 27B 运行里 N-acc 没变（77.0 vs 77.5），但它和 4B 还差了模型代次和超参，不能下规模结论\"."
+  },
+  {
+   "id": "B6",
+   "file": "blog (v1 table)",
+   "stated": "OpenDecisions \"比同样校准过的底座高 4 个点\"",
+   "outputs": "true (63.6 -> 67.7) but the paper also cites same-base fine-tune 66.6 and public 70.8/73.1",
+   "severity": "ok but incomplete",
+   "fix": "Add \"same-base fine-tune by the OpenDecisions authors: 66.6; best public 4B: 73.1\"."
+  },
+  {
+   "id": "V1",
+   "file": "video/results/SNAPSHOT.md section 5",
+   "stated": "vdm choose argmin 66.7% vs argmax 2.1% (chance 24.8%)",
+   "outputs": "argmax is 6.5 SD below chance; argmin works also when key is not the last option (61.2% vs chance 22.0%); not a simple label reversal (reversed-order argmax 46/144). Either a label/option-mapping bug or v1.1 items were filtered against frame-level evidence",
+   "severity": "error-suspect; must not be reported as capability",
+   "fix": "Do not cite 66.7% (post-hoc argmin on the test set). Run (a) option-permutation control, (b) v1.0 choose-only (choose_v1_0.py), (c) check typed_block label order on a 3-item synthetic test. Report argmax 2.1% only as an anomaly under investigation."
+  },
+  {
+   "id": "V2",
+   "file": "video/results/SNAPSHOT.md",
+   "stated": "Gemini Hydrogen no tool 43.5%, +vdm 16.7%; DeepSeek 23.8%",
+   "outputs": "Wilson CIs: 43.5 [25.6, 63.2] (hard set only, n=23); +vdm 16.7 [3.0, 56.4] (n=6); DeepSeek 23.8 [13.5, 38.5]",
+   "severity": "weak (n tiny); +vdm currently not better anywhere",
+   "fix": "Report only paired deltas with CIs (already done); no claims until >=3 runs on 840 items."
+  },
+  {
+   "id": "V3",
+   "file": "video/analysis/failure_analysis.md",
+   "stated": "27/48 perception-bound (56%, Wilson 42-69); always-last 41.0 (5th of 22); oracle 134/144",
+   "outputs": "recomputed from results.json: match",
+   "severity": "ok",
+   "fix": ""
+  },
+  {
+   "id": "D1",
+   "file": "di/results/vision_summary.json",
+   "stated": "public vision index 55.46",
+   "outputs": "recomputed 55.46; binomial-bootstrap 95% CI [54.0, 56.9]; unweighted skill 51.0; macro acc 66.0; micro acc 65.9; without Winoground 53.2. Board 4B top Piccolo 4B VL public 71.42; stock Qwen3.8-27B NVFP4 full 60.67",
+   "severity": "ok; weak vs comparators",
+   "fix": "If reported: \"public vision index 55.5 [54.0, 56.9] (weighted skill, official); 66.0 mean accuracy over 11 benchmarks\". Fair comparator is the stock Qwen3.5-4B through the same kit (not yet run) -- quick win."
+  },
+  {
+   "id": "D2",
+   "file": "di/results/text_shard*_summary.json",
+   "stated": "(no score)",
+   "outputs": "only latency; 91,539 of 140,620 rows; no scores.json saved",
+   "severity": "gap",
+   "fix": "Run kit score on the merged shards; no text-board number can be quoted yet."
+  },
+  {
+   "id": "D3",
+   "file": "di/results/latency_probe.json and summaries",
+   "stated": "median 73.7 ms (750 rows), p95 254.6 ms; vision median 114.5 ms",
+   "outputs": "matches",
+   "severity": "ok-strengthen opportunity",
+   "fix": "Latency (board hardware) is a defensible strength: median 74 ms text / 115 ms vision per request incl. multi-question requests."
+  },
+  {
+   "id": "R1",
+   "file": "README.md",
+   "stated": "v0 results section has no numbers; Colab example uses --gpu A100",
+   "outputs": "all runs on RTX PRO 6000 (G4)",
+   "severity": "minor",
+   "fix": "Add v0 headline line (92.8 avg Acc@0.5, N-acc 77.0, 84 ms) and use --gpu g4 in the example."
+  },
+  {
+   "id": "X1",
+   "file": "(main checkout only) paper/reviews/round3_*.md, outputs/eval_v0_xdomain/rows/*venus*, *sspro_640/4000*",
+   "stated": "",
+   "outputs": "exist in main checkout, untracked, absent from this worktree",
+   "severity": "note",
+   "fix": "Parent should read round-3 reviews and use these rows."
+  }
+ ]
+}

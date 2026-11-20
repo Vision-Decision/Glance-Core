@@ -1,0 +1,4103 @@
+{
+"model": "Qwen/Qwen3.5-4B (generative, bf16, MPS, greedy, thinking off)",
+"prompt": "Locate the object described as \"{expr}\" in the image. Output its bounding box as [x1, y1, x2, y2] with coordinates normalized to 0-1000. If no such object is in the image, answer exactly \"none\".",
+"wall_s": 1979,
+"B": [
+{
+"image_id": 58111,
+"salience": "large",
+"type": "bare",
+"text": "the cat",
+"present": true,
+"swap": null,
+"out": "[68, 56, 986, 987]\n",
+"none": false,
+"iou_gt": 0.983
+},
+{
+"image_id": 58111,
+"salience": "large",
+"type": "color",
+"text": "the orange cat",
+"present": true,
+"swap": null,
+"out": "[71, 56, 985, 987]\n",
+"none": false,
+"iou_gt": 0.979
+},
+{
+"image_id": 58111,
+"salience": "large",
+"type": "color",
+"text": "the pink cat",
+"present": false,
+"swap": "contrast",
+"out": "[70, 56, 986, 987]\n",
+"none": false,
+"iou_gt": 0.981
+},
+{
+"image_id": 58111,
+"salience": "large",
+"type": "color",
+"text": "the purple cat",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 58111,
+"salience": "large",
+"type": "count",
+"text": "the two cats",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 58111,
+"salience": "large",
+"type": "count",
+"text": "the three cats",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 58111,
+"salience": "large",
+"type": "size",
+"text": "the big cat",
+"present": true,
+"swap": null,
+"out": "[68, 56, 986, 988]\n",
+"none": false,
+"iou_gt": 0.984
+},
+{
+"image_id": 58111,
+"salience": "large",
+"type": "size",
+"text": "the tiny cat",
+"present": false,
+"swap": null,
+"out": "[70, 58, 986, 987]\n",
+"none": false,
+"iou_gt": 0.979
+},
+{
+"image_id": 58111,
+"salience": "large",
+"type": "action",
+"text": "the cat lying down",
+"present": true,
+"swap": null,
+"out": "[71, 56, 986, 988]\n",
+"none": false,
+"iou_gt": 0.981
+},
+{
+"image_id": 58111,
+"salience": "large",
+"type": "action",
+"text": "the cat jumping",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 58111,
+"salience": "large",
+"type": "action",
+"text": "the cat running",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 546829,
+"salience": "small",
+"type": "bare",
+"text": "the dog",
+"present": true,
+"swap": null,
+"out": "[327, 350, 458, 676]\n",
+"none": false,
+"iou_gt": 0.969
+},
+{
+"image_id": 546829,
+"salience": "small",
+"type": "color",
+"text": "the white dog",
+"present": true,
+"swap": null,
+"out": "[327, 350, 458, 676]\n",
+"none": false,
+"iou_gt": 0.969
+},
+{
+"image_id": 546829,
+"salience": "small",
+"type": "color",
+"text": "the pink dog",
+"present": false,
+"swap": "contrast",
+"out": "[327, 350, 458, 676]\n",
+"none": false,
+"iou_gt": 0.969
+},
+{
+"image_id": 546829,
+"salience": "small",
+"type": "color",
+"text": "the purple dog",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 546829,
+"salience": "small",
+"type": "color",
+"text": "the brown dog",
+"present": false,
+"swap": "scene_color",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 546829,
+"salience": "small",
+"type": "count",
+"text": "the two dogs",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 546829,
+"salience": "small",
+"type": "count",
+"text": "the three dogs",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 546829,
+"salience": "small",
+"type": "position",
+"text": "the dog on the left",
+"present": true,
+"swap": null,
+"out": "[327, 350, 458, 676]\n",
+"none": false,
+"iou_gt": 0.969
+},
+{
+"image_id": 546829,
+"salience": "small",
+"type": "position",
+"text": "the dog on the right",
+"present": false,
+"swap": null,
+"out": "[327, 350, 458, 676]\n",
+"none": false,
+"iou_gt": 0.969
+},
+{
+"image_id": 546829,
+"salience": "small",
+"type": "size",
+"text": "the small dog",
+"present": true,
+"swap": null,
+"out": "[327, 350, 458, 676]\n",
+"none": false,
+"iou_gt": 0.969
+},
+{
+"image_id": 546829,
+"salience": "small",
+"type": "size",
+"text": "the huge dog",
+"present": false,
+"swap": null,
+"out": "[327, 350, 458, 676]\n",
+"none": false,
+"iou_gt": 0.969
+},
+{
+"image_id": 546829,
+"salience": "small",
+"type": "action",
+"text": "the dog standing",
+"present": true,
+"swap": null,
+"out": "[327, 350, 458, 676]\n",
+"none": false,
+"iou_gt": 0.969
+},
+{
+"image_id": 546829,
+"salience": "small",
+"type": "action",
+"text": "the dog lying down",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 546829,
+"salience": "small",
+"type": "action",
+"text": "the dog jumping",
+"present": false,
+"swap": null,
+"out": "[327, 350, 458, 676]\n",
+"none": false,
+"iou_gt": 0.969
+},
+{
+"image_id": 309452,
+"salience": "medium",
+"type": "bare",
+"text": "the bird",
+"present": true,
+"swap": null,
+"out": "[380, 283, 605, 989]\n",
+"none": false,
+"iou_gt": 0.974
+},
+{
+"image_id": 309452,
+"salience": "medium",
+"type": "color",
+"text": "the yellow bird",
+"present": true,
+"swap": null,
+"out": "[379, 283, 605, 988]\n",
+"none": false,
+"iou_gt": 0.969
+},
+{
+"image_id": 309452,
+"salience": "medium",
+"type": "color",
+"text": "the green bird",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 309452,
+"salience": "medium",
+"type": "color",
+"text": "the pink bird",
+"present": false,
+"swap": "contrast",
+"out": "[379,283,605,988]\n",
+"none": false,
+"iou_gt": 0.969
+},
+{
+"image_id": 309452,
+"salience": "medium",
+"type": "count",
+"text": "the two birds",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 309452,
+"salience": "medium",
+"type": "count",
+"text": "the three birds",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 309452,
+"salience": "medium",
+"type": "position",
+"text": "the bird at the bottom",
+"present": true,
+"swap": null,
+"out": "[380,283,605,989]\n",
+"none": false,
+"iou_gt": 0.974
+},
+{
+"image_id": 309452,
+"salience": "medium",
+"type": "position",
+"text": "the bird at the top",
+"present": false,
+"swap": null,
+"out": "[380,283,605,989]\n",
+"none": false,
+"iou_gt": 0.974
+},
+{
+"image_id": 309452,
+"salience": "medium",
+"type": "action",
+"text": "the bird perched on a branch",
+"present": true,
+"swap": null,
+"out": "[380,283,605,989]\n",
+"none": false,
+"iou_gt": 0.974
+},
+{
+"image_id": 309452,
+"salience": "medium",
+"type": "action",
+"text": "the bird flying",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 309452,
+"salience": "medium",
+"type": "action",
+"text": "the bird swimming",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 253386,
+"salience": "large",
+"type": "bare",
+"text": "the dog",
+"present": true,
+"swap": null,
+"out": "[286, 69, 918, 986]\n",
+"none": false,
+"iou_gt": 0.976
+},
+{
+"image_id": 253386,
+"salience": "large",
+"type": "color",
+"text": "the black dog",
+"present": true,
+"swap": null,
+"out": "[286, 71, 918, 989]\n",
+"none": false,
+"iou_gt": 0.975
+},
+{
+"image_id": 253386,
+"salience": "large",
+"type": "color",
+"text": "the blue dog",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 253386,
+"salience": "large",
+"type": "color",
+"text": "the pink dog",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 253386,
+"salience": "large",
+"type": "count",
+"text": "the two dogs",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 253386,
+"salience": "large",
+"type": "count",
+"text": "the three dogs",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 253386,
+"salience": "large",
+"type": "position",
+"text": "the dog on the right",
+"present": true,
+"swap": null,
+"out": "[286, 69, 918, 989]\n",
+"none": false,
+"iou_gt": 0.973
+},
+{
+"image_id": 253386,
+"salience": "large",
+"type": "position",
+"text": "the dog on the left",
+"present": false,
+"swap": null,
+"out": "[286, 72, 918, 989]\n",
+"none": false,
+"iou_gt": 0.976
+},
+{
+"image_id": 253386,
+"salience": "large",
+"type": "size",
+"text": "the big dog",
+"present": true,
+"swap": null,
+"out": "[286, 69, 918, 989]\n",
+"none": false,
+"iou_gt": 0.973
+},
+{
+"image_id": 253386,
+"salience": "large",
+"type": "size",
+"text": "the tiny dog",
+"present": false,
+"swap": null,
+"out": "[286, 69, 916, 989]\n",
+"none": false,
+"iou_gt": 0.97
+},
+{
+"image_id": 174482,
+"salience": "large",
+"type": "bare",
+"text": "the bicycle",
+"present": true,
+"swap": null,
+"out": "[309, 25, 773, 986]\n",
+"none": false,
+"iou_gt": 0.938
+},
+{
+"image_id": 174482,
+"salience": "large",
+"type": "color",
+"text": "the blue bicycle",
+"present": true,
+"swap": null,
+"out": "[309,25,773,986]\n",
+"none": false,
+"iou_gt": 0.938
+},
+{
+"image_id": 174482,
+"salience": "large",
+"type": "color",
+"text": "the brown bicycle",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 174482,
+"salience": "large",
+"type": "color",
+"text": "the red bicycle",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 174482,
+"salience": "large",
+"type": "color",
+"text": "the white bicycle",
+"present": false,
+"swap": "scene_color",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 174482,
+"salience": "large",
+"type": "count",
+"text": "the two bicycles",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 174482,
+"salience": "large",
+"type": "count",
+"text": "the three bicycles",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 174482,
+"salience": "large",
+"type": "size",
+"text": "the big bicycle",
+"present": true,
+"swap": null,
+"out": "[309,25,773,986]\n",
+"none": false,
+"iou_gt": 0.938
+},
+{
+"image_id": 174482,
+"salience": "large",
+"type": "size",
+"text": "the tiny bicycle",
+"present": false,
+"swap": null,
+"out": "[312,25,773,986]\n",
+"none": false,
+"iou_gt": 0.931
+},
+{
+"image_id": 174482,
+"salience": "large",
+"type": "action",
+"text": "the parked bicycle",
+"present": true,
+"swap": null,
+"out": "[309,25,773,986]\n",
+"none": false,
+"iou_gt": 0.938
+},
+{
+"image_id": 174482,
+"salience": "large",
+"type": "action",
+"text": "the bicycle being ridden",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 359855,
+"salience": "large",
+"type": "bare",
+"text": "the suitcase",
+"present": true,
+"swap": null,
+"out": "[214, 38, 874, 642]\n",
+"none": false,
+"iou_gt": 0.989
+},
+{
+"image_id": 359855,
+"salience": "large",
+"type": "color",
+"text": "the blue suitcase",
+"present": true,
+"swap": null,
+"out": "[214,38,874,641]\n",
+"none": false,
+"iou_gt": 0.987
+},
+{
+"image_id": 359855,
+"salience": "large",
+"type": "color",
+"text": "the pink suitcase",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 359855,
+"salience": "large",
+"type": "color",
+"text": "the red suitcase",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 359855,
+"salience": "large",
+"type": "color",
+"text": "the green suitcase",
+"present": false,
+"swap": "scene_color",
+"out": "[212,38,874,641]\n",
+"none": false,
+"iou_gt": 0.984
+},
+{
+"image_id": 359855,
+"salience": "large",
+"type": "count",
+"text": "the two suitcases",
+"present": false,
+"swap": null,
+"out": "There are none.\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 359855,
+"salience": "large",
+"type": "count",
+"text": "the three suitcases",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 359855,
+"salience": "large",
+"type": "position",
+"text": "the suitcase at the top",
+"present": true,
+"swap": null,
+"out": "[214,38,874,640]\n",
+"none": false,
+"iou_gt": 0.986
+},
+{
+"image_id": 359855,
+"salience": "large",
+"type": "position",
+"text": "the suitcase at the bottom",
+"present": false,
+"swap": null,
+"out": "[214,38,874,641]\n",
+"none": false,
+"iou_gt": 0.987
+},
+{
+"image_id": 359855,
+"salience": "large",
+"type": "size",
+"text": "the big suitcase",
+"present": true,
+"swap": null,
+"out": "[214,38,874,642]\n",
+"none": false,
+"iou_gt": 0.989
+},
+{
+"image_id": 359855,
+"salience": "large",
+"type": "size",
+"text": "the tiny suitcase",
+"present": false,
+"swap": null,
+"out": "[214,38,874,642]\n",
+"none": false,
+"iou_gt": 0.989
+},
+{
+"image_id": 186938,
+"salience": "medium",
+"type": "bare",
+"text": "the bird",
+"present": true,
+"swap": null,
+"out": "[351, 112, 941, 850]\n",
+"none": false,
+"iou_gt": 0.987
+},
+{
+"image_id": 186938,
+"salience": "medium",
+"type": "color",
+"text": "the gray bird",
+"present": true,
+"swap": null,
+"out": "[351, 112, 941, 850]\n",
+"none": false,
+"iou_gt": 0.987
+},
+{
+"image_id": 186938,
+"salience": "medium",
+"type": "color",
+"text": "the green bird",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 186938,
+"salience": "medium",
+"type": "color",
+"text": "the pink bird",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 186938,
+"salience": "medium",
+"type": "count",
+"text": "the two birds",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 186938,
+"salience": "medium",
+"type": "count",
+"text": "the three birds",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 186938,
+"salience": "medium",
+"type": "position",
+"text": "the bird on the right",
+"present": true,
+"swap": null,
+"out": "[351, 112, 941, 850]\n",
+"none": false,
+"iou_gt": 0.987
+},
+{
+"image_id": 186938,
+"salience": "medium",
+"type": "position",
+"text": "the bird on the left",
+"present": false,
+"swap": null,
+"out": "[351, 112, 941, 850]\n",
+"none": false,
+"iou_gt": 0.987
+},
+{
+"image_id": 186938,
+"salience": "medium",
+"type": "action",
+"text": "the bird standing",
+"present": true,
+"swap": null,
+"out": "[351, 112, 941, 850]\n",
+"none": false,
+"iou_gt": 0.987
+},
+{
+"image_id": 186938,
+"salience": "medium",
+"type": "action",
+"text": "the bird flying",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 186938,
+"salience": "medium",
+"type": "action",
+"text": "the bird swimming",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 320554,
+"salience": "small",
+"type": "bare",
+"text": "the cat",
+"present": true,
+"swap": null,
+"out": "[445,517,685,780]\n",
+"none": false,
+"iou_gt": 0.935
+},
+{
+"image_id": 320554,
+"salience": "small",
+"type": "color",
+"text": "the black cat",
+"present": true,
+"swap": null,
+"out": "[445,517,685,780]\n",
+"none": false,
+"iou_gt": 0.935
+},
+{
+"image_id": 320554,
+"salience": "small",
+"type": "color",
+"text": "the blue cat",
+"present": false,
+"swap": "contrast",
+"out": "[445,514,686,780]\n",
+"none": false,
+"iou_gt": 0.929
+},
+{
+"image_id": 320554,
+"salience": "small",
+"type": "color",
+"text": "the pink cat",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 320554,
+"salience": "small",
+"type": "count",
+"text": "the two cats",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 320554,
+"salience": "small",
+"type": "count",
+"text": "the three cats",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 320554,
+"salience": "small",
+"type": "position",
+"text": "the cat at the bottom",
+"present": true,
+"swap": null,
+"out": "[445,517,685,780]\n",
+"none": false,
+"iou_gt": 0.935
+},
+{
+"image_id": 320554,
+"salience": "small",
+"type": "position",
+"text": "the cat at the top",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 320554,
+"salience": "small",
+"type": "size",
+"text": "the small cat",
+"present": true,
+"swap": null,
+"out": "[445,514,686,780]\n",
+"none": false,
+"iou_gt": 0.929
+},
+{
+"image_id": 320554,
+"salience": "small",
+"type": "size",
+"text": "the huge cat",
+"present": false,
+"swap": null,
+"out": "[445,514,686,780]\n",
+"none": false,
+"iou_gt": 0.929
+},
+{
+"image_id": 320554,
+"salience": "small",
+"type": "action",
+"text": "the cat lying down",
+"present": true,
+"swap": null,
+"out": "[445,517,686,780]\n",
+"none": false,
+"iou_gt": 0.939
+},
+{
+"image_id": 320554,
+"salience": "small",
+"type": "action",
+"text": "the cat jumping",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 320554,
+"salience": "small",
+"type": "action",
+"text": "the cat running",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 380203,
+"salience": "large",
+"type": "bare",
+"text": "the horse",
+"present": true,
+"swap": null,
+"out": "[100, 166, 905, 891]\n",
+"none": false,
+"iou_gt": 0.987
+},
+{
+"image_id": 380203,
+"salience": "large",
+"type": "color",
+"text": "the white horse",
+"present": true,
+"swap": null,
+"out": "[100, 166, 905, 891]\n",
+"none": false,
+"iou_gt": 0.987
+},
+{
+"image_id": 380203,
+"salience": "large",
+"type": "color",
+"text": "the pink horse",
+"present": false,
+"swap": "contrast",
+"out": "There is none.\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 380203,
+"salience": "large",
+"type": "color",
+"text": "the blue horse",
+"present": false,
+"swap": "contrast",
+"out": "[100,166,905,891]\n",
+"none": false,
+"iou_gt": 0.987
+},
+{
+"image_id": 380203,
+"salience": "large",
+"type": "count",
+"text": "the two horses",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 380203,
+"salience": "large",
+"type": "count",
+"text": "the three horses",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 380203,
+"salience": "large",
+"type": "size",
+"text": "the big horse",
+"present": true,
+"swap": null,
+"out": "[100, 166, 905, 891]\n",
+"none": false,
+"iou_gt": 0.987
+},
+{
+"image_id": 380203,
+"salience": "large",
+"type": "size",
+"text": "the tiny horse",
+"present": false,
+"swap": null,
+"out": "[100,166,905,891]\n",
+"none": false,
+"iou_gt": 0.987
+},
+{
+"image_id": 380203,
+"salience": "large",
+"type": "action",
+"text": "the horse eating",
+"present": true,
+"swap": null,
+"out": "[100,166,905,891]\n",
+"none": false,
+"iou_gt": 0.987
+},
+{
+"image_id": 380203,
+"salience": "large",
+"type": "action",
+"text": "the horse jumping",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 380203,
+"salience": "large",
+"type": "action",
+"text": "the horse lying down",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 284623,
+"salience": "large",
+"type": "bare",
+"text": "the cat",
+"present": true,
+"swap": null,
+"out": "[56, 0, 731, 860]\n",
+"none": false,
+"iou_gt": 0.99
+},
+{
+"image_id": 284623,
+"salience": "large",
+"type": "color",
+"text": "the black cat",
+"present": true,
+"swap": null,
+"out": "[56, 0, 733, 860]\n",
+"none": false,
+"iou_gt": 0.987
+},
+{
+"image_id": 284623,
+"salience": "large",
+"type": "color",
+"text": "the yellow cat",
+"present": false,
+"swap": "contrast",
+"out": "[56, 0, 733, 860]\n",
+"none": false,
+"iou_gt": 0.987
+},
+{
+"image_id": 284623,
+"salience": "large",
+"type": "color",
+"text": "the brown cat",
+"present": false,
+"swap": "contrast",
+"out": "[56, 0, 733, 860]\n",
+"none": false,
+"iou_gt": 0.987
+},
+{
+"image_id": 284623,
+"salience": "large",
+"type": "count",
+"text": "the two cats",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 284623,
+"salience": "large",
+"type": "count",
+"text": "the three cats",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 284623,
+"salience": "large",
+"type": "position",
+"text": "the cat on the left",
+"present": true,
+"swap": null,
+"out": "[56, 0, 730, 860]\n",
+"none": false,
+"iou_gt": 0.991
+},
+{
+"image_id": 284623,
+"salience": "large",
+"type": "position",
+"text": "the cat on the right",
+"present": false,
+"swap": null,
+"out": "[56, 0, 731, 860]\n",
+"none": false,
+"iou_gt": 0.99
+},
+{
+"image_id": 284623,
+"salience": "large",
+"type": "size",
+"text": "the big cat",
+"present": true,
+"swap": null,
+"out": "[56, 0, 733, 863]\n",
+"none": false,
+"iou_gt": 0.984
+},
+{
+"image_id": 284623,
+"salience": "large",
+"type": "size",
+"text": "the tiny cat",
+"present": false,
+"swap": null,
+"out": "[56, 0, 733, 863]\n",
+"none": false,
+"iou_gt": 0.984
+},
+{
+"image_id": 284623,
+"salience": "large",
+"type": "action",
+"text": "the cat sitting",
+"present": true,
+"swap": null,
+"out": "[56, 0, 733, 860]\n",
+"none": false,
+"iou_gt": 0.987
+},
+{
+"image_id": 284623,
+"salience": "large",
+"type": "action",
+"text": "the cat jumping",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 284623,
+"salience": "large",
+"type": "action",
+"text": "the cat running",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 60090,
+"salience": "medium",
+"type": "bare",
+"text": "the train",
+"present": true,
+"swap": null,
+"out": "[352, 229, 766, 793]\n",
+"none": false,
+"iou_gt": 0.951
+},
+{
+"image_id": 60090,
+"salience": "medium",
+"type": "color",
+"text": "the yellow train",
+"present": true,
+"swap": null,
+"out": "[352, 229, 764, 793]\n",
+"none": false,
+"iou_gt": 0.946
+},
+{
+"image_id": 60090,
+"salience": "medium",
+"type": "color",
+"text": "the red train",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 60090,
+"salience": "medium",
+"type": "color",
+"text": "the brown train",
+"present": false,
+"swap": "contrast",
+"out": "[352, 229, 766, 783]\n",
+"none": false,
+"iou_gt": 0.934
+},
+{
+"image_id": 60090,
+"salience": "medium",
+"type": "count",
+"text": "the two trains",
+"present": false,
+"swap": null,
+"out": "[352,229,766,793]\n",
+"none": false,
+"iou_gt": 0.951
+},
+{
+"image_id": 60090,
+"salience": "medium",
+"type": "count",
+"text": "the three trains",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 322829,
+"salience": "large",
+"type": "bare",
+"text": "the bench",
+"present": true,
+"swap": null,
+"out": "[131, 124,836,788]\n",
+"none": false,
+"iou_gt": 0.966
+},
+{
+"image_id": 322829,
+"salience": "large",
+"type": "color",
+"text": "the white bench",
+"present": true,
+"swap": null,
+"out": "[131,121,836,788]\n",
+"none": false,
+"iou_gt": 0.97
+},
+{
+"image_id": 322829,
+"salience": "large",
+"type": "color",
+"text": "the orange bench",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 322829,
+"salience": "large",
+"type": "color",
+"text": "the brown bench",
+"present": false,
+"swap": "contrast",
+"out": "There is none.\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 322829,
+"salience": "large",
+"type": "count",
+"text": "the two benchs",
+"present": false,
+"swap": null,
+"out": "[131,121,836,786]\n",
+"none": false,
+"iou_gt": 0.967
+},
+{
+"image_id": 322829,
+"salience": "large",
+"type": "count",
+"text": "the three benchs",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 322829,
+"salience": "large",
+"type": "size",
+"text": "the big bench",
+"present": true,
+"swap": null,
+"out": "[131,121,836,788]\n",
+"none": false,
+"iou_gt": 0.97
+},
+{
+"image_id": 322829,
+"salience": "large",
+"type": "size",
+"text": "the tiny bench",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 318908,
+"salience": "large",
+"type": "bare",
+"text": "the dog",
+"present": true,
+"swap": null,
+"out": "[182, 0, 770, 988]\n",
+"none": false,
+"iou_gt": 0.86
+},
+{
+"image_id": 318908,
+"salience": "large",
+"type": "color",
+"text": "the white dog",
+"present": true,
+"swap": null,
+"out": "[182, 0, 770, 988]\n",
+"none": false,
+"iou_gt": 0.86
+},
+{
+"image_id": 318908,
+"salience": "large",
+"type": "color",
+"text": "the black dog",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 318908,
+"salience": "large",
+"type": "color",
+"text": "the green dog",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 318908,
+"salience": "large",
+"type": "count",
+"text": "the two dogs",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 318908,
+"salience": "large",
+"type": "count",
+"text": "the three dogs",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 318908,
+"salience": "large",
+"type": "size",
+"text": "the big dog",
+"present": true,
+"swap": null,
+"out": "[182, 0, 770, 988]\n",
+"none": false,
+"iou_gt": 0.86
+},
+{
+"image_id": 318908,
+"salience": "large",
+"type": "size",
+"text": "the tiny dog",
+"present": false,
+"swap": null,
+"out": "[182, 0, 770, 988]\n",
+"none": false,
+"iou_gt": 0.86
+},
+{
+"image_id": 318908,
+"salience": "large",
+"type": "action",
+"text": "the dog sitting",
+"present": true,
+"swap": null,
+"out": "[180, 0, 771, 988]\n",
+"none": false,
+"iou_gt": 0.858
+},
+{
+"image_id": 318908,
+"salience": "large",
+"type": "action",
+"text": "the dog running",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 318908,
+"salience": "large",
+"type": "action",
+"text": "the dog swimming",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 236784,
+"salience": "large",
+"type": "bare",
+"text": "the couch",
+"present": true,
+"swap": null,
+"out": "[0, 238, 1000, 987]\n",
+"none": false,
+"iou_gt": 0.99
+},
+{
+"image_id": 236784,
+"salience": "large",
+"type": "color",
+"text": "the brown couch",
+"present": true,
+"swap": null,
+"out": "[0, 237, 1000, 987]\n",
+"none": false,
+"iou_gt": 0.989
+},
+{
+"image_id": 236784,
+"salience": "large",
+"type": "color",
+"text": "the blue couch",
+"present": false,
+"swap": "contrast",
+"out": "[0, 237, 1000, 987]\n",
+"none": false,
+"iou_gt": 0.989
+},
+{
+"image_id": 236784,
+"salience": "large",
+"type": "color",
+"text": "the pink couch",
+"present": false,
+"swap": "contrast",
+"out": "[0, 237, 1000, 987]\n",
+"none": false,
+"iou_gt": 0.989
+},
+{
+"image_id": 236784,
+"salience": "large",
+"type": "count",
+"text": "the two couches",
+"present": false,
+"swap": null,
+"out": "There is no object 'the two couches' in the image.\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 236784,
+"salience": "large",
+"type": "count",
+"text": "the three couches",
+"present": false,
+"swap": null,
+"out": "[0, 238, 1000, 987]\n",
+"none": false,
+"iou_gt": 0.99
+},
+{
+"image_id": 236784,
+"salience": "large",
+"type": "position",
+"text": "the couch at the bottom",
+"present": true,
+"swap": null,
+"out": "[0, 238, 1000, 987]\n",
+"none": false,
+"iou_gt": 0.99
+},
+{
+"image_id": 236784,
+"salience": "large",
+"type": "position",
+"text": "the couch at the top",
+"present": false,
+"swap": null,
+"out": "[0, 239, 1000, 987]\n",
+"none": false,
+"iou_gt": 0.992
+},
+{
+"image_id": 236784,
+"salience": "large",
+"type": "size",
+"text": "the big couch",
+"present": true,
+"swap": null,
+"out": "[0, 237, 1000, 987]\n",
+"none": false,
+"iou_gt": 0.989
+},
+{
+"image_id": 236784,
+"salience": "large",
+"type": "size",
+"text": "the tiny couch",
+"present": false,
+"swap": null,
+"out": "[0, 239, 1000, 987]\n",
+"none": false,
+"iou_gt": 0.992
+},
+{
+"image_id": 105335,
+"salience": "large",
+"type": "bare",
+"text": "the bowl",
+"present": true,
+"swap": null,
+"out": "[0, 389, 1000, 922]\n",
+"none": false,
+"iou_gt": 0.977
+},
+{
+"image_id": 105335,
+"salience": "large",
+"type": "color",
+"text": "the white bowl",
+"present": true,
+"swap": null,
+"out": "[0, 389, 1000, 922]\n",
+"none": false,
+"iou_gt": 0.977
+},
+{
+"image_id": 105335,
+"salience": "large",
+"type": "color",
+"text": "the yellow bowl",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 105335,
+"salience": "large",
+"type": "color",
+"text": "the black bowl",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 105335,
+"salience": "large",
+"type": "count",
+"text": "the two bowls",
+"present": false,
+"swap": null,
+"out": "[0, 388, 1000, 922]\n",
+"none": false,
+"iou_gt": 0.979
+},
+{
+"image_id": 105335,
+"salience": "large",
+"type": "count",
+"text": "the three bowls",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 105335,
+"salience": "large",
+"type": "position",
+"text": "the bowl at the bottom",
+"present": true,
+"swap": null,
+"out": "[0, 389, 1000, 922]\n",
+"none": false,
+"iou_gt": 0.977
+},
+{
+"image_id": 105335,
+"salience": "large",
+"type": "position",
+"text": "the bowl at the top",
+"present": false,
+"swap": null,
+"out": "[727,0,1000,92]\n",
+"none": false,
+"iou_gt": 0.0
+},
+{
+"image_id": 105335,
+"salience": "large",
+"type": "size",
+"text": "the big bowl",
+"present": true,
+"swap": null,
+"out": "[0, 389, 1000, 922]\n",
+"none": false,
+"iou_gt": 0.977
+},
+{
+"image_id": 105335,
+"salience": "large",
+"type": "size",
+"text": "the tiny bowl",
+"present": false,
+"swap": null,
+"out": "[727,0,1000,92]\n",
+"none": false,
+"iou_gt": 0.0
+},
+{
+"image_id": 291791,
+"salience": "large",
+"type": "bare",
+"text": "the motorcycle",
+"present": true,
+"swap": null,
+"out": "[15, 44, 977, 958]\n",
+"none": false,
+"iou_gt": 0.928
+},
+{
+"image_id": 291791,
+"salience": "large",
+"type": "color",
+"text": "the green motorcycle",
+"present": true,
+"swap": null,
+"out": "[15, 44, 977, 958]\n",
+"none": false,
+"iou_gt": 0.928
+},
+{
+"image_id": 291791,
+"salience": "large",
+"type": "color",
+"text": "the red motorcycle",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 291791,
+"salience": "large",
+"type": "color",
+"text": "the orange motorcycle",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 291791,
+"salience": "large",
+"type": "count",
+"text": "the two motorcycles",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 291791,
+"salience": "large",
+"type": "count",
+"text": "the three motorcycles",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 291791,
+"salience": "large",
+"type": "size",
+"text": "the big motorcycle",
+"present": true,
+"swap": null,
+"out": "[15, 44, 977, 958]\n",
+"none": false,
+"iou_gt": 0.928
+},
+{
+"image_id": 291791,
+"salience": "large",
+"type": "size",
+"text": "the tiny motorcycle",
+"present": false,
+"swap": null,
+"out": "[15, 44, 979, 958]\n",
+"none": false,
+"iou_gt": 0.927
+},
+{
+"image_id": 291791,
+"salience": "large",
+"type": "action",
+"text": "the parked motorcycle",
+"present": true,
+"swap": null,
+"out": "[15, 44, 977, 958]\n",
+"none": false,
+"iou_gt": 0.928
+},
+{
+"image_id": 291791,
+"salience": "large",
+"type": "action",
+"text": "the motorcycle being ridden",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 274687,
+"salience": "large",
+"type": "bare",
+"text": "the bicycle",
+"present": true,
+"swap": null,
+"out": "[0, 131, 1000, 986]\n",
+"none": false,
+"iou_gt": 0.893
+},
+{
+"image_id": 274687,
+"salience": "large",
+"type": "color",
+"text": "the black bicycle",
+"present": true,
+"swap": null,
+"out": "[0, 130, 1000, 986]\n",
+"none": false,
+"iou_gt": 0.892
+},
+{
+"image_id": 274687,
+"salience": "large",
+"type": "color",
+"text": "the green bicycle",
+"present": false,
+"swap": "contrast",
+"out": "There is none.\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 274687,
+"salience": "large",
+"type": "color",
+"text": "the brown bicycle",
+"present": false,
+"swap": "contrast",
+"out": "[0,130,1000,986]\n",
+"none": false,
+"iou_gt": 0.892
+},
+{
+"image_id": 274687,
+"salience": "large",
+"type": "count",
+"text": "the two bicycles",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 274687,
+"salience": "large",
+"type": "count",
+"text": "the three bicycles",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 274687,
+"salience": "large",
+"type": "position",
+"text": "the bicycle at the bottom",
+"present": true,
+"swap": null,
+"out": "[0, 132, 1000, 986]\n",
+"none": false,
+"iou_gt": 0.894
+},
+{
+"image_id": 274687,
+"salience": "large",
+"type": "position",
+"text": "the bicycle at the top",
+"present": false,
+"swap": null,
+"out": "There is none.\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 274687,
+"salience": "large",
+"type": "size",
+"text": "the big bicycle",
+"present": true,
+"swap": null,
+"out": "[0,130,1000,986]\n",
+"none": false,
+"iou_gt": 0.892
+},
+{
+"image_id": 274687,
+"salience": "large",
+"type": "size",
+"text": "the tiny bicycle",
+"present": false,
+"swap": null,
+"out": "[0,130,1000,986]\n",
+"none": false,
+"iou_gt": 0.892
+},
+{
+"image_id": 274687,
+"salience": "large",
+"type": "action",
+"text": "the parked bicycle",
+"present": true,
+"swap": null,
+"out": "[0,130,1000,986]\n",
+"none": false,
+"iou_gt": 0.892
+},
+{
+"image_id": 274687,
+"salience": "large",
+"type": "action",
+"text": "the bicycle being ridden",
+"present": false,
+"swap": null,
+"out": "[0,130,1000,986]\n",
+"none": false,
+"iou_gt": 0.892
+},
+{
+"image_id": 30675,
+"salience": "large",
+"type": "bare",
+"text": "the train",
+"present": true,
+"swap": null,
+"out": "[238, 383, 1000, 836]\n",
+"none": false,
+"iou_gt": 0.984
+},
+{
+"image_id": 30675,
+"salience": "large",
+"type": "color",
+"text": "the orange train",
+"present": true,
+"swap": null,
+"out": "[238, 386, 1000, 836]\n",
+"none": false,
+"iou_gt": 0.978
+},
+{
+"image_id": 30675,
+"salience": "large",
+"type": "color",
+"text": "the purple train",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 30675,
+"salience": "large",
+"type": "color",
+"text": "the white train",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 30675,
+"salience": "large",
+"type": "count",
+"text": "the two trains",
+"present": false,
+"swap": null,
+"out": "[238, 386, 1000, 836]\n",
+"none": false,
+"iou_gt": 0.978
+},
+{
+"image_id": 30675,
+"salience": "large",
+"type": "count",
+"text": "the three trains",
+"present": false,
+"swap": null,
+"out": "[238, 386, 1000, 836]\n",
+"none": false,
+"iou_gt": 0.978
+},
+{
+"image_id": 30675,
+"salience": "large",
+"type": "position",
+"text": "the train on the right",
+"present": true,
+"swap": null,
+"out": "[838, 456, 1000, 814]\n",
+"none": false,
+"iou_gt": 0.167
+},
+{
+"image_id": 30675,
+"salience": "large",
+"type": "position",
+"text": "the train on the left",
+"present": false,
+"swap": null,
+"out": "[238,386,831,833]\n",
+"none": false,
+"iou_gt": 0.763
+},
+{
+"image_id": 30675,
+"salience": "large",
+"type": "position",
+"text": "the train at the bottom",
+"present": true,
+"swap": null,
+"out": "[238, 386, 1000, 836]\n",
+"none": false,
+"iou_gt": 0.978
+},
+{
+"image_id": 30675,
+"salience": "large",
+"type": "position",
+"text": "the train at the top",
+"present": false,
+"swap": null,
+"out": "[238, 386, 1000, 836]\n",
+"none": false,
+"iou_gt": 0.978
+},
+{
+"image_id": 30675,
+"salience": "large",
+"type": "size",
+"text": "the big train",
+"present": true,
+"swap": null,
+"out": "[238, 386, 1000, 836]\n",
+"none": false,
+"iou_gt": 0.978
+},
+{
+"image_id": 30675,
+"salience": "large",
+"type": "size",
+"text": "the tiny train",
+"present": false,
+"swap": null,
+"out": "[838,463,1000,814]\n",
+"none": false,
+"iou_gt": 0.164
+},
+{
+"image_id": 486479,
+"salience": "medium",
+"type": "bare",
+"text": "the dog",
+"present": true,
+"swap": null,
+"out": "[128,142,600,624]\n",
+"none": false,
+"iou_gt": 0.98
+},
+{
+"image_id": 486479,
+"salience": "medium",
+"type": "color",
+"text": "the white dog",
+"present": true,
+"swap": null,
+"out": "[128,142,600,624]\n",
+"none": false,
+"iou_gt": 0.98
+},
+{
+"image_id": 486479,
+"salience": "medium",
+"type": "color",
+"text": "the pink dog",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 486479,
+"salience": "medium",
+"type": "color",
+"text": "the yellow dog",
+"present": false,
+"swap": "contrast",
+"out": "[130,142,600,624]\n",
+"none": false,
+"iou_gt": 0.984
+},
+{
+"image_id": 486479,
+"salience": "medium",
+"type": "color",
+"text": "the red dog",
+"present": false,
+"swap": "scene_color",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 486479,
+"salience": "medium",
+"type": "count",
+"text": "the two dogs",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 486479,
+"salience": "medium",
+"type": "count",
+"text": "the three dogs",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 486479,
+"salience": "medium",
+"type": "position",
+"text": "the dog on the left",
+"present": true,
+"swap": null,
+"out": "[128,140,600,624]\n",
+"none": false,
+"iou_gt": 0.979
+},
+{
+"image_id": 486479,
+"salience": "medium",
+"type": "position",
+"text": "the dog on the right",
+"present": false,
+"swap": null,
+"out": "[128,140,600,624]\n",
+"none": false,
+"iou_gt": 0.979
+},
+{
+"image_id": 486479,
+"salience": "medium",
+"type": "position",
+"text": "the dog at the top",
+"present": true,
+"swap": null,
+"out": "[128,140,600,624]\n",
+"none": false,
+"iou_gt": 0.979
+},
+{
+"image_id": 486479,
+"salience": "medium",
+"type": "position",
+"text": "the dog at the bottom",
+"present": false,
+"swap": null,
+"out": "[128,142,600,624]\n",
+"none": false,
+"iou_gt": 0.98
+},
+{
+"image_id": 486479,
+"salience": "medium",
+"type": "action",
+"text": "the dog lying down",
+"present": true,
+"swap": null,
+"out": "[128,140,600,624]\n",
+"none": false,
+"iou_gt": 0.979
+},
+{
+"image_id": 486479,
+"salience": "medium",
+"type": "action",
+"text": "the dog jumping",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 486479,
+"salience": "medium",
+"type": "action",
+"text": "the dog running",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 177383,
+"salience": "large",
+"type": "bare",
+"text": "the train",
+"present": true,
+"swap": null,
+"out": "[0, 96, 912, 755]\n",
+"none": false,
+"iou_gt": 0.957
+},
+{
+"image_id": 177383,
+"salience": "large",
+"type": "color",
+"text": "the yellow train",
+"present": true,
+"swap": null,
+"out": "[2, 96, 914, 755]\n",
+"none": false,
+"iou_gt": 0.961
+},
+{
+"image_id": 177383,
+"salience": "large",
+"type": "color",
+"text": "the gray train",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 177383,
+"salience": "large",
+"type": "color",
+"text": "the white train",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 177383,
+"salience": "large",
+"type": "count",
+"text": "the two trains",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 177383,
+"salience": "large",
+"type": "count",
+"text": "the three trains",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 177383,
+"salience": "large",
+"type": "size",
+"text": "the big train",
+"present": true,
+"swap": null,
+"out": "[0,91,914,755]\n",
+"none": false,
+"iou_gt": 0.952
+},
+{
+"image_id": 177383,
+"salience": "large",
+"type": "size",
+"text": "the tiny train",
+"present": false,
+"swap": null,
+"out": "[895, 519, 1000, 574]\n",
+"none": false,
+"iou_gt": 0.002
+},
+{
+"image_id": 191288,
+"salience": "medium",
+"type": "bare",
+"text": "the horse",
+"present": true,
+"swap": null,
+"out": "[188, 152, 916, 933]\n",
+"none": false,
+"iou_gt": 0.949
+},
+{
+"image_id": 191288,
+"salience": "medium",
+"type": "color",
+"text": "the brown horse",
+"present": true,
+"swap": null,
+"out": "[188, 152, 916, 933]\n",
+"none": false,
+"iou_gt": 0.949
+},
+{
+"image_id": 191288,
+"salience": "medium",
+"type": "color",
+"text": "the gray horse",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 191288,
+"salience": "medium",
+"type": "color",
+"text": "the black horse",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 191288,
+"salience": "medium",
+"type": "count",
+"text": "the two horses",
+"present": false,
+"swap": null,
+"out": "[252, 704, 956, 814]\n",
+"none": false,
+"iou_gt": 0.128
+},
+{
+"image_id": 191288,
+"salience": "medium",
+"type": "count",
+"text": "the three horses",
+"present": false,
+"swap": null,
+"out": "[252, 704, 959, 814]\n",
+"none": false,
+"iou_gt": 0.128
+},
+{
+"image_id": 191288,
+"salience": "medium",
+"type": "action",
+"text": "the horse jumping",
+"present": true,
+"swap": null,
+"out": "[188, 150, 916, 933]\n",
+"none": false,
+"iou_gt": 0.947
+},
+{
+"image_id": 191288,
+"salience": "medium",
+"type": "action",
+"text": "the horse lying down",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 191288,
+"salience": "medium",
+"type": "action",
+"text": "the horse eating grass",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 325527,
+"salience": "medium",
+"type": "bare",
+"text": "the teddy bear",
+"present": true,
+"swap": null,
+"out": "[384, 357, 645, 745]\n",
+"none": false,
+"iou_gt": 0.949
+},
+{
+"image_id": 325527,
+"salience": "medium",
+"type": "color",
+"text": "the brown teddy bear",
+"present": true,
+"swap": null,
+"out": "[384, 357, 645, 745]\n",
+"none": false,
+"iou_gt": 0.949
+},
+{
+"image_id": 325527,
+"salience": "medium",
+"type": "color",
+"text": "the black teddy bear",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 325527,
+"salience": "medium",
+"type": "color",
+"text": "the blue teddy bear",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 325527,
+"salience": "medium",
+"type": "count",
+"text": "the two teddy bears",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 325527,
+"salience": "medium",
+"type": "count",
+"text": "the three teddy bears",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 309964,
+"salience": "large",
+"type": "bare",
+"text": "the umbrella",
+"present": true,
+"swap": null,
+"out": "[270, 19, 883, 857]\n",
+"none": false,
+"iou_gt": 0.554
+},
+{
+"image_id": 309964,
+"salience": "large",
+"type": "color",
+"text": "the blue umbrella",
+"present": true,
+"swap": null,
+"out": "[0, 19, 963, 857]\n",
+"none": false,
+"iou_gt": 0.675
+},
+{
+"image_id": 309964,
+"salience": "large",
+"type": "color",
+"text": "the gray umbrella",
+"present": false,
+"swap": "contrast",
+"out": "[271,16,884,857]\n",
+"none": false,
+"iou_gt": 0.551
+},
+{
+"image_id": 309964,
+"salience": "large",
+"type": "color",
+"text": "the brown umbrella",
+"present": false,
+"swap": "contrast",
+"out": "[271,16,884,857]\n",
+"none": false,
+"iou_gt": 0.551
+},
+{
+"image_id": 309964,
+"salience": "large",
+"type": "color",
+"text": "the green umbrella",
+"present": false,
+"swap": "scene_color",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 309964,
+"salience": "large",
+"type": "count",
+"text": "the two umbrellas",
+"present": false,
+"swap": null,
+"out": "[0, 19, 963, 857]\n",
+"none": false,
+"iou_gt": 0.675
+},
+{
+"image_id": 309964,
+"salience": "large",
+"type": "count",
+"text": "the three umbrellas",
+"present": false,
+"swap": null,
+"out": "[0, 19, 963, 855]\n",
+"none": false,
+"iou_gt": 0.677
+},
+{
+"image_id": 309964,
+"salience": "large",
+"type": "position",
+"text": "the umbrella at the top",
+"present": true,
+"swap": null,
+"out": "[270, 19, 884, 857]\n",
+"none": false,
+"iou_gt": 0.553
+},
+{
+"image_id": 309964,
+"salience": "large",
+"type": "position",
+"text": "the umbrella at the bottom",
+"present": false,
+"swap": null,
+"out": "[271, 16, 884, 857]\n",
+"none": false,
+"iou_gt": 0.551
+},
+{
+"image_id": 309964,
+"salience": "large",
+"type": "size",
+"text": "the big umbrella",
+"present": true,
+"swap": null,
+"out": "[1, 19, 963, 857]\n",
+"none": false,
+"iou_gt": 0.676
+},
+{
+"image_id": 309964,
+"salience": "large",
+"type": "size",
+"text": "the tiny umbrella",
+"present": false,
+"swap": null,
+"out": "[277,16,884,857]\n",
+"none": false,
+"iou_gt": 0.547
+},
+{
+"image_id": 215723,
+"salience": "medium",
+"type": "bare",
+"text": "the umbrella",
+"present": true,
+"swap": null,
+"out": "[131, 58, 616, 238]\n",
+"none": false,
+"iou_gt": 0.8
+},
+{
+"image_id": 215723,
+"salience": "medium",
+"type": "color",
+"text": "the orange umbrella",
+"present": true,
+"swap": null,
+"out": "[131,62,616,240]\n",
+"none": false,
+"iou_gt": 0.824
+},
+{
+"image_id": 215723,
+"salience": "medium",
+"type": "color",
+"text": "the blue umbrella",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 215723,
+"salience": "medium",
+"type": "color",
+"text": "the pink umbrella",
+"present": false,
+"swap": "contrast",
+"out": "[131,60,614,238]\n",
+"none": false,
+"iou_gt": 0.804
+},
+{
+"image_id": 215723,
+"salience": "medium",
+"type": "color",
+"text": "the yellow umbrella",
+"present": false,
+"swap": "scene_color",
+"out": "[131, 58, 616, 238]\n",
+"none": false,
+"iou_gt": 0.8
+},
+{
+"image_id": 215723,
+"salience": "medium",
+"type": "count",
+"text": "the two umbrellas",
+"present": false,
+"swap": null,
+"out": "[131, 56, 616, 238]\n",
+"none": false,
+"iou_gt": 0.792
+},
+{
+"image_id": 215723,
+"salience": "medium",
+"type": "count",
+"text": "the three umbrellas",
+"present": false,
+"swap": null,
+"out": "[131,62,616,238]\n",
+"none": false,
+"iou_gt": 0.814
+},
+{
+"image_id": 215723,
+"salience": "medium",
+"type": "position",
+"text": "the umbrella on the left",
+"present": true,
+"swap": null,
+"out": "[131, 56, 616, 238]\n",
+"none": false,
+"iou_gt": 0.792
+},
+{
+"image_id": 215723,
+"salience": "medium",
+"type": "position",
+"text": "the umbrella on the right",
+"present": false,
+"swap": null,
+"out": "[131, 56, 616, 238]\n",
+"none": false,
+"iou_gt": 0.792
+},
+{
+"image_id": 215723,
+"salience": "medium",
+"type": "position",
+"text": "the umbrella at the top",
+"present": true,
+"swap": null,
+"out": "[131, 56, 616, 238]\n",
+"none": false,
+"iou_gt": 0.792
+},
+{
+"image_id": 215723,
+"salience": "medium",
+"type": "position",
+"text": "the umbrella at the bottom",
+"present": false,
+"swap": null,
+"out": "[131,62,614,238]\n",
+"none": false,
+"iou_gt": 0.811
+},
+{
+"image_id": 232649,
+"salience": "medium",
+"type": "bare",
+"text": "the toilet",
+"present": true,
+"swap": null,
+"out": "[637, 640, 1000, 989]\n",
+"none": false,
+"iou_gt": 0.524
+},
+{
+"image_id": 232649,
+"salience": "medium",
+"type": "color",
+"text": "the blue toilet",
+"present": true,
+"swap": null,
+"out": "[637, 640, 1000, 989]\n",
+"none": false,
+"iou_gt": 0.524
+},
+{
+"image_id": 232649,
+"salience": "medium",
+"type": "color",
+"text": "the green toilet",
+"present": false,
+"swap": "contrast",
+"out": "[637, 640, 1000, 989]\n",
+"none": false,
+"iou_gt": 0.524
+},
+{
+"image_id": 232649,
+"salience": "medium",
+"type": "color",
+"text": "the orange toilet",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 232649,
+"salience": "medium",
+"type": "count",
+"text": "the two toilets",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 232649,
+"salience": "medium",
+"type": "count",
+"text": "the three toilets",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 232649,
+"salience": "medium",
+"type": "position",
+"text": "the toilet on the right",
+"present": true,
+"swap": null,
+"out": "[637, 640, 997, 989]\n",
+"none": false,
+"iou_gt": 0.519
+},
+{
+"image_id": 232649,
+"salience": "medium",
+"type": "position",
+"text": "the toilet on the left",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 232649,
+"salience": "medium",
+"type": "position",
+"text": "the toilet at the bottom",
+"present": true,
+"swap": null,
+"out": "[637, 640, 997, 989]\n",
+"none": false,
+"iou_gt": 0.519
+},
+{
+"image_id": 232649,
+"salience": "medium",
+"type": "position",
+"text": "the toilet at the top",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 473821,
+"salience": "medium",
+"type": "bare",
+"text": "the couch",
+"present": true,
+"swap": null,
+"out": "[545,503,1000,883]\n",
+"none": false,
+"iou_gt": 0.971
+},
+{
+"image_id": 473821,
+"salience": "medium",
+"type": "color",
+"text": "the red couch",
+"present": true,
+"swap": null,
+"out": "[545,503,1000,883]\n",
+"none": false,
+"iou_gt": 0.971
+},
+{
+"image_id": 473821,
+"salience": "medium",
+"type": "color",
+"text": "the gray couch",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 473821,
+"salience": "medium",
+"type": "color",
+"text": "the blue couch",
+"present": false,
+"swap": "contrast",
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 473821,
+"salience": "medium",
+"type": "count",
+"text": "the two couches",
+"present": false,
+"swap": null,
+"out": "[267,497,1000,936]\n",
+"none": false,
+"iou_gt": 0.522
+},
+{
+"image_id": 473821,
+"salience": "medium",
+"type": "count",
+"text": "the three couches",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 473821,
+"salience": "medium",
+"type": "position",
+"text": "the couch on the right",
+"present": true,
+"swap": null,
+"out": "[544,503,1000,886]\n",
+"none": false,
+"iou_gt": 0.962
+},
+{
+"image_id": 473821,
+"salience": "medium",
+"type": "position",
+"text": "the couch on the left",
+"present": false,
+"swap": null,
+"out": "none\n",
+"none": true,
+"iou_gt": null
+},
+{
+"image_id": 473821,
+"salience": "medium",
+"type": "position",
+"text": "the couch at the bottom",
+"present": true,
+"swap": null,
+"out": "[544, 503, 1000, 886]\n",
+"none": false,
+"iou_gt": 0.962
+},
+{
+"image_id": 473821,
+"salience": "medium",
+"type": "position",
+"text": "the couch at the top",
+"present": false,
+"swap": null,
+"out": "[544,503,1000,886]\n",
+"none": false,
+"iou_gt": 0.962
+}
+],
+"A": [
+{
+"kind": "multi",
+"image_id": 290833,
+"n_inst": 2,
+"tag": "bare_the",
+"text": "the zebra",
+"out": "[327, 117, 992, 848]\n",
+"none": false,
+"iou_inst": [
+0.965,
+0.109
+],
+"iou_union": 0.674
+},
+{
+"kind": "multi",
+"image_id": 290833,
+"n_inst": 2,
+"tag": "plural",
+"text": "the zebras",
+"out": "[27, 274, 444, 833]\n",
+"none": false,
+"iou_inst": [
+0.11,
+0.948
+],
+"iou_union": 0.323
+},
+{
+"kind": "multi",
+"image_id": 318238,
+"n_inst": 2,
+"tag": "bare_the",
+"text": "the dog",
+"out": "[3, 466, 917, 886]\n",
+"none": false,
+"iou_inst": [
+0.928,
+0.053
+],
+"iou_union": 0.641
+},
+{
+"kind": "multi",
+"image_id": 318238,
+"n_inst": 2,
+"tag": "plural",
+"text": "the dogs",
+"out": "[10, 464, 917, 886]\n",
+"none": false,
+"iou_inst": [
+0.93,
+0.055
+],
+"iou_union": 0.642
+},
+{
+"kind": "multi",
+"image_id": 212573,
+"n_inst": 2,
+"tag": "bare_the",
+"text": "the person",
+"out": "[405, 95, 608, 768]\n",
+"none": false,
+"iou_inst": [
+0.071,
+0.977
+],
+"iou_union": 0.653
+},
+{
+"kind": "multi",
+"image_id": 212573,
+"n_inst": 2,
+"tag": "plural",
+"text": "the people",
+"out": "[405, 95, 711, 764]\n",
+"none": false,
+"iou_inst": [
+0.378,
+0.646
+],
+"iou_union": 0.978
+},
+{
+"kind": "multi",
+"image_id": 287347,
+"n_inst": 2,
+"tag": "bare_the",
+"text": "the person",
+"out": "[148,86,688,802]\n",
+"none": false,
+"iou_inst": [
+0.963,
+0.286
+],
+"iou_union": 0.963
+},
+{
+"kind": "multi",
+"image_id": 287347,
+"n_inst": 2,
+"tag": "plural",
+"text": "the people",
+"out": "[148,86,688,802]\n",
+"none": false,
+"iou_inst": [
+0.963,
+0.286
+],
+"iou_union": 0.963
+},
+{
+"kind": "multi",
+"image_id": 526728,
+"n_inst": 2,
+"tag": "bare_the",
+"text": "the person",
+"out": "[386, 375, 505, 744]\n",
+"none": false,
+"iou_inst": [
+0.041,
+0.823
+],
+"iou_union": 0.448
+},
+{
+"kind": "multi",
+"image_id": 526728,
+"n_inst": 2,
+"tag": "plural",
+"text": "the people",
+"out": "[386,373,635,747]\n",
+"none": false,
+"iou_inst": [
+0.509,
+0.473
+],
+"iou_union": 0.945
+},
+{
+"kind": "multi",
+"image_id": 64499,
+"n_inst": 2,
+"tag": "bare_the",
+"text": "the zebra",
+"out": "[0, 321, 584, 988]\n",
+"none": false,
+"iou_inst": [
+0.959,
+0.492
+],
+"iou_union": 0.959
+},
+{
+"kind": "multi",
+"image_id": 64499,
+"n_inst": 2,
+"tag": "plural",
+"text": "the zebras",
+"out": "[0, 319, 584, 988]\n",
+"none": false,
+"iou_inst": [
+0.962,
+0.491
+],
+"iou_union": 0.962
+},
+{
+"kind": "multi",
+"image_id": 574425,
+"n_inst": 2,
+"tag": "bare_the",
+"text": "the bus",
+"out": "[255, 57, 971, 912]\n",
+"none": false,
+"iou_inst": [
+0.988,
+0.003
+],
+"iou_union": 0.823
+},
+{
+"kind": "multi",
+"image_id": 574425,
+"n_inst": 2,
+"tag": "plural",
+"text": "the buses",
+"out": "[109, 338, 264, 571]\n",
+"none": false,
+"iou_inst": [
+0.003,
+0.971
+],
+"iou_union": 0.049
+},
+{
+"kind": "multi",
+"image_id": 182805,
+"n_inst": 2,
+"tag": "bare_the",
+"text": "the dog",
+"out": "[439, 372, 584, 955]\n",
+"none": false,
+"iou_inst": [
+0.963,
+0.147
+],
+"iou_union": 0.308
+},
+{
+"kind": "multi",
+"image_id": 182805,
+"n_inst": 2,
+"tag": "plural",
+"text": "the dogs",
+"out": "[439, 372, 584, 955]\n",
+"none": false,
+"iou_inst": [
+0.963,
+0.147
+],
+"iou_union": 0.308
+},
+{
+"kind": "multi",
+"image_id": 110449,
+"n_inst": 2,
+"tag": "bare_the",
+"text": "the person",
+"out": "[2, 46, 500, 804]\n",
+"none": false,
+"iou_inst": [
+0.179,
+0.975
+],
+"iou_union": 0.407
+},
+{
+"kind": "multi",
+"image_id": 110449,
+"n_inst": 2,
+"tag": "plural",
+"text": "the people",
+"out": "[0, 46, 1000, 957]\n",
+"none": false,
+"iou_inst": [
+0.699,
+0.408
+],
+"iou_union": 0.979
+},
+{
+"kind": "multi",
+"image_id": 287527,
+"n_inst": 2,
+"tag": "bare_the",
+"text": "the person",
+"out": "[370, 0, 991, 988]\n",
+"none": false,
+"iou_inst": [
+0.108,
+0.962
+],
+"iou_union": 0.62
+},
+{
+"kind": "multi",
+"image_id": 287527,
+"n_inst": 2,
+"tag": "plural",
+"text": "the people",
+"out": "[12, 10, 991, 988]\n",
+"none": false,
+"iou_inst": [
+0.469,
+0.61
+],
+"iou_union": 0.968
+},
+{
+"kind": "multi",
+"image_id": 419408,
+"n_inst": 2,
+"tag": "bare_the",
+"text": "the person",
+"out": "[348, 262, 561, 645]\n",
+"none": false,
+"iou_inst": [
+0.946,
+0.0
+],
+"iou_union": 0.268
+},
+{
+"kind": "multi",
+"image_id": 419408,
+"n_inst": 2,
+"tag": "plural",
+"text": "the people",
+"out": "[348, 262, 561, 645]\n",
+"none": false,
+"iou_inst": [
+0.946,
+0.0
+],
+"iou_union": 0.268
+},
+{
+"kind": "multi",
+"image_id": 531036,
+"n_inst": 2,
+"tag": "bare_the",
+"text": "the bus",
+"out": "[308,91,1000,700]\n",
+"none": false,
+"iou_inst": [
+0.971,
+0.011
+],
+"iou_union": 0.679
+},
+{
+"kind": "multi",
+"image_id": 531036,
+"n_inst": 2,
+"tag": "plural",
+"text": "the buses",
+"out": "[0, 344, 327, 634]\n",
+"none": false,
+"iou_inst": [
+0.007,
+0.992
+],
+"iou_union": 0.156
+},
+{
+"kind": "multi",
+"image_id": 397639,
+"n_inst": 2,
+"tag": "bare_the",
+"text": "the sheep",
+"out": "[369, 373, 597, 829]\n",
+"none": false,
+"iou_inst": [
+0.0,
+0.966
+],
+"iou_union": 0.575
+},
+{
+"kind": "multi",
+"image_id": 397639,
+"n_inst": 2,
+"tag": "plural",
+"text": "the sheep",
+"out": "[369, 373, 597, 829]\n",
+"none": false,
+"iou_inst": [
+0.0,
+0.966
+],
+"iou_union": 0.575
+},
+{
+"kind": "multi",
+"image_id": 22589,
+"n_inst": 2,
+"tag": "bare_the",
+"text": "the sheep",
+"out": "[0,440,931,1000]\n",
+"none": false,
+"iou_inst": [
+0.145,
+0.83
+],
+"iou_union": 0.963
+},
+{
+"kind": "multi",
+"image_id": 22589,
+"n_inst": 2,
+"tag": "plural",
+"text": "the sheep",
+"out": "[0,440,931,1000]\n",
+"none": false,
+"iou_inst": [
+0.145,
+0.83
+],
+"iou_union": 0.963
+},
+{
+"kind": "multi",
+"image_id": 11051,
+"n_inst": 2,
+"tag": "bare_the",
+"text": "the person",
+"out": "[391,147,988,988]\n",
+"none": false,
+"iou_inst": [
+0.974,
+0.207
+],
+"iou_union": 0.514
+},
+{
+"kind": "multi",
+"image_id": 11051,
+"n_inst": 2,
+"tag": "plural",
+"text": "the people",
+"out": "[3, 10, 995, 988]\n",
+"none": false,
+"iou_inst": [
+0.52,
+0.605
+],
+"iou_union": 0.971
+},
+{
+"kind": "multi",
+"image_id": 166165,
+"n_inst": 2,
+"tag": "bare_the",
+"text": "the person",
+"out": "[155,520,333,891]\n",
+"none": false,
+"iou_inst": [
+0.0,
+0.948
+],
+"iou_union": 0.105
+},
+{
+"kind": "multi",
+"image_id": 166165,
+"n_inst": 2,
+"tag": "plural",
+"text": "the people",
+"out": "[155,520,334,891]\n",
+"none": false,
+"iou_inst": [
+0.0,
+0.953
+],
+"iou_union": 0.105
+},
+{
+"kind": "multi",
+"image_id": 464872,
+"n_inst": 2,
+"tag": "bare_the",
+"text": "the zebra",
+"out": "[377, 383, 666, 612]\n",
+"none": false,
+"iou_inst": [
+0.93,
+0.137
+],
+"iou_union": 0.629
+},
+{
+"kind": "multi",
+"image_id": 464872,
+"n_inst": 2,
+"tag": "plural",
+"text": "the zebras",
+"out": "[377, 362, 778, 612]\n",
+"none": false,
+"iou_inst": [
+0.651,
+0.411
+],
+"iou_union": 0.954
+},
+{
+"kind": "multi",
+"image_id": 315492,
+"n_inst": 2,
+"tag": "bare_the",
+"text": "the teddy bear",
+"out": "[31,585,231,835]\n",
+"none": false,
+"iou_inst": [
+0.952,
+0.0
+],
+"iou_union": 0.137
+},
+{
+"kind": "multi",
+"image_id": 315492,
+"n_inst": 2,
+"tag": "plural",
+"text": "the teddy bears",
+"out": "[31, 585, 231, 835]\n",
+"none": false,
+"iou_inst": [
+0.952,
+0.0
+],
+"iou_union": 0.137
+},
+{
+"kind": "multi",
+"image_id": 423617,
+"n_inst": 2,
+"tag": "bare_the",
+"text": "the bus",
+"out": "[236, 233, 716, 710]\n",
+"none": false,
+"iou_inst": [
+0.914,
+0.054
+],
+"iou_union": 0.55
+},
+{
+"kind": "multi",
+"image_id": 423617,
+"n_inst": 2,
+"tag": "plural",
+"text": "the buses",
+"out": "[84, 102, 326, 408]\n",
+"none": false,
+"iou_inst": [
+0.055,
+0.882
+],
+"iou_union": 0.195
+},
+{
+"kind": "multi",
+"image_id": 555705,
+"n_inst": 2,
+"tag": "bare_the",
+"text": "the cat",
+"out": "[497, 56, 1000, 846]\n",
+"none": false,
+"iou_inst": [
+0.978,
+0.02
+],
+"iou_union": 0.499
+},
+{
+"kind": "multi",
+"image_id": 555705,
+"n_inst": 2,
+"tag": "plural",
+"text": "the cats",
+"out": "[0, 53, 1000, 846]\n",
+"none": false,
+"iou_inst": [
+0.491,
+0.446
+],
+"iou_union": 0.984
+},
+{
+"kind": "single",
+"image_id": 579321,
+"n_inst": 1,
+"tag": "bare_the",
+"text": "the dog",
+"out": "[327, 131, 991, 663]\n",
+"none": false,
+"iou_inst": [
+0.792
+],
+"iou_union": 0.792
+},
+{
+"kind": "single",
+"image_id": 579321,
+"n_inst": 1,
+"tag": "plural",
+"text": "the dogs",
+"out": "[327, 131, 991, 663]\n",
+"none": false,
+"iou_inst": [
+0.792
+],
+"iou_union": 0.792
+},
+{
+"kind": "single",
+"image_id": 449406,
+"n_inst": 1,
+"tag": "bare_the",
+"text": "the zebra",
+"out": "[208, 296, 617, 831]\n",
+"none": false,
+"iou_inst": [
+0.972
+],
+"iou_union": 0.972
+},
+{
+"kind": "single",
+"image_id": 449406,
+"n_inst": 1,
+"tag": "plural",
+"text": "the zebras",
+"out": "[208, 296, 617, 831]\n",
+"none": false,
+"iou_inst": [
+0.972
+],
+"iou_union": 0.972
+},
+{
+"kind": "single",
+"image_id": 495146,
+"n_inst": 1,
+"tag": "bare_the",
+"text": "the truck",
+"out": "[0, 722, 215, 1000]\n",
+"none": false,
+"iou_inst": [
+0.905
+],
+"iou_union": 0.905
+},
+{
+"kind": "single",
+"image_id": 495146,
+"n_inst": 1,
+"tag": "plural",
+"text": "the trucks",
+"out": "[0, 722, 215, 1000]\n",
+"none": false,
+"iou_inst": [
+0.905
+],
+"iou_union": 0.905
+},
+{
+"kind": "single",
+"image_id": 169356,
+"n_inst": 1,
+"tag": "bare_the",
+"text": "the person",
+"out": "[364, 0, 916, 489]\n",
+"none": false,
+"iou_inst": [
+0.708
+],
+"iou_union": 0.708
+},
+{
+"kind": "single",
+"image_id": 169356,
+"n_inst": 1,
+"tag": "plural",
+"text": "the people",
+"out": "[364, 0, 916, 487]\n",
+"none": false,
+"iou_inst": [
+0.706
+],
+"iou_union": 0.706
+},
+{
+"kind": "single",
+"image_id": 563758,
+"n_inst": 1,
+"tag": "bare_the",
+"text": "the teddy bear",
+"out": "[67, 11, 1000, 666]\n",
+"none": false,
+"iou_inst": [
+0.624
+],
+"iou_union": 0.624
+},
+{
+"kind": "single",
+"image_id": 563758,
+"n_inst": 1,
+"tag": "plural",
+"text": "the teddy bears",
+"out": "[67, 12, 1000, 666]\n",
+"none": false,
+"iou_inst": [
+0.623
+],
+"iou_union": 0.623
+},
+{
+"kind": "single",
+"image_id": 365208,
+"n_inst": 1,
+"tag": "bare_the",
+"text": "the person",
+"out": "[282, 292, 574, 905]\n",
+"none": false,
+"iou_inst": [
+0.891
+],
+"iou_union": 0.891
+},
+{
+"kind": "single",
+"image_id": 365208,
+"n_inst": 1,
+"tag": "plural",
+"text": "the people",
+"out": "[282, 292, 574, 905]\n",
+"none": false,
+"iou_inst": [
+0.891
+],
+"iou_union": 0.891
+},
+{
+"kind": "single",
+"image_id": 393569,
+"n_inst": 1,
+"tag": "bare_the",
+"text": "the person",
+"out": "[586, 250, 802, 685]\n",
+"none": false,
+"iou_inst": [
+0.657
+],
+"iou_union": 0.657
+},
+{
+"kind": "single",
+"image_id": 393569,
+"n_inst": 1,
+"tag": "plural",
+"text": "the people",
+"out": "[586, 250, 802, 685]\n",
+"none": false,
+"iou_inst": [
+0.657
+],
+"iou_union": 0.657
+},
+{
+"kind": "single",
+"image_id": 389933,
+"n_inst": 1,
+"tag": "bare_the",
+"text": "the dog",
+"out": "[0, 181, 831, 988]\n",
+"none": false,
+"iou_inst": [
+0.978
+],
+"iou_union": 0.978
+},
+{
+"kind": "single",
+"image_id": 389933,
+"n_inst": 1,
+"tag": "plural",
+"text": "the dogs",
+"out": "[0, 181, 831, 988]\n",
+"none": false,
+"iou_inst": [
+0.978
+],
+"iou_union": 0.978
+},
+{
+"kind": "single",
+"image_id": 29187,
+"n_inst": 1,
+"tag": "bare_the",
+"text": "the person",
+"out": "[191, 233, 362, 538]\n",
+"none": false,
+"iou_inst": [
+0.57
+],
+"iou_union": 0.57
+},
+{
+"kind": "single",
+"image_id": 29187,
+"n_inst": 1,
+"tag": "plural",
+"text": "the people",
+"out": "[192, 233, 362, 535]\n",
+"none": false,
+"iou_inst": [
+0.561
+],
+"iou_union": 0.561
+},
+{
+"kind": "single",
+"image_id": 503755,
+"n_inst": 1,
+"tag": "bare_the",
+"text": "the person",
+"out": "[40, 114, 1000, 1000]\n",
+"none": false,
+"iou_inst": [
+0.971
+],
+"iou_union": 0.971
+},
+{
+"kind": "single",
+"image_id": 503755,
+"n_inst": 1,
+"tag": "plural",
+"text": "the people",
+"out": "[40, 114, 1000, 1000]\n",
+"none": false,
+"iou_inst": [
+0.971
+],
+"iou_union": 0.971
+},
+{
+"kind": "single",
+"image_id": 498709,
+"n_inst": 1,
+"tag": "bare_the",
+"text": "the motorcycle",
+"out": "[0, 0, 1000, 986]\n",
+"none": false,
+"iou_inst": [
+0.899
+],
+"iou_union": 0.899
+},
+{
+"kind": "single",
+"image_id": 498709,
+"n_inst": 1,
+"tag": "plural",
+"text": "the motorcycles",
+"out": "[0, 0, 1000, 986]\n",
+"none": false,
+"iou_inst": [
+0.899
+],
+"iou_union": 0.899
+},
+{
+"kind": "single",
+"image_id": 233370,
+"n_inst": 1,
+"tag": "bare_the",
+"text": "the person",
+"out": "[36, 621, 976, 850]\n",
+"none": false,
+"iou_inst": [
+0.966
+],
+"iou_union": 0.966
+},
+{
+"kind": "single",
+"image_id": 233370,
+"n_inst": 1,
+"tag": "plural",
+"text": "the people",
+"out": "[36, 621, 976, 850]\n",
+"none": false,
+"iou_inst": [
+0.966
+],
+"iou_union": 0.966
+},
+{
+"kind": "single",
+"image_id": 372317,
+"n_inst": 1,
+"tag": "bare_the",
+"text": "the bus",
+"out": "[62, 193, 905, 629]\n",
+"none": false,
+"iou_inst": [
+0.949
+],
+"iou_union": 0.949
+},
+{
+"kind": "single",
+"image_id": 372317,
+"n_inst": 1,
+"tag": "plural",
+"text": "the buses",
+"out": "[62, 193, 905, 629]\n",
+"none": false,
+"iou_inst": [
+0.949
+],
+"iou_union": 0.949
+},
+{
+"kind": "single",
+"image_id": 191288,
+"n_inst": 1,
+"tag": "bare_the",
+"text": "the person",
+"out": "[426,0,652,514]\n",
+"none": false,
+"iou_inst": [
+0.967
+],
+"iou_union": 0.967
+},
+{
+"kind": "single",
+"image_id": 191288,
+"n_inst": 1,
+"tag": "plural",
+"text": "the people",
+"out": "[426,0,652,514]\n",
+"none": false,
+"iou_inst": [
+0.967
+],
+"iou_union": 0.967
+},
+{
+"kind": "single",
+"image_id": 76547,
+"n_inst": 1,
+"tag": "bare_the",
+"text": "the bicycle",
+"out": "[0, 490, 302, 988]\n",
+"none": false,
+"iou_inst": [
+0.962
+],
+"iou_union": 0.962
+},
+{
+"kind": "single",
+"image_id": 76547,
+"n_inst": 1,
+"tag": "plural",
+"text": "the bicycles",
+"out": "[0, 489, 302, 988]\n",
+"none": false,
+"iou_inst": [
+0.964
+],
+"iou_union": 0.964
+},
+{
+"kind": "single",
+"image_id": 297830,
+"n_inst": 1,
+"tag": "bare_the",
+"text": "the dog",
+"out": "[315, 75, 911, 944]\n",
+"none": false,
+"iou_inst": [
+0.85
+],
+"iou_union": 0.85
+},
+{
+"kind": "single",
+"image_id": 297830,
+"n_inst": 1,
+"tag": "plural",
+"text": "the dogs",
+"out": "[313, 75, 913, 946]\n",
+"none": false,
+"iou_inst": [
+0.849
+],
+"iou_union": 0.849
+},
+{
+"kind": "single",
+"image_id": 109827,
+"n_inst": 1,
+"tag": "bare_the",
+"text": "the teddy bear",
+"out": "[238, 319, 638, 857]\n",
+"none": false,
+"iou_inst": [
+0.92
+],
+"iou_union": 0.92
+},
+{
+"kind": "single",
+"image_id": 109827,
+"n_inst": 1,
+"tag": "plural",
+"text": "the teddy bears",
+"out": "[238, 319, 638, 857]\n",
+"none": false,
+"iou_inst": [
+0.92
+],
+"iou_union": 0.92
+},
+{
+"kind": "single",
+"image_id": 352491,
+"n_inst": 1,
+"tag": "bare_the",
+"text": "the train",
+"out": "[191, 410, 1000, 883]\n",
+"none": false,
+"iou_inst": [
+0.814
+],
+"iou_union": 0.814
+},
+{
+"kind": "single",
+"image_id": 352491,
+"n_inst": 1,
+"tag": "plural",
+"text": "the trains",
+"out": "[191, 412, 1000, 867]\n",
+"none": false,
+"iou_inst": [
+0.783
+],
+"iou_union": 0.783
+},
+{
+"kind": "single",
+"image_id": 343076,
+"n_inst": 1,
+"tag": "bare_the",
+"text": "the cat",
+"out": "[0, 28, 924, 986]\n",
+"none": false,
+"iou_inst": [
+0.97
+],
+"iou_union": 0.97
+},
+{
+"kind": "single",
+"image_id": 343076,
+"n_inst": 1,
+"tag": "plural",
+"text": "the cats",
+"out": "[0, 28, 924, 986]\n",
+"none": false,
+"iou_inst": [
+0.97
+],
+"iou_union": 0.97
+},
+{
+"kind": "single",
+"image_id": 538364,
+"n_inst": 1,
+"tag": "bare_the",
+"text": "the motorcycle",
+"out": "[470, 355, 908, 809]\n",
+"none": false,
+"iou_inst": [
+0.968
+],
+"iou_union": 0.968
+},
+{
+"kind": "single",
+"image_id": 538364,
+"n_inst": 1,
+"tag": "plural",
+"text": "the motorcycles",
+"out": "[470, 356, 908, 809]\n",
+"none": false,
+"iou_inst": [
+0.971
+],
+"iou_union": 0.971
+}
+]
+}

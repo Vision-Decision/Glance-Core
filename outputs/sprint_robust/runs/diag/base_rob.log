@@ -1,0 +1,25 @@
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+robust_zh 0 2479
+robust_zh 480 2479
+robust_zh 960 2479
+robust_zh 1440 2479
+robust_zh 1920 2479
+robust_zh 2400 2479
+robust_para 0 2459
+robust_para 480 2459
+robust_para 960 2459
+robust_para 1440 2459
+robust_para 1920 2459
+robust_para 2400 2459
+robust_func 0 2325
+robust_func 480 2325
+robust_func 960 2325
+robust_func 1440 2325
+robust_func 1920 2325
+robust_vague 0 2273
+robust_vague 480 2273
+robust_vague 960 2273
+robust_vague 1440 2273
+robust_vague 1920 2273
+done

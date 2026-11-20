@@ -1,0 +1,8 @@
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 20596.20it/s]
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+q0 type=1 labels=4 max|dlogp|=0.1029 p=[0.0, 0.0, 1.0, 0.0] top_tok='C'
+q1 type=2 labels=2 max|dlogp|=0.0250 p=[0.008, 0.992] top_tok='Yes'
+q2 type=3 labels=4 max|dlogp|=0.0987 p=[0.019, 0.055, 0.676, 0.25] top_tok='C'
+q3 type=2 labels=2 max|dlogp|=0.2562 p=[1.0, 0.0] top_tok='No'
+q4 type=3 labels=6 max|dlogp|=0.1581 p=[0.978, 0.001, 0.001, 0.0, 0.0, 0.02] top_tok='A'
+MAXDIFF 0.2562065124511719 MISMATCH

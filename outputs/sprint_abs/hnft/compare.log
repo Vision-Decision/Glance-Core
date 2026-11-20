@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/content/dv/scripts/sprint_abs/compare.py", line 65, in <module>
+    main()
+    ~~~~^^
+  File "/content/dv/scripts/sprint_abs/compare.py", line 45, in main
+    A = load_rows(os.path.join(a.a, s + ".jsonl.gz")); B = load_rows(os.path.join(a.b, s + ".jsonl.gz"))
+  File "/content/dv/scripts/sprint_abs/lib.py", line 11, in load_rows
+    with gzip.open(path, "rt") as f:
+         ~~~~~~~~~^^^^^^^^^^^^
+  File "/usr/lib/python3.13/gzip.py", line 66, in open
+    binary_file = GzipFile(filename, gz_mode, compresslevel)
+  File "/usr/lib/python3.13/gzip.py", line 205, in __init__
+    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+                               ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/content/sabs/an_hnft/v1ref/calib_natural.jsonl.gz'
+[an_retrain] DONE Wed Nov 18 01:01:18 PM UTC 2026

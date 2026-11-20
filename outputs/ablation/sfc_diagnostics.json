@@ -1,0 +1,67 @@
+{
+ "ar_digits_neg25": {
+  "n_present": 21586,
+  "refusal_greedy": 0.00597609561752988,
+  "refusal_thresh": 0.004678958584267581,
+  "sfc_refusals": 0.0012971370332622997,
+  "sfc_share_of_refusals": 0.21705426356589147,
+  "mean_pmaxcoord_present": 0.7769244334558246,
+  "median_pnone_present": 6.141699122963473e-05,
+  "halluc_greedy": 0.21998877035373388,
+  "halluc_thresh": 0.2416619876473891,
+  "absent_halluc_but_pnone_gt_half": 0.0,
+  "mean_pnone_absent": 0.7538946467226605
+ },
+ "ar_hier_neg25": {
+  "n_present": 21586,
+  "refusal_greedy": 0.006207727230612434,
+  "refusal_thresh": 0.004308348003335495,
+  "sfc_refusals": 0.0018993792272769387,
+  "sfc_share_of_refusals": 0.30597014925373134,
+  "mean_pmaxcoord_present": 0.7954726862589329,
+  "median_pnone_present": 9.607045399206982e-07,
+  "halluc_greedy": 0.2169567658618754,
+  "halluc_thresh": 0.2407636159460977,
+  "absent_halluc_but_pnone_gt_half": 0.0,
+  "mean_pnone_absent": 0.7545148336539849
+ },
+ "ar_atomic1000_neg25": {
+  "n_present": 21586,
+  "refusal_greedy": 0.01584360233484666,
+  "refusal_thresh": 0.005049569165199667,
+  "sfc_refusals": 0.010794033169646994,
+  "sfc_share_of_refusals": 0.6812865497076024,
+  "mean_pmaxcoord_present": 0.18729054140510584,
+  "median_pnone_present": 1.3983260771510686e-07,
+  "halluc_greedy": 0.15609208309938238,
+  "halluc_thresh": 0.2317798989331836,
+  "absent_halluc_but_pnone_gt_half": 0.0,
+  "mean_pnone_absent": 0.7590882080018643
+ },
+ "ar_atomic100_neg25": {
+  "n_present": 21586,
+  "refusal_greedy": 0.008709348651904012,
+  "refusal_thresh": 0.004308348003335495,
+  "sfc_refusals": 0.004401000648568517,
+  "sfc_share_of_refusals": 0.5053191489361702,
+  "mean_pmaxcoord_present": 0.5751852658203965,
+  "median_pnone_present": 9.160255487472568e-08,
+  "halluc_greedy": 0.20247052217855133,
+  "halluc_thresh": 0.24514317798989332,
+  "absent_halluc_but_pnone_gt_half": 0.0,
+  "mean_pnone_absent": 0.7476784968535908
+ },
+ "ar_digits_neg05": {
+  "n_present": 21586,
+  "refusal_greedy": 0.0022699898082090245,
+  "refusal_thresh": 0.0014824423237283424,
+  "sfc_refusals": 0.0007875474844806819,
+  "sfc_share_of_refusals": 0.3469387755102041,
+  "mean_pmaxcoord_present": 0.777750214816939,
+  "median_pnone_present": 2.7225192980040447e-06,
+  "halluc_greedy": 0.32790567097136436,
+  "halluc_thresh": 0.35025266704098823,
+  "absent_halluc_but_pnone_gt_half": 0.0,
+  "mean_pnone_absent": 0.6500383374312017
+ }
+}

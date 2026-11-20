@@ -1,0 +1,116 @@
+{
+  "checked": "2026-11-18, by fork sub-agent via arXiv HTML/PDF and HF cards; every number below was read from the cited source in this pass unless marked unverified",
+  "refcoco": {
+    "ours": {"v0_4b_avg8": 92.8, "v1_4b_avg8": 90.8, "v0_27b_avg8": 94.1, "protocol": "Acc@0.5, 8 splits, single pass, <=640 visual tokens, ungated box"},
+    "comparators": [
+      {"model": "Qwen3-VL-4B-Instruct", "size": "4B", "refcoco_avg": 89.0, "thinking_variant": 88.2, "source": "arXiv 2511.21631 Table 4", "protocol": "RefCOCO-avg, averaged splits not stated; generative JSON boxes", "comparable": "partly: same size and family; split set unstated"},
+      {"model": "Qwen3-VL-2B-Instruct", "size": "2B", "refcoco_avg": 85.6, "source": "arXiv 2511.21631 Table 4", "comparable": "partly"},
+      {"model": "Qwen3-VL-8B-Instruct", "size": "8B", "refcoco_avg": 89.1, "source": "arXiv 2511.21631 Table 4", "comparable": "partly"},
+      {"model": "Qwen3.5-4B (our base)", "size": "4B", "refcoco_avg": 88.1, "source": "HF card Qwen/Qwen3.5-4B", "protocol": "no footnote (splits, thinking, resolution unstated)", "comparable": "partly: same base, protocol unstated"},
+      {"model": "Qwen2.5-VL-3B", "size": "3B", "splits": [89.1, 91.7, 84.0, 82.4, 88.0, 74.1, 85.2, 85.7], "avg8": 85.0, "source": "arXiv 2610.35053 (LOCUS) Table 1, copied from original", "comparable": "yes"},
+      {"model": "Florence-2-L", "size": "0.77B", "splits": [93.4, 95.3, 92.0, 88.3, 92.9, 83.6, 91.2, 91.7], "avg8": 91.0, "avg5test": 91.1, "source": "arXiv 2610.35053 Table 1", "comparable": "yes; specialist; above v1 (90.8), below v0 (92.8)"},
+      {"model": "UNINEXT", "size": "0.74B", "avg8": 88.9, "source": "arXiv 2610.35053 Table 1", "comparable": "yes"},
+      {"model": "LOCUS-2B (head)", "size": "2B", "splits": [93.1, 94.3, 90.7, 87.9, 91.9, 83.6, 88.7, 89.9], "avg8": 90.0, "avg5test": 90.1, "source": "arXiv 2610.35053 Table 1", "protocol": "640^2, RefCOCO/+/g train only, head readout; 43.5 ms/question on RTX A6000 (Table 4)", "comparable": "yes: same class, same splits"},
+      {"model": "LOCUS-0.8B (head)", "size": "0.8B", "avg8": 88.0, "source": "arXiv 2610.35053 Table 1", "comparable": "yes"},
+      {"model": "Jag-0.8B", "size": "0.8B", "test_splits": {"RC_testA": 93.90, "RC_testB": 88.36, "RCp_testA": 90.69, "RCp_testB": 80.08, "RCg_test": 87.72}, "avg5test": 88.2, "source": "arXiv 2610.13239v2 Table 2", "protocol": "test splits only, 262,144-pixel budget, RefCOCO/+/g train only; 66 ms mean on A100 (Table 12)", "comparable": "yes on the 5 test splits only"},
+      {"model": "LocateAnything-3B", "size": "3B", "avg5test": 87.7, "source": "arXiv 2610.35053 Table 1", "comparable": "yes on 5 test splits; parallel box decoding"},
+      {"model": "InternVL2.5-78B", "size": "78B", "avg8": 92.3, "source": "arXiv 2610.35053 Table 1", "comparable": "upper reference; v0-4B 92.8 exceeds it"}
+    ],
+    "notes": [
+      "Qwen3-VL-4B 89.0 and Qwen3.5-4B 88.1 (same size / same base) are below v0 92.8 and v1 90.8, but their split sets are not stated: report them 'for context' with that caveat.",
+      "LOCUS notes that common RefCOCO-family training unions overlap other datasets' eval images (46.9% of targets); worth a one-line decontamination statement for v1."
+    ]
+  },
+  "grefcoco_grec": {
+    "official_metrics": {"source": "arXiv 2308.16182 (GREC)", "Pr_F1eq1_IoU05": "per-sample F1 between predicted and GT boxes, success iff F1 = 1; no-target success iff no box; top-1 output caps F1 at 0.67 on 2-target samples", "N_acc": "over no-target samples, success iff no box predicted", "threshold": "GREC baselines keep boxes with confidence > 0.7", "splits": "val / testA / testB separately"},
+    "our_comparability": "Our N-acc (gate < .5 on the 8,905 val no-target expressions) matches the official N-acc definition on val, so it is directly comparable as a number (0.5 is our chosen threshold). Official Pr is not comparable: Glance returns one box, so every multi-target sample fails F1 = 1. testA/testB are not evaluated.",
+    "comparators_val": [
+      {"model": "CRS (Qwen3-4B)", "size": "4B", "val_Pr": 56.3, "val_N_acc": 89.5, "testA_Pr_Nacc": [46.4, 87.3], "testB_Pr_Nacc": [47.5, 84.0], "source": "arXiv 2608.04698 Table 1", "comparable": "N-acc yes; above our 87.4, but Pr 56.3 is low (over-refusal)"},
+      {"model": "RC-GRPO-II (Qwen3-4B)", "size": "4B", "val_Pr": 75.7, "val_N_acc": 85.3, "testA_Pr_Nacc": [71.4, 83.1], "testB_Pr_Nacc": [64.8, 78.4], "source": "arXiv 2608.04698 Table 1", "comparable": "N-acc yes"},
+      {"model": "RC-GRPO-I (Qwen3-4B)", "size": "4B", "val_Pr": 74.4, "val_N_acc": 84.7, "source": "arXiv 2608.04698 Table 1"},
+      {"model": "Qwen3-VL-4B-Instruct", "size": "4B", "val_Pr": 72.4, "val_N_acc": 77.2, "testA_Pr_Nacc": [68.0, 70.2], "testB_Pr_Nacc": [62.2, 70.2], "source": "arXiv 2608.04698 Table 1 (their evaluation)", "comparable": "N-acc yes; v1 is +10.2"},
+      {"model": "Qwen3-VL-235B-A22B-Instruct", "val_Pr": 59.5, "val_N_acc": 65.7, "source": "arXiv 2608.04698 Table 1"},
+      {"model": "Qwen2.5-VL-7B-Instruct", "val_Pr": 38.2, "val_N_acc": 6.4, "source": "arXiv 2608.04698 Table 1"},
+      {"model": "InstanceVG", "val_Pr": 73.5, "val_N_acc": 72.8, "source": "arXiv 2608.04698 Table 1"},
+      {"model": "UNINEXT (GREC baseline)", "val_Pr": 58.2, "val_N_acc": 50.6, "source": "arXiv 2308.16182 Table 3 (threshold 0.7)"}
+    ],
+    "caveats": [
+      "The RC-GRPO paper does not say whether it used the official GREC scorer, and its text and table disagree in places (e.g. 70.6 in the text is not in the table).",
+      "Merged AUROC/ECE have no literature counterpart. GRES N-acc (LISA/GSVA) is a segmentation protocol and is not comparable."
+    ]
+  },
+  "screenspot": {
+    "ours": {"v1_ss2": 89.4, "v1_sspro": 29.3, "protocol": "center-in-box, single pass, <=2048 visual tokens, no zoom, own script"},
+    "comparators": [
+      {"model": "GUI-Actor-2B (Qwen2-VL)", "ss2": 88.6, "ss2_with_verifier": 89.3, "sspro": 36.7, "source": "arXiv 2506.03143 Tables 1, 3", "comparable": "yes: coordinate-free attention head class; v1 SS-v2 89.4 >= both"},
+      {"model": "UI-TARS-2B", "ss2": 84.7, "sspro": 27.7, "source": "arXiv 2506.03143 Tables 1, 3"},
+      {"model": "UGround-V1-2B", "sspro": 26.6, "source": "arXiv 2506.03143 Table 1"},
+      {"model": "OS-Atlas-4B", "ss2": 71.9, "sspro": 3.7, "source": "arXiv 2506.03143 Tables 1, 3"},
+      {"model": "ShowUI-2B", "sspro": 7.7, "source": "arXiv 2506.03143 Table 1"},
+      {"model": "Qwen2.5-VL-3B", "ss2": 80.9, "sspro": 25.9, "source": "arXiv 2506.03143 Table 4"},
+      {"model": "GUI-Actor-3B (Qwen2.5-VL)", "ss2": 91.0, "sspro": 42.2, "with_verifier": [92.4, 45.9], "source": "arXiv 2506.03143 Table 4"},
+      {"model": "GUI-Actor-7B (Qwen2.5-VL)", "ss2": 92.1, "sspro": 44.6, "source": "arXiv 2506.03143 Table 4"},
+      {"model": "HyperClick-3B (Qwen2.5-VL-3B)", "ss2": 90.6, "sspro": 41.3, "source": "arXiv 2510.27266v2"},
+      {"model": "Qwen3-VL-2B (UI-Venus repro)", "ss2": 85.6, "sspro": 40.6, "source": "arXiv 2602.09082 Table 1"},
+      {"model": "Qwen3-VL-2B-Instruct (tech report)", "sspro": 48.5, "source": "arXiv 2511.21631 Table 4"},
+      {"model": "Qwen3-VL-4B-Instruct", "sspro": 59.5, "source": "arXiv 2511.21631 Table 4; KV-Ground card repro also gives SS-v2 93.1 / SS-Pro 59.5 (no CoT, no zoom)"},
+      {"model": "UI-Venus-1.5-2B", "ss2": 92.8, "sspro": 57.7, "source": "arXiv 2602.09082 Table 1"},
+      {"model": "MAI-UI-2B", "ss2": 92.5, "sspro": 57.4, "source": "arXiv 2602.09082 Table 1"},
+      {"model": "Step-GUI-4B", "ss2": 93.6, "sspro": 60.0, "source": "arXiv 2602.09082 Table 1"},
+      {"model": "Holo2-4B", "ss2": 93.2, "sspro": 57.2, "source": "KV-Ground HF card"},
+      {"model": "KV-Ground-4B", "ss2": 94.1, "sspro": 67.0, "source": "KV-Ground HF card (authors' repro, no CoT, no zoom)"}
+    ],
+    "notes": [
+      "SS-v2: v1 89.4 beats every <=4B model built on Qwen2/2.5-VL (Qwen2.5-VL-3B 80.9, UI-TARS-2B 84.7, GUI-Actor-2B 88.6/89.3, OS-Atlas-4B 71.9) and Qwen3-VL-2B 85.6, but trails 2026 2-4B GUI models (92.5-94.1) and its own base (93.4 in our run).",
+      "SS-Pro: v1 29.3 beats only older 2-3B models (UI-TARS-2B 27.7, UGround-2B 26.6, Qwen2.5-VL-3B 25.9). None of the sources state the resolution; KV-Ground explicitly excludes zoom."
+    ]
+  },
+  "venusbench_gd": {
+    "official": {"source": "arXiv 2512.16501", "items": 6166, "refusal_items": 900, "positive_scoring": "predicted point inside the GT box", "refusal_scoring": "correct only if the output follows the prescribed refusal format ([-1,-1] or the rejection phrase)", "overall": "item-weighted micro average (check: Qwen3-VL-4B (3459*72.54 + 2707*35.20)/6166 = 56.15); Basic/Advanced averages are also item-weighted"},
+    "our_mismatches": [
+      "we evaluate 6,165 items / 899 refusal",
+      "we score positives ungated; under the official rule a model that refuses a positive item is wrong, so the protocol-matching score uses GATED positives (unfavourable; needs per-row v1 outputs)"
+    ],
+    "comparators": [
+      {"model": "Qwen3-VL-4B", "size": "4B", "overall": 56.15, "refusal": 31.55, "source": "arXiv 2512.16501 Table 5", "comparable": "yes, same size; refusal v1 81.5 vs 31.6; overall v1 52.3 vs 56.2 (below)"},
+      {"model": "Qwen3-VL-8B", "overall": 62.34, "refusal": 63.78, "source": "arXiv 2512.16501 Table 5"},
+      {"model": "Qwen2.5-VL-72B", "overall": 65.28, "refusal": 78.11, "source": "arXiv 2512.16501 Table 5", "note": "highest refusal in the benchmark paper; v1 81.5 is above it"},
+      {"model": "UI-Venus-Ground-72B", "overall": 70.23, "refusal": 51.33, "source": "arXiv 2512.16501 Table 5"},
+      {"model": "GUI-specific 7B (UI-TARS-7B, GTA1-7B, Holo1.5-7B, UI-Venus-Ground-7B, GUI-G2-7B, UGround-7B, Aguvis-7B)", "refusal": 0.0, "source": "arXiv 2512.16501 Table 5"},
+      {"model": "UI-Venus-1.5-2B", "overall": 67.3, "refusal": 76.3, "source": "arXiv 2602.09082 Table 9", "comparable": "yes; the strongest small refusal comparator, not cited in the paper"},
+      {"model": "UI-Venus-1.5-8B", "overall": 72.3, "refusal": 61.6, "source": "arXiv 2602.09082 Table 9"},
+      {"model": "UI-Venus-1.5-30B-A3B", "overall": 75.0, "refusal": 73.1, "source": "arXiv 2602.09082 Table 9"},
+      {"model": "Qwen3-VL-2B / 8B / 30B-A3B (UI-Venus repro)", "refusal": [0.0, 6.8, 11.3], "overall": [45.2, 55.1, 52.4], "source": "arXiv 2602.09082 Table 9"},
+      {"model": "MAI-UI-2B, MAI-UI-8B, Step-GUI-4B, Holo2-8B (UI-Venus repro, asterisked)", "refusal": 0.0, "overall": [55.4, 65.2, 54.6, 56.4], "source": "arXiv 2602.09082 Table 9"}
+    ]
+  },
+  "opendecisions": {
+    "protocol": {"source": "arXiv 2610.17205", "items": 2352, "capability": "(Intelligence + Calibration) / 2", "intelligence": "chance-corrected accuracy, tier weights 0.1/0.2/0.3/0.4, equal weight over types", "calibration": "100*(1 - ECE/0.5) per type; score type also uses RPS", "temperature": "one per type, fitted on 3,884 held-out questions, clipped to >= 1"},
+    "comparators": [
+      {"model": "Zero-shot Qwen3.5-4B (authors)", "intelligence": 46.1, "calibration": 81.2, "capability": 63.6, "source": "Table 3"},
+      {"model": "Trained Qwen3.5-4B (authors, 3 seeds)", "intelligence": 52.8, "calibration": 80.4, "capability": 66.6, "per_seed_capability": [68.0, 66.4, 65.5], "seed_sd_approx": 1.3, "source": "Table 3 and text"},
+      {"model": "decider-4b-v2", "intelligence": 56.1, "calibration": 85.5, "capability": 70.8, "source": "Table 3"},
+      {"model": "Plumb-4B", "intelligence": 60.4, "calibration": 85.8, "capability": 73.1, "source": "Table 3"},
+      {"model": "SemIf (Qwen3.5-4B, untrained)", "intelligence": 46.3, "calibration": 79.0, "capability": 62.7, "source": "Table 3"},
+      {"model": "Quyet-1.0-Medium", "intelligence": 51.0, "calibration": 66.9, "capability": 58.9, "source": "Table 3"}
+    ],
+    "ours": {"v1_clipped": {"capability": 67.7, "intelligence": 54.8, "calibration": 80.5}, "our_base_run_cal": {"capability": 63.6, "intelligence": 41.4, "calibration": 85.8}},
+    "notes": [
+      "v1 intelligence 54.8 > the authors' trained same-base 52.8; calibration 80.5 vs 80.4; capability 67.7 lies inside the authors' seed range 65.5-68.0 and above 2 of 3 seeds.",
+      "Our base run reproduces capability 63.6, but with different sub-scores (41.4 / 85.8 vs the authors' 46.1 / 81.2). The paper's 'calibration below the temperature-scaled base (85.8)' rests on our reproduction; against the authors' zero-shot base (81.2), v1 is within 0.7."
+    ]
+  },
+  "calibration_comparators_gui": [
+    {"model": "HyperClick-7B (Qwen2.5-VL-7B)", "metric": "ECE 0.249 on ScreenSpot-Pro (baselines 0.481-0.631)", "source": "arXiv 2510.27266v2", "note": "click-confidence ECE only; no AUROC, AURC or refusal experiments"},
+    {"model": "SafeGround", "metric": "FDR-controlled thresholding on ScreenSpot-Pro; the abstract reports +5.38 pts system accuracy over Gemini-only; ECE/AUROC not in the abstract", "source": "arXiv 2602.02419", "status": "full text not read; metrics partly unverified"}
+  ],
+  "citation_mismatches": [
+    "RC-GRPO: the paper cites only RC-GRPO-II (Qwen3-4B) at 85.3 N-acc, but the same Table 1 lists CRS (Qwen3-4B) at 89.5 val N-acc (above our 87.4) and Qwen3-VL-4B-Instruct at 77.2. 'Under a different protocol' overstates the difference for N-acc: the definition (no box on a val no-target expression) matches ours. What differs is Pr and the decision rule.",
+    "VenusBench refusal: the paper compares 81.5 with UI-Venus-1.5-8B (61.6), but UI-Venus-1.5-2B (76.3) and -30B-A3B (73.1) in the same Table 9, and Qwen2.5-VL-72B (78.11, VenusBench Table 5), are stronger refusal comparators. v1 still leads all of them, so citing them is both fairer and still favourable.",
+    "Same-size comparator omitted: Qwen3-VL-4B appears in VenusBench Table 5 (56.15 overall / 31.55 refusal), Qwen3-VL Table 4 (RefCOCO-avg 89.0, SS-Pro 59.5) and RC-GRPO Table 1 (val N-acc 77.2). The paper uses Qwen3-VL-8B instead.",
+    "OpenDecisions sub-scores: the 'Qwen3.5-4B cal' row of the paper's OD table (41.4 / 85.8) is our reproduction; the source's zero-shot base is 46.1 / 81.2 (same capability 63.6). Label the row as our run and add the source row.",
+    "VenusBench item count: the source has 6,166 items / 900 refusal (now confirmed); we score 6,165 / 899. Official positive scoring has no ungated option.",
+    "Qwen3.5-4B card: RefCOCO(avg) 88.1 and SS-Pro 60.3 have no protocol footnote; ScreenSpot-v2 is not on the card (the paper does not claim it).",
+    "Verified as matching: Jag (Table 2), LOCUS-2B (Table 1), GUI-Actor-7B 92.1/44.6 (Table 4, no verifier), Qwen3-VL-8B SS-Pro 54.6 (Table 4 instruct), VenusBench Qwen3-VL-8B 62.34/63.78, UI-Venus-1.5-8B 95.9/68.4/72.3/61.6 and Qwen3-VL-8B* 92.1/55.1/6.8, KV-Ground 94.1/67.0, OpenDecisions 63.6/66.6/70.8/73.1."
+  ]
+}

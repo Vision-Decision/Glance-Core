@@ -1,0 +1,763 @@
+{
+ "refcoco_grefcoco": {
+  "ours_neg25": {
+   "latency_ms_per_call_N8": 66.69111999997313,
+   "rules": {
+    "gate @alpha=0.02": {
+     "coverage": 0.38690640918969804,
+     "success": 0.3686710001857402,
+     "risk": 0.018235409003957846,
+     "violation_rate": 0.215,
+     "coverage_sd": 0.010135123273506694
+    },
+    "gate @alpha=0.05": {
+     "coverage": 0.5246743257231364,
+     "success": 0.4774933244990478,
+     "risk": 0.047181001224088664,
+     "violation_rate": 0.23,
+     "coverage_sd": 0.006458334330791639
+    },
+    "gate @alpha=0.1": {
+     "coverage": 0.6113882684007084,
+     "success": 0.5153086755046878,
+     "risk": 0.09607959289602036,
+     "violation_rate": 0.215,
+     "coverage_sd": 0.004742724705633345
+    },
+    "gate*iou @alpha=0.02": {
+     "coverage": 0.3788315836681882,
+     "success": 0.3606403153730404,
+     "risk": 0.0181912682951478,
+     "violation_rate": 0.15,
+     "coverage_sd": 0.010991175792421927
+    },
+    "gate*iou @alpha=0.05": {
+     "coverage": 0.5198398645801313,
+     "success": 0.4727292641771706,
+     "risk": 0.04711060040296067,
+     "violation_rate": 0.125,
+     "coverage_sd": 0.006505299766943987
+    },
+    "gate*iou @alpha=0.1": {
+     "coverage": 0.609929544069137,
+     "success": 0.5137388662621014,
+     "risk": 0.09619067780703577,
+     "violation_rate": 0.16,
+     "coverage_sd": 0.00469669455254971
+    },
+    "two-knob w=.9 @alpha=0.02": {
+     "coverage": 0.40905070789718195,
+     "success": 0.39097572555747945,
+     "risk": 0.0180749823397025,
+     "violation_rate": 0.18,
+     "coverage_sd": 0.009808079074030031
+    },
+    "two-knob w=.9 @alpha=0.05": {
+     "coverage": 0.534723637193826,
+     "success": 0.4875366609072314,
+     "risk": 0.04718697628659457,
+     "violation_rate": 0.17,
+     "coverage_sd": 0.006007360381462816
+    },
+    "two-knob w=.9 @alpha=0.1": {
+     "coverage": 0.6116341266174619,
+     "success": 0.5155913011176742,
+     "risk": 0.09604282549978774,
+     "violation_rate": 0.21,
+     "coverage_sd": 0.004559589332153097
+    }
+   }
+  },
+  "ar_digits_neg25": {
+   "latency_ms_per_call_N8": 549.5623159998786,
+   "rules": {
+    "1-P(none) @alpha=0.02": {
+     "coverage": 0.3691050072969679,
+     "success": 0.3509251911925624,
+     "risk": 0.018179816104405454,
+     "violation_rate": 0.22,
+     "coverage_sd": 0.009546927479429111
+    },
+    "1-P(none) @alpha=0.05": {
+     "coverage": 0.5139946206922626,
+     "success": 0.4668454998324096,
+     "risk": 0.04714912085985303,
+     "violation_rate": 0.225,
+     "coverage_sd": 0.006815193263156035
+    },
+    "1-P(none) @alpha=0.1": {
+     "coverage": 0.6067331922393869,
+     "success": 0.5103291071562102,
+     "risk": 0.09640408508317679,
+     "violation_rate": 0.23,
+     "coverage_sd": 0.005286800252154863
+    },
+    "margin (bias on none) @alpha=0.02": {
+     "coverage": 0.3756973531908128,
+     "success": 0.3574939144552334,
+     "risk": 0.018203438735579475,
+     "violation_rate": 0.2,
+     "coverage_sd": 0.009982478851071463
+    },
+    "margin (bias on none) @alpha=0.05": {
+     "coverage": 0.5162137706411716,
+     "success": 0.4691633331515709,
+     "risk": 0.047050437489600735,
+     "violation_rate": 0.245,
+     "coverage_sd": 0.006466243312238323
+    },
+    "margin (bias on none) @alpha=0.1": {
+     "coverage": 0.6066223232070093,
+     "success": 0.5103166870894741,
+     "risk": 0.09630563611753526,
+     "violation_rate": 0.225,
+     "coverage_sd": 0.004988332578829277
+    },
+    "two-knob AR w=.9 @alpha=0.02": {
+     "coverage": 0.25647258813496426,
+     "success": 0.23843728614037243,
+     "risk": 0.01803530199459188,
+     "violation_rate": 0.16,
+     "coverage_sd": 0.015397393501803672
+    },
+    "two-knob AR w=.9 @alpha=0.05": {
+     "coverage": 0.4987727486042931,
+     "success": 0.4516913884485006,
+     "risk": 0.047081360155792513,
+     "violation_rate": 0.165,
+     "coverage_sd": 0.01131453764583174
+    },
+    "two-knob AR w=.9 @alpha=0.1": {
+     "coverage": 0.6069454739880387,
+     "success": 0.5105307695918055,
+     "risk": 0.09641470439623301,
+     "violation_rate": 0.23,
+     "coverage_sd": 0.0052540408767996795
+    },
+    "greedy (fixed) @alpha=0.02": {
+     "coverage": 0.0,
+     "success": 0.0,
+     "risk": 0.0,
+     "violation_rate": 0.0,
+     "coverage_sd": 0.0
+    },
+    "greedy (fixed) @alpha=0.05": {
+     "coverage": 0.0,
+     "success": 0.0,
+     "risk": 0.0,
+     "violation_rate": 0.0,
+     "coverage_sd": 0.0
+    },
+    "greedy (fixed) @alpha=0.1": {
+     "coverage": 0.0,
+     "success": 0.0,
+     "risk": 0.0,
+     "violation_rate": 0.0,
+     "coverage_sd": 0.0
+    },
+    "seqmap (fixed) @alpha=0.02": {
+     "coverage": 0.33786568228709496,
+     "success": 0.32446182227297143,
+     "risk": 0.013403860014123591,
+     "violation_rate": 0.0,
+     "coverage_sd": 0.004096146539898277
+    },
+    "seqmap (fixed) @alpha=0.05": {
+     "coverage": 0.33786568228709496,
+     "success": 0.32446182227297143,
+     "risk": 0.013403860014123591,
+     "violation_rate": 0.0,
+     "coverage_sd": 0.004096146539898277
+    },
+    "seqmap (fixed) @alpha=0.1": {
+     "coverage": 0.33786568228709496,
+     "success": 0.32446182227297143,
+     "risk": 0.013403860014123591,
+     "violation_rate": 0.0,
+     "coverage_sd": 0.004096146539898277
+    }
+   }
+  },
+  "ar_atomic100_neg25": {
+   "latency_ms_per_call_N8": 549.5623159998786,
+   "rules": {
+    "1-P(none) @alpha=0.02": {
+     "coverage": 0.37454691489758657,
+     "success": 0.3562723919380776,
+     "risk": 0.01827452295950901,
+     "violation_rate": 0.235,
+     "coverage_sd": 0.009711658274880231
+    },
+    "1-P(none) @alpha=0.05": {
+     "coverage": 0.5023832463444541,
+     "success": 0.45515610485574487,
+     "risk": 0.0472271414887093,
+     "violation_rate": 0.225,
+     "coverage_sd": 0.008688768141832113
+    },
+    "1-P(none) @alpha=0.1": {
+     "coverage": 0.605637948139252,
+     "success": 0.509245196148091,
+     "risk": 0.09639275199116097,
+     "violation_rate": 0.225,
+     "coverage_sd": 0.005225591964839081
+    },
+    "margin (bias on none) @alpha=0.02": {
+     "coverage": 0.3819867594820707,
+     "success": 0.3637397566743803,
+     "risk": 0.018247002807690434,
+     "violation_rate": 0.215,
+     "coverage_sd": 0.008126370971035034
+    },
+    "margin (bias on none) @alpha=0.05": {
+     "coverage": 0.5052763114200279,
+     "success": 0.4580666038605653,
+     "risk": 0.04720970755946258,
+     "violation_rate": 0.255,
+     "coverage_sd": 0.007798468284738743
+    },
+    "margin (bias on none) @alpha=0.1": {
+     "coverage": 0.6057189502655457,
+     "success": 0.509372446022983,
+     "risk": 0.09634650424256272,
+     "violation_rate": 0.215,
+     "coverage_sd": 0.004771389313829532
+    },
+    "two-knob AR w=.9 @alpha=0.02": {
+     "coverage": 0.2115335335467946,
+     "success": 0.19344486772133151,
+     "risk": 0.01808866582546307,
+     "violation_rate": 0.215,
+     "coverage_sd": 0.018228905945954433
+    },
+    "two-knob AR w=.9 @alpha=0.05": {
+     "coverage": 0.46887068503970897,
+     "success": 0.42178991912914443,
+     "risk": 0.04708076591056459,
+     "violation_rate": 0.17,
+     "coverage_sd": 0.013229605772492513
+    },
+    "two-knob AR w=.9 @alpha=0.1": {
+     "coverage": 0.6057521267952033,
+     "success": 0.5093069035067982,
+     "risk": 0.09644522328840528,
+     "violation_rate": 0.22,
+     "coverage_sd": 0.005216459499486293
+    },
+    "greedy (fixed) @alpha=0.02": {
+     "coverage": 0.0,
+     "success": 0.0,
+     "risk": 0.0,
+     "violation_rate": 0.0,
+     "coverage_sd": 0.0
+    },
+    "greedy (fixed) @alpha=0.05": {
+     "coverage": 0.0,
+     "success": 0.0,
+     "risk": 0.0,
+     "violation_rate": 0.0,
+     "coverage_sd": 0.0
+    },
+    "greedy (fixed) @alpha=0.1": {
+     "coverage": 0.0,
+     "success": 0.0,
+     "risk": 0.0,
+     "violation_rate": 0.0,
+     "coverage_sd": 0.0
+    },
+    "seqmap (fixed) @alpha=0.02": {
+     "coverage": 0.0,
+     "success": 0.0,
+     "risk": 0.0,
+     "violation_rate": 0.0,
+     "coverage_sd": 0.0
+    },
+    "seqmap (fixed) @alpha=0.05": {
+     "coverage": 0.0,
+     "success": 0.0,
+     "risk": 0.0,
+     "violation_rate": 0.0,
+     "coverage_sd": 0.0
+    },
+    "seqmap (fixed) @alpha=0.1": {
+     "coverage": 0.5857082846121999,
+     "success": 0.50355024119674,
+     "risk": 0.08215804341545999,
+     "violation_rate": 0.0,
+     "coverage_sd": 0.0030044935836139636
+    }
+   }
+  }
+ },
+ "gui": {
+  "screenspot_v2": {
+   "Glance v0 @640": {
+    "n": 1272,
+    "n_absent": 0,
+    "always_answer_wrong_rate": 0.7138364779874213,
+    "latency_ms_median": null,
+    "rules": {
+     "gate @alpha=0.02": {
+      "coverage": 0.04914308176100629,
+      "success": 0.03754716981132075,
+      "risk": 0.011595911949685534,
+      "violation_rate": 0.13,
+      "coverage_sd": 0.0165401014206605
+     },
+     "gate @alpha=0.05": {
+      "coverage": 0.13337264150943395,
+      "success": 0.09495283018867924,
+      "risk": 0.03841981132075471,
+      "violation_rate": 0.15,
+      "coverage_sd": 0.02053885114538723
+     },
+     "gate @alpha=0.1": {
+      "coverage": 0.21552672955974841,
+      "success": 0.1326493710691824,
+      "risk": 0.08287735849056604,
+      "violation_rate": 0.14,
+      "coverage_sd": 0.025382704959629503
+     },
+     "gate*iou @alpha=0.02": {
+      "coverage": 0.07187893081761007,
+      "success": 0.05985849056603774,
+      "risk": 0.012020440251572326,
+      "violation_rate": 0.125,
+      "coverage_sd": 0.012999424817567714
+     },
+     "gate*iou @alpha=0.05": {
+      "coverage": 0.13251572327044026,
+      "success": 0.09361635220125787,
+      "risk": 0.038899371069182384,
+      "violation_rate": 0.165,
+      "coverage_sd": 0.01793429062192163
+     },
+     "gate*iou @alpha=0.1": {
+      "coverage": 0.2272562893081761,
+      "success": 0.14398584905660378,
+      "risk": 0.08327044025157232,
+      "violation_rate": 0.15,
+      "coverage_sd": 0.02405654082903756
+     },
+     "two-knob w=.9 @alpha=0.02": {
+      "coverage": 0.07317610062893082,
+      "success": 0.06133647798742139,
+      "risk": 0.011839622641509433,
+      "violation_rate": 0.105,
+      "coverage_sd": 0.014484059619812738
+     },
+     "two-knob w=.9 @alpha=0.05": {
+      "coverage": 0.1316509433962264,
+      "success": 0.09325471698113207,
+      "risk": 0.03839622641509433,
+      "violation_rate": 0.17,
+      "coverage_sd": 0.01983919746815709
+     },
+     "two-knob w=.9 @alpha=0.1": {
+      "coverage": 0.23422169811320756,
+      "success": 0.1522877358490566,
+      "risk": 0.08193396226415095,
+      "violation_rate": 0.11,
+      "coverage_sd": 0.02403777858200441
+     }
+    }
+   },
+   "Qwen3.5-4B generative @4000": {
+    "n": 1272,
+    "n_absent": 0,
+    "always_answer_wrong_rate": 0.0660377358490566,
+    "latency_ms_median": 542.7153924999857,
+    "rules": {
+     "answers unless 'none' @alpha=0.02": {
+      "coverage": 0.0,
+      "success": 0.0,
+      "risk": 0.0,
+      "violation_rate": 0.0,
+      "coverage_sd": 0.0
+     },
+     "answers unless 'none' @alpha=0.05": {
+      "coverage": 0.0,
+      "success": 0.0,
+      "risk": 0.0,
+      "violation_rate": 0.0,
+      "coverage_sd": 0.0
+     },
+     "answers unless 'none' @alpha=0.1": {
+      "coverage": 0.985,
+      "success": 0.9196698113207549,
+      "risk": 0.06533018867924528,
+      "violation_rate": 0.0,
+      "coverage_sd": 0.1215524578114322
+     }
+    }
+   }
+  },
+  "screenspot_pro": {
+   "Glance v0 @640": {
+    "n": 1581,
+    "n_absent": 0,
+    "always_answer_wrong_rate": 0.9911448450347881,
+    "latency_ms_median": null,
+    "rules": {
+     "gate @alpha=0.02": {
+      "coverage": 0.013792667509481668,
+      "success": 0.0006447534766118837,
+      "risk": 0.013147914032869785,
+      "violation_rate": 0.13,
+      "coverage_sd": 0.005838997456416969
+     },
+     "gate @alpha=0.05": {
+      "coverage": 0.04125790139064476,
+      "success": 0.0012958280657395704,
+      "risk": 0.03996207332490518,
+      "violation_rate": 0.17,
+      "coverage_sd": 0.010489373414567474
+     },
+     "gate @alpha=0.1": {
+      "coverage": 0.08815423514538559,
+      "success": 0.002010113780025285,
+      "risk": 0.0861441213653603,
+      "violation_rate": 0.165,
+      "coverage_sd": 0.014068535898732923
+     },
+     "gate*iou @alpha=0.02": {
+      "coverage": 0.013621997471554992,
+      "success": 0.000638432364096081,
+      "risk": 0.012983565107458914,
+      "violation_rate": 0.12,
+      "coverage_sd": 0.005587573857984211
+     },
+     "gate*iou @alpha=0.05": {
+      "coverage": 0.040227560050568906,
+      "success": 0.0014348925410872316,
+      "risk": 0.03879266750948167,
+      "violation_rate": 0.145,
+      "coverage_sd": 0.009865602318820192
+     },
+     "gate*iou @alpha=0.1": {
+      "coverage": 0.08561314791403288,
+      "success": 0.0018836915297092288,
+      "risk": 0.08372945638432362,
+      "violation_rate": 0.11,
+      "coverage_sd": 0.013701022678718052
+     },
+     "two-knob w=.9 @alpha=0.02": {
+      "coverage": 0.013723135271807836,
+      "success": 0.000638432364096081,
+      "risk": 0.013084702907711758,
+      "violation_rate": 0.1,
+      "coverage_sd": 0.005496675307528189
+     },
+     "two-knob w=.9 @alpha=0.05": {
+      "coverage": 0.04032237673830595,
+      "success": 0.001769911504424779,
+      "risk": 0.03855246523388116,
+      "violation_rate": 0.12,
+      "coverage_sd": 0.009720874333851933
+     },
+     "two-knob w=.9 @alpha=0.1": {
+      "coverage": 0.0861441213653603,
+      "success": 0.0018836915297092288,
+      "risk": 0.08426042983565107,
+      "violation_rate": 0.145,
+      "coverage_sd": 0.014122581994725093
+     }
+    }
+   },
+   "Glance v0 @4000": {
+    "n": 1581,
+    "n_absent": 0,
+    "always_answer_wrong_rate": 0.9816571790006325,
+    "latency_ms_median": null,
+    "rules": {
+     "gate @alpha=0.02": {
+      "coverage": 0.013950695322376739,
+      "success": 0.0007585335018963338,
+      "risk": 0.013192161820480407,
+      "violation_rate": 0.195,
+      "coverage_sd": 0.0067720064136697
+     },
+     "gate @alpha=0.05": {
+      "coverage": 0.043091024020227554,
+      "success": 0.004064475347661189,
+      "risk": 0.03902654867256637,
+      "violation_rate": 0.145,
+      "coverage_sd": 0.010653861516268622
+     },
+     "gate @alpha=0.1": {
+      "coverage": 0.08927307206068268,
+      "success": 0.005670037926675095,
+      "risk": 0.08360303413400758,
+      "violation_rate": 0.105,
+      "coverage_sd": 0.01371939333853003
+     },
+     "gate*iou @alpha=0.02": {
+      "coverage": 0.013116308470290772,
+      "success": 0.0006573957016434893,
+      "risk": 0.012458912768647284,
+      "violation_rate": 0.13,
+      "coverage_sd": 0.005323919256612837
+     },
+     "gate*iou @alpha=0.05": {
+      "coverage": 0.03998103666245259,
+      "success": 0.0013147914032869785,
+      "risk": 0.038666245259165614,
+      "violation_rate": 0.115,
+      "coverage_sd": 0.009214471547135573
+     },
+     "gate*iou @alpha=0.1": {
+      "coverage": 0.08669405815423514,
+      "success": 0.0017130214917825536,
+      "risk": 0.08498103666245259,
+      "violation_rate": 0.145,
+      "coverage_sd": 0.014155023229998372
+     },
+     "two-knob w=.9 @alpha=0.02": {
+      "coverage": 0.013255372945638434,
+      "success": 0.0006700379266750948,
+      "risk": 0.012585335018963337,
+      "violation_rate": 0.09,
+      "coverage_sd": 0.005018784209625907
+     },
+     "two-knob w=.9 @alpha=0.05": {
+      "coverage": 0.03967130214917826,
+      "success": 0.0013147914032869785,
+      "risk": 0.038356510745891276,
+      "violation_rate": 0.105,
+      "coverage_sd": 0.008816590209730487
+     },
+     "two-knob w=.9 @alpha=0.1": {
+      "coverage": 0.08685208596713022,
+      "success": 0.0022756005056890015,
+      "risk": 0.08457648546144121,
+      "violation_rate": 0.145,
+      "coverage_sd": 0.014292984512093194
+     }
+    }
+   },
+   "Qwen3.5-4B generative @4000": {
+    "n": 1581,
+    "n_absent": 0,
+    "always_answer_wrong_rate": 0.44022770398481975,
+    "latency_ms_median": 978.9699500001916,
+    "rules": {
+     "answers unless 'none' @alpha=0.02": {
+      "coverage": 0.0,
+      "success": 0.0,
+      "risk": 0.0,
+      "violation_rate": 0.0,
+      "coverage_sd": 0.0
+     },
+     "answers unless 'none' @alpha=0.05": {
+      "coverage": 0.0,
+      "success": 0.0,
+      "risk": 0.0,
+      "violation_rate": 0.0,
+      "coverage_sd": 0.0
+     },
+     "answers unless 'none' @alpha=0.1": {
+      "coverage": 0.0,
+      "success": 0.0,
+      "risk": 0.0,
+      "violation_rate": 0.0,
+      "coverage_sd": 0.0
+     }
+    }
+   }
+  },
+  "venusbench_gd": {
+   "Glance v0 @640": {
+    "n": 2116,
+    "n_absent": 255,
+    "always_answer_wrong_rate": 0.9612476370510397,
+    "latency_ms_median": null,
+    "rules": {
+     "gate @alpha=0.02": {
+      "coverage": 0.016890359168241966,
+      "success": 0.003114366729678639,
+      "risk": 0.013775992438563325,
+      "violation_rate": 0.11,
+      "coverage_sd": 0.005998957353098525
+     },
+     "gate @alpha=0.05": {
+      "coverage": 0.0503922495274102,
+      "success": 0.009588846880907371,
+      "risk": 0.04080340264650283,
+      "violation_rate": 0.18,
+      "coverage_sd": 0.010119857985765745
+     },
+     "gate @alpha=0.1": {
+      "coverage": 0.10525992438563327,
+      "success": 0.017197542533081287,
+      "risk": 0.088062381852552,
+      "violation_rate": 0.14,
+      "coverage_sd": 0.013146213821737753
+     },
+     "gate*iou @alpha=0.02": {
+      "coverage": 0.017022684310018903,
+      "success": 0.003983931947069944,
+      "risk": 0.01303875236294896,
+      "violation_rate": 0.075,
+      "coverage_sd": 0.004977238868867559
+     },
+     "gate*iou @alpha=0.05": {
+      "coverage": 0.05026937618147448,
+      "success": 0.008714555765595463,
+      "risk": 0.04155482041587902,
+      "violation_rate": 0.17,
+      "coverage_sd": 0.009550092600283885
+     },
+     "gate*iou @alpha=0.1": {
+      "coverage": 0.10226843100189037,
+      "success": 0.015373345935727789,
+      "risk": 0.08689508506616256,
+      "violation_rate": 0.125,
+      "coverage_sd": 0.012723114306588915
+     },
+     "two-knob w=.9 @alpha=0.02": {
+      "coverage": 0.017348771266540643,
+      "success": 0.004220226843100189,
+      "risk": 0.013128544423440454,
+      "violation_rate": 0.07,
+      "coverage_sd": 0.00503249106828035
+     },
+     "two-knob w=.9 @alpha=0.05": {
+      "coverage": 0.05210302457466918,
+      "success": 0.010647448015122874,
+      "risk": 0.04145557655954631,
+      "violation_rate": 0.155,
+      "coverage_sd": 0.009945039944130615
+     },
+     "two-knob w=.9 @alpha=0.1": {
+      "coverage": 0.10474952741020793,
+      "success": 0.01720226843100189,
+      "risk": 0.08754725897920604,
+      "violation_rate": 0.135,
+      "coverage_sd": 0.012252180882235238
+     }
+    }
+   },
+   "Glance v0 @4000": {
+    "n": 2116,
+    "n_absent": 255,
+    "always_answer_wrong_rate": 0.9286389413988658,
+    "latency_ms_median": null,
+    "rules": {
+     "gate @alpha=0.02": {
+      "coverage": 0.018950850661625707,
+      "success": 0.005415879017013232,
+      "risk": 0.013534971644612476,
+      "violation_rate": 0.125,
+      "coverage_sd": 0.006298577747901781
+     },
+     "gate @alpha=0.05": {
+      "coverage": 0.05353969754253308,
+      "success": 0.012150283553875237,
+      "risk": 0.041389413988657836,
+      "violation_rate": 0.185,
+      "coverage_sd": 0.010862945917437276
+     },
+     "gate @alpha=0.1": {
+      "coverage": 0.10872400756143667,
+      "success": 0.02122400756143667,
+      "risk": 0.0875,
+      "violation_rate": 0.17,
+      "coverage_sd": 0.013199699387562311
+     },
+     "gate*iou @alpha=0.02": {
+      "coverage": 0.01960775047258979,
+      "success": 0.006446124763705104,
+      "risk": 0.013161625708884689,
+      "violation_rate": 0.07,
+      "coverage_sd": 0.005038789063654528
+     },
+     "gate*iou @alpha=0.05": {
+      "coverage": 0.057438563327032136,
+      "success": 0.01596880907372401,
+      "risk": 0.04146975425330813,
+      "violation_rate": 0.15,
+      "coverage_sd": 0.009680923163523786
+     },
+     "gate*iou @alpha=0.1": {
+      "coverage": 0.11545841209829867,
+      "success": 0.027651228733459356,
+      "risk": 0.08780718336483932,
+      "violation_rate": 0.15,
+      "coverage_sd": 0.013383588550955887
+     },
+     "two-knob w=.9 @alpha=0.02": {
+      "coverage": 0.019815689981096406,
+      "success": 0.006521739130434783,
+      "risk": 0.013293950850661625,
+      "violation_rate": 0.065,
+      "coverage_sd": 0.005110422214881454
+     },
+     "two-knob w=.9 @alpha=0.05": {
+      "coverage": 0.0578875236294896,
+      "success": 0.01640359168241966,
+      "risk": 0.04148393194706994,
+      "violation_rate": 0.175,
+      "coverage_sd": 0.009588565046480485
+     },
+     "two-knob w=.9 @alpha=0.1": {
+      "coverage": 0.11699905482041588,
+      "success": 0.029191871455576557,
+      "risk": 0.08780718336483932,
+      "violation_rate": 0.145,
+      "coverage_sd": 0.012532766756239998
+     }
+    }
+   },
+   "Qwen3.5-4B generative @4000": {
+    "n": 2116,
+    "n_absent": 255,
+    "always_answer_wrong_rate": 0.43100189035916825,
+    "latency_ms_median": 917.2558939999362,
+    "rules": {
+     "answers unless 'none' @alpha=0.02": {
+      "coverage": 0.0,
+      "success": 0.0,
+      "risk": 0.0,
+      "violation_rate": 0.0,
+      "coverage_sd": 0.0
+     },
+     "answers unless 'none' @alpha=0.05": {
+      "coverage": 0.0,
+      "success": 0.0,
+      "risk": 0.0,
+      "violation_rate": 0.0,
+      "coverage_sd": 0.0
+     },
+     "answers unless 'none' @alpha=0.1": {
+      "coverage": 0.0,
+      "success": 0.0,
+      "risk": 0.0,
+      "violation_rate": 0.0,
+      "coverage_sd": 0.0
+     },
+     "P(not none) @alpha=0.02": {
+      "coverage": 0.07841682419659736,
+      "success": 0.06441398865784499,
+      "risk": 0.014002835538752362,
+      "violation_rate": 0.09,
+      "coverage_sd": 0.015547666201528901
+     },
+     "P(not none) @alpha=0.05": {
+      "coverage": 0.18354914933837427,
+      "success": 0.14236294896030247,
+      "risk": 0.04118620037807183,
+      "violation_rate": 0.175,
+      "coverage_sd": 0.021449266974450005
+     },
+     "P(not none) @alpha=0.1": {
+      "coverage": 0.3186767485822306,
+      "success": 0.23125708884688087,
+      "risk": 0.08741965973534971,
+      "violation_rate": 0.135,
+      "coverage_sd": 0.020656756552294254
+     }
+    }
+   }
+  }
+ }
+}

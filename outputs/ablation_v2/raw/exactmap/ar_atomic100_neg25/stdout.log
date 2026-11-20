@@ -1,0 +1,10 @@
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 16681.88it/s]
+[map] img 0/188 q=15 fwd=5 3s none=7 box=8 undecided=0
+[map] img 25/188 q=309 fwd=130 45s none=117 box=192 undecided=0
+[map] img 50/188 q=630 fwd=255 84s none=259 box=371 undecided=0
+[map] img 75/188 q=884 fwd=380 120s none=352 box=532 undecided=0
+[map] img 100/188 q=1248 fwd=505 169s none=497 box=751 undecided=0
+[map] img 125/188 q=1579 fwd=630 212s none=628 box=951 undecided=0
+[map] img 150/188 q=1906 fwd=755 257s none=761 box=1145 undecided=0
+[map] img 175/188 q=2246 fwd=881 298s none=904 box=1342 undecided=0
+{"ckpt": "/content/ckpt/ablation/ar_atomic100_neg25_bf16.pt", "variant": "ar_atomic", "split_k": 1, "image_stride": 8, "max_nodes": 10000, "n_present": 1362, "n_absent": 1067, "wall_s": 324.80619168281555, "n_forward": 941, "present": {"refuse": 0.046255506607929514, "accept": 0.9537444933920705, "undecided": 0.0, "refuse_upper": 0.046255506607929514}, "absent": {"refuse": 0.8537956888472352, "accept": 0.14620431115276475, "undecided": 0.0}, "acc50_map_box_accepted": 0.9568899153194765, "mean_expanded": 132.74228077398107}

@@ -1,0 +1,28 @@
+{
+ "requests": 21753,
+ "cost_usd_bench": 10.992037686000176,
+ "cost_usd_latency": 0.16432983,
+ "cost_usd_total": 11.156367516000175,
+ "final_failures": 0,
+ "http_attempts": 21747,
+ "http_429": 0,
+ "per_bench": {
+  "refcocog_test": 0.7435015559999987,
+  "refcocoplus_testB": 0.35754150600000034,
+  "refcoco_testA": 0.407599458,
+  "refcoco_testB": 0.37167820199999974,
+  "venus": 2.484267575999995,
+  "od": 0.06372273599999985,
+  "grefcoco": 1.7429306160000015,
+  "refcocoplus_testA": 0.41217539999999986,
+  "refcocoplus_val": 0.7845631080000005,
+  "robust": 0.7457903460000017,
+  "refcocog_val": 0.3738243599999988,
+  "attr": 0.050278788000000005,
+  "solo": 0.12331804800000026,
+  "ss2": 0.552941466,
+  "ambig": 0.03707457599999999,
+  "refcoco_val": 0.7915790400000006,
+  "sspro": 0.9441536159999985
+ }
+}

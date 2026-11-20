@@ -1,0 +1,2 @@
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 20913.67it/s]
+[beam] batch 0/1501 q=15 6s b4lp0:1s b8lp0:1s b4lp1:1s b8lp1:1s

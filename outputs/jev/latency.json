@@ -1,0 +1,52 @@
+{
+ "box_1q": {
+  "n": 60,
+  "ms_median": 180.47054300041054,
+  "ms_mean": 192.45420193340883,
+  "ms_p80": 205.45287140121218,
+  "ms_p90": 216.82421989389698,
+  "ms_min": 145.6557889978285,
+  "n_questions": 1
+ },
+ "box_8q": {
+  "n": 60,
+  "ms_median": 211.7994184991403,
+  "ms_mean": 216.93597485039695,
+  "ms_p80": 231.94271060056056,
+  "ms_p90": 251.41742240157328,
+  "ms_min": 174.4068120024167,
+  "n_questions": 8
+ },
+ "box_32q": {
+  "n": 60,
+  "ms_median": 379.929782502586,
+  "ms_mean": 379.1185362339699,
+  "ms_p80": 407.0588463975582,
+  "ms_p90": 422.2296241998265,
+  "ms_min": 320.06233900028747,
+  "n_questions": 32
+ },
+ "pair_8x2": {
+  "n": 60,
+  "ms_median": 264.27186900400557,
+  "ms_mean": 278.1650458502554,
+  "ms_p80": 277.322639398335,
+  "ms_p90": 285.4720642011671,
+  "ms_min": 225.14153199881548,
+  "n_questions": 16
+ },
+ "text_min": {
+  "n": 60,
+  "ms_median": 126.84280450048391,
+  "ms_mean": 137.00817286674769,
+  "ms_p80": 150.86544299992966,
+  "ms_p90": 173.7357592995977,
+  "ms_min": 105.99598800035892,
+  "n_questions": 1
+ },
+ "image_wh": [
+  612,
+  612
+ ],
+ "note": "sequential requests from gen-host (GCP us-central1) over a keep-alive HTTPS session; wall time includes network, OpenRouter routing and Jev. Glance's 67.0/66.7/70.2 ms (Q=1/8/32) are local GPU forward time on an RTX PRO 6000 with no network."
+}

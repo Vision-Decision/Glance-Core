@@ -1,0 +1,175 @@
+{
+ "model": "Qwen/Qwen3.5-4B",
+ "chat_template": true,
+ "prompt": "Locate the object described as \"{expr}\" in the image. Output its bounding box as [x1, y1, x2, y2] with coordinates normalized to 0-1000. If no such object is in the image, answer exactly \"none\".",
+ "sets": {
+  "refcoco_val": {
+   "n": 500,
+   "none_rate": 0.004,
+   "latency_ms_median_1q": 399.59677800015925,
+   "examples": [
+    {
+     "expr": "batter",
+     "out": "[255, 226, 478, 764]\n",
+     "gt": [
+      163.12,
+      96.91,
+      308.98,
+      325.28999999999996
+     ]
+    },
+    {
+     "expr": "front zebra",
+     "out": "[497,383,722,988]\n",
+     "gt": [
+      318.56,
+      186.09,
+      461.58000000000004,
+      474.31000000000006
+     ]
+    },
+    {
+     "expr": "cutting cake",
+     "out": "[555, 21, 902, 843]\n",
+     "gt": [
+      356.95,
+      6.72,
+      575.73,
+      421.24
+     ]
+    },
+    {
+     "expr": "red pillow left",
+     "out": "[0, 426, 115, 674]\n",
+     "gt": [
+      0.94,
+      125.57,
+      85.27,
+      292.37
+     ]
+    },
+    {
+     "expr": "first umbrella not the one in upper right",
+     "out": "[508,587,942,905]\n",
+     "gt": [
+      307.68,
+      357.34,
+      564.98,
+      574.39
+     ]
+    },
+    {
+     "expr": "guy",
+     "out": "[597, 393, 791, 986]\n",
+     "gt": [
+      380.1,
+      166.24,
+      504.83000000000004,
+      427.0
+     ]
+    },
+    {
+     "expr": "cut up apples",
+     "out": "[173,505,455,769]\n",
+     "gt": [
+      113.54,
+      151.06,
+      590.15,
+      329.22
+     ]
+    },
+    {
+     "expr": "sheep on right",
+     "out": "[540, 393,871,788]\n",
+     "gt": [
+      346.68,
+      168.32,
+      557.39,
+      335.99
+     ]
+    },
+    {
+     "expr": "wine glass far left",
+     "out": "[194,406,389,998]\n",
+     "gt": [
+      119.19,
+      193.39,
+      245.91,
+      480.0
+     ]
+    },
+    {
+     "expr": "brown animal under the big head on left",
+     "out": "[171, 516, 601, 819]\n",
+     "gt": [
+      79.49,
+      319.51,
+      241.2,
+      475.74
+     ]
+    }
+   ],
+   "acc50": 0.914
+  },
+  "grefcoco_val_notarget": {
+   "n": 500,
+   "none_rate": 0.65,
+   "latency_ms_median_1q": 105.33815500002675,
+   "examples": [
+    {
+     "expr": "the kid wearing white sitting near the table",
+     "out": "[287, 188, 584, 755]\n",
+     "gt": null
+    },
+    {
+     "expr": "man in hat",
+     "out": "none\n",
+     "gt": null
+    },
+    {
+     "expr": "a woman in a blue jacket",
+     "out": "none\n",
+     "gt": null
+    },
+    {
+     "expr": "bottom left hand corner of cup",
+     "out": "none\n",
+     "gt": null
+    },
+    {
+     "expr": "boat on right",
+     "out": "There is none.\n",
+     "gt": null
+    },
+    {
+     "expr": "left truck",
+     "out": "[11, 424, 306, 731]\n",
+     "gt": null
+    },
+    {
+     "expr": "girl holding a donut",
+     "out": "none\n",
+     "gt": null
+    },
+    {
+     "expr": "white car, front",
+     "out": "[855, 95, 936, 181]\n",
+     "gt": null
+    },
+    {
+     "expr": "roll center",
+     "out": "[138, 246, 894, 819]\n",
+     "gt": null
+    },
+    {
+     "expr": "teddy bear",
+     "out": "There are none.\n",
+     "gt": null
+    }
+   ],
+   "N_acc": 0.65
+  }
+ },
+ "latency_ms_median_8q_same_image": 3161.2464469999395,
+ "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+}

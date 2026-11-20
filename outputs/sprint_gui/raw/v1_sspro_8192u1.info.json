@@ -1,0 +1,12 @@
+{
+ "out": "/content/sprint/v1_sspro_8192u1",
+ "n": 1581,
+ "click_acc_box": 0.39215686274509803,
+ "wall_s": 1430.7767856121063,
+ "ckpt": "/content/ckpt/v1/ckpt_final.pt",
+ "max_vis": 8192,
+ "upscale": 1.0,
+ "zoom_from": "",
+ "zoom_frac": 0.4,
+ "vis_tokens_median": 4080.0
+}

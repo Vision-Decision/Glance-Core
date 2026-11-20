@@ -1,0 +1,2 @@
+Loading weights:   0%|          | 0/723 [00:00<?, ?it/s]Loading weights: 100%|██████████| 723/723 [00:00<00:00, 16714.61it/s]
+latency {"1q": {"ms_median": 621.4801779970003, "ms_mean": 601.4749280500109, "ms_p90": 660.1668510003947, "decode_steps_mean": 15.37}, "8q": {"ms_median": 629.5651180007553, "ms_mean": 629.3750009899668, "ms_p90": 666.6907499966328, "decode_steps_mean": 16.0}, "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition"}

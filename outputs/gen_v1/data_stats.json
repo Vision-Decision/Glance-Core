@@ -1,0 +1,286 @@
+{
+ "text": {
+  "records": 178579,
+  "questions": 208000,
+  "pool_questions": 478722,
+  "repeats": 1,
+  "by_src": [
+   [
+    "decider",
+    49742
+   ],
+   [
+    "j11_written",
+    18924
+   ],
+   [
+    "tasksource/procedural-typed-decisions",
+    6636
+   ],
+   [
+    "oasst2/creativity",
+    2990
+   ],
+   [
+    "j11_generator",
+    2546
+   ],
+   [
+    "human_soft",
+    2330
+   ],
+   [
+    "dynasent/r1_votes",
+    1684
+   ],
+   [
+    "spartqa-mchoice",
+    1622
+   ],
+   [
+    "jeff10_llm",
+    1525
+   ],
+   [
+    "FOL-nli",
+    1422
+   ],
+   [
+    "math_qa",
+    1386
+   ],
+   [
+    "WANLI",
+    1300
+   ],
+   [
+    "lex_glue/case_hold",
+    1265
+   ],
+   [
+    "dynasent/r2_votes",
+    1253
+   ],
+   [
+    "doc-nli",
+    1203
+   ],
+   [
+    "cais/mmlu",
+    1105
+   ],
+   [
+    "Rowan/hellaswag",
+    1098
+   ],
+   [
+    "allenai/winogrande",
+    1085
+   ],
+   [
+    "dynabench/dynasent",
+    936
+   ],
+   [
+    "scruples/verdict_votes",
+    852
+   ],
+   [
+    "logiqa",
+    841
+   ],
+   [
+    "openai/gsm8k",
+    825
+   ],
+   [
+    "procedural-typed-decisions/policy_under_uncertainty",
+    804
+   ],
+   [
+    "procedural-typed-decisions/goal_directed_planning",
+    798
+   ],
+   [
+    "procedural-typed-decisions/partial_observation_calibration",
+    792
+   ],
+   [
+    "procedural-typed-decisions/entity_belief_tracking",
+    788
+   ],
+   [
+    "procedural-typed-decisions/arithmetic",
+    767
+   ],
+   [
+    "procedural-typed-decisions/event_state_reconstruction",
+    756
+   ],
+   [
+    "procedural-typed-decisions/evidence_sufficiency",
+    753
+   ],
+   [
+    "procedural-typed-decisions/state_perturbation",
+    741
+   ],
+   [
+    "procedural-typed-decisions/policy_applicability",
+    732
+   ],
+   [
+    "procedural-typed-decisions/multi_view_adjudication",
+    723
+   ],
+   [
+    "procedural-typed-decisions/event_triggered_execution",
+    720
+   ],
+   [
+    "procedural-typed-decisions/table_lookup",
+    707
+   ],
+   [
+    "procedural-typed-decisions/instruction_execution",
+    705
+   ],
+   [
+    "google/civil_comments",
+    702
+   ],
+   [
+    "spartqa-yn",
+    686
+   ],
+   [
+    "corr2cause",
+    684
+   ],
+   [
+    "procedural-typed-decisions/record_aggregation",
+    676
+   ],
+   [
+    "glue/stsb",
+    671
+   ]
+  ],
+  "by_type": {
+   "noul": 27946,
+   "choice": 157917,
+   "score": 22137
+  },
+  "absent": 0,
+  "hard_neg": 0,
+  "easy_neg": 0,
+  "prefix_tokens": 31907115,
+  "block_tokens_est": 21428776
+ },
+ "gui": {
+  "records": 20037,
+  "questions": 130016,
+  "pool_questions": 104236,
+  "repeats": 2,
+  "by_src": [
+   [
+    "mobile_aw",
+    35772
+   ],
+   [
+    "desktop_linux",
+    25987
+   ],
+   [
+    "mobile_ricosca",
+    18710
+   ],
+   [
+    "desktop_macos",
+    17375
+   ],
+   [
+    "mobile_widgetcap",
+    14763
+   ],
+   [
+    "web_guienv",
+    9608
+   ],
+   [
+    "mobile_uibert",
+    7801
+   ]
+  ],
+  "by_type": {
+   "box": 130016
+  },
+  "absent": 13060,
+  "hard_neg": 6414,
+  "easy_neg": 6646,
+  "prefix_tokens": 26974579,
+  "block_tokens_est": 3900480
+ },
+ "natural": {
+  "records": 7668,
+  "questions": 114405,
+  "pool_questions": 360968,
+  "repeats": 1,
+  "by_src": [
+   [
+    "natural",
+    114405
+   ]
+  ],
+  "by_type": {
+   "box": 114405
+  },
+  "absent": 32299,
+  "hard_neg": 20998,
+  "easy_neg": 11301,
+  "prefix_tokens": 4781057,
+  "block_tokens_est": 3432150
+ },
+ "pixmo": {
+  "records": 6013,
+  "questions": 67606,
+  "pool_questions": 282580,
+  "repeats": 1,
+  "by_src": [
+   [
+    "pixmo_points",
+    66996
+   ],
+   [
+    "pixmo_count",
+    610
+   ]
+  ],
+  "by_type": {
+   "box": 59564,
+   "score": 7737,
+   "noul": 305
+  },
+  "absent": 9102,
+  "hard_neg": 0,
+  "easy_neg": 0,
+  "prefix_tokens": 5678775,
+  "block_tokens_est": 2319744
+ },
+ "total": {
+  "records": 212297,
+  "questions": 520027,
+  "box_questions": 303985,
+  "absent": 54461,
+  "by_type": {
+   "choice": 157917,
+   "noul": 28251,
+   "score": 29874,
+   "box": 303985
+  },
+  "prefix_tokens": 69341526,
+  "block_tokens_est": 31081150,
+  "absent_frac_of_all": 0.10472725454639856,
+  "absent_frac_of_box": 0.17915686629274472
+ }
+}

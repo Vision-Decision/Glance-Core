@@ -1,0 +1,23 @@
+{
+ "model_id": "Qwen/Qwen3.5-4B",
+ "quant": "bf16",
+ "attn_mask": "block_bidir",
+ "lora_r": 64,
+ "lora_alpha": 128,
+ "max_vis_tokens": 640,
+ "images_per_step": 8,
+ "grad_accum": 1,
+ "epochs": 1.0,
+ "max_steps": 3058,
+ "lr": 0.0002,
+ "lr_heads": 0.0005,
+ "lr_newtok": 0.0005,
+ "seed": 1,
+ "data_seed": 1,
+ "log_every": 20,
+ "save_every": 500,
+ "num_workers": 8,
+ "train_file": "data/prep/train.jsonl",
+ "variant": "ours",
+ "out_dir": "/content/out/abl/ours_neg25_s1"
+}

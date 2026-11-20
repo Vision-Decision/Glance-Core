@@ -1,0 +1,12 @@
+2026-11-18 00:03:09 train.py not running and no final ckpt — check the run
+2026-11-18 01:02:13 session dv-27b-2 gone from server
+2026-11-18 01:06:48 VM unreachable
+2026-11-18 01:47:38 download of ckpt_last.pt failed, will retry
+2026-11-18 02:22:38 download of ckpt_last.pt failed, will retry
+2026-11-18 03:08:53 pulled ckpt_last.pt (1.8G)
+2026-11-18 03:42:41 download of ckpt_last.pt failed, will retry
+2026-11-18 04:20:23 pulled ckpt_last.pt (1.8G)
+2026-11-18 05:00:42 pulled ckpt_last.pt (1.8G)
+2026-11-18 05:32:38 download of ckpt_last.pt failed, will retry
+2026-11-18 06:10:57 pulled ckpt_final.pt (1.8G)
+final checkpoint pulled, done

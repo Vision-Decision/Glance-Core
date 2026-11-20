@@ -1,0 +1,17 @@
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `causal_conv1d_update` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+rg 0 6278
+rg 480 6278
+rg 960 6278
+rg 1440 6278
+rg 1920 6278
+rg 2400 6278
+rg 2880 6278
+rg 3360 6278
+rg 3840 6278
+rg 4320 6278
+rg 4800 6278
+rg 5280 6278
+rg 5760 6278
+rg 6240 6278
+done

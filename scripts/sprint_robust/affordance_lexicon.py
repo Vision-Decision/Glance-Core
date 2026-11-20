@@ -1,0 +1,123 @@
+"""COCO category -> affordance / function lexicon (EN + ZH) for templated training rewrites.
+
+Each affordance class lists the COCO categories that can satisfy it, so validity is checked programmatically:
+  a present functional query of class C for target t is used only if no OTHER object in the image has a category in C;
+  an absent functional query of class C is used only if NO object in the image has a category in C.
+`np` (optional) is a noun phrase that can replace the category name inside a referring expression
+("left chair" -> "left thing to sit on"). Phrases avoid the category names they describe.
+"""
+
+AFF = {
+    # name: (categories, EN phrases, ZH phrases, EN noun phrase for in-expression replacement)
+    "drink": (["cup", "wine glass", "bottle"], ["something to drink from", "something to drink", "what I can drink out of",
+              "something with a drink in it"], ["喝的东西", "能喝的", "喝水用的东西", "装饮料的东西"], "thing to drink from"),
+    "hot_drink": (["cup"], ["something for coffee or tea", "what you sip a hot drink from"], ["喝咖啡用的", "喝茶用的东西"], None),
+    "wine": (["wine glass"], ["something to drink wine from", "what you pour wine into"], ["喝红酒用的", "倒葡萄酒的东西"], None),
+    "pour": (["bottle"], ["something you pour a drink out of", "a container you can twist open"], ["拧开盖能倒出饮料的", "装水的瓶装容器"], None),
+    "eat": (["banana", "apple", "sandwich", "orange", "broccoli", "carrot", "hot dog", "pizza", "donut", "cake"],
+            ["something to eat", "food I could eat", "something edible", "a snack"], ["吃的", "能吃的东西", "吃的东西", "可以吃的"],
+            "thing to eat"),
+    "sweet": (["donut", "cake"], ["dessert", "something sweet", "a sweet treat", "something sugary"], ["甜点", "甜食", "甜的东西", "饭后甜品"],
+              "sweet treat"),
+    "fruit": (["banana", "apple", "orange"], ["fruit", "a piece of fruit", "something fruity to eat"], ["水果", "一个水果", "能吃的水果"], "fruit"),
+    "veg": (["broccoli", "carrot"], ["vegetables", "a vegetable", "something healthy to eat"], ["蔬菜", "青菜", "健康的蔬菜"], "vegetable"),
+    "meal": (["sandwich", "hot dog", "pizza"], ["fast food", "something I could have for lunch", "a quick meal"],
+             ["快餐", "能当午饭的东西", "随手吃的饭"], "food"),
+    "utensil": (["fork", "spoon", "knife"], ["something to eat with", "cutlery", "an eating utensil"], ["吃饭用的工具", "餐具", "吃饭用的"], "utensil"),
+    "cut": (["knife", "scissors"], ["something to cut with", "something sharp", "a cutting tool"], ["切东西用的", "能剪东西的", "锋利的工具"], "cutting tool"),
+    "scoop": (["spoon"], ["something to scoop soup with", "what you stir coffee with"], ["舀汤用的", "搅咖啡用的"], None),
+    "stab": (["fork"], ["something to stab food with", "something with prongs"], ["叉东西吃的", "有齿的餐具"], None),
+    "container": (["bowl", "cup"], ["something to put soup in", "a container for food"], ["盛饭的东西", "装汤的"], "container"),
+    "table": (["dining table"], ["where people eat", "a surface to eat at", "where the meal is served"], ["吃饭的桌子", "放饭菜的地方", "大家围着吃饭的地方"],
+              "surface to eat at"),
+    "sit": (["chair", "couch", "bench", "bed", "toilet"], ["something to sit on", "a seat", "where I can sit", "a place to sit down"],
+            ["能坐的地方", "坐的东西", "可以坐下的地方", "能坐下休息的"], "seat"),
+    "sleep": (["bed", "couch"], ["somewhere to sleep", "where I can lie down", "a place to take a nap"], ["睡觉的地方", "能躺的地方", "午睡的地方"], None),
+    "lounge": (["couch"], ["something comfy to lounge on in the living room", "where you relax watching TV"], ["客厅里能躺着看电视的", "软软的能窝着的"], None),
+    "flush": (["toilet"], ["where you go to the bathroom", "the thing you flush"], ["上厕所用的", "冲水方便用的"], None),
+    "wash": (["sink"], ["where I can wash my hands", "where you wash the dishes"], ["洗手的地方", "洗碗的地方"], "place to wash"),
+    "cook": (["microwave", "oven", "toaster"], ["something to heat food", "a cooking appliance", "something to warm food up"],
+             ["加热食物的", "做饭用的电器", "热饭用的"], "appliance"),
+    "reheat": (["microwave"], ["something to warm up leftovers quickly", "where you reheat food in a minute"], ["热剩饭用的", "一分钟热好饭的"], None),
+    "bake": (["oven"], ["something to bake a cake in", "where you roast a chicken"], ["烤蛋糕用的", "烤鸡用的"], None),
+    "toast": (["toaster"], ["something to make toast", "what crisps your bread"], ["烤面包片的机器", "把面包烤脆的"], None),
+    "cold": (["refrigerator"], ["something that keeps food cold", "where the milk is stored"], ["冷藏食物的", "放牛奶的地方", "保鲜用的"], None),
+    "time": (["clock"], ["something that tells the time", "what I check to see what time it is"], ["看时间的东西", "能看几点的"], "timepiece"),
+    "read": (["book"], ["something to read", "reading material"], ["能读的东西", "可以看的读物"], "reading material"),
+    "flowers": (["vase"], ["something to put flowers in", "what holds the flowers"], ["插花用的", "放花的容器"], None),
+    "water_me": (["potted plant"], ["something green that needs watering", "the greenery in a pot"], ["要浇水的绿色东西", "盆里的绿色"], "greenery"),
+    "cuddle": (["teddy bear"], ["a toy for a child to hug", "something soft to cuddle"], ["给小孩抱的玩具", "软软的可以抱的东西"], "cuddly toy"),
+    "dry_hair": (["hair drier"], ["something to dry your hair"], ["吹头发用的"], None),
+    "teeth": (["toothbrush"], ["something to clean your teeth with"], ["刷牙用的"], None),
+    "screen": (["tv", "laptop", "cell phone"], ["a screen", "something with a screen", "something to watch videos on"],
+               ["有屏幕的东西", "看视频的屏幕", "能看视频的"], "screen"),
+    "shows": (["tv"], ["something to watch shows on", "what you watch the news on"], ["看电视节目的", "看新闻用的大屏幕"], None),
+    "type": (["keyboard", "laptop"], ["something to type on", "something with keys"], ["打字用的", "有按键能打字的"], None),
+    "cursor": (["mouse"], ["the thing you move the cursor with", "something to click with"], ["控制光标的东西", "点击电脑用的"], None),
+    "channel": (["remote"], ["something to change the channel", "what you use to switch the TV on"], ["换台用的东西", "开电视用的"], None),
+    "call": (["cell phone"], ["something to make a call with", "something to text with"], ["打电话用的", "发短信用的东西"], None),
+    "work": (["laptop"], ["something to do work on", "a portable work computer"], ["办公用的电子设备", "能带着走的办公电脑"], None),
+    "carry": (["backpack", "handbag", "suitcase"], ["something to carry stuff in", "something to keep belongings in"],
+              ["能装随身物品的东西", "装东西用的"], "thing to carry stuff in"),
+    "travel": (["suitcase"], ["something to pack clothes for a trip", "luggage"], ["出门旅行装衣服的", "行李"], None),
+    "rain": (["umbrella"], ["something to keep the rain off", "something for shade from the sun"], ["挡雨的东西", "遮阳挡雨用的"], "rain cover"),
+    "neck": (["tie"], ["something worn around the neck with a suit"], ["配西装戴在脖子上的"], None),
+    "ride": (["bicycle", "motorcycle", "horse", "skateboard", "elephant"], ["something to ride", "something I could ride"], ["能骑的东西", "可以骑的"],
+             "thing to ride"),
+    "pedal": (["bicycle"], ["something you pedal", "a ride powered by your legs"], ["要用脚蹬的", "脚踩着骑的"], None),
+    "drive": (["car", "bus", "truck", "motorcycle"], ["something to drive", "a way to get around town"], ["能开的", "代步的工具"], "ride"),
+    "transit": (["bus", "train"], ["public transport", "something many passengers ride in"], ["公共交通工具", "很多乘客坐的"], None),
+    "flies": (["airplane", "kite", "bird", "frisbee"], ["something that flies", "something up in the air"], ["会飞的东西", "在天上飞的"], "flying thing"),
+    "fly_trip": (["airplane"], ["something to fly to another city", "what takes people across the ocean"], ["能坐着飞到外地的", "带人飞越大洋的"], None),
+    "cargo": (["truck"], ["something to haul cargo", "what moves heavy loads on the road"], ["拉货的", "运重物的"], None),
+    "on_water": (["boat", "surfboard"], ["something to go on the water", "something that floats"], ["在水上用的", "能浮在水上的"], None),
+    "sail": (["boat"], ["something to sail", "what you cross a lake in"], ["能在水上航行的", "过湖用的"], None),
+    "rails": (["train"], ["something that runs on rails"], ["在铁轨上跑的"], None),
+    "stop_cars": (["traffic light", "stop sign"], ["something that tells cars when to stop", "a traffic signal"], ["指挥车辆停下的东西", "交通信号"], None),
+    "hose": (["fire hydrant"], ["something firefighters connect hoses to"], ["消防员接水管用的"], None),
+    "pay_park": (["parking meter"], ["something you pay for parking at"], ["停车交费的"], None),
+    "pet": (["cat", "dog"], ["a pet", "an animal that lives with people"], ["宠物", "家里养的小动物"], "pet"),
+    "farm": (["sheep", "cow", "horse"], ["a farm animal", "livestock"], ["家畜", "农场里的动物"], "farm animal"),
+    "milk": (["cow"], ["the animal that gives milk"], ["产奶的动物"], None),
+    "wool": (["sheep"], ["the animal that gives us wool"], ["能剪毛做毛衣的动物"], None),
+    "wild": (["elephant", "bear", "zebra", "giraffe"], ["a wild animal", "an animal you'd see on safari"], ["野生动物", "在野外才能看到的动物"], "wild animal"),
+    "long_neck": (["giraffe"], ["the animal with the long neck"], ["脖子很长的动物"], None),
+    "stripes": (["zebra"], ["the striped animal"], ["身上有条纹的动物"], None),
+    "trunk": (["elephant"], ["the animal with a trunk"], ["有长鼻子的动物"], None),
+    "bark": (["dog"], ["the animal that barks", "man's best friend"], ["会汪汪叫的", "看家的动物"], None),
+    "mice": (["cat"], ["the animal that catches mice", "the one that purrs"], ["会抓老鼠的动物", "会喵喵叫的"], None),
+    "feathers": (["bird"], ["something with feathers", "the one that sings in the trees"], ["有羽毛的", "在树上唱歌的"], None),
+    "throw": (["frisbee", "sports ball"], ["something to throw and catch", "something to toss around"], ["扔着玩的东西", "抛来抛去的"], None),
+    "hit_ball": (["baseball bat", "tennis racket"], ["something to hit a ball with"], ["击球用的"], None),
+    "catch_ball": (["baseball glove"], ["something to catch a baseball with"], ["接棒球用的"], None),
+    "snow": (["skis", "snowboard"], ["something to slide down a snowy slope"], ["在雪坡上往下滑用的"], None),
+    "waves": (["surfboard"], ["something to ride waves"], ["冲浪用的"], None),
+    "tricks": (["skateboard"], ["something with wheels to do tricks on"], ["带轮子能踩着玩花样的"], None),
+    "windy": (["kite"], ["something to fly on a windy day"], ["刮风天放着玩的"], None),
+    "sport": (["sports ball", "frisbee", "tennis racket", "baseball bat", "baseball glove", "skis", "snowboard", "skateboard", "surfboard", "kite"],
+              ["sports gear", "something to play sports with"], ["运动用品", "运动器材"], "sports gear"),
+}
+
+GENERIC = {  # supercategory -> (EN, ZH); categories in SKIP_GENERIC never get a generic query
+    "vehicle": (["the vehicle", "that vehicle", "the means of transport"], ["交通工具", "那个交通工具"]),
+    "animal": (["the animal", "that creature", "the animal there"], ["那只动物", "动物"]),
+    "food": (["the food", "the food item", "something edible"], ["吃的", "食物", "那个吃的"]),
+    "kitchen": (["the kitchenware", "that kitchen item", "the tableware"], ["厨房用品", "餐具"]),
+    "furniture": (["the furniture", "that piece of furniture"], ["家具", "那件家具"]),
+    "electronic": (["the device", "that gadget", "the electronics"], ["电子设备", "那个电子产品"]),
+    "appliance": (["the appliance", "that kitchen appliance"], ["电器", "那个家电"]),
+    "sports": (["the sports equipment", "that sports gear"], ["运动器材", "运动装备"]),
+    "accessory": (["the accessory", "that personal item"], ["随身物品", "那个随身带的东西"]),
+}
+SKIP_GENERIC = {"potted plant", "toilet"}
+
+SYN = {  # category name variants that may appear in referring expressions (for in-expression replacement)
+    "couch": ["couch", "sofa"], "tv": ["tv", "television", "monitor"], "donut": ["donut", "doughnut"], "cell phone": ["cell phone", "phone"],
+    "dining table": ["dining table", "table"], "motorcycle": ["motorcycle", "motorbike", "bike"], "airplane": ["airplane", "plane", "jet"],
+    "bicycle": ["bicycle", "bike"], "wine glass": ["wine glass", "glass"], "cup": ["cup", "mug"], "potted plant": ["potted plant", "plant"],
+    "teddy bear": ["teddy bear", "teddy"], "sports ball": ["ball"], "hot dog": ["hot dog", "hotdog"], "refrigerator": ["refrigerator", "fridge"],
+}
+
+
+def cat_classes(cat):
+    return [k for k, v in AFF.items() if cat in v[0]]

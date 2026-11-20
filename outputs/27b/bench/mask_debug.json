@@ -1,0 +1,62 @@
+{
+ "A_rerun": {
+  "final_prefix_reldiff": 0.0,
+  "prelast_prefix_reldiff": 0.0,
+  "layers_1_4_8_16_32": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "per_token_median": 0.0,
+  "per_token_max": 0.0,
+  "worst_tokens": [
+   1,
+   0,
+   2,
+   4,
+   3
+  ]
+ },
+ "B_dict_causal": {
+  "final_prefix_reldiff": 0.29668089747428894,
+  "prelast_prefix_reldiff": 0.23713313043117523,
+  "layers_1_4_8_16_32": [
+   0.0,
+   0.0004,
+   0.0014,
+   0.0031,
+   0.0146
+  ],
+  "per_token_median": 0.10921401530504227,
+  "per_token_max": 1.3115596771240234,
+  "worst_tokens": [
+   317,
+   658,
+   523,
+   834,
+   877
+  ]
+ },
+ "C_dict_block": {
+  "final_prefix_reldiff": 0.29668089747428894,
+  "prelast_prefix_reldiff": 0.23713313043117523,
+  "layers_1_4_8_16_32": [
+   0.0,
+   0.0004,
+   0.0014,
+   0.0031,
+   0.0146
+  ],
+  "per_token_median": 0.10921401530504227,
+  "per_token_max": 1.3115596771240234,
+  "worst_tokens": [
+   317,
+   658,
+   523,
+   834,
+   877
+  ]
+ }
+}

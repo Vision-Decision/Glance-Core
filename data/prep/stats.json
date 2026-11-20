@@ -1,0 +1,80 @@
+{
+ "train_images": 24407,
+ "train_records": 24462,
+ "train_pos": 266539,
+ "grefcoco_train_neg": 16994,
+ "swap_neg": 71852,
+ "dropped_multi_target_sents": 69580,
+ "held_out_images": 6549,
+ "absent_ratio": 0.24999929653755787,
+ "q_per_image_mean": 14.560781742942599,
+ "src_counts": {
+  "refcoco": 101399,
+  "refcocoplus": 93365,
+  "refcocog": 71775,
+  "grefcoco": 16994,
+  "swap": 71852
+ },
+ "eval": {
+  "refcoco_val": {
+   "n_q": 10834,
+   "n_img": 1500,
+   "n_absent": 0
+  },
+  "refcoco_testA": {
+   "n_q": 5657,
+   "n_img": 750,
+   "n_absent": 0
+  },
+  "refcoco_testB": {
+   "n_q": 5095,
+   "n_img": 750,
+   "n_absent": 0
+  },
+  "refcocoplus_val": {
+   "n_q": 10758,
+   "n_img": 1500,
+   "n_absent": 0
+  },
+  "refcocoplus_testA": {
+   "n_q": 5726,
+   "n_img": 750,
+   "n_absent": 0
+  },
+  "refcocoplus_testB": {
+   "n_q": 4889,
+   "n_img": 750,
+   "n_absent": 0
+  },
+  "refcocog_val": {
+   "n_q": 4896,
+   "n_img": 1300,
+   "n_absent": 0
+  },
+  "refcocog_test": {
+   "n_q": 9602,
+   "n_img": 2600,
+   "n_absent": 0
+  },
+  "grefcoco_val": {
+   "n_q": 14229,
+   "n_img": 1501,
+   "n_absent": 8905
+  },
+  "grefcoco_testA": {
+   "n_q": 19200,
+   "n_img": 750,
+   "n_absent": 4448
+  },
+  "grefcoco_testB": {
+   "n_q": 16063,
+   "n_img": 750,
+   "n_absent": 4673
+  },
+  "grefcoco_val_merged": {
+   "n_q": 25063,
+   "n_img": 1501,
+   "n_absent": 8905
+  }
+ }
+}

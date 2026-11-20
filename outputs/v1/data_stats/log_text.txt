@@ -1,0 +1,190 @@
+HTTP Error 429 thrown while requesting HEAD https://huggingface.co/datasets/legacy-datasets/banking77/resolve/f54121560de48f2852f90be299010d1d6dc612ec/banking77.py
+Rate limited. Waiting 263.0s before retry [Retry 1/5].
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+{
+ "legacy-datasets/banking77:None:test": {
+  "items": 3080,
+  "keys": 5144
+ },
+ "clinc/clinc_oos:plus:test": {
+  "items": 5500,
+  "keys": 5369
+ },
+ "allenai/ai2_arc:ARC-Easy:test": {
+  "items": 2376,
+  "keys": 9561
+ },
+ "allenai/ai2_arc:ARC-Challenge:test": {
+  "items": 1172,
+  "keys": 5909
+ },
+ "Rowan/hellaswag:None:validation": {
+  "items": 10042,
+  "keys": 106902
+ },
+ "allenai/winogrande:winogrande_xl:validation": {
+  "items": 1267,
+  "keys": 3697
+ },
+ "allenai/openbookqa:main:test": {
+  "items": 500,
+  "keys": 782
+ },
+ "tau/commonsense_qa:None:validation": {
+  "items": 1221,
+  "keys": 2502
+ },
+ "facebook/anli:None:test_r1": {
+  "items": 1000,
+  "keys": 13201
+ },
+ "facebook/anli:None:test_r2": {
+  "items": 1000,
+  "keys": 13925
+ },
+ "facebook/anli:None:test_r3": {
+  "items": 1200,
+  "keys": 18208
+ },
+ "cais/mmlu:all:test": {
+  "items": 14042,
+  "keys": 148064
+ },
+ "TIGER-Lab/MMLU-Pro:None:test": {
+  "items": 12032,
+  "keys": 58734
+ },
+ "openai/gsm8k:main:test": {
+  "items": 1319,
+  "keys": 17198
+ },
+ "opendecisions": {
+  "items": 2352,
+  "keys": 118205
+ }
+}
+wrote /content/data/prep_v1/calib_text.jsonl 4560 records 5368 questions
+wrote /content/data/prep_v1/pool_text.jsonl 411196 records 478483 questions
+{
+ "di_keys": {
+  "legacy-datasets/banking77:None:test": {
+   "items": 3080,
+   "keys": 5144
+  },
+  "clinc/clinc_oos:plus:test": {
+   "items": 5500,
+   "keys": 5369
+  },
+  "allenai/ai2_arc:ARC-Easy:test": {
+   "items": 2376,
+   "keys": 9561
+  },
+  "allenai/ai2_arc:ARC-Challenge:test": {
+   "items": 1172,
+   "keys": 5909
+  },
+  "Rowan/hellaswag:None:validation": {
+   "items": 10042,
+   "keys": 106902
+  },
+  "allenai/winogrande:winogrande_xl:validation": {
+   "items": 1267,
+   "keys": 3697
+  },
+  "allenai/openbookqa:main:test": {
+   "items": 500,
+   "keys": 782
+  },
+  "tau/commonsense_qa:None:validation": {
+   "items": 1221,
+   "keys": 2502
+  },
+  "facebook/anli:None:test_r1": {
+   "items": 1000,
+   "keys": 13201
+  },
+  "facebook/anli:None:test_r2": {
+   "items": 1000,
+   "keys": 13925
+  },
+  "facebook/anli:None:test_r3": {
+   "items": 1200,
+   "keys": 18208
+  },
+  "cais/mmlu:all:test": {
+   "items": 14042,
+   "keys": 148064
+  },
+  "TIGER-Lab/MMLU-Pro:None:test": {
+   "items": 12032,
+   "keys": 58734
+  },
+  "openai/gsm8k:main:test": {
+   "items": 1319,
+   "keys": 17198
+  },
+  "opendecisions": {
+   "items": 2352,
+   "keys": 118205
+  }
+ },
+ "tasksource": {
+  "rows": 999832,
+  "after_license": 884398,
+  "after_source_excl": 872480,
+  "after_split_train": 872480,
+  "sampled_questions": 220001
+ },
+ "decisionbank": {
+  "rows": 261561,
+  "after_license": 239744,
+  "after_source_excl": 235556,
+  "sampled_questions": 200000
+ },
+ "lemon": {
+  "rows": 1199692,
+  "after_license_and_source_excl": 987407,
+  "sampled_questions": 120000
+ },
+ "calib": {
+  "records": 4560,
+  "questions": 5368,
+  "dropped": {
+   "dup_question": 49,
+   "di_or_opendecisions_overlap": 303,
+   "empty_state": 7,
+   "block_too_long": 145,
+   "state_too_long": 96
+  },
+  "by_src": {
+   "tasksource": 2775,
+   "decisionbank": 2593
+  },
+  "by_type": {
+   "choice": 3966,
+   "noul": 763,
+   "score": 639
+  }
+ },
+ "train": {
+  "records": 411196,
+  "questions": 478483,
+  "dropped": {
+   "dup_question": 15704,
+   "di_or_opendecisions_overlap": 20407,
+   "empty_state": 8671,
+   "state_too_long": 6755,
+   "block_too_long": 8182
+  },
+  "by_src": {
+   "tasksource": 210750,
+   "decisionbank": 171642,
+   "lemon": 96091
+  },
+  "by_type": {
+   "choice": 363720,
+   "score": 50343,
+   "noul": 64420
+  }
+ }
+}

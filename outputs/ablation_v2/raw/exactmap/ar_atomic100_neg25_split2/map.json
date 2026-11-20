@@ -1,0 +1,24 @@
+{
+ "ckpt": "/content/ckpt/ablation/ar_atomic100_neg25_bf16.pt",
+ "variant": "ar_atomic",
+ "split_k": 2,
+ "image_stride": 8,
+ "max_nodes": 10000,
+ "n_present": 1362,
+ "n_absent": 1067,
+ "wall_s": 279.35136318206787,
+ "n_forward": 940,
+ "present": {
+  "refuse": 0.10719530102790015,
+  "accept": 0.8928046989720999,
+  "undecided": 0.0,
+  "refuse_upper": 0.10719530102790015
+ },
+ "absent": {
+  "refuse": 0.9231490159325211,
+  "accept": 0.07685098406747891,
+  "undecided": 0.0
+ },
+ "acc50_map_box_accepted": 0.959703947368421,
+ "mean_expanded": 118.11650885137917
+}

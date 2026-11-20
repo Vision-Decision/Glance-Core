@@ -1,0 +1,17 @@
+{
+ "model_id": "Qwen/Qwen3.5-4B", "task": "v1.1 (box + choice/score/noul)", "config": "configs/v1.1_4b.json",
+ "gpu": "RTX PRO 6000 Blackwell 96GB (Colab G4, session dv-v1, account acct-8)",
+ "wall_clock_utc": {"train": "2026-11-18 04:14-11:44 (449.9 min, 3857 steps)", "ckpt_final_pushed": "11:53",
+                    "post_train_eval_export_push": "11:45-12:21", "gui_rerun_sspro_venus": "12:25-"},
+ "compute_units_estimate": "~85 CU (G4 ~10 CU/h x ~8.5 h incl. eval)",
+ "trainable_params": {"lora_r64_alpha128": 121.9e6, "heads": 12.2e6, "total": 134.1e6,
+                      "note": "frozen Qwen3.5-4B backbone (bf16); LoRA on the LM, heads = box + typed readouts"},
+ "effective_batch": {
+   "definition": "per optimizer step = grad_accum (2) micro-batches, each packed by TokenBudgetSampler to prefix_budget 16384 tokens / q_budget 192 question tokens / max 64 records",
+   "records_per_step_mean": 57.4, "questions_per_step_mean": 205.5, "tokens_per_step_mean": 26118,
+   "source": "records 221475 / 3857 steps; questions and tokens = mean(q_per_s * s_per_step), mean(tok_per_s * s_per_step) over train_log.jsonl"},
+ "train": {"records": 221475, "steps": 3857, "s_per_step_mean": 7.0, "peak_mem_gb": 37.0, "lr": 2e-4, "lr_heads": 5e-4, "warmup_steps": 100},
+ "temperatures": {"presence": 1.0054, "choice": 0.8808, "noul": 0.9659, "score": 0.9215,
+                  "choice_hard_split": 0.9098, "note": "golden-section fit on held-out calib splits; choice and score now differ (v1 grid bug gave identical values)"},
+ "checkpoint": "HF Vision-Decision/glance-train-ckpts v1.1/ckpt_final.pt (private); release export v1.1/release; per-row eval outputs v1.1/eval_rows, v1.1/eval_rows_gui"
+}

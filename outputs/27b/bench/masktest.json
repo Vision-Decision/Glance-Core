@@ -1,0 +1,83 @@
+{
+ "args": {
+  "model": "Qwen/Qwen3.8-27B",
+  "quant": "bf16",
+  "mode": "masktest",
+  "mbs": "1,2,4",
+  "img": "1024,896",
+  "prompt_len": 40,
+  "qblocks": 8,
+  "qlen": 25,
+  "lora_r": 64,
+  "steps": 4,
+  "maskmode": "block",
+  "attn": "sdpa,flex",
+  "no_gc": false,
+  "out": "/content/27b_out/masktest.json"
+ },
+ "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+ "gpu_mem_gb": 94.97076416015625,
+ "runs": [],
+ "env": {
+  "torch": "2.14.1+cu130",
+  "transformers": "5.23.0",
+  "fla": "0.6.0",
+  "causal_conv1d": "missing (ModuleNotFoundError)",
+  "peft": "0.21.2",
+  "bitsandbytes": "0.50.2",
+  "kernels": "0.18.3"
+ },
+ "load_s": 4.847258806228638,
+ "mem_after_load_gb": 50.955976486206055,
+ "lora_target_suffixes": [
+  "linear_attn.in_proj_qkv",
+  "linear_attn.in_proj_z",
+  "linear_attn.out_proj",
+  "mlp.down_proj",
+  "mlp.gate_proj",
+  "mlp.up_proj",
+  "self_attn.k_proj",
+  "self_attn.o_proj",
+  "self_attn.q_proj",
+  "self_attn.v_proj"
+ ],
+ "lora_params_M": 435.15904,
+ "seq": {
+  "visual_tokens": 896,
+  "prefix_len": 938,
+  "total_len": 1138
+ },
+ "masktest": {
+  "sdpa": {
+   "how": "set_attn_implementation(dict)",
+   "prefix_block_vs_causal_reldiff": 0.29668089747428894,
+   "blk0_block_vs_isolated_reldiff": 0.017880989238619804,
+   "blk3_block_vs_causal_reldiff(mask applied if >0)": 0.1581701636314392,
+   "blk3_block_vs_isolated_reldiff(leak via linear-attn)": 0.3976847529411316,
+   "blk3_causal_vs_isolated_reldiff(no-mask reference)": 0.44089335203170776,
+   "blk3_read_KL(block||isolated)": 0.16583824157714844,
+   "backward_ok": true,
+   "fwd_bwd_s": 1.0850768089294434,
+   "lora_grad_norm": 9.496722058845949,
+   "peak_gb": 55.029282569885254
+  },
+  "flex": {
+   "how": "direct config set (ValueError: Qwen3_5TextModel does not support an attention implementation through torch's flex_attention. Please request the support)",
+   "prefix_block_vs_causal_reldiff": 0.26963332295417786,
+   "blk0_block_vs_isolated_reldiff": 0.018452327698469162,
+   "blk3_block_vs_causal_reldiff(mask applied if >0)": 0.15851444005966187,
+   "blk3_block_vs_isolated_reldiff(leak via linear-attn)": 0.3873679041862488,
+   "blk3_causal_vs_isolated_reldiff(no-mask reference)": 0.4295731484889984,
+   "blk3_read_KL(block||isolated)": 0.15302182734012604,
+   "ok": false,
+   "err": "InductorError: RuntimeError: No valid triton configs. OutOfMemoryError: out of resource: triton_tem_fused_flex_attention_backward_mul_1 Required: 114688 Hardware limit:101376 Reducing block sizes or `num_stages` may help.",
+   "tb": "ample_inputs, inputs_to_check, graph_kwargs)\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_inductor/compile_fx.py\", line 1749, in codegen_and_compile\n    compiled_module = graph.compile_to_module()\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_inductor/graph.py\", line 3060, in compile_to_module\n    return self._compile_to_module()\n           ~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_inductor/graph.py\", line 3070, in _compile_to_module\n    mod = self._compile_to_module_lines(wrapper_code)\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_inductor/graph.py\", line 3146, in _compile_to_module_lines\n    mod = PyCodeCache.load_by_key_path(\n        key,\n    ...<6 lines>...\n        },\n    )\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_inductor/codecache.py\", line 4820, in load_by_key_path\n    mod = _reload_python_module(key, path, set_sys_modules=set_sys_modules)\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_inductor/runtime/compile_tasks.py\", line 37, in _reload_python_module\n    exec(code, mod.__dict__, mod.__dict__)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/torchinductor_root/fr/cfr6futea2n34b5ht24unjljzccaznjbuziufy75w7r3toyeytgm.py\", line 917, in <module>\n    async_compile.wait(globals())\n    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_inductor/async_compile.py\", line 912, in wait\n    self._wait_futures(scope)\n    ~~~~~~~~~~~~~~~~~~^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_inductor/async_compile.py\", line 942, in _wait_futures\n    kernel = result.result(timeout=wait_timeout)\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_inductor/codecache.py\", line 5508, in result\n    return self.result_fn()\n           ~~~~~~~~~~~~~~^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_inductor/async_compile.py\", line 558, in get_result\n    kernel.precompile(\n    ~~~~~~~~~~~~~~~~~^\n        warm_cache_only=False,\n        ^^^^^^^^^^^^^^^^^^^^^^\n        reload_kernel=reload_kernel_in_parent,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        static_triton_bundle_key=CompiledTritonKernels.key(source_code),\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_inductor/runtime/triton_heuristics.py\", line 807, in precompile\n    self._make_launchers()\n    ~~~~~~~~~~~~~~~~~~~~^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_inductor/runtime/triton_heuristics.py\", line 1092, in _make_launchers\n    raise RuntimeError(\n        f\"No valid triton configs. {type(exc).__name__}: {exc}\"\n    )\ntorch._inductor.exc.InductorError: RuntimeError: No valid triton configs. OutOfMemoryError: out of resource: triton_tem_fused_flex_attention_backward_mul_1 Required: 114688 Hardware limit:101376 Reducing block sizes or `num_stages` may help.\n"
+  },
+  "flex_blockmask": {
+   "flex_BlockMask_vs_sdpa_dense_reldiff": 0.27470821142196655,
+   "ok": false,
+   "err": "InductorError: RuntimeError: No valid triton configs. OutOfMemoryError: out of resource: triton_tem_fused_flex_attention_backward_mul_1 Required: 114688 Hardware limit:101376 Reducing block sizes or `num_stages` may help.",
+   "tb": "ample_inputs, inputs_to_check, graph_kwargs)\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_inductor/compile_fx.py\", line 1749, in codegen_and_compile\n    compiled_module = graph.compile_to_module()\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_inductor/graph.py\", line 3060, in compile_to_module\n    return self._compile_to_module()\n           ~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_inductor/graph.py\", line 3070, in _compile_to_module\n    mod = self._compile_to_module_lines(wrapper_code)\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_inductor/graph.py\", line 3146, in _compile_to_module_lines\n    mod = PyCodeCache.load_by_key_path(\n        key,\n    ...<6 lines>...\n        },\n    )\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_inductor/codecache.py\", line 4820, in load_by_key_path\n    mod = _reload_python_module(key, path, set_sys_modules=set_sys_modules)\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_inductor/runtime/compile_tasks.py\", line 37, in _reload_python_module\n    exec(code, mod.__dict__, mod.__dict__)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/torchinductor_root/sf/csfvmfdzqgjarxsfdlahorctstfvhzgfhn7dqhzd3yyau6n32a6e.py\", line 935, in <module>\n    async_compile.wait(globals())\n    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_inductor/async_compile.py\", line 912, in wait\n    self._wait_futures(scope)\n    ~~~~~~~~~~~~~~~~~~^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_inductor/async_compile.py\", line 942, in _wait_futures\n    kernel = result.result(timeout=wait_timeout)\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_inductor/codecache.py\", line 5508, in result\n    return self.result_fn()\n           ~~~~~~~~~~~~~~^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_inductor/async_compile.py\", line 558, in get_result\n    kernel.precompile(\n    ~~~~~~~~~~~~~~~~~^\n        warm_cache_only=False,\n        ^^^^^^^^^^^^^^^^^^^^^^\n        reload_kernel=reload_kernel_in_parent,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        static_triton_bundle_key=CompiledTritonKernels.key(source_code),\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_inductor/runtime/triton_heuristics.py\", line 807, in precompile\n    self._make_launchers()\n    ~~~~~~~~~~~~~~~~~~~~^^\n  File \"/usr/local/lib/python3.13/dist-packages/torch/_inductor/runtime/triton_heuristics.py\", line 1092, in _make_launchers\n    raise RuntimeError(\n        f\"No valid triton configs. {type(exc).__name__}: {exc}\"\n    )\ntorch._inductor.exc.InductorError: RuntimeError: No valid triton configs. OutOfMemoryError: out of resource: triton_tem_fused_flex_attention_backward_mul_1 Required: 114688 Hardware limit:101376 Reducing block sizes or `num_stages` may help.\n"
+  }
+ }
+}

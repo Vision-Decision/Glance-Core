@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "glance-core"
+version = "0.2.0"
+description = "Glance: a typed decision model on Qwen3.5-4B (shared-prefix forward, presence/box/IoU and typed heads, training and eval)."
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.6",
+    "torchvision",
+    "transformers==5.23.0",
+    "peft>=0.17",
+    "numpy",
+    "pillow",
+    "safetensors",
+    "huggingface_hub",
+]
+
+[project.optional-dependencies]
+# fused Gated-DeltaNet kernels; without them the model falls back to the pure-torch GDN (CPU tests use that path)
+gpu = ["flash-linear-attention==0.6.0", "accelerate"]
+data = ["pyarrow", "pandas"]
+
+[project.urls]
+Repository = "https://github.com/Vision-Decision/glance-core"
+
+[tool.setuptools]
+# `train` is importable so downstream repos can reuse helpers such as train.to_dev
+py-modules = ["train"]
+
+[tool.setuptools.packages.find]
+include = ["dv", "dv.*"]
+namespaces = true
