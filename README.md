@@ -159,7 +159,7 @@ python eval.py --ckpt /content/out/v1/ckpt_final.pt --latency --out eval_results
 | Checkpoints v1.2, multi-box, Gen-v1, scan, Glance-Video | `Vision-Decision/glance-train-ckpts` |
 | Checkpoints v0, 27B, v1, v1.1, ablations, robustness recipes | `Vision-Decision/glance-train-ckpts-legacy` |
 | Training pools, multi-box and v1.2 data, large repository files | `Vision-Decision/glance-train-data` (`git_large_files/` mirrors this repository's paths) |
-| Grounding data from Glance-Data, v1.2 category-free set | `Vision-Decision/glance-ground-v2` |
+| Grounding data (Glance-Data), trainer records, v1.2 category-free set | `Vision-Decision/Glance-COCO` (`records/`, `intermediates/catfree_v12/`; formerly `glance-ground-v2`) |
 | Shifted-description evaluation set | `Vision-Decision/glance-robust-ref` |
 | Synthetic GUI data | `Vision-Decision/guisyn-v0` |
 

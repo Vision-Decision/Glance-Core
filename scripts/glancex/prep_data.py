@@ -27,7 +27,7 @@ ap.add_argument("--out", required=True)
 ap.add_argument("--revision", default="0da8cf88053728f58674c7d5b8357db4740d3f62")
 a = ap.parse_args()
 os.makedirs(a.out, exist_ok=True)
-d = snapshot_download("Vision-Decision/Glance-Data", repo_type="dataset", revision=a.revision,
+d = snapshot_download("Vision-Decision/Glance-COCO", repo_type="dataset", revision=a.revision,
                       local_dir=os.path.join(a.out, "_gd"))
 
 

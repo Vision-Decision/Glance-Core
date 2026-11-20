@@ -48,8 +48,8 @@ hf download Vision-Decision/glance-train-data --repo-type dataset --local-dir /c
 | `Vision-Decision/glance-train-ckpts` | model | v1.2、多框 pilot、scan 短读出、Glance-Video、生成式基线、ar_iou 特征、leak4b、gv0 结果 |
 | `Vision-Decision/glance-train-ckpts-legacy`（原个人仓库，已搬到组织） | model | v0、27B、ablation 全部、v1、v1.1（含 release 导出和逐行输出）、sprint_abs 逐行输出、sprint_robust、sprint_gui ft1、robust_eval、多框 pilot 的 base/heads/jointnb 评测 |
 | `Vision-Decision/glance-train-data` | dataset | 本次新建。存放原先只在本机、gen-host 或会话临时目录里的中间数据：v1 自然图像题池、多框 pilot 数据、S3 增强题池、v1.2 catfree 场景文件、scan 蒸馏清单 |
-| `Vision-Decision/glance-ground-v2` | dataset | 由 Glance-Data 转换来的训练数据（`full/`、`single/`）、诊断集、v1.2 catfree 数据 |
-| `Vision-Decision/Glance-Data` | dataset | 同组同学的 grounding 数据（parquet） |
+| `Vision-Decision/glance-ground-v2` | dataset | 由 Glance-Data 转换来的训练数据（`full/`、`single/`）、诊断集、v1.2 catfree 数据。2026-11-20 起私有；公开副本并入 `Vision-Decision/Glance-COCO` 的 `records/`、`eval/`、`intermediates/catfree_v12/` |
+| `Vision-Decision/Glance-Data` | dataset | 同组同学的 grounding 数据（parquet）。2026-11-20 更名为 `Vision-Decision/Glance-COCO`，旧 id 自动跳转 |
 | `Vision-Decision/glance-robust-ref` | dataset | 描述偏移评测集（中文、改写、功能式、模糊） |
 | `Vision-Decision/guisyn-v0` | dataset | 合成 GUI 截图、可访问性树和 grounding 题 |
 | `Vision-Decision/glance-video-v0` | dataset | Glance-Video 的片段 shard、records、去污染表、回放数据 |
